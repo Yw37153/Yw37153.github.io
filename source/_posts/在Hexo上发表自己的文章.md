@@ -53,7 +53,7 @@ tags:
 \<title>是标题，可以使用任意语言。
 
 ## 写作
-常用的语法是markdown。可以看相关的[教程](https://www.runoob.com/markdown/md-tutorial.html "菜鸟：Markdown 教程")。我在这里记录一下使用频率较低但重要的指令。
+常用的语法是markdown。可以看相关的[教程](https://www.runoob.com/markdown/md-tutorial.html "菜鸟：Markdown 教程")。我在这里简单介绍 一下使用频率较低但重要的指令。
 
 ### 插入图片
 ```
@@ -63,7 +63,12 @@ tags:
 ### 插入代码
 - 行内代码：将代码用反单引号包围起来。
 - 段间代码：将代码` ``` `包围起来。
+
 ### 插入流程图
+{% note info %}
+这里根据使用的Markdown插件不同, 所以有时候需要添加其他的`mermaid`插件才能正常渲染.
+如果渲染后仍然是代码块形式, 则需要安装额外的mermaid插件.
+{% endnote %}
 - 竖式流程图
 ```mermaid
 graph TD
