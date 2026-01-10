@@ -21,12 +21,14 @@ graph TD
 ```
 
 ## 新建
-用git bash打开库文件夹，输入命令
+用`git bash`打开库文件夹，输入命令
 ```
 hexo new [layout] <title>
 ```
-[Layout]是类型名，有三种，对应着不同的模板。分别是`page`、`post`和`draft`。具体区别是他们的`Front-matter`不同，同时会被保存在source目录下的不同文件夹中。
-- Page
+[Layout]是类型名，默认有三种，分别对应着不同的模板。分别是`page`、`post`和`draft`。具体区别是他们的`Front-matter`不同, 保存目录不同, `page`生成的文件名为`index.md`。
+- Page  
+  **静态内容**：用于创建独立、不受时间影响的内容（如网站首页、关于我、分类、标签）。  
+  **组织结构**：可形成页面层级（例如：父页面“服务” → 子页面“网页设计”“SEO优化”）。
 ```
 ---
 title: {{ title }}
@@ -34,7 +36,10 @@ date: {{ date }}
 ---
 ```
 
-- Post
+- Post  
+  **动态内容**：适合按时间发布的更新（如博客文章、新闻、教程）。  
+  **分类系统**：通过分类（Categories） 和标签（Tags） 进行内容组织。  
+  **社交互动**：支持评论、分享，适合内容营销。
 ```
 ---
 title: {{ title }}
@@ -43,7 +48,8 @@ tags:
 ---
 ```
 
-- Draft
+- Draft  
+  Hexo的独特机制，基本和`Post`一样.
 ```
 ---
 title: {{ title }}
@@ -88,9 +94,12 @@ A[方形] -->B(圆角)
     F[横向流程图]
 ```
 ## 发表
-本文章所说的发表是指将`draft`格式转化为`post`或者`page`格式。我们需要利用`git bash`
+```
+hexo generate
+```
+这一命令可以生成仓库`post`和`page`文章的静态文件. `draft`文件夹并不包括在内, 如果我们想让`draft`内的文章被看到, 则需要**发表**文章,将文章从`draft`移到`post`文件夹下: 
+
 在`git bash`中输入
 ```
-hexo publish [layout] <title>r
+hexo publish [layout] <title>
 ```
-即可将draft文件夹中的文件移到post文件夹。

@@ -90,6 +90,7 @@ encrypt: # hexo-blog-encrypt
   message: 输入密码查看.
   tags:
   - {name: 日记, password: private_emo}
+  - {name: 加密, password: Bog11025}
   theme: shrink
   wrong_pass_message: 你看不了哦~
   wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
