@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2c986f196896b525",
+        "id": "d4196737f23902e0",
         "type": "tabs",
         "children": [
           {
-            "id": "de31b993f7208b50",
+            "id": "e09b9cbc3f0abe0f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_drafts/象征界.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "象征界"
+              "title": "新标签页"
             }
           }
         ]
@@ -192,8 +188,9 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "de31b993f7208b50",
+  "active": "e09b9cbc3f0abe0f",
   "lastOpenFiles": [
+    "_drafts/象征界.md",
     "_posts/喜欢",
     "_posts/喜欢.md",
     "_posts/随笔.md",
@@ -207,7 +204,6 @@
     "_drafts/c-study-debug/image.png",
     "_drafts/c-study-debug",
     "_drafts/随笔.md",
-    "_drafts/象征界.md",
     "_drafts/c-stdudy-debug.md",
     "未命名.base",
     "_posts/地坛小记.md",

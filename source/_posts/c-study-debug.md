@@ -5,7 +5,10 @@ tags:
   - C语言
 date: 2026-01-10 22:38:45
 ---
-
+## 注意
+1. 大写->小写:`x=X+32`.  
+2. (int)/(int):`d=(float)n1/n2`.
+3. 
 ## 错题
 1. 已知学生记录的定义为：
 ```
@@ -26,7 +29,7 @@ struct student s;
 假设变量s中的birth应是“2008年5月10日”，对birth的正确赋值语句是
 (D) `s.birth.year=1988; s.birth.month=5; s.birth.day=10;`
 
-2. 
+1. 
 ![alt text](./c-stdudy-debug/image.png)
 
 
