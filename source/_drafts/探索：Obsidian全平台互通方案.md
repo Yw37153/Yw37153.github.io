@@ -18,13 +18,32 @@ tags:
 在**iPad**中找到**Obsidian**的文件夹，将需要备份的仓库文件夹压缩后传到电脑上。  
 
 ### 第二步：Windows端
-用Obsidian打开刚刚的仓库。  
-用**git bash**打开仓库，输入以下命令。  
+- 用Obsidian打开刚刚的仓库。  
+- 用**git bash**打开仓库，输入以下命令。  
 ```
 git init  // 初始化 git 项目
 git remote add origin $ git remote add origin git@github.com:Yw37153/Ywww.git // 添加远程仓库
 ```
+- 在Obsidian**根目录**下创建`.gitignore`文件，把不需要备份的文件写一下。
+```
+.obsidian
+.vscode
+```
+以下是来自Gemini的建议
+```
+# 忽略工作区布局
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
 
+# 忽略缓存和回收站
+.obsidian/cache/
+.trash/
+
+# 忽略操作系统生成的临时文件
+.DS_Store
+Thumbs.db
+```
+- 缓存+提交
 ### 第二步：iPad安装git
 在APP Store下载**iSH**
 进入后输入
