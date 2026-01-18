@@ -1,6 +1,7 @@
 ---
 title: 探索：Obsidian全平台互通方案
 tags:
+  - 随笔
 ---
 ## 前言
 [Obsidian的介绍]
@@ -43,7 +44,16 @@ git remote add origin $ git remote add origin git@github.com:Yw37153/Ywww.git //
 .DS_Store
 Thumbs.db
 ```
-- 缓存+提交
+- 缓存+提交  
+  这一步我的建议是命令行进行第一次提交，我最开始用的VSCode但是没有提交成功，我不好说了。提交命令：
+```
+  git add .
+  git commit -m "git bash"
+  On branch main
+  nothing to commit, working tree clean
+```
+**Finish**
+
 ### 第二步：iPad安装git
 在APP Store下载**iSH**
 进入后输入

@@ -1,5 +1,5 @@
 ---
-title: C-stdudy-Note
+title: C_stdudy_Note
 tags:
   - 学习
   - C语言
