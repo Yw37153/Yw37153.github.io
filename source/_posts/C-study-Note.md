@@ -1,5 +1,5 @@
 ---
-title: C_stdudy_Note
+title: C_study_Note
 tags:
   - 学习
   - C语言
@@ -35,7 +35,7 @@ struct student s;
 (D) `s.birth.year=1988; s.birth.month=5; s.birth.day=10;`
 
 2. 
-![alt text](./c-stdudy-debug/image.png)
+![alt text](./C-study-Note/image.png)
 
 
 **原代码**
