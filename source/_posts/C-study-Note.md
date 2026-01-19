@@ -35,7 +35,7 @@ struct student s;
 (D) `s.birth.year=1988; s.birth.month=5; s.birth.day=10;`
 
 2. 
-![alt text](./C-study-Note/image.png)
+![alt text](image.png)
 
 
 **原代码**
