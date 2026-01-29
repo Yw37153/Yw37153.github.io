@@ -8,3 +8,8 @@ public/
 _multiconfig.yml
 */.obsidian/
 source\未命名.base
+
+#Vibe Coding
+.gemini
+.iflow
+openspec
