@@ -2,32 +2,33 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <title>git教程-小白快速入门指北 | 文逸行</title>
+  <title>麦田里的守望者 | 文逸行</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="">
   <meta name="theme-color" content="#10b981">
 
-  <link rel="canonical" href="http://example.com/git%E6%95%99%E7%A8%8B-%E5%B0%8F%E7%99%BD%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/">
+  <link rel="canonical" href="http://example.com/%E9%BA%A6%E7%94%B0%E9%87%8C%E7%9A%84%E5%AE%88%E6%9C%9B%E8%80%85/">
 
   
     <link rel="shortcut icon" href="/%3Csvg%20xmlns=%22http:/www.w3.org/2000/svg%22%20width=%22256%22%20height=%22256%22%20viewBox=%220%200%2048%2048%22%3E%3Ccircle%20cx=%2224%22%20cy=%2224%22%20r=%2221.5%22%20fill=%22none%22%20stroke=%22#1b79a1%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22%3E%3C/circle%3E%3Cpath%20fill=%22none%22%20stroke=%22#1b79a1%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22%20d=%22m32%2016l-4%2016l-4-16l-4%2016l-4-16%22%3E%3C/path%3E%3C/svg%3E">
   
 
-  <meta name="description" content="引言 Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。我们可以利用它进行代码的管理，它的核心就是仓库的上传、下载与更新。 参考网址：  git简明指南 Git教程|菜鸟教程  工作原理示意图 ![git-process]{git-process} 找到所需仓库 新仓库   初始化   Shell1git init   添加到暂存区   Shell1git add &amp;l">
+  <meta name="description" content="那两个修女，是作我最深刻时灵魂的向往，是美好，不求回报，对他人纯粹的“善意”。它不需要经过什么反思，只需看到一种冲动，即便只是满足的幻想。 两个问题：   “我”为什么在拼命地找人聊天？   在这个结构中，“我的妹妹”象征着什么？   “你对发生的任何事情都不喜欢。”——如果世界上只有绝对的合我心意的喜欢才值得被我喜欢，那我将不会喜欢任何东西。如果我单单喜欢世间纯洁无垢的东西，那我就已经和热爱生活">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git教程-小白快速入门指北">
-<meta property="og:url" content="http://example.com/git%E6%95%99%E7%A8%8B-%E5%B0%8F%E7%99%BD%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/index.html">
+<meta property="og:title" content="麦田里的守望者">
+<meta property="og:url" content="http://example.com/%E9%BA%A6%E7%94%B0%E9%87%8C%E7%9A%84%E5%AE%88%E6%9C%9B%E8%80%85/index.html">
 <meta property="og:site_name" content="文逸行">
-<meta property="og:description" content="引言 Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。我们可以利用它进行代码的管理，它的核心就是仓库的上传、下载与更新。 参考网址：  git简明指南 Git教程|菜鸟教程  工作原理示意图 ![git-process]{git-process} 找到所需仓库 新仓库   初始化   Shell1git init   添加到暂存区   Shell1git add &amp;l">
+<meta property="og:description" content="那两个修女，是作我最深刻时灵魂的向往，是美好，不求回报，对他人纯粹的“善意”。它不需要经过什么反思，只需看到一种冲动，即便只是满足的幻想。 两个问题：   “我”为什么在拼命地找人聊天？   在这个结构中，“我的妹妹”象征着什么？   “你对发生的任何事情都不喜欢。”——如果世界上只有绝对的合我心意的喜欢才值得被我喜欢，那我将不会喜欢任何东西。如果我单单喜欢世间纯洁无垢的东西，那我就已经和热爱生活">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-01-27T15:29:18.000Z">
-<meta property="article:modified_time" content="2026-01-27T15:29:18.399Z">
+<meta property="article:published_time" content="2026-01-29T17:11:51.000Z">
+<meta property="article:modified_time" content="2026-01-29T17:13:30.375Z">
 <meta property="article:author" content="Felix">
+<meta property="article:tag" content="读书笔记">
 <meta name="twitter:card" content="summary">
   <meta name="generator" content="Hexo 8.0.0">
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/git%E6%95%99%E7%A8%8B-%E5%B0%8F%E7%99%BD%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/"},"headline":"git教程-小白快速入门指北","description":"引言 Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。我们可以利用它进行代码的管理，它的核心就是仓库的上传、下载与更新。 参考网址： git简明指南 Git教程|菜鸟教程 工作原理示意图 ![git-process]{git-process} 找到所需仓库 新仓库 初始化 Shell1gi","datePublished":"2026-01-27T15:29:18.000Z","dateModified":"2026-01-27T15:29:18.399Z","author":{"@type":"Person","name":"Felix"},"publisher":{"@type":"Organization","name":"文逸行","logo":{"@type":"ImageObject","url":"http://example.com/%3Csvg%20xmlns=%22http:/www.w3.org/2000/svg%22%20width=%22256%22%20height=%22256%22%20viewBox=%220%200%2048%2048%22%3E%3Ccircle%20cx=%2224%22%20cy=%2224%22%20r=%2221.5%22%20fill=%22none%22%20stroke=%22#1b79a1%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22%3E%3C/circle%3E%3Cpath%20fill=%22none%22%20stroke=%22#1b79a1%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22%20d=%22m32%2016l-4%2016l-4-16l-4%2016l-4-16%22%3E%3C/path%3E%3C/svg%3E"}}}
+{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/%E9%BA%A6%E7%94%B0%E9%87%8C%E7%9A%84%E5%AE%88%E6%9C%9B%E8%80%85/"},"headline":"麦田里的守望者","description":"那两个修女，是作我最深刻时灵魂的向往，是美好，不求回报，对他人纯粹的“善意”。它不需要经过什么反思，只需看到一种冲动，即便只是满足的幻想。 两个问题： “我”为什么在拼命地找人聊天？ 在这个结构中，“我的妹妹”象征着什么？ “你对发生的任何事情都不喜欢。”——如果世界上只有绝对的合我心意的喜欢才值得被我喜欢，那我将不会","datePublished":"2026-01-29T17:11:51.000Z","dateModified":"2026-01-29T17:13:30.375Z","author":{"@type":"Person","name":"Felix"},"publisher":{"@type":"Organization","name":"文逸行","logo":{"@type":"ImageObject","url":"http://example.com/%3Csvg%20xmlns=%22http:/www.w3.org/2000/svg%22%20width=%22256%22%20height=%22256%22%20viewBox=%220%200%2048%2048%22%3E%3Ccircle%20cx=%2224%22%20cy=%2224%22%20r=%2221.5%22%20fill=%22none%22%20stroke=%22#1b79a1%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22%3E%3C/circle%3E%3Cpath%20fill=%22none%22%20stroke=%22#1b79a1%22%20stroke-linecap=%22round%22%20stroke-linejoin=%22round%22%20d=%22m32%2016l-4%2016l-4-16l-4%2016l-4-16%22%3E%3C/path%3E%3C/svg%3E"}}}
 </script>
 
   
@@ -122,95 +123,54 @@
   <main id="sea-main-wrapper" data-pagefind-body>
     <article class="sea-page-card-wrapper">
   <header class="sea-article-header">
-    <h1 class="sea-article-title">git教程-小白快速入门指北</h1>
+    <h1 class="sea-article-title">麦田里的守望者</h1>
     
       <div class="sea-post-meta sea-post-meta__center">
         <div class="sea-post-time">
   <svg t="1716964550804" class="sea-svg-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2621" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M805.49888 981.49888l-602.3168-0.76288c-86.59456-8.192-154.56768-81.3056-154.56768-170.01472L48.6144 291.73248c0-94.1568 76.60032-170.75712 170.7776-170.75712l586.10176 0c94.1568 0 170.73152 76.60032 170.73152 170.75712L976.22528 810.7008C976.2304 904.87296 899.63008 981.49888 805.49888 981.49888L805.49888 981.49888zM219.3664 190.57152c-55.79776 0-101.20192 45.38368-101.20192 101.18144l0 518.96832c0 55.79776 45.40416 101.20704 101.20192 101.20704l586.13248 0c55.77728 0 101.16096-45.40928 101.16096-101.20704L906.65984 291.73248c0-55.79776-45.38368-101.18656-101.16096-101.18656L219.3664 190.54592 219.3664 190.57152zM698.84416 290.51904c-25.60512 0-46.38208-20.77696-46.38208-46.38208l0-158.6688c0-25.6 20.77696-46.38208 46.38208-46.38208 25.6 0 46.38208 20.78208 46.38208 46.38208L745.22624 244.1216C745.22624 269.7472 724.46976 290.51904 698.84416 290.51904L698.84416 290.51904zM315.65824 290.51904c-25.60512 0-46.38208-20.77696-46.38208-46.38208l0-158.6688c0-25.6 20.77696-46.38208 46.38208-46.38208 25.6 0 46.38208 20.78208 46.38208 46.38208L362.04032 244.1216C362.04032 269.7472 341.28896 290.51904 315.65824 290.51904L315.65824 290.51904zM534.8864 794.78784l-44.27264 0c-25.6 0-46.38208-20.77696-46.38208-46.38208 0-25.6 20.78208-46.38208 46.38208-46.38208l44.27264 0c25.6 0 46.38208 20.78208 46.38208 46.38208C581.26848 774.01088 560.4864 794.78784 534.8864 794.78784L534.8864 794.78784zM930.79552 452.608 121.24672 452.608c-25.60512 0-46.38208-20.78208-46.38208-46.38208 0-25.60512 20.77696-46.38208 46.38208-46.38208l809.5744 0c25.6 0 46.38208 20.77696 46.38208 46.38208C977.2032 431.82592 956.42624 452.608 930.79552 452.608L930.79552 452.608zM327.92576 649.03168l-44.27264 0c-25.6 0-46.38208-20.78208-46.38208-46.38208 0-25.60512 20.78208-46.38208 46.38208-46.38208l44.27264 0c25.6 0 46.38208 20.77696 46.38208 46.38208C374.30784 628.25472 353.52576 649.03168 327.92576 649.03168L327.92576 649.03168zM534.8864 649.03168l-44.27264 0c-25.6 0-46.38208-20.78208-46.38208-46.38208 0-25.60512 20.78208-46.38208 46.38208-46.38208l44.27264 0c25.6 0 46.38208 20.77696 46.38208 46.38208S560.4864 649.03168 534.8864 649.03168L534.8864 649.03168zM741.27872 649.03168l-44.26752 0c-25.60512 0-46.38208-20.78208-46.38208-46.38208 0-25.60512 20.77696-46.38208 46.38208-46.38208l44.26752 0c25.60512 0 46.38208 20.77696 46.38208 46.38208C787.6608 628.25472 766.90944 649.03168 741.27872 649.03168L741.27872 649.03168zM327.92576 794.78784l-44.27264 0c-25.6 0-46.38208-20.77696-46.38208-46.38208 0-25.6 20.78208-46.38208 46.38208-46.38208l44.27264 0c25.6 0 46.38208 20.78208 46.38208 46.38208C374.30784 774.01088 353.52576 794.78784 327.92576 794.78784L327.92576 794.78784zM741.27872 794.78784l-44.26752 0c-25.60512 0-46.38208-20.77696-46.38208-46.38208 0-25.6 20.77696-46.38208 46.38208-46.38208l44.26752 0c25.60512 0 46.38208 20.78208 46.38208 46.38208C787.6608 774.01088 766.90944 794.78784 741.27872 794.78784L741.27872 794.78784z" p-id="2622"></path></svg>
-  <time datetime="2026-01-27T15:29:18.000Z">2026-01-27</time>
+  <time datetime="2026-01-29T17:11:51.000Z">2026-01-30</time>
 </div>
         
         
+  <div class="sea-post-tags">
+    <svg t="1716964811431" class="sea-svg-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6117" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M384 977.152c-20.5312 0-39.8336-7.9872-54.3232-22.4256l-260.4032-260.4032c-14.4896-14.4896-22.4256-33.7408-22.4256-54.3232s7.9872-39.8336 22.4256-54.3232l439.6032-439.6032c24.9344-24.9344 70.2464-43.7248 105.5232-43.7248h230.4c42.3424 0 76.8 34.4576 76.8 76.8v230.4c0 35.2256-18.7904 80.5888-43.6736 105.5232l-439.6032 439.6032a76.1856 76.1856 0 0 1-54.3232 22.4256zM614.4 153.6c-21.248 0-54.272 13.6704-69.2736 28.7232l-439.6032 439.6032c-4.8128 4.8128-7.424 11.2128-7.424 18.1248s2.6624 13.312 7.424 18.0736l260.4032 260.4032c4.8128 4.8128 11.2128 7.424 18.1248 7.424s13.312-2.6624 18.1248-7.424l439.6032-439.6032c15.0016-15.0016 28.7232-48.0768 28.7232-69.3248V179.2a25.6 25.6 0 0 0-25.6-25.6h-230.4z" p-id="6118"></path><path d="M742.4 358.4c-42.3424 0-76.8-34.4576-76.8-76.8S700.0576 204.8 742.4 204.8s76.8 34.4576 76.8 76.8S784.7424 358.4 742.4 358.4z m0-102.4a25.6 25.6 0 1 0 0 51.2 25.6 25.6 0 0 0 0-51.2z" p-id="6119"></path></svg>
+    <a class="tag-link" href="/tag/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" rel="tag">读书笔记</a>
+  </div>
+
       </div>
     
   </header>
   <div class="sea-doc">
     
     <div class="sea-article-content">
-      <h1>引言</h1>
-<p>Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。我们可以利用它进行代码的管理，它的核心就是仓库的上传、下载与更新。<br>
-参考网址：</p>
+      <p>那两个修女，是作我最深刻时灵魂的向往，是美好，不求回报，对他人纯粹的“善意”。它不需要经过什么反思，只需看到一种冲动，即便只是满足的幻想。</p>
+<p>两个问题：</p>
 <ul class="lvl-0">
-<li class="lvl-2"><a target="_blank" rel="noopener" href="https://www.runoob.com/manual/git-guide/">git简明指南</a></li>
-<li class="lvl-2"><a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-tutorial.html">Git教程|菜鸟教程</a></li>
+<li class="lvl-3">
+<p>“我”为什么在拼命地找人聊天？</p>
+</li>
+<li class="lvl-3">
+<p>在这个结构中，“我的妹妹”象征着什么？</p>
+</li>
 </ul>
-<h1>工作原理示意图</h1>
-<p>![git-process]{git-process}</p>
-<h2 id="找到所需仓库">找到所需仓库</h2>
-<h3 id="新仓库">新仓库</h3>
-<ol>
-<li class="lvl-3">
-<p>初始化</p>
-</li>
-</ol>
-<figure class="highlight plaintext"><figcaption><span>Shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li class="lvl-3">
-<p>添加到暂存区</p>
-</li>
-</ol>
-<figure class="highlight plaintext"><figcaption><span>Shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-<p>或</p>
-<figure class="highlight plaintext"><figcaption><span>Shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add *</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li class="lvl-3">
-<p>提交到Head</p>
-</li>
-</ol>
-<figure class="highlight plaintext"><figcaption><span>Shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;代码提交信息&quot;</span><br></pre></td></tr></table></figure>
-<ol start="4">
-<li class="lvl-3">
-<p>推送到云端仓库</p>
-</li>
-</ol>
-<figure class="highlight plaintext"><figcaption><span>Shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin &lt;server&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="已有仓库克隆">已有仓库<mark>克隆</mark></h3>
+<p>“你对发生的任何事情都不喜欢。”——如果世界上只有绝对的合我心意的喜欢才值得被我喜欢，那我将不会喜欢任何东西。如果我单单喜欢世间纯洁无垢的东西，那我就已经和热爱生活、生命、世界的相去甚远了。世界是不纯净的，生活是不纯洁的。正因如此，在爱中就必须看到这种特质，而不应当成为不去爱的理由。</p>
+<p>——去爱，去相信，将自己放置在世界一隅，认真去感受。</p>
+<p>“爱”字，太过抽象。在爱人爱已之前，先学会爱世界。</p>
+<h2 id="关于主角霍尔顿（Holden）">关于主角霍尔顿（Holden）</h2>
+<p>这本书的主角，我对他的名字没有一点儿印象，好像在他室友打他时喊过，他也向别人介绍过自己，说他是个骗子，从不流露出自己的真实姓名——除了招嫖那次？他是一个眼里不揉沙子，看不起学校那些假模假式的人；是一个爱妹妹的人，在想到妹妹时总是很骄傲；他不是一个守规矩的人，被学校多次劝退；爱看讽刺小说，能看见世间虚伪的人，即便他也是被讽刺的人。我尝试描述他的性格，可我唯一能做的就是再念一遍文章的原文。但是他让我想到了一个词——赤诚。他诚实的生活在世界上，世界太过肮脏，他无路可逃，但他依旧选择了真诚地活着。原本赤诚的人是很吸引我的，但我总认为那样的人是一团雪地中的火焰，可是看到他我却发现并非，原来赤诚还有这种表达。在学校里，他的价值观实在是危险可怖，于是他成为了在应试规矩的学校中做边缘行走的人；但当他走进入社会，他又太过正常好像他是个异类。他不要求妓女同他做爱，但他又被老鸨敲诈。他又因为自己的性需求，大半夜打电话骚扰女生。在一次又一次的矛盾当中，我好像看见了他的自我。在 2026.01.24 凌晨 2:10，我对“真诚”二字终于有了想法。</p>
+<h1>摘录与共鸣</h1>
 <ul class="lvl-0">
 <li class="lvl-2">
-<p>本地</p>
+<p>首先，这地方简直没法待。除非有个跳舞跳得好的姑娘陪着你跳舞，或者除非那里的侍者让你买的不光是可口可乐，而是一些真正在的饮料。世界上没有一个夜总会可以让你长久坐下去，除非你至少可以买点儿酒痛饮一顿，或者除非你是跟一个让你神魂颠倒的姑娘在一起在一起。</p>
+</li>
+<li class="lvl-2">
+<p>……将你发现对人的行为感到惶恐、恐惧甚至恶心的，你并不是第一个。在这方面你倒是一点也不孤独。你知道后一定会兴奋，一定会受到激励。历史上许许多多人都像你现在这样，在道德上和精神上都有过彷徨的时期。幸而，他们中间有几个将自己的彷徨记录下来了。你可以向他们学习——只要你愿意。正如你有朝一日如果有任何贡献，别人也可以向你学习。这真是一个妙极的轮回安排。这是历史。这是诗。</p>
 </li>
 </ul>
-<figure class="highlight plaintext"><figcaption><span>Shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git clone &lt;/path/to/repository&gt;</span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">- 云端</span><br><span class="line">```Power Shell</span><br><span class="line">git clone &lt;SSH：username@host:/path/to/repository&gt;</span><br></pre></td></tr></table></figure>
-<p>这样，我们就在本地和云端上<strong>都</strong>有了相同的仓库。那么，我们应该如何更新推送呢？</p>
-<h2 id="更新-修改云端仓库">更新/修改<mark>云端</mark>仓库</h2>
-<p>首先，我们需要确定我们所需要修改的<strong>分支</strong>，默认的主分支是Master。<br>
-可以用<code>git status</code>检查</p>
-<ol>
-<li class="lvl-3">
-<p>添加到暂存区</p>
-</li>
-</ol>
-<figure class="highlight plaintext"><figcaption><span>Shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-<p>或</p>
-<figure class="highlight plaintext"><figcaption><span>Shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add *</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li class="lvl-3">
-<p>提交到Head</p>
-</li>
-</ol>
-<figure class="highlight plaintext"><figcaption><span>Shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;代码提交信息&quot;</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li class="lvl-3">
-<p>推送到云端仓库</p>
-</li>
-</ol>
-<figure class="highlight plaintext"><figcaption><span>Shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin &lt;server&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="更新本地仓库">更新<mark>本地</mark>仓库</h2>
-<p>下载并快速合并代码：</p>
-<figure class="highlight plaintext"><figcaption><span>Shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
-<h1>尾声</h1>
-<p>以上是常用命令及基本操作，下面附上Git命令速查表，方便大家查找命令，也方便大家进行进阶学习。<br>
-!(Git help)[Git help]</p>
+<h1>感想</h1>
+<p>这本书是在我在DDL无聊翻开的，他是我在大学图书馆借的，但是，我自初中起的网名就是由这本书而来——麦田。那里我虽然一直在听他的读书电台，但是内容一个字也没有听进去。很神奇，一本我没有看过的书名，它的书名是我五年不更的网名。翻开来，主角竟和我又相似之处，有点移情了。</p>
+<p>2026-01-29<br>
+不那么像。我没有那么愤世嫉俗，我轻易不觉得别人假模假式。</p>
 
     </div>
   </div>
@@ -221,15 +181,15 @@
     
       <div class="prev">
         <svg t="1725418977480" class="sea-svg-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4239" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M384 512L731.733333 202.666667c17.066667-14.933333 19.2-42.666667 4.266667-59.733334-14.933333-17.066667-42.666667-19.2-59.733333-4.266666l-384 341.333333c-10.666667 8.533333-14.933333 19.2-14.933334 32s4.266667 23.466667 14.933334 32l384 341.333333c8.533333 6.4 19.2 10.666667 27.733333 10.666667 12.8 0 23.466667-4.266667 32-14.933333 14.933333-17.066667 14.933333-44.8-4.266667-59.733334L384 512z" p-id="4240"></path></svg>
-        <a class="link" href="/%E9%BA%A6%E7%94%B0%E9%87%8C%E7%9A%84%E5%AE%88%E6%9C%9B%E8%80%85/">
-          麦田里的守望者
+        <a class="link" href="/%E8%87%AA%E5%9C%A8%E7%A6%BB%E5%BC%80/">
+          自在离开
         </a>
       </div>
     
     
       <div class="next">
-        <a class="link" href="/%E4%BB%8A%E6%97%A5%E9%97%B2%E8%B0%88%E8%A7%81%E8%90%BD%E8%8A%B1/">
-          今日闲谈见落花
+        <a class="link" href="/git%E6%95%99%E7%A8%8B-%E5%B0%8F%E7%99%BD%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8C%97/">
+          git教程-小白快速入门指北
         </a>
         <svg t="1725418993065" class="sea-svg-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6832" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M731.733333 480l-384-341.333333c-17.066667-14.933333-44.8-14.933333-59.733333 4.266666-14.933333 17.066667-14.933333 44.8 4.266667 59.733334L640 512 292.266667 821.333333c-17.066667 14.933333-19.2 42.666667-4.266667 59.733334 8.533333 8.533333 19.2 14.933333 32 14.933333 10.666667 0 19.2-4.266667 27.733333-10.666667l384-341.333333c8.533333-8.533333 14.933333-19.2 14.933334-32s-4.266667-23.466667-14.933334-32z" p-id="6833"></path></svg>
       </div>
