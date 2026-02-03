@@ -15,10 +15,10 @@ pretty_urls:
 #索引
 source_dir: source
 public_dir: public
-tag_dir: tag
+tags_dir: tags
 archive_dir: archives
 category_dir: categories
-tag_generator:
+tags_generator:
   per_page: 10
   order_by: -date
   enable_index: true
@@ -28,7 +28,7 @@ i18n_dir: ':lang'
 #标签别名
 category_map:
   教程: Tutorial
-tag_map:
+tags_map:
   教程: Tutorial
   Hexo: Hexo
 
@@ -73,7 +73,7 @@ ignore: null
 
 
 #主题
-theme: sea
+theme: butterfly
 
 
 deploy:

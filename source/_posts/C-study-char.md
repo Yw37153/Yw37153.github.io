@@ -2,6 +2,13 @@
 title: C_study_char
 date: 2026-01-10 22:16:16
 tags:
+  - C语言
+  - 学习
+  - 笔记
+categories:
+  - 学习
+  - 代码
+  - C语言
 ---
 
 

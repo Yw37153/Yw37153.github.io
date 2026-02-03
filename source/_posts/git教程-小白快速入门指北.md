@@ -2,6 +2,11 @@
 title: git教程-小白快速入门指北
 date: 2026-01-27 23:29:18
 tags:
+  - 教程
+  - Git
+categories:
+  - 教程
+  - Git
 ---
 
 # 引言
