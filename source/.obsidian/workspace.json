@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about/index.md",
+                "file": "_posts/探索：Obsidian全平台互通方案.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "探索：Obsidian全平台互通方案"
             }
           }
         ]
@@ -194,9 +194,11 @@
   },
   "active": "79750b9d07ed525e",
   "lastOpenFiles": [
+    "_posts/如何建立一个自己的网站.md",
+    "about/index.md",
+    "_posts/c-study-struct.md",
     "categories/index.md",
     "tags/index.md",
-    "about/index.md",
     "_posts/git教程-小白快速入门指北.md",
     "_posts/C-study-struct.md",
     "_posts/C-study-Note.md",
@@ -206,7 +208,6 @@
     "_posts/于是我再一次拿出电脑开始写作.md",
     "_posts/喜欢.md",
     "_posts/探索：Obsidian全平台互通方案.md",
-    "_posts/如何建立一个自己的网站.md",
     "_posts/麦田里的守望者.md",
     "_posts/今日闲谈见落花.md",
     "Git.md",
@@ -227,7 +228,6 @@
     "_drafts/随笔.md",
     "_drafts/c-stdudy-debug.md",
     "未命名.base",
-    "_posts/地坛小记.md",
     "_posts/C-study-char",
     "_posts/随笔1/20251207122340_72_128.jpg",
     "_posts/随笔1/2025-12-07_120216_851.jpg",

@@ -4,8 +4,8 @@ tags:
   - Hexo
   - 教程
 categories:
+  - 技术教程
   - Hexo
-  - Hexo基础功能
 date: 2025-11-16 09:28:59
 ---
 

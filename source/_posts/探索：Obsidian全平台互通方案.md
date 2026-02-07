@@ -2,7 +2,11 @@
 title: 探索：Obsidian全平台互通方案
 tags:
   - 教程
-  - 管理
+  - Obsidian
+  - Git
+categories:
+  - 工具分享
+  - Obsidian
 date: 2026-02-06 22:33:06
 ---
 
