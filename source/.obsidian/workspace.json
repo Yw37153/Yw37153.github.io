@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/C-study-char.md",
+                "file": "about/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "C-study-char"
+              "title": "index"
             }
           }
         ]
@@ -194,15 +194,27 @@
   },
   "active": "79750b9d07ed525e",
   "lastOpenFiles": [
-    "_posts/C-study-debug.md",
+    "categories/index.md",
+    "tags/index.md",
+    "about/index.md",
+    "_posts/git教程-小白快速入门指北.md",
     "_posts/C-study-struct.md",
+    "_posts/C-study-Note.md",
     "_posts/C-study-char.md",
+    "_posts/自在离开.md",
     "_posts/在Hexo上发表自己的文章.md",
+    "_posts/于是我再一次拿出电脑开始写作.md",
+    "_posts/喜欢.md",
+    "_posts/探索：Obsidian全平台互通方案.md",
+    "_posts/如何建立一个自己的网站.md",
+    "_posts/麦田里的守望者.md",
+    "_posts/今日闲谈见落花.md",
+    "Git.md",
+    "_posts/C-study-debug.md",
     "_drafts/探索：Obsidian全平台互通方案.md",
     "_posts/draft.md",
     "_drafts/象征界.md",
     "_posts/喜欢",
-    "_posts/喜欢.md",
     "_posts/随笔.md",
     "_posts/c-study-debug-1.md",
     "_posts/c-study-debug-1",
@@ -216,13 +228,9 @@
     "_drafts/c-stdudy-debug.md",
     "未命名.base",
     "_posts/地坛小记.md",
-    "_drafts/Event.md",
-    "_drafts/C-study-char.md",
     "_posts/C-study-char",
     "_posts/随笔1/20251207122340_72_128.jpg",
     "_posts/随笔1/2025-12-07_120216_851.jpg",
-    "_posts/随笔1/2025-12-07_115813_840.jpg",
-    "_posts/如何建立一个自己的网站.md",
-    "about/index.md"
+    "_posts/随笔1/2025-12-07_115813_840.jpg"
   ]
 }

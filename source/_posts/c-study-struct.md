@@ -2,7 +2,6 @@
 title: C_study_Struct
 tags:
   - C语言
-  - 学习
   - 笔记
 categories:
   - 学习

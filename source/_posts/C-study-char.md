@@ -3,7 +3,6 @@ title: C_study_char
 date: 2026-01-10 22:16:16
 tags:
   - C语言
-  - 学习
   - 笔记
 categories:
   - 学习
@@ -124,6 +123,4 @@ D.  形参p的地址值
  <summary>答案</summary>
  <br>B</br>
  <br>解析：
- <br>p++是后增</br>
- </br>
-</details>
+ <br>p++是后增

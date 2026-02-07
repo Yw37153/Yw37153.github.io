@@ -3,7 +3,6 @@ title: 在Hexo上发表自己的文章
 tags:
   - Hexo
   - 教程
-  - 文章
 categories:
   - Hexo
   - Hexo基础功能
