@@ -5,8 +5,8 @@ keywords: null
 author: Felix
 language: zh-CN
 timezone: ''
-url: http://example.com
-permalink: ':title/'
+url: https://yw37153.github.io/
+permalink: ':hash/'
 permalink_defaults: null
 pretty_urls:
   trailing_index: true

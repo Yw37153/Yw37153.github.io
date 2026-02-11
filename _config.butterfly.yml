@@ -18,10 +18,11 @@ nav:
   fixed: false
 
 menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  主页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder
+  关于: /about/ || fas fa-user
 
 # --------------------------------------
 # Code Blocks Settings
@@ -63,16 +64,16 @@ avatar:
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
+default_top_img: /image/default_top_img.png
 
 # The banner image of index page
-index_img:
+index_img: /image/index_img.png
 
 # The banner image of archive page
-archive_img:
+archive_img: 
 
 # Note: tag page, not tags page
-tag_img:
+tag_img: 
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
@@ -233,12 +234,16 @@ related_post:
   limit: 6
   # Choose: created / updated
   date_type: created
+  # Default cover image for related posts
+  cover: /image/default_top_img.png
 
 # Choose: 1 / 2 / false
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
 post_pagination: 1
+# Default cover image for previous/next post
+pagination_cover: /image/default_top_img.png
 
 # Displays outdated notice for a post
 noticeOutdate:
@@ -292,7 +297,7 @@ aside:
       link: https://github.com/xxxxxx
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: '正在记录那些“无从存在”的瞬间。'
   card_recent_post:
     enable: true
     # If set 0 will show all
