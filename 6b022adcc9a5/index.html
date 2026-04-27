@@ -1,167 +1,462 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>自在离开 | 文逸行</title><meta name="author" content="Felix"><meta name="copyright" content="Felix"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="这里有锁.">
+<!doctype html>
+<html lang="zh"><head>
+<title>自在离开 - 文逸行</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="description" content="这里有锁.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="自在离开">
 <meta property="og:url" content="https://yw37153.github.io/6b022adcc9a5/index.html">
 <meta property="og:site_name" content="文逸行">
 <meta property="og:description" content="这里有锁.">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://yw37153.github.io/img/butterfly-icon.png">
 <meta property="article:published_time" content="2026-01-29T17:12:03.000Z">
 <meta property="article:modified_time" content="2026-02-11T05:43:37.351Z">
 <meta property="article:author" content="Felix">
 <meta property="article:tag" content="加密">
 <meta property="article:tag" content="随笔">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://yw37153.github.io/img/butterfly-icon.png"><script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "自在离开",
-  "url": "https://yw37153.github.io/6b022adcc9a5/",
-  "image": "https://yw37153.github.io/img/butterfly-icon.png",
-  "datePublished": "2026-01-29T17:12:03.000Z",
-  "dateModified": "2026-02-11T05:43:37.351Z",
-  "author": [
-    {
-      "@type": "Person",
-      "name": "Felix",
-      "url": "https://yw37153.github.io"
-    }
-  ]
-}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://yw37153.github.io/6b022adcc9a5/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
-    (() => {
-      
-    const saveToLocal = {
-      set: (key, value, ttl) => {
-        if (!ttl) return
-        const expiry = Date.now() + ttl * 86400000
-        localStorage.setItem(key, JSON.stringify({ value, expiry }))
-      },
-      get: key => {
-        const itemStr = localStorage.getItem(key)
-        if (!itemStr) return undefined
-        const { value, expiry } = JSON.parse(itemStr)
-        if (Date.now() > expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return value
-      }
-    }
 
-    window.btf = {
-      saveToLocal,
-      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
-        const script = document.createElement('script')
-        script.src = url
-        script.async = true
-        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
-        script.onload = script.onreadystatechange = () => {
-          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
-        }
-        script.onerror = reject
-        document.head.appendChild(script)
-      }),
-      getCSS: (url, id) => new Promise((resolve, reject) => {
-        const link = document.createElement('link')
-        link.rel = 'stylesheet'
-        link.href = url
-        if (id) link.id = id
-        link.onload = link.onreadystatechange = () => {
-          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
-        }
-        link.onerror = reject
-        document.head.appendChild(link)
-      }),
-      addGlobalFn: (key, fn, name = false, parent = window) => {
-        if (!false && key.startsWith('pjax')) return
-        const globalFn = parent.globalFn || {}
-        globalFn[key] = globalFn[key] || {}
-        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
-        parent.globalFn = globalFn
-      }
-    }
-  
-      
-      const activateDarkMode = () => {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      const activateLightMode = () => {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
+<link rel="stylesheet" href="/lib/fancybox/fancybox.css">
+<link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
 
-      btf.activateDarkMode = activateDarkMode
-      btf.activateLightMode = activateLightMode
 
-      const theme = saveToLocal.get('theme')
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1777300337736">
+
+<link rel="stylesheet" href="/css/style.css?v=1777300337736">
+
+
+
+
     
-          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        <link rel="stylesheet" href="/custom.css?v=1777300337736">
+    
+
+
+
+<script src="/lib/mdui_043tiny/mdui.js" async></script>
+<script src="/lib/fancybox/fancybox.umd.js" async></script>
+<script src="/lib/lax.min.js" async></script>
+
+
+<script async src="/js/app.js?v=1777300337736"></script>
+
+ 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4D4ZJ9G024"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "G-4D4ZJ9G024");
+</script>
+
+
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<meta name="generator" content="Hexo 8.0.0"></head><body class="nexmoe mdui-drawer-body-left"><div id="nexmoe-background"><div class="nexmoe-bg" style="background-image: url(https://i.dawnlab.me/b5a7e61560facdd5b8aa9683fce147d7.png)"></div><div class="mdui-appbar mdui-shadow-0"><div class="mdui-toolbar"><a class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: &#039;#drawer&#039;, swipe: true}" title="menu"><i class="mdui-icon nexmoefont icon-menu"></i></a><div class="mdui-toolbar-spacer"></div><a class="mdui-btn mdui-btn-icon" href="/" title="Felix"><img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="Felix"></a></div></div></div><div id="nexmoe-header"><div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="Felix">
+            <img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="Felix" alt="Felix">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>16</div>
+        <div><span>标签</span>16</div>
+        <div><span>分类</span>14</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
         
-      
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
-      }
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/archive.html" title="文章归档">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                文章归档
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://nexmoe.com/donate.html" title="给我赞助">
+            <i class="mdui-list-item-icon nexmoefont icon-coffee"></i>
+            <div class="mdui-list-item-content">
+                给我赞助
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://i.nexmoe.com/" title="关于博主">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博主
+            </div>
+        </a>
+        
+    </div>
     
-      
-    const detectApple = () => {
-      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
-        document.documentElement.classList.add('apple')
-      }
-    }
-    detectApple()
-  
-    })()
-  </script><script>const GLOBAL_CONFIG = {
-  root: '/',
-  algolia: undefined,
-  localSearch: undefined,
-  translate: undefined,
-  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
-  copy: {
-    success: '复制成功',
-    error: '复制失败',
-    noSupport: '浏览器不支持'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '',
-  dateSuffix: {
-    just: '刚刚',
-    min: '分钟前',
-    hour: '小时前',
-    day: '天前',
-    month: '个月前'
-  },
-  copyright: undefined,
-  lightbox: 'null',
-  Snackbar: undefined,
-  infinitegrid: {
-    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
-    buttonText: '加载更多'
-  },
-  isPhotoFigcaption: false,
-  islazyloadPlugin: false,
-  isAnchor: false,
-  percent: {
-    toc: true,
-    rightside: false,
-  },
-  autoDarkmode: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: '自在离开',
-  isHighlightShrink: false,
-  isToc: true,
-  pageType: 'post'
-}</script><meta name="generator" content="Hexo 8.0.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/image/default_top_img.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">文逸行</span></a><a class="nav-page-title" href="/"><span class="site-name">自在离开</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">自在离开</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-01-29T17:12:03.000Z" title="发表于 2026-01-30 01:12:03">2026-01-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-02-11T05:43:37.351Z" title="更新于 2026-02-11 13:43:37">2026-02-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/">个人随笔</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="你看不了哦~" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="95263e71080149906ce0feadd0d5a347b8aaef3749d55e2186a5a31ab247c5c0">a5ea2ecb672ade62adf93d46cb1e567015ec4080e8d2618f3d56786be065b064db8ee20677358574adc10460441fa9ee55c365518d290d2b2e583ab5cf969d7d8d5fdc96c2fe3c232c27482aea860546210d91b4a8289559eae1bbb6f099907514c68099332e165c42323f392031dea7af61828f4dbdfb9b782a65645da7924a7c6a4275e58be0cc05d9b2edc06c862249ff2efa015055f7a62897f8084967d3ee129abebf9bc217a39dcf04c59ff10e7ab166a258336a20063f2c6c4ecbdf76037bfcec6abefb0c76837148f63fceb882dfa2fcc2d140d2d02ba0519babab747f9111f229cbed9876b8cf241c2c06f81e4cc62fdcc78e0bbcb374b41ad3c4bd57211d305cbc072f73a01d083b337ce3839c6a6070ff5fc82e4567b2ee93b5c8accee8a9d51df04f0b9b99c7d3104efd38bacd018cdd04ef11ec545e063257b308aa027ee876a6508fd3ecd1f3b3d0507b0fe9a2ccaa81474f161349603048a3b3a53f5c725162071b1fcca820378b78d93b954b504d9b30809c492072ab17aee2850cc7b1bfa88da2e8418b0afadcfdaf2ecbdde004daf594a65def3943999e1e04d8f5c890fbff1e78553c8564441c0882319e0a233dcce35363dd7de54bb53aadb38015d704a33602141adcea3a46a1c5d1118f8af9a34386ca8d7e12597cb275ba7c4b85806cc83dd9e961644000084e204daab52d1ef16d78bde5f9fff4406ffe6f152eba289f9f85b611cad30ba12dab05bdc807f8ec7aba1234176546435ef86c3ec9292484f8723b608af5db92563e9780f0f981bd0180fa57080e0cc9fd4de4b181484a1cae7a10b28e025f1dd0add2a17d6295d72c2bfb5994530877e53187fcd3d94c5b3d9696512205ee80271bde92a11aaad6d687093c3f7065ef2d4fb8e7ec82b454b60f82e4d61319476cc566cb995c679a202025c8014154659bab2a43e2210443d84b69d6b0f2f1ade03b8b1efc548c13b05d00693882f1cf83466ab898ec23887f3481d3512c6c00a9fd3714b9c523d53478be7a7f8b6c239fa763b92942f4815253a5246b23cae5597843083586f9fa30c71c566d8d96c7db7d05dcd103c6cb7bc29c9887313626316ea528aa4223919536ccd093c461878407cd8cafb6696dd143accf5fd11d29c5fdc8e3bfea6b94e498239c7b8ec803de87cc6806b454b1d3cbcf99a968c0d5533eb681b7c00ab6b9debbe9bf808fdbae3ac584bf6c816c7ae69a0472aa5314c7e66e93272fe14950f53b0fb10ac0e7bcdad3c6f9852bc7618616616368ad2630c2f05e4c94e96ef9b6645f32c3f0877032d5328e64390549b3c94fc6151728a2878f3ca2a214b785ad081d0ebb4a9b121481ca0d158842637bc59e348708f7f6e53df318d423cfb8b960997f385c90d4e3c91f165073ba17caf540d87609c05cdbe1bd097bd32305509114313f403889a79504b967c7c483d08df1c5fb1d9add018f7100cc3a3875e6f3f3c594cce8e8e7c6219bf19a362a81625dc88be756148400361ade77179a3ede7ffaf434cc421d603b8ff5718ed6508ece0ab81ec1d2cbeafcb5a9c469aecff4bfa2996fb69bbcfc22edeaefb9c27fbb1f9dc81483265a58cd314d503bc0a4c42137d4fae740e90e7c231fd5ab32e6b8410c313b993a21fc94827dd980cd4d845e7748c9e6284553eaf9987979bf9b3a0c8a4f69794961db193347fcaf7981f8a39d99dc04c70cbe07d9b466ffdf122f0ec87ca3403187b3b34bd18f80be12b4b7d7a8d45af15147b1251584591c33429cc18b970c531667b5e5284d5b5e880e3759a0006ccff0f581793b55a9df5cea9f1dae523f2889731485d0d91ae14ab8de4a6ee0efc06f02c636f1339f9eb1310d2e973171b6ecc4535b272be528a16a6d2cbe1a79acb9050f0b3f5725b138f7f6a8ef6bdb3ed303af414b1b7c42e84ba42325ba5babeff92bdb26b1ab7be621c8c88b39b06b855339481c3526fd448b59dcd3cb5f02069ce3e9ec4b28c34cb89b3eed0dab7608b6afc2646f6dc1443ea3261830ab467bf9a67fd9bc544ffcb8cb0ef6ac39595dc1d67d6881093014cd513f172fb437e4609f3a4d8adbc1bc961379e1105017b85fb49107882fb65f6115fd8f32bfafc8c3a79d527a6469f45afbd2f35266918696ebb228e8e7854eece815979f04ef6d802aed86f37b9d921793783c250c9bf9b232b504f52f43a3a3440e02603775a4884e74ced9fbf1bd14e997425c1e989ed07bfa5bf9f88f0b08f87dc19a509a20b6f653122f2aa5b30df34a69a2d703eba3f9a3a037f648adde57bbb9198ec31359594d572ef1530d867a50b98b183e3cbcd1561087bd6d64a957e84a10386198e60ff925364190ecf2302e748b6f3b0a897f8d0822e5ce0dbcea5d477c4dc6acbadbed040852b3c2f501d5f7f726e8d32ea0e2c10f9e1cfbf140de1fce2755b0584837885998c0b72aefcef3d6d7011474276581cec3f7963743ad51a2bdb40f4e36fafb089897f96329452f56667d1ab8f8e1dad1e099967e92ed5b579507a9b2a9807576f56ee70532f16e844ac46116c7ea53600d86e087b4107260a66e76378826819becf63a6bd708411d9a2cca0e85ff7498bd6a8b1d43f157e062bdd557a920d62ddd4e22ed544d9169fbef28f39e723498c3575cfad6972060626179bf392ed2e68fb31c26a8031d44b1eaead0049a964bc05589dee5bdc598419d94e8c9148a9a15194f690bf53cb36a1c232826b2256c8e4601b452cfb1f4e3bb094622b154e2a3444bc83cf95006b9dda51a6f8ff7176ac8057007ebfcf9acd44c321cc9c059f36c0c5e8674520886f72487757ec4e5d859cc56b5361e6e84df70e2cf44c2b3172b27773207c73edfe40b1437b45a6d65d09edb2724d2c85c377ca80c82f713aac29718b1053b63ede489f062831dc1100d43c523cc5c5f7dba409e98335cd56188ba95fb828b24bbaa2bbf8ed352f8f3f0df5ca16633fcceadd48505b61ada6730285be59fc47a8653876cb568740d8151f02c64ae8e285021f32f0b308db763b243b39a4429f594c6b8badcaa14188f66cb1d971e7f266a7875632e6795c33e5c49455435dc955edc605abf86567f00348e966aee6b82b6725a91d69444346873c15f593c4d4ce206e4fa1737106a32e7cf3e6a2a34edb7535ee0d96e7625ba3c3c66affe1a31f84be17548fb2b8226744e19ce3194c4999869a9f6c706daa99f52485746b80d35c0cc27cb58adcee5c26e30444c0dc95a3d33ed467c758aac95b2a932740404ca81c8f0d40b409aa05d5f2fbd2d1300144f1f8dcb173e19882f9816578fd6faaf7d7686427801d346495f52702033f4faab7f42331b49fef6e102052b80552b4f4b2998742b6e38b88a51a28aa61e35488b04a450249fd08f300a3f2aa3dc486604eb6698e164afea145605a5893590fcd1524c7cd3d2d62822651e22d4d7ad05ee679600a5c1695ecad693be7d60441df598eb3ec46090560c9c3f459ca932649d41228e7a1d1f827e6c0ec3e5b0847bb2dc68b90a4b0ddb810e938d5256252becbf9c9f0bb3761ea37c9e3c84a5d4f8e12e256f7d2ff41a56d512ad7f779aef693dbd4b17f609d63189ed97fa3ceb923897fd1336313fba9f0d42e9a8291fd462d9df1575e4f9c2f8f2ad44d5dc606bb7325993721358555fce29d5fe9fe6f77a3d1baeeab5f0da11575f16deda36c9dd9e7b7322d9d59013ff1a688708f4</script>
+    
+        
+        <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
+            </form>
+         
+    </div>
+</div>
+
+
+
+
+    
+        
+        <div class="nexmoe-widget-wrap">
+	<div class="nexmoe-widget nexmoe-social">
+		<a
+			class="mdui-ripple"
+			href="https://jq.qq.com/?_wv=1027&k=5CfKHun"
+			target="_blank"
+			mdui-tooltip="{content: 'QQ群'}"
+			style="
+				color: rgb(249, 174, 8);
+				background-color: rgba(249, 174, 8, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-QQ"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://space.bilibili.com/20238211"
+			target="_blank"
+			mdui-tooltip="{content: '哔哩哔哩'}"
+			style="
+				color: rgb(231, 106, 141);
+				background-color: rgba(231, 106, 141, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-bilibili"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://github.com/nexmoe/"
+			target="_blank"
+			mdui-tooltip="{content: 'GitHub'}"
+			style="
+				color: rgb(25, 23, 23);
+				background-color: rgba(25, 23, 23, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-github"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://www.zhihu.com/people/nexmoe"
+			target="_blank"
+			mdui-tooltip="{content: '知乎'}"
+			style="
+				color: rgb(30, 136, 229);
+				background-color: rgba(30, 136, 229, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-zhihu"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://twitter.com/nexmoe"
+			target="_blank"
+			mdui-tooltip="{content: 'Twitter'}"
+			style="
+				color: rgb(59, 151, 239);
+				background-color: rgba(59, 151, 239, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-twitter"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://nexmoe.com/atom.xml"
+			target="_blank"
+			mdui-tooltip="{content: 'RSS'}"
+			style="
+				color: rgb(247, 132, 34);
+				background-color: rgba(247, 132, 34, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-rss"
+			></i> </a
+		>
+	</div>
+</div>
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章分类</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/学习笔记/C语言/">C语言</a>
+          <span class="category-list-count">3</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/技术教程/Git/">Git</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/技术教程/Hexo/">Hexo</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/工具分享/Obsidian/">Obsidian</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/个人随笔/">个人随笔</a>
+          <span class="category-list-count">5</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/学习笔记/">学习笔记</a>
+          <span class="category-list-count">3</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/工具分享/">工具分享</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/技术教程/">技术教程</a>
+          <span class="category-list-count">3</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/文学/">文学</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/文章/">文章</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/个人随笔/琐事/">琐事</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/记录/">记录</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/随笔/">随笔</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 16.67px;">C语言</a> <a href="/tags/Git/" style="font-size: 13.33px;">Git</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Obsidian/" style="font-size: 10px;">Obsidian</a> <a href="/tags/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/" style="font-size: 10px;">个人随笔</a> <a href="/tags/%E5%8A%A0%E5%AF%86/" style="font-size: 13.33px;">加密</a> <a href="/tags/%E5%9B%9E%E5%BF%86/" style="font-size: 13.33px;">回忆</a> <a href="/tags/%E6%8C%87%E9%92%88/" style="font-size: 10px;">指针</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 20px;">教程</a> <a href="/tags/%E6%96%87%E5%AD%A6/" style="font-size: 10px;">文学</a> <a href="/tags/%E6%96%87%E7%AB%A0/" style="font-size: 13.33px;">文章</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 16.67px;">笔记</a> <a href="/tags/%E7%BB%93%E6%9E%84%E4%BD%93/" style="font-size: 10px;">结构体</a> <a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" style="font-size: 10px;">读书笔记</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 20px;">随笔</a> <a href="/tags/%E9%AA%91%E8%A1%8C/" style="font-size: 10px;">骑行</a>
+    </div>
+    
+      <script>
+        var maxTagcloud = parseInt(17);
+        var tags_length = parseInt(16);
+        var tags_arr = [];
+        for(var i = 0; i < tags_length; i++){
+          tags_arr.push(i);
+        }
+        tags_arr.sort(function (l, r) {
+          return Math.random() > 0.5 ? -1 : 1;
+        });
+        tags_arr = tags_arr.slice(0, maxTagcloud < tags_length ? tags_length - maxTagcloud : 0);
+        for(var tag_i = 0; tag_i < tags_arr.length; tag_i++){
+          document.getElementById("randomtagcloud").children[tags_arr[tag_i]].style.display = 'none';
+        }
+      </script>
+    
+  </div>
+
+    
+        
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/">2025</a><span class="archive-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">最新文章</h3>
+    <div class="nexmoe-widget">
+      <ul>
+        
+          <li>
+            <a href="/ee0e693ef75b/">好吧，第一次真正意义上的骑行</a>
+          </li>
+        
+          <li>
+            <a href="/92152adbe655/">四月快乐</a>
+          </li>
+        
+          <li>
+            <a href="/f100aad107e7/">哲学的意义：答案还是思考</a>
+          </li>
+        
+          <li>
+            <a href="/e69543aaddc9/">碎片</a>
+          </li>
+        
+          <li>
+            <a href="/037bcb475da6/">探索：Obsidian全平台互通方案</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+        
+        <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-link">
+		<ul>
+        
+            <li>
+                <a href="https://nexmoe.com/" target="_blank" >
+                    <img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="折影轻梦"></img>
+                    <p>折影轻梦</p>
+                </a>
+            </li>
+        
+		</ul>
+    </div>
+</div>
+<style>
+.nexmoe-widget-wrap .nexmoe-link ul li a {
+    text-align : center;
+}
+.nexmoe-widget-wrap .nexmoe-link ul li a img {
+    max-width : 100%;
+}
+.nexmoe-widget-wrap .nexmoe-link ul li a p {
+    margin: 10px 0;
+}
+</style>
+
+    
+   
+    <div class="nexmoe-copyright">
+        &copy; 2026 Felix
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <br><a target="_blank" href="https://beian.miit.gov.cn/">鄂ICP备2020018486号</a>
+<br><a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">
+<img src="https://i.dawnlab.me/c0268c1e6cfd0863d6ba35be1575941a.png" width="150px"></a>
+
+    </div>
+</div><!-- .nexmoe-drawer --></div><div id="nexmoe-content"><div class="nexmoe-primary"><div class="nexmoe-post">
+  <article>
+    
+        <div class="nexmoe-post-cover"> 
+            <img src="https://i.dawnlab.me/b5a7e61560facdd5b8aa9683fce147d7.png" alt="自在离开" loading="lazy">
+            <h1>自在离开</h1>
+        </div>
+    
+    
+    <div class="nexmoe-post-meta">
+    <div class="nexmoe-rainbow">
+        <a class="nexmoefont icon-calendar-fill">2026年01月30日</a>
+        
+            <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/">个人随笔</a>
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</div>
+
+    <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="你看不了哦~" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="3989a09a0950ce0e958155730169372ff76fc8e9982040e94eae042d5cbad144">a5ea2ecb672ade62adf93d46cb1e567001b662e197dabf5eb3869dd149436efdc1083721e5734061b137869a7107df4c24ddf16dae514bacd425cdbdf055a436d17c531e4f0f297e0b6abd15543dbddf22d162646761de2605fddc65c6e0ca692d30ac9eec235876a57c27356dc41f2c5b5b96367c486b1bcae7a547fe019092e3d06530e1a314986d444c3fd8d64dbb6dd1a238a31d8299571e76597871ae7b7eb1b81f73425bfd2068904fb49ff81d24a6f09907cae2db8a5a5260b1c721cc272b16f92a2816ac9802cef2318cf50c60f449cb28ca80b0d9f6d4907a8d514793c7f9108f90183bb9a668108a637cfada8f77a16d9f3c9ccda661f491379e5466d089b4e9006f04d7f23b8d9c2f4299c75ed57bd904829443ceeeec986791ed6aa1c032e411a0c5735225a0f54bb05c92602eb38b7230d56fc4285fe143b05ced8bc196d8c64ac606c98fe99ad422053402f891a4ba212fe030807d9f39437055a86476061fc1d3e9ad14f8e40619349ff614c59a595702a185aad99badc714741735c9f052dfdb5e2e399f21d04bd757d307aac44a45360a533b2cef339ee764fe8f60ccf3e3d9aca66e62d3642cfd34c328a8d0db48717826a0caa2cf6be51dd36b0bf338e5c0353f342172295981bd3825e825b8a709c2b8a53192d4aa15bbf338dceb9e7e98ae84145b4cee7b458f59523b800197f71f1203601f2eab0c444db86b5d575e788ea12d06da02b45d9a8816769bb4ca38f498cee5ef58718b85ccca96d1b79c80fa11fec9e5e75ae0230d0b6034d809abe4464d5ca791b89329e382a8d300267a630ee2592e0aab98171edd631ba97201e9027aa83f2f91e676d551a1b70709860ccd1a088ce32477d03ad0506ac3d586ed037905da13a931b5f5c3e1e69009149fd5c5bde15f27ad1db213f46670d98da4520e3e0dfd077a5fee183d3d8907968fd388c667c822a18ab765ea1b929e78a23e8e13449202276ea9dd29516f47d87b557e721a27107f6e7161ca152586e6902f8498251801199206f6e57273f231682a27dfcde9c16be85e96937bd883ac482b5512b3ac4c27c038336df938d950ffeff8f61a03c133c8f79257c91a095e02fe8ad617bde256c60b1e8174c1f7092adb0102728d4c9434c1cfdba0e0c30aefe9f9620cb7bf468bc441d16c912ad7f7b4a3f76c1ee29dab422fb6f0c7a80de6b3f6d02b9fabea07a4e4203a7cb7d1506669a35158d5395979d2e566b075f3517d3ea805d49b9120ed4b043efab2aed724254bcbe54a818b7cf89225b7a20f492309954db285dfda20ef55e04b7935bc7c5130550e4c2b1e0c1e16d24d1197fb8393adba5f6d1961d0ac0f553f6051927c9ffb5cf6a71382dcccc56784e7a590d0859f87ac1126568dd1d7cf4cc2850582fed7a3267430758a62c6edbcc8f6576b7bc578b0ce6980496e7ed65684dbddab1a6e98129975d5aabe266f2aaadecb0c1168b4cd6d8f82ac06c823954e25c3d63da9fd37d42b2c9829cb9750fa12135aa6b5d9fc0baf0b57f11f68ed037a50ac4e850dd0bdef05b51c63b54a88369a23b39464fe49b7d97f7b0b476ab90c9722eeaec7181568bacff3dfa751b37cfe52c2732f2b80561121cc60909bd7d9dc11526cb10c9445491987dc5c50a2e619b102e6873316843111383583f955b9522444ef54ee8c93221718fd74c9bf7e11a683e1c3afda0e31da0c21237329fb41f9dfe523d760ed64dbd5b1e0b9a69e51a886e916dedb29adf37ec95e8d2265fef131a42f5c28c938366761d050e46d4ff9bf29a8984a3ef109e9761a9d875a03253d8665f82842ee39684c034679a363c4a8cafafa89e6cc7cba956e4bf583d32575f39cb590d87023bb3176f10c4907a540ece67afbf096f59659fd442f1f88370a06dc1e7d886c8ea5fc22ef6bfd0e5943db4cf07fc421a685bccec69370a0d009bb116c647df5ba37ca6c63ef1cdab90021d6745e4127c3fa1708bbae0e96cb5af57c0fc7d0c35dd505093bda209f24777f42ed54d28ccc53c4942d823e8695be26e7b8e0d6fab99486c566c046d7dfd6dcd5bfcaf8b482566eb0125d806eb02d44ff618f610e65b5098086d1c47038a6f4ba57d46109cd1c7d4ff06e9dc69dd4103bc91f8a696bacb10b05a3441e3a5eae87aa15950f336fd37249cbed4fbd1ba8e7c326da8e4dfd2817317c71ed2fe26ff15ee688143778786eefd18be2d80a45d64f1c770dd046a83f005978631b295daee871c4935432364e6158a464e359331a39800c404d554389b7efd5ce82e0cc661ab4e9143eb73188599adc005fb83acf3cc922d55a7cb30aded2c67a2f96620dc01ae109a442a58cedb860af4a42cae7c9619427afac13c50f39d3d168c7d4a67011c4d2588ebdde5fb2a6df4990b1b80063a82b8da80c0227afee267f303db78e16dcb6adf29cd0c94f5114e1e9fb55759e56a43e7102169c2108c422487a8717f492e4d5b3baece57e395bef935e54341aa9473da7e3ed15ad340f22716991037fb651bc5f7f7b2cf5f212e74cad490c16651450a9e002c8cf923b9065dd58656026b447069469c62e6fca596807029c34aea6ce4dd591eac2f8d5c5d3ff332a5c01aefac722b58e90e9d2d250d461698e70ddb855e8bf78fd950a6524c8d5d9b541e3845361f28baa7be4b8f761479f77f587b0d70911ab65707c1baa8bbff13e0edd2b808d280a124d7a4abcaf383079e537facc9b2710463726eb0cdc65be2acd5356a495d59d7a40b86ade3e4f49e251bf74fb3ca2e327139c9fc7e095d5a20c2b345624f0b5cc6abb1e99604025c03aa942231c001a41e30b67a56182e1dda144a4426389aef3b02bd78587a0c075f6eef99e31effa1b84a402b69dbc8781381eaa23313d8f2e6f59f5cbd4cfdee2f634b31e78a6580facdd0d94d1095863433dd9f489818a61489b21e9d65235dc92e8d6a2cc0dbd1bcbcf45c15ffbbb4b6eb2ca105c888952d00e79824ebcf946f5a6fe9ce0224f3b2ca6c61ff82889bd9ad1b4b1ab446ba66eb1536472a69e8389806e5d843a08d275639c564548406caaa26fb1071c10813001d290e4a54d2cb98531772985040fafd1b58c78a70f59b20fea892de53e0e1a4967ea6c25b9a1efea6372d659744f59350402e3223d6f301b775d7c2db232c15953f0aa7ff54c721f0930039acd9f4142a813980576917ccded2a38f35708363852ecea179f830d9e44b7c86c602baaf9e75cad65e1a0b52bdf3d5c912171cb9391aa98b2b62feee35e1dfb9a011e0b655808bdb2fd7b5d8b347f4166f00ae4e33cb42ffa41583f5c68aac18365b673efab0504da41e50ff04240a7069e72567d7e26b0c02a78519a66d9f8fe3f3cff4fb7006273f531cbdb27b90d94dac12df620f6bdc18acb4eda8f7ad54982819f9ce74412ccf15e5a4fd7fc62da0800256030e9574c065ab70268a94831f2a09440a540652c93817f8dd7b9203a74b63b98fb22d1cabed270a3c0e53220e2d0fa56c9c13675fcba4e7356c8f2bf97844cb326e5bf6ff90d788e1e15b92070090936bf9ece58b8f99deb973e3154af3d9315068a4d0a7ffa63f512ff90bbda83983b11162ffc65a88ed54f9c597dee72ce34170bbd9770b2fdb9c9d2df136b6aa54b58136c041c5547eb21b4a07318e0bfdba9084ba5bf995fdaef4613d72b776faef1876a122b55a7025c8c1332eed6c63a43e58bee1b0ee9a68b3b1abd5e5e6c863c099a1fc9b82035e7511d78e0ca563e73a9b8ed7d17838ac594955fa88336d280c26e62f175b23e45064cca28cf0e7095c7560fae6f7ffadb265f42da2495cced8262817c2a7aa9df3fecbb918694ba7fda3f7226474c153d3452fd78b7ab04f075d6e7762978e0d1d84f24dd94e7f28e59a9a41aa9e5</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-shrink">
       <input class="hbe hbe-input-field hbe-input-field-shrink" type="password" id="hbePass">
@@ -171,59 +466,54 @@
     </div>
   </div>
 </div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://yw37153.github.io">Felix</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yw37153.github.io/6b022adcc9a5/">https://yw37153.github.io/6b022adcc9a5/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://yw37153.github.io" target="_blank">文逸行</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a><a class="post-meta__tags" href="/tags/%E5%8A%A0%E5%AF%86/">加密</a></div><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/037bcb475da6/" title="探索：Obsidian全平台互通方案"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">探索：Obsidian全平台互通方案</div></div><div class="info-2"><div class="info-item-1">前言 [Obsidian的介绍] 本地软件，iPad+Windows是一种很常见且性价比很高的组合，Obsidian作为一款备受好评的本地Markdown书写软件，其不可避免的痛点就是不同设备之间的同步问题。 首选方案：Git 这个方案的核心是Git的云端仓库：将不同设备之间的仓库通过云端下载更新。   优点：免费。   工具：  iSH Shell Termux Obsidian插件Git    首先我们需要先将初始仓库上传至云端。这里以初始仓库在win上为例。 Win端上传   进入仓库   1cd &lt;你的/仓库/路径&gt; 12git init  // 初始化 git 项目git remote add origin &lt;仓库地址&gt; // 添加远程仓库   在Obsidian根目录下创建.gitignore文件，把不需要备份的文件写一下。   12.obsidian.vscode 以下是来自Gemini的建议 123# 忽略操作系统生成的临时文件.DS_StoreThumbs.db   缓存+提交 这一步我的建议是命令行进行第一次提交，因为我最开始用的VSC...</div></div></div></a><a class="pagination-related" href="/cb805417a12e/" title="麦田里的守望者"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">麦田里的守望者</div></div><div class="info-2"><div class="info-item-1">那两个修女，是作我最深刻时灵魂的向往，是美好，不求回报，对他人纯粹的“善意”。它不需要经过什么反思，只需看到一种冲动，即便只是满足的幻想。 两个问题：   “我”为什么在拼命地找人聊天？   在这个结构中，“我的妹妹”象征着什么？   “你对发生的任何事情都不喜欢。”——如果世界上只有绝对的合我心意的喜欢才值得被我喜欢，那我将不会喜欢任何东西。如果我单单喜欢世间纯洁无垢的东西，那我就已经和热爱生活、生命、世界的相去甚远了。世界是不纯净的，生活是不纯洁的。正因如此，在爱中就必须看到这种特质，而不应当成为不去爱的理由。 ——去爱，去相信，将自己放置在世界一隅，认真去感受。 “爱”字，太过抽象。在爱人爱已之前，先学会爱世界。 关于主角霍尔顿（Holden） 这本书的主角，我对他的名字没有一点儿印象，好像在他室友打他时喊过，他也向别人介绍过自己，说他是个骗子，从不流露出自己的真实姓名——除了招嫖那次？他是一个眼里不揉沙子，看不起学校那些假模假式的人；是一个爱妹妹的人，在想到妹妹时总是很骄傲；他不是一个守规矩的人，被学校多次劝退；爱看讽刺小说，能看见世间虚伪的人，即便他也是被讽刺的人。我尝...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related no-desc" href="/5f2068dd7cb7/" title="喜欢"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-01-10</div><div class="info-item-2">喜欢</div></div></div></a><a class="pagination-related" href="/24d847ae071d/" title="于是我再一次拿出电脑开始写作"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-01-18</div><div class="info-item-2">于是我再一次拿出电脑开始写作</div></div><div class="info-2"><div class="info-item-1">众里寻他千百度，蓦然回首，那人却在，灯火阑珊处。 《青玉案·元夕》 对人生态度的转变是什么时候呢？我也说不上来，讲道理，在我回首看来时路的之前，还真没发现自己已经改变了许多。所以我要趁着自己还记得清楚，趁着现在还有一腔写作的热血，记录下来。 风吹18，成年之前 这个18并非一个精确的时间，人的成长并非以时间为尺度，这个改变是在生长的过程中慢慢培养的。不说内向，就是思维方式也发生了很大改变。那时候， 我的行事准则来源就是我的母亲，再然后就是网络。当这两者冲突时，我仍然会选择我的母亲作为最高权威。在成年那天，我想着什么？我想，“大概我还没有能力去承担作为一个成年人的责任吧。”成年，好像也不意味着什么。 盛夏喧嚣，Who am I 高中的住宿生活同时带给了我自由和枷锁。我可以不用再向我的妈妈汇报我要干什么去，即使在只有90平米的小房子里。但是，我的一举一动又可能会被同学看在眼中，这又要我去想：我应该做什么。在上完晚自习后的30分钟里，是我最自由的一段时光，我无法向我的班级同学们解释我的幸运，只好塑造一个可怜的家伙——我其实一点也不享受学校时光。也许正因为如此，他们才会对讨厌的我这个态度...</div></div></div></a><a class="pagination-related" href="/3982f9dc37c3/" title="今日闲谈见落花"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-01-22</div><div class="info-item-2">今日闲谈见落花</div></div><div class="info-2"><div class="info-item-1">没有别的什么想法，也不是想写些什么，只是到了这个图书大厦，觉得这样做很有趣——于是我找了一个空地坐下，拿出键盘，写下这段文字。人出生就是出生了，从此再无别的含义。这世界太过于残忍，视万物为刍狗。我们难以想象，没有目的如何生存。在人类还不是人类时，人们活下去的动力就只是出于本能。一切全凭基因驱动。那时，活下去——这个词本身，就是他们拼尽全力的目标。随着文明的开启，人们渐渐掌握了语言，学会了耕种。有了闲时，有了语言的能力，大家就开始思考——“我是谁？我在哪？我应该到哪里去？”这样的哲学命题终于完成了它的降生，自此，对这个问题的回答成为了哲学的根基和脉络，贯穿至今。 这些问题不是只有成熟的人才会思考，而是只有当我们认真审视并尽可能用行动诠释自己的思想时才会变为一个成熟的人。所以，看到这段话的你，请不要放弃对这些问题的思考。如果你认为你的答案过于肯定，请不要害怕，古往今来的哲学家们，他们也相当程度上坚信自己的理念。请不要害怕出错，因为我们一定会犯下“有局限性”的罪名。当我们给出自己的回答时，错误就已经诞生，但是与此同时，真理的一部分也悄然而至。 我希望哲学的春雨可以沐浴在每一个成长中的少...</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Felix</div><div class="author-info-description">认真生活中</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">正在记录那些“无从存在”的瞬间。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content toc-div-class" style="display:none"></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/92152adbe655/" title="四月快乐">四月快乐</a><time datetime="2026-04-06T05:35:08.000Z" title="发表于 2026-04-06 13:35:08">2026-04-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/f100aad107e7/" title="哲学的意义：答案还是思考">哲学的意义：答案还是思考</a><time datetime="2026-03-14T06:28:29.000Z" title="发表于 2026-03-14 14:28:29">2026-03-14</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/e69543aaddc9/" title="碎片">碎片</a><time datetime="2026-02-10T06:31:10.000Z" title="发表于 2026-02-10 14:31:10">2026-02-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/037bcb475da6/" title="探索：Obsidian全平台互通方案">探索：Obsidian全平台互通方案</a><time datetime="2026-02-06T14:33:06.000Z" title="发表于 2026-02-06 22:33:06">2026-02-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/6b022adcc9a5/" title="自在离开">自在离开</a><time datetime="2026-01-29T17:12:03.000Z" title="发表于 2026-01-30 01:12:03">2026-01-30</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Felix</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.0.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"><script>(() => {
-  let initFn = window.walineFn || null
-  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
-  const option = null
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+    <p><img src="https://i.dawnlab.me/53a8c7cf3ad77a0f0a456ce2c6afe88a.png" loading="lazy"></p>
 
-  const destroyWaline = ele => ele.destroy()
+  </article>
 
-  const initWaline = (Fn, el = document, path = window.location.pathname) => {
-    const waline = Fn({
-      el: el.querySelector('#waline-wrap'),
-      serverURL: 'https://api.zcservice.houlang.cloud/comment/ef724cff3721959196ec64f1b763d7ba',
-      pageview: false,
-      dark: 'html[data-theme="dark"]',
-      comment: false,
-      ...option,
-      path: isShuoshuo ? path : (option && option.path) || path
-    })
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>本文作者：</strong>Felix<br>
+        <strong>本文链接：</strong><a href="https://yw37153.github.io/6b022adcc9a5/" title="https:&#x2F;&#x2F;yw37153.github.io&#x2F;6b022adcc9a5&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;yw37153.github.io&#x2F;6b022adcc9a5&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
 
-    if (isShuoshuo) {
-      window.shuoshuoComment.destroyWaline = () => {
-        destroyWaline(waline)
-        if (el.children.length) {
-          el.innerHTML = ''
-          el.classList.add('no-comment')
-        }
-      }
-    }
-  }
+        
+    </div>
 
-  const loadWaline = (el, path) => {
-    if (initFn) initWaline(initFn, el, path)
-    else {
-      btf.getCSS('https://cdn.jsdelivr.net/npm/@waline/client@3.8.0/dist/waline.min.css')
-        .then(() => import('https://cdn.jsdelivr.net/npm/@waline/client@3.8.0/dist/waline.min.js'))
-        .then(({ init }) => {
-          initFn = init || Waline.init
-          initWaline(initFn, el, path)
-          window.walineFn = initFn
-        })
-    }
-  }
 
-  if (isShuoshuo) {
-    'Waline' === 'Waline'
-      ? window.shuoshuoComment = { loadComment: loadWaline } 
-      : window.loadOtherComment = loadWaline
-    return
-  }
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+   
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E5%8A%A0%E5%AF%86/" rel="tag">加密</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E9%9A%8F%E7%AC%94/" rel="tag">随笔</a>
+    
+</div>
+  
+  
+    <script async src="/js/copy-codeblock.js?v=1777300337658"></script>
+  
 
-  if ('Waline' === 'Waline' || !false) {
-    if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
-    else setTimeout(loadWaline, 0)
-  } else {
-    window.loadOtherComment = loadWaline
-  }
-})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+  
+      <div class="nexmoe-post-footer">
+          请在你的配置文件中设置 slotComment
+
+      </div>
+  
+</div></div><div class="nexmoe-post-right">    <div class="nexmoe-fixed">
+        <div class="nexmoe-tool">
+
+            
+
+            
+            
+
+            
+
+            <a href="#nexmoe-content" class="backtop toc-link" aria-label="Back To Top" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+        </div>
+    </div>
+</div></div><div id="nexmoe-footer"><!--!--></div><div id="nexmoe-search-space"><div class="search-container"><div class="search-header"><div class="search-input-container"><input class="search-input" type="text" placeholder="搜索" onInput="sinput();"></div><a class="search-close" onclick="sclose();">×</a></div><div class="search-body"></div></div></div><div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2058306854838448" crossorigin="anonymous"></script>
+</div></body></html>
