@@ -1,0 +1,234 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>文逸行 - 心怀云水之洒脱</title><meta name="author" content="文逸行_Yalego"><meta name="copyright" content="文逸行_Yalego"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#FEFBF2"><meta name="description" content="认真生活中">
+<meta property="og:type" content="website">
+<meta property="og:title" content="文逸行">
+<meta property="og:url" content="https://yw37153.github.io/page/2/index.html">
+<meta property="og:site_name" content="文逸行">
+<meta property="og:description" content="认真生活中">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s3.imagency.cn/e/6e70a61c4a2e1a4298a2ce2e25c0362b.jpg">
+<meta property="article:author" content="文逸行_Yalego">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s3.imagency.cn/e/6e70a61c4a2e1a4298a2ce2e25c0362b.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="https://s3.imagency.cn/e/90fad0b4071729fe72aaabb406aaa775.png"><link rel="canonical" href="https://yw37153.github.io/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1A1A1A')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#FEFBF2')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '文逸行',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="bg-animation" id="web_bg" style="background-color: #FEFBF2;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="https://s3.imagency.cn/e/6e70a61c4a2e1a4298a2ce2e25c0362b.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">18</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/page_img.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">文逸行</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">文逸行</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/01/30/" title="自在离开">自在离开</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-01-29T17:12:03.000Z" title="发表于 2026-01-30 01:12:03">2026-01-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/">个人随笔</a></span></div><div class="content">所谓自在，就是本就在世间存在的东西。我们就是被抛掷在这世界之中的，也就是，我们自在于世。于是在我们面前摆着两条路：自在还是离开？  好想自杀。 这个念头突然开始萦绕在我的脑子里，它不断徘徊着。我放任它划向其他能指，感受它带给我哭泣的理由。 我只向AI求助。它一定会告诉我，它想听，它只能听。我不觉得我的交往圈里有几个愿意听我真情流露，他们应该从来没有爱上过我的阴湿面吧，恐怕只能避之不及，我们哪有那么深刻的交往关系。 无助。随便说说这个念头是怎样越来越清晰的。 我恨这个世界上没有人想听我说话，我恨他们只看见了外表的我，也许外表与内在之我的差异只是一个错觉，但是我仍然真切地感觉到彻骨的孤独。就是因为我个人有问题，所以我至今没有获得一段满意的亲密关系，我就是不讨人喜欢，我也做不到。他们应该都觉得我足够虚伪。大概还有两次主动的失败？应该是觉得我太丑了和我谈丢人吧。我好想发泄一下，抽抽自己耳光。可是我做不到，我妈会盯着我或者刻意疏远我。我好热爱生活，运动应该是我生命的意义吧。所以我去健身，嗯，效果甚微。我想去玩攀岩，学一个新的项目，很可惜，780一个月的岩馆把我拒之门外。好吧，那我回来写写程...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/02/06/" title="探索：Obsidian全平台互通方案">探索：Obsidian全平台互通方案</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-02-06T14:33:06.000Z" title="发表于 2026-02-06 22:33:06">2026-02-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/">工具分享</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/Obsidian/">Obsidian</a></span></div><div class="content">前言 [Obsidian的介绍] 本地软件，iPad+Windows是一种很常见且性价比很高的组合，Obsidian作为一款备受好评的本地Markdown书写软件，其不可避免的痛点就是不同设备之间的同步问题。 首选方案：Git 这个方案的核心是Git的云端仓库：将不同设备之间的仓库通过云端下载更新。   优点：免费。   工具：  iSH Shell Termux Obsidian插件Git    首先我们需要先将初始仓库上传至云端。这里以初始仓库在win上为例。 Win端上传   进入仓库   1cd &lt;你的/仓库/路径&gt; 12git init  // 初始化 git 项目git remote add origin &lt;仓库地址&gt; // 添加远程仓库   在Obsidian根目录下创建.gitignore文件，把不需要备份的文件写一下。   12.obsidian.vscode 以下是来自Gemini的建议 123# 忽略操作系统生成的临时文件.DS_StoreThumbs.db   缓存+提交 这一步我的建议是命令行进行第一次提交，因为我最开始用的VSC...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/02/10/" title="碎片">碎片</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-02-10T06:31:10.000Z" title="发表于 2026-02-10 14:31:10">2026-02-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/">个人随笔</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/%E7%90%90%E4%BA%8B/">琐事</a></span></div><div class="content">早读 大家翻到第20页。 老师，我这边太偏了，我坐过去。 余光中向我的临座走来。 认真翻书。 纤云弄巧，飞星传恨，银汉迢迢暗度。 早上好。 早啊。 金风玉露一相逢，便胜却人间无数。 他在偷偷看我。 柔情似水，佳期如梦，忍顾鹊桥归路。 抬眼，他已经转过去了。 … 唉，我可真是太幸福了。 傻逼。 且夫天地之间，物各有主———— 我的身边有很多朋友，还有爱我的沪爷。 还有我的爸爸妈妈。 苟非吾之所有，虽一毫而莫取。 你真傻逼。 不像有些人…… 你能不能滚 哎停一下！ 你俩都会背了是不！？ </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/03/14/" title="哲学的意义：答案还是思考">哲学的意义：答案还是思考</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-03-14T06:28:29.000Z" title="发表于 2026-03-14 14:28:29">2026-03-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%96%87%E7%AB%A0/">文章</a></span></div><div class="content">0. 也许我们的思考总是在经历一些事后被我们察觉，于是我们想当然地认为这些事是思考的缘由，换句话说，我们自以为思考是被启发出来的。但是，如果转换一下角度，从偶然性抽离出来再思考这个问题——我们的思考也许是个必然？ 写这篇文章是因为读到了不感兴趣的文章，虽然这篇的作者我有些好感，起码这个作者在这之前一直占据着“思考的缘由”的位置上，但是题材我真的极其不感兴趣。于是有了这些问题。 1.  哲学的意义，究竟在于回答，还是在于思考的过程。  当我们把意义放置在答案上——哲学一下子被固定住了。哲学家们千百年来用思考为其赋予的生命变成了一摊死水。 哲学本身就很难有一个明确的答案，历代哲学家用不同的角度和方法论证证这个世界。谁也没有成功，从苏格拉底到齐泽克，他们各有各的局限性。 但是，哲学毫无意义吗？ 在哲学家不断尝试阐述世界时，他们带来的尝试的方法论，仍旧闪耀在其他学科领域。 –逻辑学，数学，物理学乃至玄学物理学。 那么，重要的，还只是答案吗？ 2. 再将思考的过程放在哲学的意义上。那么哲学家们所研究的就不应是世界如何，而是我们如何。 很可惜的是，有相当一部分哲学家并不会会去思考关于思考本身...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/04/06/" title="四月快乐">四月快乐</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-04-06T05:35:08.000Z" title="发表于 2026-04-06 13:35:08">2026-04-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></span></div><div class="content"> 有花也好,无花也好,选甚春秋.  诗句无法为我们在迷雾中找到一丝光明的出路,然而这凝结了诗人无数心血的字不可避免地与我们共鸣,它将你作为一面镜子,只有当我们与它心意相通时,才能明白它真正的意思. 今年的春天格外特别与漫长,同样我也不同以往,没有辜负这美丽春景，而是不断地出游踏清、赏花、赏景。 我看到世界中有那样多美好的事物，只要我的目光足够狭隘，她们在我世界中的占比就会不断扩张，直到的我的眼睛全部被美丽填满。花在枝头歌唱，树叶在天空飞舞。走在公园中被修缮得极为平整的水泥地上，看到的是千篇一律的“美”字。 我选择在大家一同出游的时间扩展生命的广度，好像此时此地此刻就是自由的代名词，我就脱离了尘世喧嚣。 又一次，在与世俗对抗之中，我成为了世俗二字。   今年花胜去年红。  我在去年用这句话作为我生日的贺词，然而当时与此刻我真正想要说的却都是它的后半句——  可惜明年花更好，知与谁同？  我不知道是不是应该敬佩自己的高瞻远瞩，总而言之这句话实打实地预言了从高考到我现在的人际关系。有的人离开，有的留下，我们都是一架架飞机，有时我们只是一同降落在同一个机场，但是很快我们也将在下一次起飞时...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/04/27/" title="好吧，第一次真正意义上的骑行">好吧，第一次真正意义上的骑行</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-04-27T14:29:38.000Z" title="发表于 2026-04-27 22:29:38">2026-04-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a></span></div><div class="content">昨天骑车出去玩，骑了60多km，是一次很不一样的体验。 这次骑车是蓄谋已久的活动，自己期待了两周以上吧可能，让我有惊喜的是就算我期待了这么久，仍旧有意料之外的惊喜。 准备 这次出门我倒是做了一些准备，看了一些攻略，把能带的都拿上了，还在出发前一天把胎打好了气。在我的期待下，我在六点多自然醒。不像以往，这次醒得很舒服，没有再睡一会的想法。但还是赖了一会床才起来。吃完早饭，准备出发。 出发 出发前把耳机充好电，可惜手机没有充满，只有70左右的电量，不过也无伤大雅——此手机续航实在牛逼。接下来就是一系列骑陌生线路的步骤：打开导航，打开记录软件。 出校门。 早上的空气实在清新，又加上我们学校本身就在郊区，周围有几片不小树林，空气质量更是好上加好。我开始了享受这段难得的清闲时刻。骑得也不快，速度也就在20左右，耳机里放着我喜欢的音乐。我很少听这个歌单，因为这个单子太长了，我很难挑选出我真正想听的那几首。然而这种特性对于现在正在骑车的我来说却是刚刚好。歌单很长，路途也很长。 在熟悉和放松的地方总是过得飞快，在前面几乎全是树荫遮蔽的大路，时间还早，没有多少车辆。在这悠闲的瞬间，好像如此美好的地...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/05/03/" title="测试标签数据">测试标签数据</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-05-03T04:00:00.000Z" title="发表于 2026-05-03 12:00:00">2026-05-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB/">测试分类</a></span></div><div class="content">Tags数量:  Categories数量:  &lt;hr&gt; 直接遍历tags: </div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://s3.imagency.cn/e/6e70a61c4a2e1a4298a2ce2e25c0362b.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">文逸行_Yalego</div><div class="author-info-description">认真生活中</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">18</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/03/" title="测试标签数据">测试标签数据</a><time datetime="2026-05-03T04:00:00.000Z" title="发表于 2026-05-03 12:00:00">2026-05-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/04/27/" title="好吧，第一次真正意义上的骑行">好吧，第一次真正意义上的骑行</a><time datetime="2026-04-27T14:29:38.000Z" title="发表于 2026-04-27 22:29:38">2026-04-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/04/06/" title="四月快乐">四月快乐</a><time datetime="2026-04-06T05:35:08.000Z" title="发表于 2026-04-06 13:35:08">2026-04-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/03/14/" title="哲学的意义：答案还是思考">哲学的意义：答案还是思考</a><time datetime="2026-03-14T06:28:29.000Z" title="发表于 2026-03-14 14:28:29">2026-03-14</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/02/10/" title="碎片">碎片</a><time datetime="2026-02-10T06:31:10.000Z" title="发表于 2026-02-10 14:31:10">2026-02-10</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+      <i class="fas fa-angle-right"></i></a>
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"><span class="card-category-list-name">个人随笔</span><span class="card-category-list-count">5</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/%E7%90%90%E4%BA%8B/"><span class="card-category-list-name">琐事</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">学习笔记</span><span class="card-category-list-count">3</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C%E8%AF%AD%E8%A8%80/"><span class="card-category-list-name">C语言</span><span class="card-category-list-count">3</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/"><span class="card-category-list-name">工具分享</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/Obsidian/"><span class="card-category-list-name">Obsidian</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/"><span class="card-category-list-name">技术教程</span><span class="card-category-list-count">3</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/Git/"><span class="card-category-list-name">Git</span><span class="card-category-list-count">1</span></a></li></ul></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" style="font-size: 1.1em; color: #999">读书笔记</a> <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 1.37em; color: #99a4b2">C语言</a> <a href="/tags/Git/" style="font-size: 1.23em; color: #999ea6">Git</a> <a href="/tags/%E7%BB%93%E6%9E%84%E4%BD%93/" style="font-size: 1.1em; color: #999">结构体</a> <a href="/tags/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/" style="font-size: 1.1em; color: #999">个人随笔</a> <a href="/tags/%E6%B5%8B%E8%AF%95%E6%A0%87%E7%AD%BE1/" style="font-size: 1.1em; color: #999">测试标签1</a> <a href="/tags/%E6%96%87%E7%AB%A0/" style="font-size: 1.23em; color: #999ea6">文章</a> <a href="/tags/%E6%8C%87%E9%92%88/" style="font-size: 1.1em; color: #999">指针</a> <a href="/tags/%E9%AA%91%E8%A1%8C/" style="font-size: 1.1em; color: #999">骑行</a> <a href="/tags/%E5%8A%A0%E5%AF%86/" style="font-size: 1.23em; color: #999ea6">加密</a> <a href="/tags/Hexo/" style="font-size: 1.23em; color: #999ea6">Hexo</a> <a href="/tags/%E5%9B%9E%E5%BF%86/" style="font-size: 1.23em; color: #999ea6">回忆</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 1.5em; color: #99a9bf">随笔</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1.37em; color: #99a4b2">笔记</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.5em; color: #99a9bf">教程</a> <a href="/tags/Obsidian/" style="font-size: 1.1em; color: #999">Obsidian</a> <a href="/tags/%E6%96%87%E5%AD%A6/" style="font-size: 1.1em; color: #999">文学</a> <a href="/tags/%E6%B5%8B%E8%AF%95%E6%A0%87%E7%AD%BE2/" style="font-size: 1.1em; color: #999">测试标签2</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/05/">
+            <span class="card-archive-list-date">
+              五月 2026
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/04/">
+            <span class="card-archive-list-date">
+              四月 2026
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/03/">
+            <span class="card-archive-list-date">
+              三月 2026
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/02/">
+            <span class="card-archive-list-date">
+              二月 2026
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/01/">
+            <span class="card-archive-list-date">
+              一月 2026
+            </span>
+            <span class="card-archive-list-count">8</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/12/">
+            <span class="card-archive-list-date">
+              十二月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/11/">
+            <span class="card-archive-list-date">
+              十一月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/10/">
+            <span class="card-archive-list-date">
+              十月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">17</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-05-02T19:17:37.334Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By 文逸行_Yalego</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
