@@ -1866,6 +1866,13 @@ a {
 a:hover {
   color: #5a5a5a;
 }
+#site-title,
+#site-subtitle,
+.site-name,
+#aside-content .author-info-name,
+#aside-content .author-info-description {
+  font-family: HUIWENMING;
+}
 .text-center {
   text-align: center;
 }
@@ -2039,7 +2046,7 @@ figure.highlight pre .javascript .function {
 .container pre,
 .container code {
   font-size: 14px;
-  font-family: Fira Code !important;
+  font-family: Anonymous_Pro !important;
   border-radius: 6px;
 }
 .container code {
