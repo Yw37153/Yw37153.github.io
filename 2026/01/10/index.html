@@ -521,7 +521,7 @@
     disqusjs = new DisqusJS({
       shortname: 'yw37153',
       title: 'C_study_Note',
-      apikey: 'G0o8ogBzDhi5gWFa1s1ZAm2j7Kv1lNcCDicfCpvKaMhH8nAncF5RResqAhqy0uup',
+      apikey: 'QZ0WUPplsWWcCTIFmYCG01iXrqukbtzkTLcxZxSvGZAnplNIh2ICNH52iOU00e06',
       ...dqOption,
       identifier: isShuoshuo ? path : (dqOption && dqOption.identifier) || '/2026/01/10/',
       url: isShuoshuo ? location.origin + path : (dqOption && dqOption.url) || 'https://yw37153.github.io/2026/01/10/'
@@ -548,7 +548,7 @@
       if (!eleGroup) return
       const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
 
-      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=yw37153&api_key=G0o8ogBzDhi5gWFa1s1ZAm2j7Kv1lNcCDicfCpvKaMhH8nAncF5RResqAhqy0uup&thread:link=${cleanedLinks}`,{
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=yw37153&api_key=QZ0WUPplsWWcCTIFmYCG01iXrqukbtzkTLcxZxSvGZAnplNIh2ICNH52iOU00e06&thread:link=${cleanedLinks}`,{
         method: 'GET'
       })
       const result = await res.json()
