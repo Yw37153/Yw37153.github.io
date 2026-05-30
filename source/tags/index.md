@@ -1,7 +1,8 @@
 ---
-title: 標籤
-date: 2026-02-02 21:50:00 
-type: 'tags' #必选
-orderby: length #random-随机排序 name-标签名字 length-标签数量
-order: -1 #1-正序 -1-倒序
+title: 标签
+date: 2026-05-03 02:42:45
+type: 'tags'
+orderby: random
+order: 1
 ---
+

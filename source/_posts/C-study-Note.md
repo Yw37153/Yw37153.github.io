@@ -3,9 +3,12 @@ title: C_study_Note
 tags:
   - C语言
   - 笔记
+  - 加密
 categories:
+  - 技术探索
   - 学习笔记
   - C语言
+hide: true
 date: 2026-01-10 22:38:45
 ---
 ## 注意

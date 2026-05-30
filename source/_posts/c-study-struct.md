@@ -4,10 +4,13 @@ tags:
   - C语言
   - 笔记
   - 结构体
+  - 加密
 categories:
+  - 技术探索
   - 学习笔记
   - C语言
 date: 2025-12-11 17:34:39
+hide: true
 ---
 
 # Struct

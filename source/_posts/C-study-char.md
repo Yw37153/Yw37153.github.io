@@ -5,9 +5,12 @@ tags:
   - C语言
   - 笔记
   - 指针
+  - 加密
 categories:
+  - 技术探索
   - 学习笔记
   - C语言
+hide: true
 ---
 
 
