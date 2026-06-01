@@ -6,7 +6,7 @@ author: 文逸行_Yalego
 language: zh-CN
 timezone: ''
 url: https://yw37153.github.io/
-permalink: :year/:month/:day/
+permalink: posts/:hash/
 permalink_defaults: null
 pretty_urls:
   trailing_index: true

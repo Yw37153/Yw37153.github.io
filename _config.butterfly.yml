@@ -460,7 +460,7 @@ busuanzi:
 math:
   # Choose: mathjax, katex
   # Leave it empty if you don't need math
-  use:
+  use: mathjax
   per_page: true
   hide_scrollbar: false
 
@@ -545,7 +545,7 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use: Livere
+  use: # 禁用内置评论，使用自定义Livere Web Component
   # Display the comment name next to the button
   text: false
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -1091,7 +1091,21 @@ inject:
     - <link rel="stylesheet" href="/fonts/font.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    # - <script src="xxxx"></script>
+    # Livere评论 - 插入到 post-pagination 上方（仅文章页生效）
+    - |
+      <script>
+      (function() {
+        if (!document.getElementById('post-comment')) return;
+        var pagination = document.getElementById('post-pagination');
+        var container = document.createElement('div');
+        container.id = 'livere-comment-wrap';
+        container.innerHTML = '<livere-comment client-id="PhyrMWIoABbnPKqNMAqd"></livere-comment>';
+        if (pagination && pagination.parentNode) {
+          pagination.parentNode.insertBefore(container, pagination);
+        }
+      })();
+      </script>
+      <script type="module" src="https://www.livere.org/livere-widget.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
