@@ -1,0 +1,690 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>线性空间 | 文逸行</title><meta name="author" content="文逸行_Yalego"><meta name="copyright" content="文逸行_Yalego"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#FEFBF2"><meta name="description" content="线性空间 性质（判断是否是线性空间的依据） 定义 5.1.1 设 $V$ 是一个非空集合，$F$ 是一个数域. 在集合 $V$ 的元素之间定义了一种运算，叫做加法，即对于 $V$ 中任意两个元素 $\alpha$ 与 $\beta$，在 $V$ 中都有唯一的一个元素 $\gamma$ 与之对应，称为 $\alpha$ 与 $\beta$ 的和，记为 $\gamma &#x3D; \alpha + \beta">
+<meta property="og:type" content="article">
+<meta property="og:title" content="线性空间">
+<meta property="og:url" content="https://yw37153.github.io/posts/581f95a5bebe/index.html">
+<meta property="og:site_name" content="文逸行">
+<meta property="og:description" content="线性空间 性质（判断是否是线性空间的依据） 定义 5.1.1 设 $V$ 是一个非空集合，$F$ 是一个数域. 在集合 $V$ 的元素之间定义了一种运算，叫做加法，即对于 $V$ 中任意两个元素 $\alpha$ 与 $\beta$，在 $V$ 中都有唯一的一个元素 $\gamma$ 与之对应，称为 $\alpha$ 与 $\beta$ 的和，记为 $\gamma &#x3D; \alpha + \beta">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s3.imagency.cn/e/6e70a61c4a2e1a4298a2ce2e25c0362b.jpg">
+<meta property="article:published_time" content="2026-05-29T02:00:00.000Z">
+<meta property="article:modified_time" content="2026-06-08T08:27:47.484Z">
+<meta property="article:author" content="文逸行_Yalego">
+<meta property="article:tag" content="向量空间">
+<meta property="article:tag" content="线性空间">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s3.imagency.cn/e/6e70a61c4a2e1a4298a2ce2e25c0362b.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "线性空间",
+  "url": "https://yw37153.github.io/posts/581f95a5bebe/",
+  "image": "https://s3.imagency.cn/e/6e70a61c4a2e1a4298a2ce2e25c0362b.jpg",
+  "datePublished": "2026-05-29T02:00:00.000Z",
+  "dateModified": "2026-06-08T08:27:47.484Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "文逸行_Yalego",
+      "url": "https://yw37153.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="https://s3.imagency.cn/e/90fad0b4071729fe72aaabb406aaa775.png"><link rel="canonical" href="https://yw37153.github.io/posts/581f95a5bebe/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1A1A1A')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#FEFBF2')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":false,"highlightHeightLimit":false,"highlightFullpage":true,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '线性空间',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/fonts/font.css"><meta name="generator" content="Hexo 8.1.1"></head><body><div class="bg-animation" id="web_bg" style="background-color: #FEFBF2;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s3.imagency.cn/e/6e70a61c4a2e1a4298a2ce2e25c0362b.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">27</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">43</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/top_img.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">文逸行</span></a><a class="nav-page-title" href="/"><span class="site-name">线性空间</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">线性空间</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-05-29T02:00:00.000Z" title="发表于 2026-05-29 10:00:00">2026-05-29</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-06-08T08:27:47.484Z" title="更新于 2026-06-08 16:27:47">2026-06-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E5%AD%A6/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/">高等代数</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><h1>线性空间</h1>
+<h2 id="性质（判断是否是线性空间的依据）">性质（判断是否是线性空间的依据）</h2>
+<p><strong>定义 5.1.1</strong> 设 $V$ 是一个非空集合，$F$ 是一个数域. 在集合 $V$ 的元素之间定义了一种运算，叫做加法，即对于 $V$ 中任意两个元素 $\alpha$ 与 $\beta$，在 $V$ 中都有唯一的一个元素 $\gamma$ 与之对应，称为 $\alpha$ 与 $\beta$ 的和，记为 $\gamma = \alpha + \beta$；在数域 $F$ 与集合 $V$ 中的元素之间还定义了一种运算，叫做数乘，即对于数域 $F$ 中任一数 $k$ 与集合 $V$ 中任一元素 $\alpha$，在 $V$ 中都有唯一的一个元素 $\delta$ 与它们对应，称为 $k$ 与 $\alpha$ 的数量乘法，记为 $\delta = k\alpha$，如果两种运算<strong>满足如下性质：</strong></p>
+<p>(1) <strong>加法交换律</strong> $\alpha + \beta = \beta + \alpha$;</p>
+<p>(2) <strong>加法结合律</strong> $(\alpha + \beta) + \gamma = \alpha + (\beta + \gamma)$;</p>
+<p>(3) 存在“<strong>零元</strong>”，即存在 $\mathbf{0} \in V$，使得 $\forall \alpha \in V, \ \mathbf{0} + \alpha = \alpha$;</p>
+<p>(4) 存在<strong>负元</strong>，即 $\forall \alpha \in V$，存在 $\beta \in V$，使得 $\alpha + \beta = \mathbf{0}$;</p>
+<p>(5) $1 \cdot \alpha = \alpha$;</p>
+<p>(6) <strong>数乘结合律</strong> $(kl)\alpha = k(l\alpha) = l(k\alpha)$;</p>
+<p>(7) <strong>分配律</strong> $(k + l)\alpha = k\alpha + l\alpha$;</p>
+<p>(8) <strong>分配律</strong> $k(\alpha + \beta) = k\alpha + k\beta$,</p>
+<h2 id="基变换与坐标变换">基变换与坐标变换</h2>
+<h2 id="过渡矩阵">过渡矩阵</h2>
+<p>$\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n$ 和 $\eta_1, \eta_2, \cdots, \eta_n$ 是 $V$ 的两组基，且</p>
+
+$$\begin{cases} \eta_1 = a_{11}\varepsilon_1 + a_{21}\varepsilon_2 + \cdots + a_{n1}\varepsilon_n, \\ \eta_2 = a_{12}\varepsilon_1 + a_{22}\varepsilon_2 + \cdots + a_{n2}\varepsilon_n, \\ \cdots\cdots \\ \eta_n = a_{1n}\varepsilon_1 + a_{2n}\varepsilon_2 + \cdots + a_{nn}\varepsilon_n. \end{cases} \quad (5.3.1)$$
+
+<p>将式 (5.3.1) 写成矩阵形式</p>
+
+$$(\eta_1, \eta_2, \cdots, \eta_n) = (\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n) \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{pmatrix}. \quad (5.3.2)$$
+
+<p>这也就是<strong>基变换</strong>公式。</p>
+<p><strong>定义 5.3.1</strong> 我们称式 (5.3.2) 中的矩阵</p>
+
+$$A = \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{pmatrix}$$
+
+<p>为从基 $\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n$ 到基 $\eta_1, \eta_2, \cdots, \eta_n$ 的<strong>过渡矩阵</strong>.</p>
+<h2 id="基变换公式">基变换公式</h2>
+<p>$$\mathbf{\eta} = A\mathbf{\varepsilon}$$<br>
+$$(x_{1}, x_{2}, \cdots, x_{n})=(\varepsilon_{1}, \varepsilon_{2}, \cdots, \varepsilon_{n})A$$</p>
+<h2 id="坐标变换公式">坐标变换公式</h2>
+
+$$\mathbf{x} = A\mathbf{x}'$$
+
+
+$$(x_{1},x_{2}, \cdots, x_{n})=A(x'_{1}, x'_{2}, \cdots, x'_{n})$$
+
+<h1>线性子空间</h1>
+<h2 id="判断">判断</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>加法封闭</p>
+</li>
+<li class="lvl-2">
+<p>数乘封闭</p>
+</li>
+</ul>
+<h2 id="运算">运算</h2>
+<ul class="lvl-0">
+<li class="lvl-3">
+<p><strong>子空间的交</strong> $V_1 \cap V_2 = {v \mid v \in V_1 \text{ 且 } v \in V_2}$</p>
+</li>
+<li class="lvl-3">
+<p><strong>子空间的和</strong> $V_1 + V_2 = {v_1 + v_2 \mid v_1 \in V_1, v_2 \in V_2}$</p>
+<ul class="lvl-2">
+<li class="lvl-7"><strong>子空间的直和</strong> $V_1 + V_2$ 中每个向量 $\mathbf{\alpha}$ 的分解式$\mathbf{\alpha} = \mathbf{\alpha}_1 + \mathbf{\alpha}_2, \quad \mathbf{\alpha}_1 \in V_1, \ \mathbf{\alpha}_2 \in V_2$ 唯一, 则称$V_1 + V_2$为<strong>直和</strong>，记为 $V_1 \oplus V_2$.</li>
+</ul>
+</li>
+</ul>
+<p>$$L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_s) + L(\beta_1, \beta_2, \cdots, \beta_t) = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_s, \beta_1, \beta_2, \cdots, \beta_t).$$</p>
+<h3 id="直和判断的充分必要条件">直和判断的充分必要条件</h3>
+<p><strong>定理 5.4.6</strong> 设 $V_1$ 与 $V_2$ 是 $V$ 的两个子空间，若 $W = V_1 + V_2$，则下述结论等价：</p>
+<p>(1) $W = V_1 + V_2$ 是直和；</p>
+<p>(2) 如果 $\mathbf{\alpha}_1 + \mathbf{\alpha}_2 = \mathbf{0}, \ \mathbf{\alpha}_i \in V_i (i = 1,2)$，那么 $\mathbf{\alpha}_1 = \mathbf{\alpha}_2 = \mathbf{0}$；</p>
+<p>(3) $V_1 \cap V_2 = {\mathbf{0}}$；</p>
+<p>(4) 如果 $\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_s$ 是 $V_1$ 的一组基，$\beta_1, \beta_2, \cdots, \beta_t$ 是 $V_2$ 的一组基，那么 $\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_s, \beta_1, \beta_2, \cdots, \beta_t$ 是 $W$ 的一组基；</p>
+<p>(5) $\dim W = \dim V_1 + \dim V_2$.</p>
+<h2 id="维数与基">维数与基</h2>
+<p>$L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_r)$ 的<strong>维数</strong>等于向量组 $\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_r$ 的<strong>秩</strong>.</p>
+<p><em>与运算结合</em> :</p>
+<p><strong>定理 5.4.5（维数公式）</strong> 设 $V$ 为有限维线性空间，$V_1, V_2$ 为 $V$ 的子空间，则</p>
+<p>$$\dim(V_1 + V_2) = \dim V_1 + \dim V_2 - \dim(V_1 \cap V_2). \quad (5.4.4)$$</p>
+<p>如果是<strong>直和</strong><br>
+$$\dim(W) = \dim V_1 + \dim V_2$$，<em>其中$W = V_1 + V_2$是直和</em></p>
+<h2 id="例题">例题</h2>
+<p><strong>例 1</strong> 已知 $\mathbb{R}^4$ 中向量 （P201: 4）</p>
+<p>$$\mathbf{\alpha}_1 = (1, 2, 1, 0), \ \mathbf{\alpha}_2 = (-1, 1, 1, 1); \ \mathbf{\beta}_1 = (2, -1, 0, 1), \ \mathbf{\beta}_2 = (1, -1, 3, 7),$$</p>
+<p>子空间 $V_1 = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2), \ V_2 = L(\mathbf{\beta}_1, \mathbf{\beta}_2),$</p>
+<p><strong>(1) 求 $V_1 + V_2$ 的一组基和维数.</strong></p>
+<p><strong>步骤：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>$V_{1}+V_{2}=L(\alpha_{1},\alpha_{2},\beta_{1},\beta_{2})$</p>
+</li>
+<li class="lvl-2">
+<p>写出以 $\alpha_{1},\alpha_{2},\beta_{1}\beta_{2}$ 为列向量的矩阵</p>
+</li>
+<li class="lvl-2">
+<p>对矩阵进行实行行变换，化成行最简形</p>
+</li>
+<li class="lvl-2">
+<p>秩=维数，主元列为基（与求极大线性无关组一致）</p>
+</li>
+</ul>
+<p><strong>解：(1)</strong> $V_1 + V_2 = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1, \mathbf{\beta}_2)$</p>
+<p>对以 $\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1, \mathbf{\beta}_2$ 为列向量的矩阵 $\mathbf{A}$ 作初等行变换</p>
+
+$$\mathbf{A} = \begin{pmatrix} 1 & -1 & 2 & 1 \\ 2 & 1 & -1 & -1 \\ 1 & 1 & 0 & 3 \\ 0 & 1 & 1 & 7 \end{pmatrix} \rightarrow \begin{pmatrix} 1 & -1 & 2 & 1 \\ 0 & 3 & -5 & -3 \\ 0 & 2 & -2 & 2 \\ 0 & 1 & 1 & 7 \end{pmatrix} \rightarrow \begin{pmatrix} 1 & -1 & 2 & 1 \\ 0 & 0 & -2 & -6 \\ 0 & 1 & -1 & 1 \\ 0 & 0 & 2 & 6 \end{pmatrix} \rightarrow \begin{pmatrix} 1 & 0 & 0 & -1 \\ 0 & 1 & 0 & 4 \\ 0 & 0 & 1 & 3 \\ 0 & 0 & 0 & 0 \end{pmatrix} = \mathbf{B}$$
+
+<p>由 $\mathbf{B}$ 知，$\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1$ （或 $\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_2$）为 $\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1, \mathbf{\beta}_2$ 的一个极大无关组.</p>
+<p>$V_1 + V_2 = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1)$ 为 3 维的，$\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1$ （或 $\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_2$）为其一组基.</p>
+<p><strong>(2) 求 $V_1 \cap V_2$ 的一组基和维数.</strong></p>
+<p><strong>步骤：</strong></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>设向量$\gamma$ 是 $V_{1}$ 和 $V_{2}$ 中的向量</p>
+</li>
+<li class="lvl-2">
+<p>分别用 $V_{1}$ 和 $V_{2}$ 的基表示$\gamma$</p>
+</li>
+<li class="lvl-2">
+<p>移项，使右侧全部为零</p>
+</li>
+<li class="lvl-2">
+</li>
+</ul>
+<p>$\mathbf{\gamma} = k_1\mathbf{\alpha}_1 + k_2\mathbf{\alpha}_2 = l_1\mathbf{\beta}_1 + l_2\mathbf{\beta}_2$</p>
+<hr>
+<p><a href="/ecb159bb0577/">返回总目录</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://yw37153.github.io">文逸行_Yalego</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yw37153.github.io/posts/581f95a5bebe/">https://yw37153.github.io/posts/581f95a5bebe/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://yw37153.github.io" target="_blank">文逸行</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4/">线性空间</a><a class="post-meta__tags" href="/tags/%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4/">向量空间</a></div><div class="post-share"><div class="social-share" data-image="https://s3.imagency.cn/e/6e70a61c4a2e1a4298a2ce2e25c0362b.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/49e3f6d43f5e/" title="线性方程组理论"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">线性方程组理论</div></div><div class="info-2"><div class="info-item-1">线性方程组理论 3.5 线性方程组理论 一、有解条件 非齐次线性方程组 $Ax = \beta$：   有解 $\Leftrightarrow r(A) = r(\bar{A})$（系数矩阵秩 = 增广矩阵秩）  $= n$：唯一解 $&lt; n$：无穷多组解（$n$ 为未知数个数）    齐次线性方程组 $Ax = 0$：   $r(A) = n$：唯一零解   $r(A) &lt; n$：无穷多非零解    注：解空间维数 $= n - r$（$n$ 为未知数个数，$r$ 为系数矩阵的秩）   二、解的结构 1. 基础解系 $Ax = 0$ 的一组解向量，满足：   线性无关   可表达全部解向量   条件：有非零解 个数：$n - r$ = 自由未知量个数 求 $Ax = 0$ 的基础解系步骤：   将系数矩阵 化简为行最简形   确定自由未知量个数 $= n - r$   确定自由未知量   写出化简后的表达式   将自由未知量移至右侧   令自由未知量依次取一个为 1，其余为 0，得出结果，将计算结果依次排列为解向量   例：  $$\begin{cases} x +...</div></div></div></a><a class="pagination-related" href="/posts/db100a784552/" title="感我此言良久立(1)"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/%E6%84%9F%E6%88%91%E6%AD%A4%E8%A8%80%E8%89%AF%E4%B9%85%E7%AB%8B/VCG211369517256.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">感我此言良久立(1)</div></div><div class="info-2"><div class="info-item-1">我自知生在北京，高考竞争算不上激烈，于是努力地过了一天又一天，比不上那些卷王，但是为了不背叛我自己，那些日子我也算不上得过且过。回想高中打球那段日子，虽说精神状态算不上没有病，但对我个人来讲也是一段欢乐时光。我总是在想，如果毕业了，我见不到这帮子有病的人了怎么办，还会这样快乐吗。 我很期待运动的时间，中午、晚饭过后、晚自习后、以及体育课甚至上操跑步的时间——这几个时间点一同组成了我学下去的动力——再学一会就可以去打球了。也正因此，我难以接受天气变化。有风有雨就打不了球，其他年级有考试也打不了球。运动的时间看似多，加起来也难凑出两个小时，我也就格外珍惜这段发着光的碎片。 于是我打排球相当尽力，我可以接到每一个球，因为我害怕在这本就让我期待和骄傲的时间让我感到失败。 我不是一个多坚强的人，作为大多数人的一份子，我会把失误无限放大。一次失败的不可修复在我看来就像给我的技术宣判了死刑。我越来越害怕我丢下，我越来越害怕接不起球会被淘汰——即便我们只是打着玩，根本和淘汰无关。 好像是高二，我意识到我的技术在瓶颈期。然而想上一点强度会被虐烂，打休闲又太没有激情了，于是在一场球后，我在一个空旷的...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s3.imagency.cn/e/6e70a61c4a2e1a4298a2ce2e25c0362b.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">文逸行_Yalego</div><div class="author-info-description">认真生活中</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">27</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">43</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Yw37153/"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Yw37153/" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://x.com/AsisYw63675" target="_blank" title="X"><i class="fab fa-x-twitter" style="color: #000000;"></i></a><a class="social-icon" href="https://t.me/AsisYalego" target="_blank" title="Telegram"><i class="fab fa-telegram" style="color: #0088cc;"></i></a><a class="social-icon" href="https://space.bilibili.com/183529341" target="_blank" title="B站"><i class="fab fa-bilibili" style="color: #ff6699;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">线性空间</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%A7%E8%B4%A8%EF%BC%88%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E6%98%AF%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4%E7%9A%84%E4%BE%9D%E6%8D%AE%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">性质（判断是否是线性空间的依据）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E5%8F%98%E6%8D%A2%E4%B8%8E%E5%9D%90%E6%A0%87%E5%8F%98%E6%8D%A2"><span class="toc-number">1.2.</span> <span class="toc-text">基变换与坐标变换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%87%E6%B8%A1%E7%9F%A9%E9%98%B5"><span class="toc-number">1.3.</span> <span class="toc-text">过渡矩阵</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E5%8F%98%E6%8D%A2%E5%85%AC%E5%BC%8F"><span class="toc-number">1.4.</span> <span class="toc-text">基变换公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9D%90%E6%A0%87%E5%8F%98%E6%8D%A2%E5%85%AC%E5%BC%8F"><span class="toc-number">1.5.</span> <span class="toc-text">坐标变换公式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">线性子空间</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A4%E6%96%AD"><span class="toc-number">2.1.</span> <span class="toc-text">判断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E7%AE%97"><span class="toc-number">2.2.</span> <span class="toc-text">运算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B4%E5%92%8C%E5%88%A4%E6%96%AD%E7%9A%84%E5%85%85%E5%88%86%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="toc-number">2.2.1.</span> <span class="toc-text">直和判断的充分必要条件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%B4%E6%95%B0%E4%B8%8E%E5%9F%BA"><span class="toc-number">2.3.</span> <span class="toc-text">维数与基</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98"><span class="toc-number">2.4.</span> <span class="toc-text">例题</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/1139877a6fef/" title="数学分析（下）知识点分类">数学分析（下）知识点分类</a><time datetime="2026-06-09T02:00:00.000Z" title="发表于 2026-06-09 10:00:00">2026-06-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/27a37256e099/" title="多元函数微分学">多元函数微分学</a><time datetime="2026-06-08T02:00:00.000Z" title="发表于 2026-06-08 10:00:00">2026-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/3fd397ff52ab/" title="数学分析笔记">数学分析笔记</a><time datetime="2026-06-08T02:00:00.000Z" title="发表于 2026-06-08 10:00:00">2026-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/4839f19f60f3/" title="定积分的应用">定积分的应用</a><time datetime="2026-06-08T02:00:00.000Z" title="发表于 2026-06-08 10:00:00">2026-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/81df7152b326/" title="多元函数的极限与连续">多元函数的极限与连续</a><time datetime="2026-06-08T02:00:00.000Z" title="发表于 2026-06-08 10:00:00">2026-06-08</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By 文逸行_Yalego</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        loader: {
+          load: [
+            // Four font extension packages (optional)
+            //- '[tex]/bbm',
+            //- '[tex]/bboldx',
+            //- '[tex]/dsfont',
+            '[tex]/mhchem'
+          ],
+          paths: {
+            'mathjax-newcm': '[mathjax]/../@mathjax/mathjax-newcm-font',
+
+            //- // Four font extension packages (optional)
+            //- 'mathjax-bbm-extension': '[mathjax]/../@mathjax/mathjax-bbm-font-extension',
+            //- 'mathjax-bboldx-extension': '[mathjax]/../@mathjax/mathjax-bboldx-font-extension',
+            //- 'mathjax-dsfont-extension': '[mathjax]/../@mathjax/mathjax-dsfont-font-extension',
+            'mathjax-mhchem-extension': '[mathjax]/../@mathjax/mathjax-mhchem-font-extension'
+          }
+        },
+        output: {
+          font: 'mathjax-newcm',
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+          packages: {
+            '[+]': [
+              'mhchem'
+            ]
+          }
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          menuOptions: {
+            settings: {
+              enrich: false  // Turn off Braille and voice narration text automatic generation
+            }
+          },
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@4.1.0/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const parseViewBox = viewBox => {
+    if (!viewBox) return null
+    const parts = viewBox.trim().split(/[\s,]+/).map(n => Number(n))
+    if (parts.length !== 4 || parts.some(n => Number.isNaN(n))) return null
+    return parts
+  }
+
+  const getSvgViewBox = svg => {
+    const attr = parseViewBox(svg.getAttribute('viewBox'))
+    if (attr) return attr
+
+    // Fallback: use bbox to build a viewBox
+    try {
+      const bbox = svg.getBBox()
+      if (bbox && bbox.width && bbox.height) return [bbox.x, bbox.y, bbox.width, bbox.height]
+    } catch (e) {
+      // getBBox may fail on some edge cases; ignore
+    }
+
+    const w = Number(svg.getAttribute('width')) || 0
+    const h = Number(svg.getAttribute('height')) || 0
+    if (w > 0 && h > 0) return [0, 0, w, h]
+    return [0, 0, 100, 100]
+  }
+
+  const setSvgViewBox = (svg, vb) => {
+    svg.setAttribute('viewBox', `${vb[0]} ${vb[1]} ${vb[2]} ${vb[3]}`)
+  }
+
+  const clamp = (v, min, max) => Math.max(min, Math.min(max, v))
+
+  const openSvgInNewTab = ({ source, initViewBox }) => {
+    const getClonedSvg = () => {
+      if (typeof source === 'string') {
+        const template = document.createElement('template')
+        template.innerHTML = source.trim()
+        const svg = template.content.querySelector('svg')
+        return svg ? svg.cloneNode(true) : null
+      }
+      if (source && typeof source.cloneNode === 'function') {
+        return source.cloneNode(true)
+      }
+      return null
+    }
+
+    const clone = getClonedSvg()
+    if (!clone) return
+    if (initViewBox && initViewBox.length === 4) {
+      clone.setAttribute('viewBox', initViewBox.join(' '))
+    }
+    if (!clone.getAttribute('xmlns')) clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg')
+    if (!clone.getAttribute('xmlns:xlink') && clone.outerHTML.includes('xlink:')) {
+      clone.setAttribute('xmlns:xlink', 'http://www.w3.org/1999/xlink')
+    }
+    // inject background to match current theme
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark'
+    const bg = getComputedStyle(document.body).backgroundColor || (isDark ? '#1e1e1e' : '#ffffff')
+    if (!clone.style.background) clone.style.background = bg
+
+    const serializer = new XMLSerializer()
+    const svgSource = serializer.serializeToString(clone)
+    const htmlSource = `<!doctype html><html><head><meta charset="utf-8" />
+      <style>
+        html, body { width: 100%; height: 100%; margin: 0; display: flex; align-items: center; justify-content: center; background: ${bg}; }
+        svg { max-width: 100%; max-height: 100%; height: auto; width: auto; }
+      </style>
+      </head><body>${svgSource}</body></html>`
+    const blob = new Blob([htmlSource], { type: 'text/html;charset=utf-8' })
+    const url = URL.createObjectURL(blob)
+    window.open(url, '_blank', 'noopener')
+    setTimeout(() => URL.revokeObjectURL(url), 30000)
+  }
+
+  const attachMermaidViewerButton = wrap => {
+    let btn = wrap.querySelector('.mermaid-open-btn')
+    if (!btn) {
+      btn = document.createElement('button')
+      btn.type = 'button'
+      btn.className = 'mermaid-open-btn'
+      wrap.appendChild(btn)
+    }
+
+    btn.innerHTML = '<i class="fa fa-search fa-fw" aria-hidden="true"></i>'
+
+    if (!btn.__mermaidViewerBound) {
+      btn.addEventListener('click', e => {
+        e.preventDefault()
+        e.stopPropagation()
+        const svg = wrap.__mermaidOriginalSvg || wrap.querySelector('svg')
+        if (!svg) return
+        const initViewBox = wrap.__mermaidInitViewBox
+        if (typeof svg === 'string') {
+          openSvgInNewTab({ source: svg, initViewBox })
+          return
+        }
+        openSvgInNewTab({ source: svg, initViewBox })
+      })
+      btn.__mermaidViewerBound = true
+    }
+  }
+
+  // Zoom around a point (px, py) in the SVG viewport (in viewBox coordinates)
+  const zoomAtPoint = (vb, factor, px, py) => {
+    const w = vb[2] * factor
+    const h = vb[3] * factor
+    const nx = px - (px - vb[0]) * factor
+    const ny = py - (py - vb[1]) * factor
+    return [nx, ny, w, h]
+  }
+
+  const initMermaidGestures = wrap => {
+    const svg = wrap.querySelector('svg')
+    if (!svg) return
+
+    // Ensure viewBox exists so gestures always work
+    const initVb = getSvgViewBox(svg)
+    wrap.__mermaidInitViewBox = initVb
+    wrap.__mermaidCurViewBox = initVb.slice()
+    setSvgViewBox(svg, initVb)
+
+    // Avoid binding multiple times on themeChange/pjax
+    if (wrap.__mermaidGestureBound) return
+    wrap.__mermaidGestureBound = true
+
+    // Helper: map client (viewport) coordinate -> viewBox coordinate
+    const clientToViewBox = (clientX, clientY) => {
+      const rect = svg.getBoundingClientRect()
+      const vb = wrap.__mermaidCurViewBox || getSvgViewBox(svg)
+      const x = vb[0] + (clientX - rect.left) * (vb[2] / rect.width)
+      const y = vb[1] + (clientY - rect.top) * (vb[3] / rect.height)
+      return { x, y, rect, vb }
+    }
+
+    const state = {
+      pointers: new Map(),
+      startVb: null,
+      startDist: 0,
+      startCenter: null
+    }
+
+    const clampVb = vb => {
+      const init = wrap.__mermaidInitViewBox || vb
+      const minW = init[2] * 0.1
+      const maxW = init[2] * 10
+      const minH = init[3] * 0.1
+      const maxH = init[3] * 10
+      vb[2] = clamp(vb[2], minW, maxW)
+      vb[3] = clamp(vb[3], minH, maxH)
+      return vb
+    }
+
+    const setCurVb = vb => {
+      vb = clampVb(vb)
+      wrap.__mermaidCurViewBox = vb
+      setSvgViewBox(svg, vb)
+    }
+
+    const onPointerDown = e => {
+      // Allow only primary button for mouse
+      if (e.pointerType === 'mouse' && e.button !== 0) return
+      svg.setPointerCapture(e.pointerId)
+      state.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY })
+
+      if (state.pointers.size === 1) {
+        state.startVb = (wrap.__mermaidCurViewBox || getSvgViewBox(svg)).slice()
+      } else if (state.pointers.size === 2) {
+        const pts = [...state.pointers.values()]
+        const dx = pts[0].x - pts[1].x
+        const dy = pts[0].y - pts[1].y
+        state.startDist = Math.hypot(dx, dy)
+        state.startVb = (wrap.__mermaidCurViewBox || getSvgViewBox(svg)).slice()
+        state.startCenter = { x: (pts[0].x + pts[1].x) / 2, y: (pts[0].y + pts[1].y) / 2 }
+      }
+    }
+
+    const onPointerMove = e => {
+      if (!state.pointers.has(e.pointerId)) return
+      state.pointers.set(e.pointerId, { x: e.clientX, y: e.clientY })
+
+      // Pan with 1 pointer
+      if (state.pointers.size === 1 && state.startVb) {
+        const p = [...state.pointers.values()][0]
+        const prev = { x: e.clientX - e.movementX, y: e.clientY - e.movementY }
+        // movementX/Y unreliable on touch, compute from stored last position
+        const last = wrap.__mermaidLastSinglePointer || p
+        const dxClient = p.x - last.x
+        const dyClient = p.y - last.y
+        wrap.__mermaidLastSinglePointer = p
+
+        const { rect } = clientToViewBox(p.x, p.y)
+        const vb = (wrap.__mermaidCurViewBox || getSvgViewBox(svg)).slice()
+        const dx = dxClient * (vb[2] / rect.width)
+        const dy = dyClient * (vb[3] / rect.height)
+        setCurVb([vb[0] - dx, vb[1] - dy, vb[2], vb[3]])
+        return
+      }
+
+      // Pinch zoom with 2 pointers
+      if (state.pointers.size === 2 && state.startVb && state.startDist > 0) {
+        const pts = [...state.pointers.values()]
+        const dx = pts[0].x - pts[1].x
+        const dy = pts[0].y - pts[1].y
+        const dist = Math.hypot(dx, dy)
+        if (!dist) return
+        const factor = state.startDist / dist // dist bigger => zoom in (viewBox smaller)
+
+        const cx = (pts[0].x + pts[1].x) / 2
+        const cy = (pts[0].y + pts[1].y) / 2
+        const centerClient = { x: cx, y: cy }
+
+        const pxy = clientToViewBox(centerClient.x, centerClient.y)
+        const cpx = pxy.x
+        const cpy = pxy.y
+
+        const vb = zoomAtPoint(state.startVb, factor, cpx, cpy)
+        setCurVb(vb)
+      }
+    }
+
+    const onPointerUpOrCancel = e => {
+      state.pointers.delete(e.pointerId)
+      if (state.pointers.size === 0) {
+        state.startVb = null
+        state.startDist = 0
+        state.startCenter = null
+        wrap.__mermaidLastSinglePointer = null
+      } else if (state.pointers.size === 1) {
+        // reset single pointer baseline to avoid jump
+        wrap.__mermaidLastSinglePointer = [...state.pointers.values()][0]
+      }
+    }
+
+    // Wheel zoom (mouse/trackpad)
+    const onWheel = e => {
+      // ctrlKey on mac trackpad pinch; we treat both as zoom
+      e.preventDefault()
+      const delta = e.deltaY
+      const zoomFactor = delta > 0 ? 1.1 : 0.9
+      const { x, y } = clientToViewBox(e.clientX, e.clientY)
+      const vb = (wrap.__mermaidCurViewBox || getSvgViewBox(svg)).slice()
+      setCurVb(zoomAtPoint(vb, zoomFactor, x, y))
+    }
+
+    const onDblClick = () => {
+      const init = wrap.__mermaidInitViewBox
+      if (!init) return
+      wrap.__mermaidCurViewBox = init.slice()
+      setSvgViewBox(svg, init)
+    }
+
+    svg.addEventListener('pointerdown', onPointerDown)
+    svg.addEventListener('pointermove', onPointerMove)
+    svg.addEventListener('pointerup', onPointerUpOrCancel)
+    svg.addEventListener('pointercancel', onPointerUpOrCancel)
+    svg.addEventListener('wheel', onWheel, { passive: false })
+    svg.addEventListener('dblclick', onDblClick)
+  }
+
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+
+      // Clear old render (themeChange/pjax will rerun)
+      const oldSvg = item.querySelector('svg')
+      if (oldSvg) oldSvg.remove()
+      item.__mermaidGestureBound = false
+
+      const config = mermaidSrc.dataset.config ? JSON.parse(mermaidSrc.dataset.config) : {}
+      if (!config.theme) {
+        config.theme = theme
+      }
+      const mermaidThemeConfig = `%%{init: ${JSON.stringify(config)}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+        if (true) initMermaidGestures(item)
+        item.__mermaidOriginalSvg = svg
+        if (true) attachMermaidViewerButton(item)
+      }
+
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (false) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid@11.12.2/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script>
+(function() {
+  if (!document.getElementById('post-comment')) return;
+  var pagination = document.getElementById('post-pagination');
+  var container = document.createElement('div');
+  container.id = 'livere-comment-wrap';
+  container.innerHTML = '<livere-comment client-id="PhyrMWIoABbnPKqNMAqd"></livere-comment>';
+  if (pagination && pagination.parentNode) {
+    pagination.parentNode.insertBefore(container, pagination);
+  }
+})();
+</script>
+<script type="module" src="https://www.livere.org/livere-widget.js"></script>
+<script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div></body></html>
