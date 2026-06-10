@@ -1054,6 +1054,125 @@ Read and Write access to code
     <title>多元函数微分学</title>
     <url>/posts/27a37256e099/</url>
     <content><![CDATA[第十七章 多元函数微分学
+一、基本概念与可微性条件
+1. 全微分 (Total Differential)
+函数在点 P0(x0,y0)P_0(x_0, y_0)P0​(x0​,y0​) 处的全微分为：df∣P0=df(x0,y0)=Adx+Bdydf\Big|_{P_0} = df(x_0, y_0) = A dx + B dydf​P0​​=df(x0​,y0​)=Adx+Bdy
+其中：
+
+
+A=fx(x0,y0)A = f_x(x_0, y_0)A=fx​(x0​,y0​)
+
+
+B=fy(x0,y0)B = f_y(x_0, y_0)B=fy​(x0​,y0​)
+
+
+2. 偏导数 (Partial Derivative)
+
+
+核心思想：把非导变量视为常数进行求导。
+
+
+3. 可微性条件
+
+
+必要条件：
+
+偏导数存在。
+函数连续。
+
+
+
+充分条件：
+
+偏导数存在且连续。
+
+
+
+
+二、几何应用
+设曲面方程为 z=f(x,y)z = f(x, y)z=f(x,y)，在点 P0(x0,y0,z0)P_0(x_0, y_0, z_0)P0​(x0​,y0​,z0​) 处：
+1. 切平面方程 (Tangent Plane)
+z−z0=fx(x0,y0)(x−x0)+fy(x0,y0)(y−y0)z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)z−z0​=fx​(x0​,y0​)(x−x0​)+fy​(x0​,y0​)(y−y0​)2. 法线方程 (Normal Line)
+x−x0fx(x0,y0)=y−y0fy(x0,y0)=z−z0−1\frac{x - x_0}{f_x(x_0, y_0)} = \frac{y - y_0}{f_y(x_0, y_0)} = \frac{z - z_0}{-1}fx​(x0​,y0​)x−x0​​=fy​(x0​,y0​)y−y0​​=−1z−z0​​
+三、复合函数求导与全微分
+1. 复合函数求导路径（树状图分析）
+设 z=f(x,y)z = f(x, y)z=f(x,y)，其中 (x,y)(x, y)(x,y) 满足 D={x=φ(s,t),y=ψ(s,t)}\mathcal{D} = \{x = \varphi(s, t), y = \psi(s, t)\}D={x=φ(s,t),y=ψ(s,t)}：
+    z = f(x, y)          &lt;--- 因变量    /         \   x           y         &lt;--- 中间变量 /   \       /   \s     t     s     t      &lt;--- 自变量
+
+
+如何处理（链式法则）：壳函数路径相乘，有别路径相加，从头到尾。
+
+∂z∂s=∂z∂x∂x∂s+∂z∂y∂y∂s\frac{\partial z}{\partial s} = \frac{\partial z}{\partial x}\frac{\partial x}{\partial s} + \frac{\partial z}{\partial y}\frac{\partial y}{\partial s}∂s∂z​=∂x∂z​∂s∂x​+∂y∂z​∂s∂y​
+∂z∂t=∂z∂x∂x∂t+∂z∂y∂y∂t\frac{\partial z}{\partial t} = \frac{\partial z}{\partial x}\frac{\partial x}{\partial t} + \frac{\partial z}{\partial y}\frac{\partial y}{\partial t}∂t∂z​=∂x∂z​∂t∂x​+∂y∂z​∂t∂y​
+
+
+
+2. 复合函数的全微分
+dz=∂z∂xdx+∂z∂ydydz = \frac{\partial z}{\partial x} dx + \frac{\partial z}{\partial y} dydz=∂x∂z​dx+∂y∂z​dy其中自变量本身又是复合函数：
+dx=∂x∂sds+∂x∂tdtdx = \frac{\partial x}{\partial s} ds + \frac{\partial x}{\partial t} dtdx=∂s∂x​ds+∂t∂x​dt
+dy=∂y∂sds+∂y∂tdtdy = \frac{\partial y}{\partial s} ds + \frac{\partial y}{\partial t} dtdy=∂s∂y​ds+∂t∂y​dt
+
+
+全微分形式不变性：无论 x,yx, yx,y 是自变量还是中间变量，全微分的形式保持一致。
+
+
+3. 复合函数高阶偏导数
+(注：手写笔记吐槽&quot;好烦，我不想写了。总之按之前的方法慢慢来，多练四道。链接至上文多元函数偏导数。&quot;)
+
+四、方向导数与梯度
+1. 方向导数 (Directional Derivative)
+
+
+定义：lim⁡ρ→0+f(P)−f(P0)ρ\lim_{\rho \to 0^+} \frac{f(P) - f(P_0)}{\rho}ρ→0+lim​ρf(P)−f(P0​)​
+记作 ∂f∂l∣P0\frac{\partial f}{\partial l}\Big|_{P_0}∂l∂f​​P0​​，其中 lll 为方向。
+
+
+计算公式：
+∂f∂l∣P0=fx(P0)cos⁡α+fy(P0)cos⁡β+fz(P0)cos⁡γ\frac{\partial f}{\partial l}\Big|_{P_0} = f_x(P_0)\cos\alpha + f_y(P_0)\cos\beta + f_z(P_0)\cos\gamma∂l∂f​​P0​​=fx​(P0​)cosα+fy​(P0​)cosβ+fz​(P0​)cosγ
+(其中 cos⁡α,cos⁡β,cos⁡γ\cos\alpha, \cos\beta, \cos\gammacosα,cosβ,cosγ 为方向 lll 的方向余弦)
+
+
+2. 梯度 (Gradient)
+
+
+定义：
+grad f(P0)=(fx(P0),fy(P0),fz(P0))\text{grad } f(P_0) = (f_x(P_0), f_y(P_0), f_z(P_0))grad f(P0​)=(fx​(P0​),fy​(P0​),fz​(P0​))
+
+
+模（长度）：
+∥grad f(P0)∥=fx2(P0)+fy2(P0)+fz2(P0)\|\text{grad } f(P_0)\| = \sqrt{f_x^2(P_0) + f_y^2(P_0) + f_z^2(P_0)}∥grad f(P0​)∥=fx2​(P0​)+fy2​(P0​)+fz2​(P0​)​
+
+
+
+五、泰勒定理 (Taylor’s Theorem)
+设 fx=fy=0f_x = f_y = 0fx​=fy​=0，函数具有 n+1n+1n+1 阶连续偏导数。对于点 (x0+h,y0+k)(x_0+h, y_0+k)(x0​+h,y0​+k)，存在 θ∈(0,1)\theta \in (0, 1)θ∈(0,1)，泰勒展开式为：
+f(x0+h,y0+k)=f(x0,y0)+(h∂∂x+k∂∂y)f(x0,y0)+12!(h∂∂x+k∂∂y)2f(x0,y0)+⋯+1n!(h∂∂x+k∂∂y)nf(x0,y0)+Rnf(x_0+h, y_0+k) = f(x_0, y_0) + \left(h\frac{\partial}{\partial x} + k\frac{\partial}{\partial y}\right)f(x_0, y_0) + \frac{1}{2!}\left(h\frac{\partial}{\partial x} + k\frac{\partial}{\partial y}\right)^2 f(x_0, y_0) + \cdots + \frac{1}{n!}\left(h\frac{\partial}{\partial x} + k\frac{\partial}{\partial y}\right)^n f(x_0, y_0) + R_nf(x0​+h,y0​+k)=f(x0​,y0​)+(h∂x∂​+k∂y∂​)f(x0​,y0​)+2!1​(h∂x∂​+k∂y∂​)2f(x0​,y0​)+⋯+n!1​(h∂x∂​+k∂y∂​)nf(x0​,y0​)+Rn​
+
+六、极值问题
+1. 极值定义
+
+
+极大值：对于 ∀P∈U(P0)\forall P \in U(P_0)∀P∈U(P0​)，均有 f(P)≤f(P0)f(P) \le f(P_0)f(P)≤f(P0​)，则称 f(P0)f(P_0)f(P0​) 为极大值。
+
+
+2. 极值存在的条件
+(1) 必要条件
+若函数在 (x0,y0)(x_0, y_0)(x0​,y0​) 处取得极值，则：fx(x0,y0)=fy(x0,y0)=0f_x(x_0, y_0) = f_y(x_0, y_0) = 0fx​(x0​,y0​)=fy​(x0​,y0​)=0
+此时点 (x0,y0)(x_0, y_0)(x0​,y0​) 称为稳定点（驻点）。
+(2) 充分条件（海塞矩阵 Hessian Matrix）
+构造海塞矩阵：
+Hf(P0)=(fxx(P0)fxy(P0)fyx(P0)fyy(P0))H_f(P_0) = \begin{pmatrix} f_{xx}(P_0) &amp; f_{xy}(P_0) \\ f_{yx}(P_0) &amp; f_{yy}(P_0) \end{pmatrix}Hf​(P0​)=(fxx​(P0​)fyx​(P0​)​fxy​(P0​)fyy​(P0​)​)
+
+
+正定矩阵 ⇒\Rightarrow⇒ 取得极小值。
+
+
+负定矩阵 ⇒\Rightarrow⇒ 取得极大值。
+
+
+不定矩阵 ⇒\Rightarrow⇒ 无极值（鞍点）。
+
+
 
 返回总目录
 ]]></content>
@@ -1071,7 +1190,23 @@ Read and Write access to code
   <entry>
     <title>多元函数的极限与连续</title>
     <url>/posts/81df7152b326/</url>
-    <content><![CDATA[第十六章 多元函数的极限与连续
+    <content><![CDATA[二元函数的极限
+一、 重极限
+定义：
+设二元函数 f(P)f(P)f(P) 在定义域 DDD 上有定义，P0P_0P0​ 是 DDD 的聚点。
+∀ε&gt;0,∃δ&gt;0, 当 P∈U˚(P0,δ)∩D 时，恒有：\forall \varepsilon &gt; 0, \exists \delta &gt; 0, \text{ 当 } P \in \mathring{U}(P_0, \delta) \cap D \text{ 时，恒有：}∀ε&gt;0,∃δ&gt;0, 当 P∈U˚(P0​,δ)∩D 时，恒有：
+∣f(P)−A∣&lt;ε|f(P) - A| &lt; \varepsilon∣f(P)−A∣&lt;ε则称当 P→P0P \to P_0P→P0​ 时，f(P)f(P)f(P) 在 DDD 上的极限为 AAA，记作：
+lim⁡P→P0P∈Df(P)=A\lim_{\substack{P \to P_0 \\ P \in D}} f(P) = AP→P0​P∈D​lim​f(P)=A
+二、 累次极限
+1. 先对 x→x0x \to x_0x→x0​，后对 y→y0y \to y_0y→y0​
+L1=lim⁡y→y0lim⁡x→x0f(x,y)L_1 = \lim_{y \to y_0} \lim_{x \to x_0} f(x, y)L1​=y→y0​lim​x→x0​lim​f(x,y)2. 先对 y→y0y \to y_0y→y0​，后对 x→x0x \to x_0x→x0​
+L2=lim⁡x→x0lim⁡y→y0f(x,y)L_2 = \lim_{x \to x_0} \lim_{y \to y_0} f(x, y)L2​=x→x0​lim​y→y0​lim​f(x,y)
+💡 概念辨析笔记：
+
+重极限要求点 PPP 以任意路径趋近于 沿P0沿 P_0沿P0​ 时，函数值都趋于同一个常数 AAA。
+累次极限则是分别沿平行于坐标轴的方向，先后进行两次一元函数的极限过程。两者并不完全等价==（重极限存在时，累次极限不一定存在；反之亦然）==。
+
+
 
 返回总目录
 ]]></content>
@@ -1162,6 +1297,10 @@ Read and Write access to code
 
 2026-06-09
 添加「数学分析（下）知识点分类」复习笔记
+
+
+2026-06-09
+定积分的应用、多元函数的极限与连续、
 
 
 
@@ -1285,6 +1424,39 @@ d(12x2)=12dx2=12d(x2+1)d\left(\frac{1}{2}x^2\right) = \frac{1}{2}dx^2 = \frac{1}
 
 
 
+定积分的应用
+一、 体积（旋转体）
+设函数 f(x)f(x)f(x) 在闭区间 [a,b][a, b][a,b] 上连续。由平面图形 A={(x,y)∣0≤∣y∣≤∣f(x)∣,a≤x≤b}A = \{ (x, y) \mid 0 \le |y| \le |f(x)|, a \le x \le b \}A={(x,y)∣0≤∣y∣≤∣f(x)∣,a≤x≤b} 绕 xxx 轴旋转一周所得的旋转体体积：
+V=π∫abf2(x) dxV = \pi \int_{a}^{b} f^2(x) \, dxV=π∫ab​f2(x)dx
+二、 弧长
+1. 参数方程形式
+若曲线由参数方程表示：
+{x=x(t)y=y(t)t∈[α,β]\begin{cases} x = x(t) \\ y = y(t) \end{cases} \quad t \in [\alpha, \beta]{x=x(t)y=y(t)​t∈[α,β]
+其弧长公式为：
+s=∫αβx′2(t)+y′2(t) dts = \int_{\alpha}^{\beta} \sqrt{x&#x27;^2(t) + y&#x27;^2(t)} \, dts=∫αβ​x′2(t)+y′2(t)​dt
+2. 极坐标形式
+若曲线由极坐标方程表示：
+ρ=r(θ),θ∈[α,β]\rho = r(\theta), \quad \theta \in [\alpha, \beta]ρ=r(θ),θ∈[α,β]
+其弧长公式为：
+s=∫αβr2(θ)+r′2(θ) dθs = \int_{\alpha}^{\beta} \sqrt{r^2(\theta) + r&#x27;^2(\theta)} \, d\thetas=∫αβ​r2(θ)+r′2(θ)​dθ
+
+三、 曲率
+1. 参数方程形式
+对于参数方程表示的曲线，其曲率 kkk 的计算公式为：
+k=∣x′y′′−x′′y′∣(x′2+y′2)32k = \frac{|x&#x27;y&#x27;&#x27; - x&#x27;&#x27;y&#x27;|}{(x&#x27;^2 + y&#x27;^2)^{\frac{3}{2}}}k=(x′2+y′2)23​∣x′y′′−x′′y′∣​
+2. 直角坐标形式
+若曲线方程为 y=f(x)y = f(x)y=f(x)，则其曲率 kkk 的计算公式为：
+k=∣y′′∣(1+y′2)32k = \frac{|y&#x27;&#x27;|}{(1 + y&#x27;^2)^{\frac{3}{2}}}k=(1+y′2)23​∣y′′∣​
+
+四、 旋转曲面的面积
+1. 直角坐标形式
+若曲线 y=f(x)y = f(x)y=f(x) 绕 xxx 轴旋转，所围成的旋转曲面面积为：
+S=2π∫ab∣f(x)∣1+f′2(x) dxS = 2\pi \int_{a}^{b} |f(x)| \sqrt{1 + f&#x27;^2(x)} \, dxS=2π∫ab​∣f(x)∣1+f′2(x)​dx
+2. 参数方程形式
+若曲线由参数方程表示：
+{x=x(t)y=y(t)t∈[α,β]\begin{cases} x = x(t) \\ y = y(t) \end{cases} \quad t \in [\alpha, \beta]{x=x(t)y=y(t)​t∈[α,β]
+该曲线绕 xxx 轴旋转一周所得的旋转曲面面积为：
+S=2π∫αβ∣y(t)∣x′2(t)+y′2(t) dtS = 2\pi \int_{\alpha}^{\beta} |y(t)| \sqrt{x&#x27;^2(t) + y&#x27;^2(t)} \, dtS=2π∫αβ​∣y(t)∣x′2(t)+y′2(t)​dt
 附录：常用不定积分基本公式表
 
 
@@ -1457,7 +1629,7 @@ d(12x2)=12dx2=12d(x2+1)d\left(\frac{1}{2}x^2\right) = \frac{1}{2}dx^2 = \frac{1}
 解答题
 
 
-第16题 [期末2] — 旋转体体积：y=2sin⁡x (0≤x≤π)y=2\sin x\,(0\le x\le\pi)y=2sinx(0≤x≤π) 绕 xxx 轴旋转
+第16题 [期末2] — 旋转体体积：y=2sin⁡x (0≤x≤π)y=2\sin x\,(0\le x\le\pi)y=2sinx(0≤x≤π) 绕 xxx 轴旋转 ✅ 2026-06-10
 
 答案： 2π22\pi^22π2。V=π∫0πy2dx=4π∫0πsin⁡2x dx=2π2V=\displaystyle\pi\int_0^\pi y^2dx=4\pi\int_0^\pi\sin^2 x\,dx=2\pi^2V=π∫0π​y2dx=4π∫0π​sin2xdx=2π2。
 
@@ -1494,7 +1666,7 @@ d(12x2)=12dx2=12d(x2+1)d\left(\frac{1}{2}x^2\right) = \frac{1}{2}dx^2 = \frac{1}
 填空题
 
 
-第7题 [期末2] — 偏导数计算 fx(0,0)f_x(0,0)fx​(0,0)，f(x,y)=x+x+y1+yf(x,y)=x+\dfrac{x+y}{1+y}f(x,y)=x+1+yx+y​
+第7题 [期末2] — 偏导数计算 fx(0,0)f_x(0,0)fx​(0,0)，f(x,y)=x+x+y1+yf(x,y)=x+\dfrac{x+y}{1+y}f(x,y)=x+1+yx+y​ ✅ 2026-06-10
 
 答案： 222。fx=1+11+yf_x=1+\dfrac{1}{1+y}fx​=1+1+y1​，fx(0,0)=1+1=2f_x(0,0)=1+1=2fx​(0,0)=1+1=2。
 
@@ -1509,7 +1681,7 @@ d(12x2)=12dx2=12d(x2+1)d\left(\frac{1}{2}x^2\right) = \frac{1}{2}dx^2 = \frac{1}
 计算题
 
 
-第13题 [期末2] — 直接将 x=2x=2x=2 代入后求偏导 fy(2,y)f_y(2,y)fy​(2,y)
+第13题 [期末2] — 直接将 x=2x=2x=2 代入后求偏导 fy(2,y)f_y(2,y)fy​(2,y) ✅ 2026-06-10
 
 答案： 4y4y4y。代入 x=2x=2x=2 得 f(2,y)=2+2y2f(2,y)=2+2y^2f(2,y)=2+2y2，故 fy(2,y)=4yf_y(2,y)=4yfy​(2,y)=4y。
 
