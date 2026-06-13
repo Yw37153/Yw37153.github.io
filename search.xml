@@ -2293,12 +2293,12 @@ x + y = 0 \\
 
 例：
 
-\begin{pmatrix}
+$$\begin{pmatrix}
 1 & 0 & 3 & 0 & 1 \\
 0 & 1 & 1 & 0 & 1 \\
 0 & 0 & 0 & 1 & 1 \\
 0 & 0 & 0 & 0 & 0
-\end{pmatrix}
+\end{pmatrix}$$
 
 其中主元列为第 1、2、4 列，故：
 
