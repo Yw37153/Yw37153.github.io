@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Anonymous_Pro';
+  font-display: swap;
+  src: url('Anonymous_Pro/AnonymousPro-Regular.ttf') format("truetype");  
+}
+
+@font-face {
+  font-family: 'HUIWENMING';
+  font-display: swap;
+  src: url('HUIWENMING/HUIWENMING.ttf') format("truetype");  
+}
