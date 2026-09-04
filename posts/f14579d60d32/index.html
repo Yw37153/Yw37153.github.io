@@ -1,0 +1,841 @@
+<!doctype html>
+
+<html lang="zh-CN" data-fancybox-enabled="1">
+<head>
+  
+
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f3e9">
+
+<title>C_study_Note | 文逸行</title>
+<meta name="description" content="这里有锁.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C_study_Note | 文逸行">
+<meta property="og:url" content="https://www.wyxworld.cyou/posts/f14579d60d32/">
+<meta property="og:site_name" content="文逸行">
+<meta property="og:description" content="这里有锁.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.wyxworld.cyou/img/C%E8%AF%AD%E8%A8%80/note.webp">
+<meta property="article:published_time" content="2026-01-10T14:38:45.000Z">
+<meta property="article:modified_time" content="2026-09-04T09:42:24.383Z">
+<meta property="article:author" content="文逸行_Yalego">
+<meta property="article:tag" content="C语言">
+<meta property="article:tag" content="加密">
+<meta property="article:tag" content="笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.wyxworld.cyou/img/C%E8%AF%AD%E8%A8%80/note.webp">
+<link rel="canonical" href="https://www.wyxworld.cyou/posts/f14579d60d32/">
+
+<link rel="icon" href="/img/favicon.png" type="image/png">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"C_study_Note","name":"C_study_Note | 文逸行","description":"这里有锁.","url":"https://www.wyxworld.cyou/posts/f14579d60d32/","inLanguage":"zh-CN","isPartOf":{"@type":"WebSite","name":"文逸行","url":"https://www.wyxworld.cyou/"},"image":["https://www.wyxworld.cyou/img/C%E8%AF%AD%E8%A8%80/note.webp"],"mainEntityOfPage":"https://www.wyxworld.cyou/posts/f14579d60d32/","datePublished":"2026-01-10T14:38:45.000Z","dateModified":"2026-09-04T09:42:24.383Z","author":{"@type":"Person","name":"文逸行_Yalego"},"publisher":{"@type":"Organization","name":"文逸行"},"keywords":"C语言, 笔记, 加密"}</script>
+
+<script>
+  (function () {
+    var accents = { orange: 1, purple: 1, sakura: 1, blue: 1, pink: 1, green: 1, black: 1 };
+    var match = document.cookie.match(/(?:^|;\s*)flatpaper-accent=([^;]+)/);
+    var accent = 'blue';
+    if (match) {
+      try { accent = decodeURIComponent(match[1]); } catch (e) {}
+    }
+    if (!accents[accent]) accent = 'blue';
+    document.documentElement.setAttribute('data-accent', accent);
+    try {
+      if (localStorage.getItem('flatpaper-mode') === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+      }
+    } catch (e) {}
+  })();
+</script>
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+
+
+
+  
+
+  
+
+  
+<script defer src="https://cdn.jsdelivr.net/npm/twikoo@1.7.12/dist/twikoo.all.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+<script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+
+  
+  <link rel="stylesheet" href="/fonts/font.css">
+  
+<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="文逸行" type="application/atom+xml">
+</head>
+
+<body
+  class="is-post tag-style-tape bg-style-grid"
+  data-default-accent="blue"
+  data-code-theme="simple"
+  data-note-style="sticky"
+  data-note-icons="on"
+  data-button-style="circle"
+  data-strong-accent="on"
+>
+  
+  <svg width="0" height="0" style="position:absolute;z-index:-1;" aria-hidden="true">
+    <defs>
+      <filter id="paper-edge" x="-5%" y="-5%" width="110%" height="110%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.04" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </defs>
+  </svg>
+  <svg class="flatpaper-icon-sprite" xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden;" aria-hidden="true" focusable="false"><defs><symbol id="flatpaper-icon-lucide-layout-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></symbol><symbol id="flatpaper-icon-lucide-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol><symbol id="flatpaper-icon-lucide-archive" viewBox="0 0 24 24"><rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></symbol><symbol id="flatpaper-icon-lucide-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol><symbol id="flatpaper-icon-lucide-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol><symbol id="flatpaper-icon-lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></symbol><symbol id="flatpaper-icon-lucide-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol><symbol id="flatpaper-icon-lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol><symbol id="flatpaper-icon-lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></symbol><symbol id="flatpaper-icon-lucide-palette" viewBox="0 0 24 24"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"/><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/></symbol><symbol id="flatpaper-icon-fa-brands-github" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></symbol><symbol id="flatpaper-icon-fa-brands-twitter" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></symbol><symbol id="flatpaper-icon-lucide-mail" viewBox="0 0 24 24"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></symbol><symbol id="flatpaper-icon-lucide-rss" viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></symbol><symbol id="flatpaper-icon-lucide-atom" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></symbol><symbol id="flatpaper-icon-lucide-heart" viewBox="0 0 24 24"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></symbol><symbol id="flatpaper-icon-lucide-message-circle" viewBox="0 0 24 24"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></symbol><symbol id="flatpaper-icon-lucide-message-square" viewBox="0 0 24 24"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/></symbol><symbol id="flatpaper-icon-lucide-share-2" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></symbol><symbol id="flatpaper-icon-lucide-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol><symbol id="flatpaper-icon-lucide-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol><symbol id="flatpaper-icon-lucide-shuffle" viewBox="0 0 24 24"><path d="m18 14 4 4-4 4"/><path d="m18 2 4 4-4 4"/><path d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22"/><path d="M2 6h1.972a4 4 0 0 1 3.6 2.2"/><path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45"/></symbol><symbol id="flatpaper-icon-lucide-flame" viewBox="0 0 24 24"><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"/></symbol><symbol id="flatpaper-icon-lucide-history" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></symbol><symbol id="flatpaper-icon-lucide-table-of-contents" viewBox="0 0 24 24"><path d="M16 5H3"/><path d="M16 12H3"/><path d="M16 19H3"/><path d="M21 5h.01"/><path d="M21 12h.01"/><path d="M21 19h.01"/></symbol><symbol id="flatpaper-icon-lucide-list-tree" viewBox="0 0 24 24"><path d="M8 5h13"/><path d="M13 12h8"/><path d="M13 19h8"/><path d="M3 10a2 2 0 0 0 2 2h3"/><path d="M3 5v12a2 2 0 0 0 2 2h3"/></symbol><symbol id="flatpaper-icon-lucide-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></symbol><symbol id="flatpaper-icon-lucide-tag" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></symbol><symbol id="flatpaper-icon-lucide-eye" viewBox="0 0 24 24"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="flatpaper-icon-lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol><symbol id="flatpaper-icon-lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></symbol><symbol id="flatpaper-icon-lucide-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol><symbol id="flatpaper-icon-lucide-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol><symbol id="flatpaper-icon-lucide-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol><symbol id="flatpaper-icon-lucide-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol><symbol id="flatpaper-icon-lucide-chevron-up" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></symbol><symbol id="flatpaper-icon-lucide-send" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></symbol><symbol id="flatpaper-icon-lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></symbol><symbol id="flatpaper-icon-lucide-panel-left" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/></symbol><symbol id="flatpaper-icon-lucide-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol><symbol id="flatpaper-icon-lucide-aperture" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m14.31 8 5.74 9.94"/><path d="M9.69 8h11.48"/><path d="m7.38 12 5.74-9.94"/><path d="M9.69 16 3.95 6.06"/><path d="M14.31 16H2.83"/><path d="m16.62 12-5.74 9.94"/></symbol><symbol id="flatpaper-icon-lucide-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></symbol><symbol id="flatpaper-icon-lucide-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></symbol><symbol id="flatpaper-icon-lucide-radio" viewBox="0 0 24 24"><path d="M16.247 7.761a6 6 0 0 1 0 8.478"/><path d="M19.075 4.933a10 10 0 0 1 0 14.134"/><path d="M4.925 19.067a10 10 0 0 1 0-14.134"/><path d="M7.753 16.239a6 6 0 0 1 0-8.478"/><circle cx="12" cy="12" r="2"/></symbol><symbol id="flatpaper-icon-lucide-hash" viewBox="0 0 24 24"><line x1="4" x2="20" y1="9" y2="9"/><line x1="4" x2="20" y1="15" y2="15"/><line x1="10" x2="8" y1="3" y2="21"/><line x1="16" x2="14" y1="3" y2="21"/></symbol><symbol id="flatpaper-icon-lucide-gift" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/><path d="M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5"/><rect x="3" y="7" width="18" height="4" rx="1"/></symbol><symbol id="flatpaper-icon-fa-brands-alipay" viewBox="0 0 448 512"><path d="M377.74 32H70.26C31.41 32 0 63.41 0 102.26v307.48C0 448.59 31.41 480 70.26 480h307.48c38.52 0 69.76-31.08 70.26-69.6-45.96-25.62-110.59-60.34-171.6-88.44-32.07 43.97-84.14 81-148.62 81-70.59 0-93.73-45.3-97.04-76.37-3.97-39.01 14.88-81.5 99.52-81.5 35.38 0 79.35 10.25 127.13 24.96 16.53-30.09 26.45-60.34 26.45-60.34h-178.2v-16.7h92.08v-31.24H88.28v-19.01h109.44V92.34h50.92v50.42h109.44v19.01H248.63v31.24h88.77s-15.21 46.62-38.35 90.92c48.93 16.7 100.01 36.04 148.62 52.74V102.26C447.83 63.57 416.43 32 377.74 32zM47.28 322.95c.99 20.17 10.25 53.73 69.93 53.73 52.07 0 92.58-39.68 117.87-72.9-44.63-18.68-84.48-31.41-109.44-31.41-67.45 0-79.35 33.06-78.36 50.58z"/></symbol><symbol id="flatpaper-icon-fa-brands-weixin" viewBox="0 0 576 512"><path d="M385.2 167.6c6.4 0 12.6.3 18.8 1.1C387.4 90.3 303.3 32 207.7 32 100.5 32 13 104.8 13 197.4c0 53.4 29.3 97.5 77.9 131.6l-19.3 58.6 68-34.1c24.4 4.8 43.8 9.7 68.2 9.7 6.2 0 12.1-.3 18.3-.8-4-12.9-6.2-26.6-6.2-40.8-.1-84.9 72.9-154 165.3-154zm-104.5-52.9c14.5 0 24.2 9.7 24.2 24.4 0 14.5-9.7 24.2-24.2 24.2-14.8 0-29.3-9.7-29.3-24.2.1-14.7 14.6-24.4 29.3-24.4zm-136.4 48.6c-14.5 0-29.3-9.7-29.3-24.2 0-14.8 14.8-24.4 29.3-24.4 14.8 0 24.4 9.7 24.4 24.4 0 14.6-9.6 24.2-24.4 24.2zM563 319.4c0-77.9-77.9-141.3-165.4-141.3-92.7 0-165.4 63.4-165.4 141.3S305 460.7 397.6 460.7c19.3 0 38.9-5.1 58.6-9.9l53.4 29.3-14.8-48.6C534 402.1 563 363.2 563 319.4zm-219.1-24.5c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.8 0 24.4 9.7 24.4 19.3 0 10-9.7 19.6-24.4 19.6zm107.1 0c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.5 0 24.4 9.7 24.4 19.3.1 10-9.9 19.6-24.4 19.6z"/></symbol><symbol id="flatpaper-icon-fa-brands-paypal" viewBox="0 0 384 512"><path d="M111.4 295.9c-3.5 19.2-17.4 108.7-21.5 134-.3 1.8-1 2.5-3 2.5H12.3c-7.6 0-13.1-6.6-12.1-13.9L58.8 46.6c1.5-9.6 10.1-16.9 20-16.9 152.3 0 165.1-3.7 204 11.4 60.1 23.3 65.6 79.5 44 140.3-21.5 62.6-72.5 89.5-140.1 90.3-43.4.7-69.5-7-75.3 24.2zM357.1 152c-1.8-1.3-2.5-1.8-3 1.3-2 11.4-5.1 22.5-8.8 33.6-39.9 113.8-150.5 103.9-204.5 103.9-6.1 0-10.1 3.3-10.9 9.4-22.6 140.4-27.1 169.7-27.1 169.7-1 7.1 3.5 12.9 10.6 12.9h63.5c8.6 0 15.7-6.3 17.4-14.9.7-5.4-1.1 6.1 14.4-91.3 4.6-22 14.3-19.7 29.3-19.7 71 0 126.4-28.8 142.9-112.3 6.5-34.8 4.6-71.4-23.8-92.6z"/></symbol><symbol id="flatpaper-icon-fa-brands-x-twitter" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></symbol><symbol id="flatpaper-icon-fa-brands-steam" viewBox="0 0 496 512"><path d="M496 256c0 137-111.2 248-248.4 248-113.8 0-209.6-76.3-239-180.4l95.2 39.3c6.4 32.1 34.9 56.4 68.9 56.4 39.2 0 71.9-32.4 70.2-73.5l84.5-60.2c52.1 1.3 95.8-40.9 95.8-93.5 0-51.6-42-93.5-93.7-93.5s-93.7 42-93.7 93.5v1.2L176.6 279c-15.5-.9-30.7 3.4-43.5 12.1L0 236.1C10.2 108.4 117.1 8 247.6 8 384.8 8 496 119 496 256zM155.7 384.3l-30.5-12.6a52.79 52.79 0 0 0 27.2 25.8c26.9 11.2 57.8-1.6 69-28.4 5.4-13 5.5-27.3.1-40.3-5.4-13-15.5-23.2-28.5-28.6-12.9-5.4-26.7-5.2-38.9-.6l31.5 13c19.8 8.2 29.2 30.9 20.9 50.7-8.3 19.9-31 29.2-50.8 21zm173.8-129.9c-34.4 0-62.4-28-62.4-62.3s28-62.3 62.4-62.3 62.4 28 62.4 62.3-27.9 62.3-62.4 62.3zm.1-15.6c25.9 0 46.9-21 46.9-46.8 0-25.9-21-46.8-46.9-46.8s-46.9 21-46.9 46.8c.1 25.8 21.1 46.8 46.9 46.8z"/></symbol><symbol id="flatpaper-icon-fa-brands-bilibili" viewBox="0 0 512 512"><path d="M488.6 104.1C505.3 122.2 513 143.8 511.9 169.8V372.2C511.5 398.6 502.7 420.3 485.4 437.3C468.2 454.3 446.3 463.2 419.9 464H92.02C65.57 463.2 43.81 454.2 26.74 436.8C9.682 419.4 .7667 396.5 0 368.2V169.8C.7667 143.8 9.682 122.2 26.74 104.1C43.81 87.75 65.57 78.77 92.02 78H121.4L96.05 52.19C90.3 46.46 87.42 39.19 87.42 30.4C87.42 21.6 90.3 14.34 96.05 8.603C101.8 2.868 109.1 0 117.9 0C126.7 0 134 2.868 139.8 8.603L213.1 78H301.1L375.6 8.603C381.7 2.868 389.2 0 398 0C406.8 0 414.1 2.868 419.9 8.603C425.6 14.34 428.5 21.6 428.5 30.4C428.5 39.19 425.6 46.46 419.9 52.19L394.6 78L423.9 78C450.3 78.77 471.9 87.75 488.6 104.1H488.6zM449.8 173.8C449.4 164.2 446.1 156.4 439.1 150.3C433.9 144.2 425.1 140.9 416.4 140.5H96.05C86.46 140.9 78.6 144.2 72.47 150.3C66.33 156.4 63.07 164.2 62.69 173.8V368.2C62.69 377.4 65.95 385.2 72.47 391.7C78.99 398.2 86.85 401.5 96.05 401.5H416.4C425.6 401.5 433.4 398.2 439.7 391.7C446 385.2 449.4 377.4 449.8 368.2L449.8 173.8zM185.5 216.5C191.8 222.8 195.2 230.6 195.6 239.7V273C195.2 282.2 191.9 289.9 185.8 296.2C179.6 302.5 171.8 305.7 162.2 305.7C152.6 305.7 144.7 302.5 138.6 296.2C132.5 289.9 129.2 282.2 128.8 273V239.7C129.2 230.6 132.6 222.8 138.9 216.5C145.2 210.2 152.1 206.9 162.2 206.5C171.4 206.9 179.2 210.2 185.5 216.5H185.5zM377 216.5C383.3 222.8 386.7 230.6 387.1 239.7V273C386.7 282.2 383.4 289.9 377.3 296.2C371.2 302.5 363.3 305.7 353.7 305.7C344.1 305.7 336.3 302.5 330.1 296.2C323.1 289.9 320.7 282.2 320.4 273V239.7C320.7 230.6 324.1 222.8 330.4 216.5C336.7 210.2 344.5 206.9 353.7 206.5C362.9 206.9 370.7 210.2 377 216.5H377z"/></symbol><symbol id="flatpaper-icon-fa-brands-youtube" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></symbol><symbol id="flatpaper-icon-fa-brands-facebook" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></symbol><symbol id="flatpaper-icon-fa-brands-instagram" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></symbol><symbol id="flatpaper-icon-fa-brands-telegram" viewBox="0 0 496 512"><path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></symbol><symbol id="flatpaper-icon-fa-brands-weibo" viewBox="0 0 512 512"><path d="M407 177.6c7.6-24-13.4-46.8-37.4-41.7-22 4.8-28.8-28.1-7.1-32.8 50.1-10.9 92.3 37.1 76.5 84.8-6.8 21.2-38.8 10.8-32-10.3zM214.8 446.7C108.5 446.7 0 395.3 0 310.4c0-44.3 28-95.4 76.3-143.7C176 67 279.5 65.8 249.9 161c-4 13.1 12.3 5.7 12.3 6 79.5-33.6 140.5-16.8 114 51.4-3.7 9.4 1.1 10.9 8.3 13.1 135.7 42.3 34.8 215.2-169.7 215.2zm143.7-146.3c-5.4-55.7-78.5-94-163.4-85.7-84.8 8.6-148.8 60.3-143.4 116s78.5 94 163.4 85.7c84.8-8.6 148.8-60.3 143.4-116zM347.9 35.1c-25.9 5.6-16.8 43.7 8.3 38.3 72.3-15.2 134.8 52.8 111.7 124-7.4 24.2 29.1 37 37.4 12 31.9-99.8-55.1-195.9-157.4-174.3zm-78.5 311c-17.1 38.8-66.8 60-109.1 46.3-40.8-13.1-58-53.4-40.3-89.7 17.7-35.4 63.1-55.4 103.4-45.1 42 10.8 63.1 50.2 46 88.5zm-86.3-30c-12.9-5.4-30 .3-38 12.9-8.3 12.9-4.3 28 8.6 34 13.1 6 30.8.3 39.1-12.9 8-13.1 3.7-28.3-9.7-34zm32.6-13.4c-5.1-1.7-11.4.6-14.3 5.4-2.9 5.1-1.4 10.6 3.7 12.9 5.1 2 11.7-.3 14.6-5.4 2.8-5.2 1.1-10.9-4-12.9z"/></symbol><symbol id="flatpaper-icon-lucide-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol><symbol id="flatpaper-icon-lucide-library" viewBox="0 0 24 24"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></symbol></defs></svg>
+  
+  <header class="site-header">
+  
+  <button class="icon-button js-sidebar-toggle sidebar-toggle" type="button" aria-label="打开侧边栏" aria-controls="paper-sidebar-drawer" aria-expanded="false">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-menu"></use></svg>
+
+  </button>
+
+  <div class="brand">
+    <div class="brand-mark-wrapper">
+      
+        <button class="brand-mark" type="button" aria-label="打开站点导航" aria-haspopup="true" aria-expanded="false" aria-controls="brand-nav-menu">
+          
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-grid flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-layout-grid"></use></svg>
+
+        </button>
+        <div class="brand-nav-menu" id="brand-nav-menu" role="menu">
+          
+            <div class="brand-nav-group">
+              <div class="brand-nav-title">行至此处</div>
+              
+                <a role="menuitem" href="/" target="_blank" rel="noopener noreferrer">
+                  
+                    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-house"></use></svg>
+
+                  
+                  <span>首页</span>
+                </a>
+              
+                <a role="menuitem" href="/guestbook/" target="_blank" rel="noopener noreferrer">
+                  
+                    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-message-square"></use></svg>
+
+                  
+                  <span>留言</span>
+                </a>
+              
+                <a role="menuitem" href="/about/" target="_blank" rel="noopener noreferrer">
+                  
+                    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-user"></use></svg>
+
+                  
+                  <span>关于</span>
+                </a>
+              
+            </div>
+          
+        </div>
+      
+    </div>
+    <a class="brand-text" href="/">文逸行</a>
+  </div>
+
+  <nav class="site-nav" aria-label="主导航">
+    
+      
+        <a class="site-nav-link " href="/">
+          
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-house"></use></svg>
+
+          <span>首页</span>
+        </a>
+      
+    
+      
+        <a class="site-nav-link " href="/guestbook/">
+          
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-message-square"></use></svg>
+
+          <span>留言</span>
+        </a>
+      
+    
+      
+        <a class="site-nav-link " href="/about/">
+          
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-user"></use></svg>
+
+          <span>关于</span>
+        </a>
+      
+    
+      
+        <div class="site-nav-item has-children">
+          <button class="site-nav-link site-nav-parent" type="button" aria-haspopup="true" aria-expanded="false">
+            
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-user"></use></svg>
+
+            <span>我的</span>
+          </button>
+          <div class="site-nav-menu" role="menu">
+            
+              <a role="menuitem" class="" href="/Music/">
+                
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-music"></use></svg>
+
+                <span>音乐馆</span>
+              </a>
+            
+              <a role="menuitem" class="" href="/Library/">
+                
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-library"></use></svg>
+
+                <span>书影馆</span>
+              </a>
+            
+              <a role="menuitem" class="" href="/Schedule/">
+                
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-calendar"></use></svg>
+
+                <span>课程表</span>
+              </a>
+            
+          </div>
+        </div>
+      
+    
+      
+        <div class="site-nav-item has-children">
+          <button class="site-nav-link site-nav-parent" type="button" aria-haspopup="true" aria-expanded="false">
+            
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-folder"></use></svg>
+
+            <span>文章</span>
+          </button>
+          <div class="site-nav-menu" role="menu">
+            
+              <a role="menuitem" class="" href="/categories/">
+                
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-folder"></use></svg>
+
+                <span>分类</span>
+              </a>
+            
+              <a role="menuitem" class="" href="/tags/">
+                
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-tag"></use></svg>
+
+                <span>标签</span>
+              </a>
+            
+              <a role="menuitem" class="" href="/archives/">
+                
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-archive flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-archive"></use></svg>
+
+                <span>归档</span>
+              </a>
+            
+          </div>
+        </div>
+      
+    
+  </nav>
+
+  <div class="header-tools">
+    <button class="icon-button js-search-open" type="button" aria-label="搜索文章">
+      
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-search"></use></svg>
+
+    </button>
+    <div class="accent-picker">
+      <button class="icon-button accent-toggle" type="button" aria-label="选择主题色" title="选择主题色" aria-haspopup="true" aria-expanded="false" aria-controls="accent-menu">
+        
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-palette"></use></svg>
+
+      </button>
+      <div class="accent-menu" id="accent-menu" role="menu" aria-label="主题色">
+        <button type="button" class="accent-option" role="menuitemradio" aria-label="橙色" aria-checked="false" data-accent-option="orange">
+          <span class="accent-swatch accent-swatch--orange" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="accent-option" role="menuitemradio" aria-label="紫色" aria-checked="false" data-accent-option="purple">
+          <span class="accent-swatch accent-swatch--purple" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="accent-option" role="menuitemradio" aria-label="樱花粉" aria-checked="false" data-accent-option="sakura">
+          <span class="accent-swatch accent-swatch--sakura" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="accent-option" role="menuitemradio" aria-label="蓝色" aria-checked="false" data-accent-option="blue">
+          <span class="accent-swatch accent-swatch--blue" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="accent-option" role="menuitemradio" aria-label="粉色" aria-checked="false" data-accent-option="pink">
+          <span class="accent-swatch accent-swatch--pink" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="accent-option" role="menuitemradio" aria-label="绿色" aria-checked="false" data-accent-option="green">
+          <span class="accent-swatch accent-swatch--green" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="accent-option" role="menuitemradio" aria-label="黑色" aria-checked="false" data-accent-option="black">
+          <span class="accent-swatch accent-swatch--black" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+    <button class="theme-toggle" type="button" aria-label="切换颜色模式">
+      <span class="theme-icon theme-icon--sun">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-sun"></use></svg>
+</span>
+      <span class="theme-icon theme-icon--moon">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-moon"></use></svg>
+</span>
+    </button>
+  </div>
+</header>
+
+
+  
+  <main class="paper-shell paper-shell--article">
+    
+
+<aside id="paper-sidebar-drawer" class="paper-sidebar paper-sidebar--right" aria-label="侧边栏">
+  <div class="drawer-toolbar" aria-label="侧边栏工具">
+    <div class="drawer-accent-options" role="group" aria-label="主题色">
+      <button type="button" class="accent-option" aria-label="橙色" aria-pressed="false" data-accent-option="orange">
+        <span class="accent-swatch accent-swatch--orange" aria-hidden="true"></span>
+      </button>
+      <button type="button" class="accent-option" aria-label="紫色" aria-pressed="false" data-accent-option="purple">
+        <span class="accent-swatch accent-swatch--purple" aria-hidden="true"></span>
+      </button>
+      <button type="button" class="accent-option" aria-label="樱花粉" aria-pressed="false" data-accent-option="sakura">
+        <span class="accent-swatch accent-swatch--sakura" aria-hidden="true"></span>
+      </button>
+      <button type="button" class="accent-option" aria-label="蓝色" aria-pressed="false" data-accent-option="blue">
+        <span class="accent-swatch accent-swatch--blue" aria-hidden="true"></span>
+      </button>
+      <button type="button" class="accent-option" aria-label="粉色" aria-pressed="false" data-accent-option="pink">
+        <span class="accent-swatch accent-swatch--pink" aria-hidden="true"></span>
+      </button>
+      <button type="button" class="accent-option" aria-label="绿色" aria-pressed="false" data-accent-option="green">
+        <span class="accent-swatch accent-swatch--green" aria-hidden="true"></span>
+      </button>
+      <button type="button" class="accent-option" aria-label="黑色" aria-pressed="false" data-accent-option="black">
+        <span class="accent-swatch accent-swatch--black" aria-hidden="true"></span>
+      </button>
+    </div>
+    <button class="icon-button drawer-close js-sidebar-close" type="button" aria-label="关闭侧边栏">
+      
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-x"></use></svg>
+
+    </button>
+  </div>
+
+  <section class="side-card nav-card">
+    <nav class="site-nav-drawer" aria-label="移动端导航">
+      
+        
+          <a class="" href="/">
+            
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-house"></use></svg>
+
+            <span>首页</span>
+          </a>
+        
+      
+        
+          <a class="" href="/guestbook/">
+            
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-message-square"></use></svg>
+
+            <span>留言</span>
+          </a>
+        
+      
+        
+          <a class="" href="/about/">
+            
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-user"></use></svg>
+
+            <span>关于</span>
+          </a>
+        
+      
+        
+          <div class="drawer-nav-group">
+            <button class="drawer-nav-parent" type="button" aria-expanded="false">
+              
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-user"></use></svg>
+
+              <span>我的</span>
+            </button>
+            <div class="drawer-nav-children">
+              
+                <a class="" href="/Music/">
+                  
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-music"></use></svg>
+
+                  <span>音乐馆</span>
+                </a>
+              
+                <a class="" href="/Library/">
+                  
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-library"></use></svg>
+
+                  <span>书影馆</span>
+                </a>
+              
+                <a class="" href="/Schedule/">
+                  
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-calendar"></use></svg>
+
+                  <span>课程表</span>
+                </a>
+              
+            </div>
+          </div>
+        
+      
+        
+          <div class="drawer-nav-group">
+            <button class="drawer-nav-parent" type="button" aria-expanded="false">
+              
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-folder"></use></svg>
+
+              <span>文章</span>
+            </button>
+            <div class="drawer-nav-children">
+              
+                <a class="" href="/categories/">
+                  
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-folder"></use></svg>
+
+                  <span>分类</span>
+                </a>
+              
+                <a class="" href="/tags/">
+                  
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-tag"></use></svg>
+
+                  <span>标签</span>
+                </a>
+              
+                <a class="" href="/archives/">
+                  
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-archive flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-archive"></use></svg>
+
+                  <span>归档</span>
+                </a>
+              
+            </div>
+          </div>
+        
+      
+    </nav>
+  </section>
+
+  <section class="side-card profile-card">
+    
+      <div class="avatar avatar--image avatar--circle">
+        <img src="https://bee-reg-ab.imagency.cn/e/6e70a61c4a2e1a4298a2ce2e25c0362b.jpg" alt="文逸行_Yalego" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+    
+    <h3>文逸行_Yalego</h3>
+    <p class="profile-role">文逸行</p>
+    <p>尝试认真生活的普通人。</p>
+    
+    <div class="socials">
+      
+        <a href="https://github.com/Yw37153/" target="_blank" rel="noopener" aria-label="GitHub" data-tooltip="GitHub">
+          
+            
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="lucide lucide-github flatpaper-icon flatpaper-icon--fa-brands" aria-hidden="true"><use href="#flatpaper-icon-fa-brands-github"></use></svg>
+
+          
+        </a>
+      
+        <a href="https://x.com/AsisYw63675" target="_blank" rel="noopener" aria-label="X" data-tooltip="X">
+          
+            
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="lucide lucide-x-twitter flatpaper-icon flatpaper-icon--fa-brands" aria-hidden="true"><use href="#flatpaper-icon-fa-brands-x-twitter"></use></svg>
+
+          
+        </a>
+      
+        <a href="https://t.me/AsisYalego" target="_blank" rel="noopener" aria-label="Telegram" data-tooltip="Telegram">
+          
+            
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="lucide lucide-telegram flatpaper-icon flatpaper-icon--fa-brands" aria-hidden="true"><use href="#flatpaper-icon-fa-brands-telegram"></use></svg>
+
+          
+        </a>
+      
+        <a href="https://space.bilibili.com/183529341" target="_blank" rel="noopener" aria-label="Bilibili" data-tooltip="Bilibili">
+          
+            
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="lucide lucide-bilibili flatpaper-icon flatpaper-icon--fa-brands" aria-hidden="true"><use href="#flatpaper-icon-fa-brands-bilibili"></use></svg>
+
+          
+        </a>
+      
+      
+        
+        
+        <a href="/atom.xml" aria-label="RSS feed" data-tooltip="RSS feed">
+          
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rss flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-rss"></use></svg>
+
+        </a>
+      
+    </div>
+  </section>
+
+  
+    <section class="side-card brand-link-card" aria-label="站点链接">
+      
+        <div class="brand-link-group">
+          <div class="brand-link-title">行至此处</div>
+          <div class="brand-link-list">
+            
+              <a href="/" target="_blank" rel="noopener noreferrer">
+                
+                  
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-house"></use></svg>
+
+                
+                <span>首页</span>
+              </a>
+            
+              <a href="/guestbook/" target="_blank" rel="noopener noreferrer">
+                
+                  
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-message-square"></use></svg>
+
+                
+                <span>留言</span>
+              </a>
+            
+              <a href="/about/" target="_blank" rel="noopener noreferrer">
+                
+                  
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-user"></use></svg>
+
+                
+                <span>关于</span>
+              </a>
+            
+          </div>
+        </div>
+      
+    </section>
+  
+
+  
+    <div class="post-sticky-stack">
+      <section class="side-card toc-card">
+        <header class="toc-card__head">
+          <h2>
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-table-of-contents flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-table-of-contents"></use></svg>
+文章目录</h2>
+          <button type="button" class="toc-toggle-all" data-action="toggle-toc" aria-pressed="false" aria-label="展开全部目录" title="展开全部目录">
+            
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-chevron-down"></use></svg>
+
+          </button>
+        </header>
+        <div class="toc-content">
+          
+            
+          
+        </div>
+      </section>
+      
+
+
+    </div>
+  
+
+  
+
+</aside>
+
+    <section class="paper-main">
+      
+
+<div class="article-tape-wrap">
+<span class="tape tape--top-right" aria-hidden="true"></span>
+<article class="article-paper">
+  
+  <header class="article-header">
+    
+      <a class="label-pill" href="/categories/Tech/">
+        
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-folder"></use></svg>
+
+        技术探索
+      </a>
+    
+    <h1>C_study_Note</h1>
+    <div class="meta-line meta-line--article">
+      <span class="meta-date">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-calendar"></use></svg>
+2026-01-10</span>
+      
+        <span class="meta-tags">
+          
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-tag"></use></svg>
+
+          <a class="meta-tag-link" href="/tags/C%E8%AF%AD%E8%A8%80/">#C语言</a><a class="meta-tag-link" href="/tags/%E7%AC%94%E8%AE%B0/">#笔记</a><a class="meta-tag-link" href="/tags/%E5%8A%A0%E5%AF%86/">#加密</a>
+        </span>
+      
+    </div>
+  </header>
+
+  
+
+
+  <div class="article-content">
+    <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="你看不了哦~" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="e7c3b7e81cb2a898bbe38674c8bb45907bd644223888459f749105d47684b4cd">a5ea2ecb672ade62adf93d46cb1e567001b662e197dabf5eb3869dd149436efdc1083721e5734061b137869a7107df4c24ddf16dae514bacd425cdbdf055a436d17c531e4f0f297e0b6abd15543dbddf22d162646761de2605fddc65c6e0ca692d30ac9eec235876a57c27356dc41f2c5b5b96367c486b1bcae7a547fe019092e3d06530e1a314986d444c3fd8d64dbb6be40a31af12f3e3266520ae8d5a66055cd086cb0fcc32e410ec9cff49b8318b6d746c7506accf949753e1ba69708e16b263e21cd85f633e5620e4e5161a32273f7cc44fc7aa39a1e733928510bef83f1c1b72ea5cae95160764c0b4f0ab9d4404ada097dfd607ed35015f4cfc64a3a71c43b76cac39e889a891cc1177460a10ca1bc18982b2e8e0ed6080f1fd44a77bb64a5d6df3a1e0dfc5e26aa7a9cd51e8f558ce4cbee6ecd5877f78fc00ea25729eac4dffc4d44d353fa5b05c04284f45b05d0500a2f9201eef5242205eb1cb7c4d9e9b992231f7899b76d652f023e74b8b0cedc722681b3bedbf4bc71bed50a2b0e5fc9ff85ecb7cbff7c496e4913b47a821eb81eec4ff79caa0a7bd37d95ee23091b93c9862bc66bfb1a935b3000d0876c2a83de4245fb894c4091b47f5098642551ecb75a0e9df0e6fd2e6288246d40b7ddab321c4b4edd1deeb85a71531f28753409172594ffb02a05c6bb509f93c7cebc30d0e51ad364987dd400dc700afbee1f8e866395a396f7ad1078de97a6415c56077e087ed9c993709e567978ea2f05600426a5d0873594b203f70df21996c761105fa8a997f5769b50d0ca5b66985c333188a40d046b9714d1a184a669d65e5b872431da308fe391b6f068523514c4a1a194a67856dd9a6d87e7debd66bc7348020d9966709ed4771e4239b5fd2525cdaa1df57a660597467ff68bcbaacbba23700a8e2d5b720fc91e45a8639836d8752ddc1c7ec7ba69f8fa5f72bf14dd8917e41f076d47c99b487b3ff0a147a9e0bc51662533da34022c281313d684c59e283830da32f7f3d016de2f40cea9de87434b5d98bb33d2e9f3eb14a8de114bc89905469752abd37bf53612cd037c4cb7dc954d932112672ff0310b51707e440bbe4117d5100ea522eaf5564a25a97629e75fc26abb2127b59cea5c91f1013641acb06bea8b943fb48d8a7b8101f34b4c6a8e9af2950a21f3c1dcb5d8c473402b7d8bce366e2fbae199577f3c0ebc0a5c3f1ffc6d636314852b4777e0cb73a5db22f5ea03e253ac676964e2fc9ab2eec96fc67c378129830f103a36c5c6f9f221db9099cdb1354a909f9d0b4f64388dfb39878eba629888ee3f81eaebbeea9e45e27e33c195ee6b80f70407265ecc1272de034121dde7468b557a46a24a2017700d1329d780beb33a8ed65a92381d67689beb3274fd531584fc72d47b1cbd56f5874c2e6baf006a96393595bc892a606d7856c6a8fa4ef1be713816ece7d53d61831244940e854c206e81652d64b1805368a9622411be92c181cc683b3dbc59f6b2b7880a31bb99f03d257f86bb6345469ac23b9a72552bc243beec3203ca6bef809ec94edfed5248044d44bd4dfd06bcd8815fecdcb7e45004927dc28f296a7d8b6e946d36793e75c86599f15a356543aa384a0601e937fdcac969767ff6ddf8600127895f5c829477644f4e0f0f273007dcb7a46ff788962848efcf8fb70e190a241e0ebe93a370e444eedb2864b851210a7f521803ce1fdb5e9c92af523fb4153ab87999e7713369a080cf17695c220c61108734772d0ffe03a0c9e7b272378fc769e2245516ca3fdf63b976e1fc6b4422e952788d894765be747e06db228872c29e5db82bb2803f85d6cd5756589f86dcce3fa1618ce8b5d4c3b0cfaf55daa6b591ec697f447e2f0b00f92a7d44d5049a1693d65ca92fa3e9627254605f38e040a17c84667189705ca066564a49ef61865b179cccace5b489c97b6d0d9eed9c579a9aeba7cfd9c6b7b90fda1cd65a5e36f167322f752dac98744689a6d881fcbf3ab747cc639cdee352e89b19aec9e26037bbfff7c0b958023e1fcdd3d2e2934d0c1f6ae8526dad9973b65a090b47f06e918309b1552bb42375f4449215ca44d007a483e2951c07f723cc451718eb8ada8cc72a0aea48cd2168215a4a2a554c288192f9f21cb7bf37f3324f8c490196406072e399c1d02b7537d0d227f582779701a0d3c51d50f191f12e731a0e65e8ab998a0735c9a4c9714e8be21ecd5f7d7333c1c6adf751fd91b3e0bf9b937c13819c14c378a1574d5e5ba90bbb92f6a5d49d6bf1b7182fdcafb9cf4f910f907a938a5a4b173880ac9392a49089460e3462af3c196fbb0a58b0bc95b3f95774c9d03ce50a278c3ad899e190c6b62328e4dd6d0cb160117b68c43009ca220dace7e36fd755bb6d8570228b51017203242f1510b9bc5eeb26441c35ae41cbde2126386cf96093184aebef3e5245391dc521ef03322defeea60e37d5a95cd11e6212b54963c3418444f50db96ae26c0d0dae78b10262ad1556d1a17f9984e93ceaf176d99bae4f5c157b17db31ee85b1779a0239c53eed6ec577e2cc1bbe8806c9cbbcb8bdcdbb4563d01eb4b867010d3236385eae7d413324096ea4247c799f202a3e19b677c0e6042891788b37bb58c2302f847e3457fc71ca65ee0f0d5d902ad24fb200b91ddf941946355fb62b4064dd6d5b36210068359072ebe7f85cd02318eb3608e7fa95c3459c9d69312aafb0310a9533a59cf59a79df614b811d11d8feee4a25ecde3d1c748d7d6e7a170fe88bc22ff6aebd0a3957a548f8574c04eade673a317717dca4f013a897c0271120dcd337e0a958be0576b758e6a49efacc798ca865258f74659fe2956feb0a547947cfdb7d5af84d5a1f36f93d6568462bb09413ae858b7fd7a531bb9c1f435014c5297f8d95bc048bc76ab7ee3ffa27e7679a80fa4575d36655f3081e3d95cf9770e7a7342088a7883a4069a2495e4164e0ca5422e0658026db52f583d9b3d97ca71bbf4b2aad76c6dbcf3065d7a4e814cea7b11c52c307da46dc2b5deb5cf920cef44638940f6bc1300a90b0d381ecc466115c1a40563bdebd3bae48fedff78b64992882914254de909cd307d158c795e46b8498cac62488b28435329b06a473b4005626ec50517d6338ead004fa0c524c5425a9f094c3c59166bb7715e25f865d42cd467960e60162e456253e21a5be22e115d7a37161076f8e5d17bd3b605ed21b6f0bd2d5b4c5efafeaebd1d7240176ccea1d4dfbc3de65d747c13c94ffe6f8203b439f6451f9e4510ff5ab81f0c4e78a9db6639c9e55ec8dcdbfb337fb1cdf039c157e8f972df61284f3aa006726d51a11c8c8c4a587ac133d648d5058ed84f545fe30d0307aa176feb5c25f1e17ab77d63116fbd76e6a99d3d8c0b6d03f7ba95d6406e7b240c8c2656a1ccaae689b1d04cf0af4812f2ce6e122022ad5689f2fc0f3e9c3b0fffc9eb82b8a3330d25194de4f03a09d6518c33cb4e4b481c3aa24735cb52e31d69d4dbb92bdbb6429cbc2c356c1384748aa2cb2967671c9f211109021a111090fa714d7300891a8f9bbd12113b3c6662146ea36712868fb1d49cd3b2b0186c853a458bffbccd0ef31e5ca497b8070f53b9562ba71bb392128c48a610b9611d051ed703926562d6f0477edf39ce43fa3ad4f882ec404235cd67cf436007d5c6c09f765fa481d45d60982a273a004a739872bc70fc4f2fb03f4c39276382c23b7103e8938f07a2e81b39a6b7772ce6602ccf34263a39ca62fa412f2c81f8d12ec1b611e64848fa9c22fa70e8521fdaef1ec6a8827cfc0650bd821b9ba50f7726e9ef3a1509d38a84b6e2ce4719336e69b700663b41c6130a5688079aff5e9abb9e93c9cbcfc82a5c1bb6194c7f3917b2bc102cf04ff8082f1814fcf3e5cea11d3caee6ecd08715785a3990691efd75623ccbbd27a5423c55e64a6366d54178841229400142f247b228daa41ea0af9d38b8db8687484ce5dcde6ddad3c58feef84e058079f5c2c331cc832284b8062d8c71a99bfbddcb407315e63e0892246dba5dd1c7fa9030e251da4267df8d7d8d5b8594cb8ce5892cc7889c2118db46fd55dc149b2563050d2017d83ada42cce9afaed0524353f1cc38a9f45c43f9f99055447d707b2e920d9a3c5595eb04e6a0d57113d421641a077d750bf67b19fb05255437b5f4f7ed37fd4fadf5e3bd4792bb16e0921801b2eeae3a4cb1aecc399268551cc18429eb2f1f6b0c02cf5969a45147e3e325bffd588610b196c75f87ab44161c51d27ddbea76abc0f15efa56657e581514bb4cd4b9159a6debbb77a31698c6abd9997162b212f5a17b6e4745620b0204be4fc7980d99f3ca8c1da7d66140d215fc4ea528798bc740b7423a747cfc51263edf31960a2547d705b748ac3cb827920903dfe6720998fef33d748a4c0460a434f47695c78e41a5bea2eb37aa8e4ef2b316d73b151b2b612d7ef281c1aa8b3ba194d7a10a2220193722fc87064aa8b5e6ea9d3b6a6524f29a20afcb59428dc69123280e77b8394b9c27dcd04fedcb5d9ad6586cae8c567748a668f731595a3dc9eaa1963e4e50ff8482a908e5c41d4673be67aa7853e2e3cd61d5a9b7a9d7c1f0215d6655d64d6f54cb268c5ad9a6965f0ad5d8a72fd9c91ddada134db01813ee9c25fe9efee4a07b36e69ca45e250ffff48d00f6656f4c651fd81d088e1573a6496d0547c04a5d31fc85b21d29b0d24797fb54a5ebd77327433847155013f0f310367faf726a4b7455e0307af03935ee570b19f128c007acae203ea8ec8f30aa8c3a49c3c91a804bee2917c48c06c06698d4c15bf2b46f838290883ae7f8aebf988d7606069595569e17b049d53d0fca59c357db1e2266a570e2353c84d6bf54e009e009022cf196ca8a0d5b93924c091d224c794e1e904fa664ec1bb28e601b49226fb0ad3b36798d85d7d89863b1299dbc5b59a28a54cf762a95da5fb1c53e91e9d368d5a33df0e18768098170b92e319cb4a5d45fe973d0e2661df0095bb641fa4b8a1c1198e95782d1fd0f719def778c987414b9e0bade4a1fb981f0148f67803c42b479ea4b81c53bcd8d17a9ca5de18effd573e9c110c2b152cf56064d20dd7e470c2b0332abaa8ccea4c15ee1e59627a59669f2b1fda63feeadf51661709483180fc2e74c7d22abb5ba698e6db67433f227ad0de656c6f49ca9dd9ae550c9c69882160486d4dedde1e6878ebfbcbb2477868abadcef73c3e3d8339cf4b236c09f996854f965a98b8973e756b77821e6a35a3945784ae7b60a0518716f189ebae817da63214090287d0b6306bc8ab1e1a90d9022c2977d5824d2bc26c437938e2be8d1ffe1dfaa0fd9f195ab2db2a5b24649bed7ae2327c091dedd9d2dc9798b5cb355422c8f892bed0ceedf7e26ac64da49ad11595817565de7caad60b954f37d63d5446e2668ab6e14618e876dd661ee6f58827a8c8b19bb4769e7fe05eb10183a785c3eb6bd0e3fd4c6eecfe3b73c02176a9e59134d50b76151ada0b3b56d52a345f3455e9b91f3092c11a77b39f2d233b516ec6aa231f00ef99a4da12a6531e5b53b2508dee40b8280618fcfdabf9e24f92253d42bb02dbfa665bba6aa26035d45b843ec4a2e410da372f3509815f557f8bb45f361883ac5ca4a47d3dcff870b26b5f56f16b6e98c07ab5ea37def08d1fd72e7ce5b9d5dd110993670ec155c8a268e713764587b6d93f890e656f4c71a96d4e33ea525390ad050b46bbcfea0cf43fa62e511aae9cc7541095efe64f9ef15696b9f1b4856a2a67703f52f29f87e59eec9834d37bac76b8e9f8d4b53d45fbbc17fff6a0d498212043c65be0a692022bdefb28e9a0ee05c78637d7b5b1d9253ce996817475257a6324acf7645481ee6ef8617e532849b3eaceceefb900ea61adbb0cd5775ff1775aabb3369825624f70b433e2e747c543070205a1be0dac930d32390bbd59316aeef8151773df4e859cf071687474349333c306ffe646ea92b69e6d0c1dbf694601817ae73470cc981b1bed7b12c9ddace2ed24e52d7f8ffa728d85f049355490854069deb4dabf8898dd56aa58b0b22e33bafff6f1cd2877006f2e3a7f5969043cdfa5f4bcdd5f096455f43c24d45670abb21f0f0095a51d122f1f0744e386f32c871e1156c6ebe35ab1732aea6d62b538b6106a551342f6a30a5f53f5a0b5f3f0474ac0a7b5fa11f7f209c826bf5bb74a0d7133c683eb0ddfdb6b0fd1d612f1244d7e41686ad3836d8dd6a6e1c8c442926ae29689b3f297a7a6669e56984899e5543df8c3e00fa57fcf638d0df6f13452b77657d3af9e7d836391adbe4fce645a6c9a12863730919c76bd15cfd9641d63adb01370c9ddb940ae8105baa08c7d9d379d6604d90e316737193a8ce1319295e7857a77fca3d7db8c8736413ddbad516f6d336f0a510ca4c3f51cebdacba63ab71846144834861fbaa9fe4f5d18096db3cc978bc1f67e9a5860e2d2aa7294ffb55501b3da1bfd6b3e3fb1f6dbae20240980b13b294f1cb2af65d34cad80eb6157162e0f6434c240ed3203b46507c60c4b636c9fb7b5fabfd73733c889202c8dcd38e3b027c461d19c7c1210b42d4eee9b4f6559124de82c432611736f2abed6159b2ed500ca51626828f51810a80fe056530a7358246311b375c8e1b96b6352dc6348b791870f34ae3b75eeac585769b57ce3cda4dbcc0e36433aa4390aea3d3a6c700b875e47e72b35a4931ff1e7c87f5a590734edc474dcf063a91d7531f5f249b44a0f9272ef61788267877ae3acea6a21346c50ac5fa934bebd20b88916daad7f4ee22e22e58f2c10a467e17c0a731482d638edc3f406e8de3c8b57e9dfefbd4f6f67264f6456a20b43715b5472d01688128a345fe1e96672673fb3be0d4196690c05b60a3ed0fa386ff034cef50cb2a5bbd8a2e67a0a8394bdb0c5116803e566c8455877574109f8b0fdcf0ce3f05ebf0c919b8b80d18e233c5c0f6276e9ae914335b539efc7504da01553ec1ddbe4544c2761161059899941a7d1297e84e1af0eebb1113cbcfe393244b4d9021cf0926634d52ce455228a36b4cd23431d4e50541e2e0a383752489c739e7e633e817db2bb4855f92df31d9632ae066307135a85ac1000fac441bf6bc9190d41e303ccaa22a1194760e2e66bf3bd1a1203274ab7eba19475018a7a767587a625737b04bd48b6b83248695a91435d82f2fca6fb49a498564490137494e9ea86aec5ec0739724109c0ef83dd193b288089b67c402a6a4fb53cff9f1e5c3bfa795b6530e8d4d675ce6afc9f306f7e0f93791be0e2d9b3fa8fd80012b561ecbc78a9bfc565b6e4d63dc87cc2a03bb571f04fabe8fbd970c9518ca757292a34e8360516dc603c36c8fa6bff2adc76a6fad67a893750c031e0b9e6f8030b1d0d4280a6700eabcb3d0079f7e8251c7357998cd26f8831b139d8aa95198df75ca84bffe1d17a6b24ca9c584b108d240d44d40f226a19c2ce1d8ba759feb9bc436cbaf4ebb496d2e7d1611b02131acd98ea46fd2b5986a284712b1134c4248b7116443da250b6fac29198af69f152d51a1164065d594a837c466f1fad551bfa3839fecbd81cd85ac59ed32bc04727d03470d74146f3fa2190513ba24e6874ba88688059de071b2db80b0da0ab2cc3ae23dbcf70513a57439becc7f320e7323cdf35a1b610e8a53e1b59f7ad61034d57375585e0356bc5ba42020b55d08182f09b72c7a2201765f5579069d53776e157b650c55bfdc8e32d0ea5ac8f48d2286d3d6ab3b40ee6dc574f0e88a64ff400d402132603d63a6f97c69495c8dec8f87649dd0684e116f69168df8c075cbcd5c7faafcb10a0106f9c2ecffb82f4552454f34fe98bb137e8a7a6d2891a3e6d7a61fccbd2b04c5e8207378bb3911a7611659cfd686c0513379dc0724a14f69b15215b5e6d33482dc1134dee539a77b0831878c6451fce8ec9a60ce1a2b7a7870abcf447481402eb7799cc531a063d98eb665b607b78e3a46dfe8e94c12ace7087117d540a3affcf105c90c60eb80335f741be19275672f320c8827cc382bd6bf1b4667d4842d0ff6221c32a07d1cbc6c6994c8a99cdb3f8e3d4bf9ce7bb72bf3afad1db714a69b25c4efaa58ab9e76d9836dc4bb9e4141dc3b49f1b3f78b9057283f8dd8182f227813acf60967d68c4f4155ba9afd9c02980e229c4725a7b3497fe4d8ae4af3a3da1e4d156b6a90e75d14ae9c73b07a0eed64cc4d6c6f1109916d0b6397dc7c1f46d8921b9d6f3a86de37a1475d5f6de79300da534453761b54d554935e0666abf69cb479b33f0de3dcda9f3711cac08eef8d5fde4e225deeab52a59395dd52162954fcf0209b094c709a9176e94b1867cf090809a31a74ee9b9b744c0c9b1a6f2c61c6e729e5dc83b764c80cda8398df4987aab8af0704b811d9a3b954c37abce85e82f67a9477d52dd050d08cffbfb9dd4be773cc562053b7c5ff3f20d1e82b69fd58a01714b17552b04d7541158f0c2f8495af3080185c9e6bffb50fe207a115272bd409c21cc19fa54efb667a0fc900cac8e0733834cf8b8568216fc23f5793651d7e3244fd85c63d6d3afe8b4a41946c27cb4c8ad4caaa241b9ed43192e4a051320c8d4c1e216f6ea3d2a64e83d2eb4267cc4fbbb80cc01e43a70a5b79088b4fda6ae42497f387a3091dbb30fc613121deab8d45a6cc6287e9e8e6e8954df53a1a346653ef0bffba12fbd33bb7f19b08e54561db5a8bd9c6f1778f9b330237ac13e46cf1943654c7969db2dd12cdc982f4e4065f9f732c9dbca375b7906d81c574d932e8458d97e52b6a1e822dd155c9035dfd65f242496a7ae9956eda1f9a377b8e23eac696226e35394ece94fdf00697454b073aaaf80f2a1b24cb39da9f6d72a395d28eeea3549ea0dc7496cd7d15a5e743d03acc691110e7f50aaca9e2489b7e138e257fb5b5ba568855ff57f351e6fc8720352461fb5e9596788ff2a3fed248d9c493335c02c966e00f37028d974173274c62a7c1530570ed06334c2a8c06561f49ef78426d570020d921e30b80591ec69cb9ccc20839161e29f875bf89c4b0568a1df3cd97f2a164b5c6c1853201952c7493a6d0b644e4d518276fae5221dc915daca7828db63f261c6ba10e31d1a14252070bfd458844ba3dd91b8270e71e3d5309f7720d6bfa5e13f4859b63c8e10204eb048485d8fb44d9ecf71328bfcefeb383bb007d6a83a4bc48f2b4517dbb41b8d7e4b32dfdd26af3e0448c651ddd2c99c8383f242cd80eebddf119a03a89beda44b57f8b6dd92c19573c1409a5f2214ced68cab1d6ebc17cb245cfb823abf4ffe506ba70a9a693be75fe4a097d76cdf436d8ac68dc699a67a10af1ecf1a216ba81b2017b18ce06dbebcc169b6c7d11f1eb4f7155d4838d584939ab93f17df4b61d78f31063e11a1c15f6eb6d10ad7467f5ca14e9ca9cd7a2d17791c5447f349de8b6340dddebd65d449e3f9c18c7d304e0143fdc813da4037833db48a768266faebe913a35db50186ba6ee2f571529025d49deab19b236a04feeb1b4c59d30ba8dffc385ddd064a9757a8796416363ad7aed8bd807310ecb4b005446773585b9ca8b9bddd4664356758cc7971c30563a9c517e413e5845e355c5a15a1c548ceaad11818daebef0d846827a3d3b075248e1645c16edd6fc248535403647dec57243e00d42f6d1de20ba707d3e513f6f126caaf37df3ea2926112e61d88554b84f971b9b822b83640bb623b0b5074de62a124554d904cd8e8ee3d6fdf414ade4f2ca49fe9e2f27283a107b2c14c06385daa10a78c6cf9b9e10c60f0470b6cbeb6338e4f3784141ce2db64b910c04b591a2ddabe85aa963b964c220218f585de6ce59a3e7eec9bcb5f8ff422ca7ab499e3cbfbf50cc8d8d6c569f4e0e236eff6b6f0df3c42b883112cec2c56f0702fb9238725b00a63ec8daf8dabc336902274f83c19eba50ba53c194f9a8f6fc4ea7bdf17537e6cd06d927ca1e2f96d25d423c5587738e4e4bf67d650c666d0e0a9c9106228cc3e4a2b320baba6d447d9b26c7e77f227d670d72a88b9897d30839368b9059e92f1f98534c0a1572c845bb5ad8e5f136e478dfa3f6f4889133cad68762060a20e25cf2629291d5989c41496d19d2ae6c10b55d750f007075822deebc1286dc0caf8cc0945737ee2ab948306f4fe157f63d4a6e132cbfbef596c9f77eae36154f1f3f81301d122034cab5d58c1b33a1e346f3c106c66157279ba54b7d0bb2d0e11829523278196b0717cf39df2c8c14f1d10fe59d29051e5ca70f8c01be6da6ffcc849b07d8c942463b97d70d2e08759fb6b1f64e402ad0d47818be5fe4566b9a2accb40de35c8b3e488a173c7ac6db62d521a69a32caf5ed340b207111a3fd4d7ded6d2f614ea8cd6b17b75504643177ed0e12397f0a3b21fe1310d4c2da51f8e35f64a2473fb929b60576cb4387ba4726d728bcbf4a959b22752521a896abb6708664c94c338946842976cc64ce88f3370de59ee9925ab2e49b4a2ef80b1db04e5cd131a5cec53cae0d71827adb278ecd2de411d8c782fc77573ed847091ab14db14511c96c690dd07f4a377cacbfdf39448e8c50b09b602cddb9261ea6992f7df73633c6a963ee51367de8aeb4c31a4edafafb24b72355b7bd1d6a56ad65e0cf7964556b912da18a8999f35724fd72753c898a4ff1b42ca2cf2929c8a46415dab2998976fc93724e64b03697ae260c66b8477c5746458cb9e31271977f31b7846d7e7e30e39f9298da0352bb2888cb6ee5a7d2e6093f06c49fc51d5b0d1e9b1b11d9071d1a105142bb5c8d77e56dbaff5ad856ebd23d423cf70d780c7749806d156530d8c061d1f163f5bc8b52bba6d78676237060971259d1b56f5dd3648c2d149e91a097ce65b42e93584f5a31b85b31050fbb621ef98b622fe063f413edb232bf1585c22e1a44dd7a9917688d25be22eca347a4db8fcb8d27bc90569ccc9899d63579dda626755c8384b3af3c5d7a9931ff5ba3e485e73b1c793d80e66a8c7b732ef515d1c6941840c187c34de021bee169065059ed770fc3240e1de4ea8f9f725ab10f1e24cb186a668d502e091baf5449b7ae511da5e4e53f810ae5599e035f96b408ed8d3f341711a742f66bfb02266602eb7f60234c8a80c2476918bcc52eb2195bdacd3ba86542f5ca026a3235d264dcb03cc702d27ce0fc4f7ea7011b98e7665aa41658c6e8c8739e89d0287839a08b6eadc0ca613b1c9d3d482d2af741dec855dc6ddffd55619468eb74bdcca4dfed4616b1636c0cf37602f5a42a24558e97ba1cbae9c86875e45fe67c6115a7da48eb97f425b81a4d2348f31366258b8190f684228ce7aec560b43de8d94f474b9ea457fbdad35d9f5bad4441d99c93d5067339b58a47360fc72202ae6459574b3fe198a5385a7a6ea83d069e5e9675ea0658a7182f54cb00d0f06b3b68d840333d4d189376d1194572cd985723bed876fa44a44007c08f35742cc27360161e9f5dbf3e46f7b7120b9c5f6e83502816f8a10319c25df3373b598388468d85c648d2acdb8bb3a523dbf3175fbfc4343b1e182039e8f51df5f133375c40b523136b8865c9e177ec5314b71c23e8ccc0cecabf95309c81d0f3590bf7db86e2d8d33ab8500f11a92ef00538693f94e6b76e52a7ad058a9e5c5a71426030cf4fcc1786f386e048c76f6c0e7afb3aaae83775a68c493334de4ebbf0871b3b55926edd2b5b539cce6feb8a28a55f6aff91ea65708d30a60814d6b0354bbaf531a0058f20c4710bf7b9517097ec9311ed4fc4f64f5173f16bcd7b979b2facac7b15407d4fc9c586564e08936665301cc91f7bb9cc8f7b4343469de046e407191372ad83292508b5eaac0658a26b9bccf10c5eb47cd0645cfe41a3ec0bebb96942fde62473116866b1063d076433bb1aca5e842616a9a4b5410192cab08c3a0f89af0f80149e31b678ba8bf4bd77016a2dec0f3689d8934484a617fa9429e4fb2756301b7de98eb36ceda74b2cb83e6e0ebb66cbbb5138a0dcb325babb37a762a3a669d82a3b31e5a627858957697dbd3ee788b8eb1bea9f617f76f7592f6a884695df20c935000675e13e682bd2fa8fb4e22f4f329abc56b13ae822064127cea024744bc33d33fdbd8d547dba66cfbb01db6479fbd4f94e317709ddd923fd16585d6098e7c56da14232e4337135f0d10cf0122be2583eb8ce9338cdea6a63c151b47c85e7427484b1f956bfa7b84a4769e17fd14574d57779a950620ec4d9598f20c6b1809e5437c10a26221202d521785b0abff3d67c491ea781e0be9a34c70a3cbae40ed52e2462bd57b6159847e2332e4516a0c6831ae041fc1bafa441769d58ab62970e5ae208500287416df765f65c3c8c4ad7ca757a4a9b8bdcd646102fdaf16569ef8d252a1c1d720d3fd9f9c8f0e8cf76ec34a8427c49fc125bdc045587ad5ce8b1021dfc41a9ad66985b6d0596c9d7291f6a84a9a8990f6679461f28e939af0ded4c871b0b05dfd931f89ed24bcaff2000738c1d3d43d20095192d975493f350f931c12ee39910d8f12de937c8a1734982c4d973b959f805286d352cab1aa9edd3ff6cb286ac3fb40bf017c8b0c545cc7117dfd7b89599a6df3f9674b2ef975808fa0317717ae4936ba005c2600a90164332de8b6d67d84546dda328f128720b4024168b2dceb2da1a6b1ec7a6bf9bb3af039719ebc3d93b286317d6980ebf41f657291cdbcde67a32ea7164b001387960f8fd2da4d1585b5edeb18a229eb263683b44919e20f7a8f5acc6853df774f3792dc41d0df6684602efe4130b821ed2c743c1bb3236bb126ab76230a00da93230bc79c503e4ae5d4d3666acd944fbea24017544cc696ad27204f8183407323e8d54059775499390d5cd2302f698007b4778fc09b259ff60582aea56a0a38aa0040c533101698fcec6c7e978a9a06d345c1191217a5f0a766f57f6c999be12bb0103a128632e977c3d30a57bbc07b48b2e8a19b453ddbb6137dd920417069ff4f47cfdb1ba0d23ac548bdbd0d3ca56d2cd5d1eca6f662323d3cec2cb75c9f18fd5bdb05b028de3412f895b4fe080d39f034c1549f5bea1d1d503ae5b8ee35de2ded447fe964e98c55cb433db4374cd44c125a06a1db16a28f31e101fc1e96ad83d7785fec466bb2b230245cec6e432a7154a9377ee0822639db2afa0397f48148b6c9958744d29b2e56ae41ad3c24fefbae04f9879bbd2e5d3fd843ef604b257e78b602d0567e5aba3785983747821e9526d54757b103acb6c57ce4fd1d6d5f79b7b818d6f5ebdd3aa73d2bf56cf6d700258c2798b51d0d5b999968f4f8558d8932ce6e8dd54af1958c01e0acd9ca55900fcb029f6713ceb234214b02b6c1e53cd7130b7995316d4c2d66e42606409c7948504ecc5e2761719573b9d7613de3dfee97d3a20e68027d11c691c7548011b8f2b44a8f02ffd111b12f8c3c3f4ef6cb68b44f96a0c285297322dc191d69ebcc1cdad051ed06286a0e7f884b6ead0c2b9301faa9c71d12efa227a11b13c3f4e5e8aef0b9d01e8c21fea48c22bce3ac88f2b69437fc086eb6fb17e1a8ee40bf8926922d39cc5188b2e382fccf276036827d2e62f29c3ab8885f1a13f42d3194f4965b4a4829d8c36cf755fd3383b75b15fff342aaf61f53121ea74cb527f1ae2825fab7d3ed5befbd2214b3be0bddd748c13405eafbb407495142f00b16f6309464d04c42dce977eb808ee1ae56aad32c857b73c2861fdd48e59f2dabc0771d0ddcc5e5b5c69388f0bbcc171a377139fccfdf4420f3668afce42014bef66aeea0e1be43ee9852a688fb0b7e52909c12af8ef0f60595671053794f4de99b73cc6e510c46e8bad33de66fbc2734917d216c3fe529b29ec5e9114dfe666b60963a9a554c4af23780399233fe376dbc671b0ec2e1f49db97c8473f42890a9c21809e916de052407f1ff2c063cd6b5a6f7f3c59fac4a3de184639b556806cb3d21bf7598fdf14a7b37555ac5048ed444cf436adea0f7044a1353c6e159a3d55d53c28a58173788f58b0cd3e88c953bc31c7f499f9d5867cf1765c8ee202777f394abc5450ec7f4d986e69011a2abf5dcfdb6d1e073881820e497ad68dc6060bbcb50c32ef5a75591abbf18de20b7b3fbbccef4b2bb1f9a995b95c877d22c61510cc2c6c23f8b5dad34ab6711f3f84e5c4284b0d6196b1f2f9670d94f7023a31d82b251b8bbe33d8c72c205621b63f7a8b9e1e6d27d76a3687d2c1c6a1c5dfaffd51ee9cdf03a933b76446ea375c6554b57d7b5d45a3442567644ad944a542f13581da1e23de5553533d7da0cf32471003996c55249cac3629ec20984cd61a1016c243365d231183463e39abf30f59c53eb693e569915593d46cf1e397b64e1e4f451fed8d14f10bc37bb71ed9690bca83eeeb71bb31fae584e5dcd28ed8fd11175bb176bc84c4b6a22c2d4b6fdcd4a465eb9f46c1d84778d4ec483b6d355bdc1979d75a3dd6facdf3440485c362a8490f2f4411797047c1dd40476cfb4a3e03433eaaab639ed6d71b6495580a1454fffd93452fb243d1f8ace9bab544c201277535fd866c3ad85c36eed409b2e741e4176be9f5005efdf6bd200a20fdf760c044793e017117881e845e7086bbb47902f8bb1e80f9cccb609c522598c8214a27f45982691cea3ba2e80977ff3068e3f5fa18576940febde2b0fa2da09301540faea0a2238f4ad4a5a207b5602f29e90aef4a78dd892ee966659b14370fccd0b1d5ad3c5be7cc1b4bed0289759f8048b7a72da03d0f448cb0cbbf71a4ef170dcd3a0c9d87ffe18115177a22d3ad12b26ab9283e6eab6752e089feefe24b636d5a0d1299b74a9ed549cb30ebf95e1fba503ec492a438a983831374c73df0d3d5051d63d78cbef3b98e5fbf4f48fec95fd9c85bd50f2202ce199831ebb8036e27b26c3a2f3b05dcf024f087952e37536ad43bccbf02414dc82b1a3120d620d540c47083e22efe10eb8c1c608ee1b35c1937f71316739900265e24f8a98dce600b0bc6c8a973c1dd62188261125b113d5b48b12cfbe8ade75926f341ba8ad4015484ef287140b3a01dc07a569b204a670bdb8d375b35308855bc3d9f892f285521a1284493b7ff83ccdc6a8bf44f1303784a70f1baf4384df81db39b17b7577b604126bf71f6d0fda474da723463dde396a366d98603e3288057ae054b3db54633126d3cf764f7e9ce3e48e65138d4b1548dd30434cd53703a56f475e3f670f220a4c26209643c15b4fefd2d150dd394f74d9c02d7c662d69d6088bf261d15ccd21b38007bf681a8b2e89bddaacb5e681ea2290295fe44f22a0f11495327f1bef32166f9dc7a0a8eee60ebacd705fb4c30c9884b564008d23590bd307beb3437d581bff5acfd2a8ee61dd3c1f8961140794bc467faab7b46355a35aafa7d25bb68e982a82abf6b5ee46e3f0fb5355d9a1f3ad80c8d622d188c61278d0f12a280b39d1c01e3a523c50de69ad5d2a40ad8d3ac734c84fd00f17edc64c6af6e552481206df6e96955467d20338fdbdea962b7513114a347f0709e2cd4a802818569d6e9a70ffafa15a8acdcfda3255d54b89f2a88580c2466440fed7b02bd54d761a3819cc22facaa33f1ee61d6aaafda19c24b96c57ece0eadfc92abc3dd441d8afa3a6428eea551d0dc95783e500594d827764733006ffd43b4a525e65091d1b23f14e1837b142f89b102d9f51fdf3d3d765c0273086bafd419b1f52cab9f91a4f2984eecd2b129c978bc89fdf8deb8fe30367c2748cfdfa9f4c203f3b8331bbb890acd389be14c825bc975b66fe15318d894cba2ca7cbdaa3f47828c0afe0b3385208ce0a8b4e06090a3889d2335bcc42aa1bd1e16c255c3cae34f70e46e47a73ce858ceace445d8c242878e6088c1b144b73def7ee8c138a0946677b926ea57860d245a074e52388e8f61f3057d2862f42cbda41fae809cb47d8b61536b14c2b14a7415b43b39ca791cff6d91208c83b795f25301f7bee1144bf31b0e6c5d4d003c82fb9148b851f46634944b1a4310b1159b614dd806c54e30479e9baf5eecec847810fc4f0b5b04c5eb09fc40fc754eb173cd09de40b3acc5e4339941310ba6269e7876b990addb037e5626451d62d730f58509edd10a2a63e3c2a5a3ca753dc17d68f4278d86bb30887c82ba14f4bd3e4b6ec05b36fd0b597bff72ed452cd0e6eba534503d5fac1ed268c18e2b6a0bf8486cd6641a86eabfb98ffcfb30690e4da8886cd99b574fb88bcfdc057d700697bfa562abd2763e35ab38a69549f33b2cd794332e308f33478b3a401eb5cb55a17ababa5a38b857b0da94cbb401ca5e0a5395206a93801bf726977321715dde6f69e5bc81853129156aee9434ad3d7588984a55b8933dd28f8cdb522eb0547e0c6cc2c4ae3d82c1c74df536a4f1c7f13f1586bd73a7281ba2c071e1b4317b731589ae30d1a8e1a4d83d9fe78f275835db5b13246488f88ca4b3a02f8ea149af753d6d29182b02aee21659b6b11b9ed509457b112a88ce0268d045b67a8507db32db87bd0894522aa75454aca0a48fc0c4285a928dbe2dd7f4f2056188c407b19e7cf17a1b99ce3769627edd2f1ed2b16441089b7a3eda9bf2db2de4f46e3d021c2cc0275e0e84c293a6f1d02b4f03ffc7d898e8fe3c8654ff38506c246ec25b3c1bdc604c96d29bbea04608eec3012f92e55a35eb9e15791b65ab38f75b73df8b2fced9ff81c88e709160d1c2e4466dd44bea764413a8b229fe3cf66e37798ebbdf9dba9afbee31c3f7e636f400ebdeab0c6cb405c6bc9901095f2011e73eb55078a3a34088be6b6a4d31164f8d5459477f4e5eec0f189672a4cfe08d9891a81f7d18bed81d545c64cec8a8b9ba8345e629e52c71d2ac4ab323b2957be17a0456440ada73792fa09927677cdeb2015b7fd3aa07cd4d4b5e745436fbea3687fbb080e6c4761a4d16610ba0c9f86656a1a797eec7b2ec7a35f87fad143f5677ef680ff24f2895c42eb42d786ceb7aec42ba22944a580675efba04b763f78b94d7fd662fd26b7c81a8744803bf1fb239cda041a2c7156741b5cdc62265a82d8c813ffefa81262458027a578ebcc6a6cdfab2f7ac3d59c891986f19731a0f9f1e4c0d115f8757822e7dce8da48c118b3280b434cc2ef0e104d564a77140f87deba0b4a4650a721ea00c3024cd7b06bd07814e8d903c8c58a854d3f9d17ad97ad54dd1e98d98719815ab0a1fb6cba70437c6538c162d8b7e3b4364ab404c72db5e1c3590fbfd1e03544ebdcb9159a91e5b0f7c54abe58fcde3b16e2685814acf25a3eaf459cb58a47933e2aa23956e02f1057f422e1e8ca3e6f4d98f766d8174e2af09d2c37c22368cedd3bf2d4557969a1a214e674728b79bf761db20a678becfff7114ce6a43a83c023d0e0d0553350d8ef4ac1a440c376e77ee9b0d7f35080adf535cba26e428e1f9c60c2110a064f28e143e7bb2245ad40d0d622046097afdbcd0101985a85c95e45accb83b9950b3f390f57db262c63eed944eb31dee423cce94d414f0b83f0762c4d458d414a19b5d4135108711860b9ad3918a7f57abe790666288dc5a498f7256ea8cc17363a2fbfb3ff1f5f2885d0d4aa45cc9733956adc5934a0af3fc7c14f5e9ef35c406080c953785be77af77af3990f38f24a3bc9ccae7fbdddf782809b162d778c0a89661b64dabb71b8b44595746d9340b26e418231c35c82268add0a5667d90e2b5fbec60892bae0d32cb8caf647cc1e382ce406c75baa01d3f3a9074c76e193acff7e494d52a4c0c0a7ce37fb22634178f875aa301ffeaac08ad0cc70c1bf3aa889ee1b5b4ec951f26a12e081f6dc94021af00946ea71cb497ec4317426a4e305ee89b992b45dd1228cb9af20e133c8a115bc454130bc1b0af28c45a37dc0613249ca2bcf487d040bbfa3a1ecfdaf4aceb26da09e023354b08e60e1d03e72d1395254fd4672ed72730c121e363c7e5f59be8b4a6e76cbdf4a4b03dde636504c0a4c97407a15eac7df56effbe5a2948420c8e258fea259f4db287d7d956350d0c296fd3a37dd8b7267616235431f555ccd3241ce1d855a1c809d18d08c90e536632dba0a4b2be7fdc002c8e89701e312b97c68a11f846046592bdd47fc23a1912bf71d7a9698ed7ec03f4351c69f21ccfa18eb053c851b31f0e60a022753b7ab11c8f02029edfbdfdafe795aed6c071e144bcec80de6b6a6da88f32ae984ee611fb12ea89329b4ee7a12f39994628c20ff7fef670ebfb949f1c26227399422a5c25e8d195ad3488586ff0ac610f113f2c3ea645be3a14f40d3294c2ad59271a523c26d3b8da1da218ae95428a5739624455daa4252b9f55158f043593feb8c5e7384ea00b78b716ff9ae14c05dda62969337f2470920bf220df206ac8d18b7e4f9399efb08c03772eab7cd1f05e33ce39c053275e92e2814b4ee6495deaabc8129d989d628f01cf85ace52768d246e4826eca87f984eb83e5e4859f79144d7a520df85e51c3c2a7bb166e1076429b6fbeda3eb33710916ec662674c851378d7db7cc568813c7c6da9d0bc5bd7b36062bb942c0aba8df6adaba30ccda3da7a4f00abb1572e9b696775803cc338a506da20ba35f8812a817e1958efccd20a527f8c9303f3632c79dde923b07852c68dfb84e8cf3e3c37aa1a09f93a602a92fc2f423003ec376422627ba949ed8f51f00d248d027cb031b076b987bb263bd8c235c5ac3b5bfa3478f26e13d7af5cb06ac0930260ed0b697ce30a3e9bf548584258f2e0de0b9710561e9d7ef2c5c31570394296efb4e95e0fec0cf7206a8f721d124e34b37c01b414b84beb66343afeb55eb20910f079e3ef6979d6198e7adef64888a3452c989fb7f82af1e81fb12f7f7d5203952a5c0db49a31778860d6e6ede9f1eae7138fe245e86e21a2ebc727beed5a560a0c3c82bddc4a176cf9a01b975f4ab55509d56795c48a365747ad00980e5820bdfea3167f9d569424bc43ac10b1a04162f7e402e7d804177e15b0b6549c9736e0a986ada33e01eaff23991b56d8a81d040dd52098cd5114a4cd132672961011a026bb839ac6673eaf5936afd8d3c9512b701dc02d63165f69c8d4da0dd794284a2a0b7ed70235e2bc6929a34960e5cd0684128f6cf7b45da4ea8ceeba01c484ce009d4c569b24316cd35de08fa1b49df2cc971f939e9dd173c1bd2fe47823b54babfa7db04eb6ce804cfe9538e9e4f6456c6d1209f84b9e1cb152011d3f0f08da0c314715505bdd83ce2851d6c724bda5f1b91218b835fc1578cbabe8c5cc170ed623830b610535091bb38e2e963df0a1edf22d5934a0023ac561967b814042544205ee688e462bddc793553ab3169f64dc52815bb09827e6e50c30233b38fdd2222a06c068b9461b0b25d96842faf2bc229c94f35ce10855821b8506dd88f1b1da729d690ac0df45978e46633ab41e4fb495dfb647f5931e1935c3fccf2eb1bc91526216928026a5c5c4e1f39d56b747986aab702012c4de0cc770e1a922d5cc0391f501e9c159c449c145d1dd39cdd643bc278ff736899d8136a7eae85938bb8fd11d300f5a9ea36862a5e03810402c91c52ae82eb1d49a77ae215265dae7a61f4762a35920daf0366847d2143cd856a513b01599ee6483e5036982c2532e87fe21fcf01ca6d4e621b3f87defe341f4484a0d4192050073708e89d57e09960a38f598d343102ad32b15884ff9e7702de6abae2a82fd5de346499d9d8764c763e8b58507d144e283d69d4674c16978acbeb88445042e9e4ca16dfc0a98b487e77bf8d623bf281817be09e31cb831695ed5d09b10060690a10c225e1f72e0f0637614b8d575ad5f2a85954988e3a8721a7e38c7b4dadea2c370a6f02319b31c55c3cfa7ccdcea0cd2d744351acaf90cd1d8b28643387a2d58c34a6c3ddef45d862fbec0ff90562c76904caac979fdc28875be0b25c9109594f9a84083be601074e57ac7bee1209deef82390fed566a14bfd2767efb4e29edde60181d82b3656ea58fa75f8bc52e266f1fdd805e22e61748ac0cb27048076db1d88aea5f01fdca0339cf4a1fc40a8ae8619c8e1616c2f138b93656dbbce6dbfcea91d6869d98b15a5220bdc3c02eb2ba63ee7339182a182379581c0dce99cd6dad05303c9763319f0375e157a5d53794970169b86c93207ba93853251678d02d47857813a145658a84c93f1149cd4b4e51d1155e14303697c6b55d441a2135f6242e545d86e9f59a9f2981560b2e20438416a2929d1edfba9dc97b9901ae913d58efee31b7b6b602486047a15010d37a83b085b0bc63aa6f8ca6e4dadd28e2e1f4d21e08d3e0a17922a0171db60d1573b6cea6c2d4d22dfa4d78f5f1ef6349b40834383e143980b6eecb5b7a020a39af2ed8a793090623ef4f96b2e435befaa2219b0890576c836f8e75a5328a296d0a2abefa148eeaf9658c78d0341297dcdd36407be46094e00c08958fd463053eb7bdc8138d46800fd68a7362267081493fa30238c69c34d029efb93cb30a479d886922f85d7123b1f63c78242d8774f0c07942b889358219c194e1a6d97fb50b58f35502913a334e0abb4ea8752cb2acd9632adadfd56de22837b4a374570028e1fa689baba9e3df6753345b59dc458f45f0fdd4b9619882169065e211c895f21131e57892a7ef84fbbf77ad9371ed133e7bdf55f84a7c8f157161f148c9fe2c65c516f744d62ac74c75c85a3cfb3b7fcc08fa937a5f66b3920c772ffd470635bc2a7a7b54659d4e94e413c69bd4fdd2fc6e9d8b201008b417c54568649f3a1c4b202ef20642d954778476420d3d606ca5a2ecf31625cf3851a73e581cc34f7cee2f5b1a6b56392a3a01b2eb92ff345c94ac8d50fab7f990e0dcda7bcbc4968ac58cf2bbf6ca18a850816233caf7e3dc72777a378cf554645eb29c8c720d274a25911aa33059193545dfb05d582c00db843511919d083fc31be567d7daf38286b20112db02fc67d7846e7f206358cfb9ec21da264ed36d64699947699f6992469ffe41dcdb11fe62e3c46d21ed67429f176e804d1a00a0c2581847302440a28eccbe7d0934592ec88b5feb5c705e32a6671c29963fe93390ae552f14f50416af6466158949546deed653d19904efcc78a6ccd2e7d7e1c4b635136ccbe887d2d5f4c299a3205f8f3fa5ca843f5d36192098dd9041bcbff7a939182662f71846f935e84e46a3361faf44fa036a159eeabaaf1e761654e381e513595e911bc0f45fe941d3706c9c5849286ad9b18c8fa6e6e47c77ebe6edc3539199d982cb4e018f0097b1e2cceb3e0209997a8e5ae44110b8eacbad9cf424a10e40f08dc3bcef086145525a71b121e22230f894f48a31e2c3c65b799cdd2085e1e3677c15765d4a9ed30ce26dc6c60d56d476fc2730127802b8bef6fe4f4a5005b5a3be5d15775fd0c1b6ea311826e3aa9e21dbe4ccc5585b6af35f94e6cd69b6860755be81186a49606c54d165121b8460d5428f33ab6279a6ea51f2e00581e8da92ed21b2e458acc64483fd569f861ae7d95130a3f59bf5537d81266a1d82d1a02234d533441ce482ed86e4f44bc72e382ae6d461edff4f7b97c57b06482e0ef59792b5d08a1bc85e99fcd607a2f06145720fba91b7abcb10ef36e2713b4cdd24b493285c2888e9989d81f18a9b01e53999b8a649dc6911094c37fb37aaeddffcaa7aeacd109729ffae7aff71758e83f54cf5fe6f452dd1ba5bd9e50680fd5cd7300d7063374936e7739461bd3f3764fa18ab2f1941a256c08c4d596b9a644a822216c3eabec80bc41cb155161d2f805d00a088d632a754ee9535c24f7fabe42f681103e5549b710eafc4f4bd0aeeb7f0f4fae20d0697797f6ad3cfee1fa1060c9e0ec8ec8d899f4c73acf3471ec0f4218ce6334264e2304ea6227192c075c6e43296120d2afeacbbd508204fb87eb016ef8480219ce3b37acbc0afb1596e65f5c7d3b1a4077a883d3b524ef30f1a523431442d7c03b1ed77a7af191a4ec53eeef08057b81e9d120ac4d0c7e723fb32a8afeeb02257416cb9365ccb3324634851cc3eaa73b7748b2874b44e0bb0d355f9806586afb9ca15e454db06f0ef6ef297d2eeec8ab9f61c998bec6a83b44c3f4757d0b5b15386ab37b8d59435c02efe744766c3c23769b15095c4cde50586daa8b72dceb84ba530ce3e402224e4b46919fccdb06cab836083d3b5e140581e1b4902edb9d764ce3e658ef22372c59db63dfed0a08aae2731280694e8520688f3a255fb197567597d9b4e2767d3aa604be118c93da694d1ccffcb45c15ed8b03e3080c210fea2136e1a0ce57b6765fd3dd85aef92760f8f4458c27ab2066c61321b2ba2a0fc7402921cf630b236ce1374716ddb84f47b77bc1f4029abed8e18cf8b402cd641cade5a6b4bdd2a39a1d74b638714e855a7e39fc2bde31e63ee8258b72b3e9639e6298464a889d337afa309ca848df49a903c7a44f65af542d16b6e8ff5a163177a5e8c0a2bb77efca80d1c160a54ecdfc476adc8f069a4fb5c3a538e2fcea511dd8e4756a25514c0a54f23750f8c54c8a81e585a148ace2a32c6fc8b53dfe9eb959c2090bb3017ea4939b48028b2e6ec4b841629795c2654942b5b04de2dbec0a90c60dea9dffe520febb12e0f122097dd7cc47e509e0b2f987cadcbd977d467646d55f43679d4ed5a4b15b5befcc64f0370d6d683842aa8032913dfd5c183080fc2670911f7b97e443b5d4fa1d72147f20079396719eeae002032c1eafe6f0de3951c19a287a0050d6c1426432226aa39ef7bae419348c55019843fd88eb7f57db824ed0d7bef3b597c15f2a9c764ece26f49b8999580e536729ee4d09887af653dede31ca427696dd8bbfbbb209937e60f5a0a4d3c41a97263c41ca015fc3d7a74dc0ee5a13020df6f85e5451ac7dff805f08c51a4be95ef684690093a73dc9e6c10006f8402fb3a1fba35dfa3f5b89d859278fe926536c17d232211282bfd9fad61d9ee13aeeaab25b9fba32437bce53089251009487a98a74a6940a0d73629f4d898aea74a7bb18be334d061bb038a31ee377417db9ed09cb9f3ddf802c059a58b7bec2a9c4a93fe82af1dcc981f6be9b392c9b1c87ab6999f1cd70b6b6f8c89f0ec09ac038a27e29b34f04ad654173061fa97d9ca9ad1742af02298dcf52553a9f7b9ec84fc5df3692bb824bed69defbe960a9f4567b8581ae3aad158e8d784e2cbc8d25c10efcb87f62dfb66a94db603665a5602d513ca51b777181120c4be13a24dfe8ffb82eed318639f9bfa3f5deda157facbce023b025e9b8d06e68caed8d22fb9af2b47d0cd8d8194a6a0840c2425cd7ae57318e13ce2a943d710822c86bc2c7fbaedc8709c0ed031fc9c633cdfc87838209fa7b3e371e114dfab5e5b9f09e8346ac254ccb2e748b98cbc39d16c365a04a765ee136ed30ba948c936dc8f58b5e9ac3ffb5561925bdc3b42af05d6f6858bc15a51da36d14b9f89810f8142dba7c7904f0cf4214e2def0ecd86551fd46b29ee8fd28933fe0d86dc958b8aca874d488d5fd17d6ddce50884a37a5d08f0c8f1a89286220ed3155449a0af791e5e56048e1b7ec9a663c235be769cff160966c34f2b4314eeb23c04282d4fa6e87cd7147e744f9ea8b29d6c5ca6631f848338495523c5a26674b7d47848c1fb754f4402fb4d389760db5df57d040ec3a0cc4c46028c39d98bad81aad336877822930cdd2afba6c27091e7c685eb718d2628c8bed4f888c8b36a78f19b087474eb9c6732dd5450b2542bd1b4cb74ab74a331c22e87d670e5859254eee748f142432e5c9b8a023cb035c1639c88ce999e73ae94cf4a7077d81e7069b7e99c71ff7e5caf9edcfa6d2c2c50ab1f208cedbea0421d1e05c76fcdb2f3b31ca0620e15ca4acae13889f06b03ca45ac30895cca3ac972f5f6b33485c022bbd8ce893c9e07a244ba5b1a68d414e7e6258b258a8669872f46cdfea271ab2db851bc92e56ca03fc7ed7a9022c871b6cea2a2de2e034dc00e4b56481f3cc7accf7982eaf5f8c05ee6506707fd69c7b5d320f5c3a3a832ee7663703abd95edd9116076377df10df4363fdd3117f5a6da351e1a4e523ac2d799a2e8b67442eb4de1ee06d65473628809f0d650f9e4230ca580a59a0123d0ec013c01ea3ddddc51427ae018ed390ae9c33dc3842cd9c0501fdce10ed6c0fbd3a2741f26206247a47ba36d0e718f6f880363f42550a3b389d3ded8bac36186d3a71a7264533042dff344a68b6fdff46ed953df98e8313feed6e96e228887e9aaa9570c2ef2512c19eaf4c2b5842553cf30d379f3d835be5f58301e0db8fcdfe441f2033cf5ba1e29d74a499169cb87d9c6bace19b17401167b6a838e0cbf4f1e5da4b45d9245d96639ad5a68d586c6653a4248a0bf583e145c9e399ec39b5d8daa4f8c51afb72e8a562f3fcd744796810474c209a9b5172481e70dd1f20dae5c539db5752a3241674be373077ad6c08cd207d30a12adf2ad0d49f3bb3c4e88b0ef9b5e0b4d85be05422f66978d273bf3c3b6ac8fd5fefef3024b0671910db515b1152cbf6cd4493dcb505ebdec2c9959ae12712346bf94da984e0b0ab940917c17f6ef58d8ea4aa566209cac34d554f32f734885592c6b819256c26a82ad6c1e1fdea107602a11598e5e24451c3d09fcda33dd4b230eababb237d595752ea73920093b2c7bcd199aabc56bda8f17b72566b0deebf1d4d4e05b46f575f5cf918d758a53cae766e875e562d626ff630eee6dce4d18816d644fcc585358b1d9425c4640afa1fdc03195688e156d384a720c99047f4773c3d0172ba449c2b8f1e13511473faf87d1b26f8730356826d151c2048ab781a63be6d337dfaa381e90571b0ffdb3354d2da59b4e5c4c3477277cf04a83b8a3546491d5296a8c083810226ee6fd851ffa6a47a5c5c6470bd41b6584bbf909c9852e89db74d489258f68de27f34f6466bc707b03877bc567cd541010d7c4c762ed2242139c8d8c51bb5bf00d19766e0c02c77c26f951cd0b65032af06dfc095a1b0bdf154cc401c387203e8b4a14fdda87e0c67a2e2230a1f82196d509c05716e1190aa426b6fafa9dd3fe6dc349f93a635225c37e4dd17632b41f1baa87a26298e18c8cffde2005ad5cf2d0bad8439d7eb75131e02f82a59e1d537c6950e81ade3b13c7da30c4a65c27beb933e88ec569a73dfd6ccee8cb9ea315f214d292aba2303118075781c382b54fb0dac0aef37ef55259e988d2107c571862f6ada9223ee622cc9a63611fc4ed7632fe5140d633db52d564698bbcf0aa464a512f4ca0fc336655f9f2fe15245d29a68f8d920a067705bc31b6e41260cdd0b835728eb32cd594139d22275391105410a6d59ce5d036fc09283a4159d7f0f70fe7cfa9e3fe71df1c53e3d39bc3bde78a96d24677012bc9bce839f5f5e5dfd5fea02e8dc44a930f9b26355d25a797a21ce475e7b8ddee3c6220b19125313bd8c9f3483532e1ed05d879d127c45a0695b1bb68ef4857cffc92bdf59667d7c1daefe122ff194ac414835761f6c208ece173ad5c11bfc936057e0e65bb63fce1b9c02513c21f5d6f215810d6b2b43d51878abef9f160ede53a8b17e1d04d63c503799bc77580d014f5bd1037cd050dbec05621e804fb0fb83d5674e27df5eb18bbc525f773ad3960e56c969f1895043308b33511b2e5fe11f1488341547899dee42ddabddb7b09935c6f1da52aac4b5438eb0d4931e60a9afd0b3297b1dd5449c6da83d8160935b7840afcf22a3bc57548cbbc6bb391abef575fce08548c76c6747b8a220b2612a123f68e6aeefc3bd407d37997814b6556ebedbd743ace3dd038df20aea66716ebcb61ad7c45b298f53a1dbc6be4e25453f86cff7dd455f1a6c2b17e300f3d8cccf97bd333cfef9524c79993cded3e0da2bbfe92ee54da2b7b611e165d80bf095dfae44e2d8908b7aa29d4f78966e729ed552108a530fa6958910e3e43203bef6fa6cc4d66bdd516460ce982793870a36832653099f57cf67fe0d59e6f7aedd9a9694e923f15d820108d4a7367e6ea72b112ded1200113a44512a87cd2192a9cc19a55289ac034ee605aca1a3688c84715815aafd06bd7fc782d77b9930ec4f1c07d3f540eb7eacce015cb7fdc4c3b7f0e4544ddec1d787593609c0611b2f57aeb5301c6a4ec07adf40661d14da49233239a13fff4e5d1d6608f1826f246f0eed0e591e019e5e4d7881385a8d5b96ed5f49df330d567b004aec0242c5f073b59384eb0a50fc74b995e7ba92c9a5a05037d9663ae003625fd17ff660d68d53de1972c65dc126bacb8454855b75348fe5c513d848dd831c42a9baf9e9fffb92d87e40bc649537f812c775a8fa01ad04a9be1506d694bbaac159987ba3cf0160afadb633cc0c44549868897a3122c21318e910695f9c62b1219446af9cbea34a922ca27f20e22c49916028a267a72e683adf38deba9626aa9ddb5e127e168fe0ec05bc385587fa3465d11b06d854d1f7d781e05a588b4fad2cf88981a2408f11467d2a70f541faa3d623696e97b2cc4b1020b7e9cb880ed29ce5291ff704dd13544fd62693027355f15b81f88d71b539e8b8ec99a6a5cbef5f1e3dc3e5106bc0960cfe328efabadd2410017780e8566f5f19152aa29060dd3a4f28b0be76ea0d529254cce3f67aec2efd42853faac8273bb97a60db3990fa68bba7252d50937b33776380466c1a045b7841d5a46d3fc0a34710e617a199fa43f09f9d9bb144db49be3eee0b06f7bd52407da9a369d2e5fb179789d94fe541ad812a2c0ccc00f3b6d7f306196cae759b88a34f107a9aeaaefb073f0e9efd766888a5a11592f7061fc2a786785f7c739f0e56919fc722bcc0381957bdf815f2cb45d01a40b4f493f68221c1d00d111e8d9fd602c4d7c3576afb234e96525b45b3182e663b31b8a28ff702f9e9b8e2282fc3bf596718eab4169a1ee1ae0ad8edc9bfe65fb1937ee46edc</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-shrink">
+      <input class="hbe hbe-input-field hbe-input-field-shrink" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-shrink" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-shrink">输入密码查看.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+  </div>
+
+  <footer class="article-reactions">
+    <div class="reaction-group">
+      <button type="button" class="reaction reaction--comment" aria-label="跳转到评论区" data-action="scroll-to-comments">
+        
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-message-circle"></use></svg>
+
+      </button>
+      <span class="reaction-label">评论</span>
+      
+    </div>
+    <div class="reaction-group reaction-group--right">
+      
+      
+      <button type="button" class="reaction reaction--share" aria-label="分享" data-action="share">
+        
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share-2 flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-share-2"></use></svg>
+
+      </button>
+      <span class="reaction-label">分享</span>
+    </div>
+  </footer>
+
+  
+
+
+  <nav class="article-actions">
+    
+      <a class="article-action article-action--prev" href="/posts/24d847ae071d/">
+        
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-arrow-left"></use></svg>
+
+        <span class="action-label">上一篇</span>
+        <span class="action-title">于是我再一次拿出电脑开始写作</span>
+      </a>
+    
+    
+      <a class="article-action article-action--next" href="/posts/fe17491f06d5/">
+        <span class="action-label">下一篇</span>
+        <span class="action-title">C_study_char</span>
+        
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-arrow-right"></use></svg>
+
+      </a>
+    
+  </nav>
+</article>
+</div>
+
+<button type="button" class="back-to-top" data-action="scroll-to-top" aria-label="返回顶部" hidden>
+  
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-arrow-up"></use></svg>
+
+</button>
+
+
+  <section class="related-paper">
+    <header class="related-paper__head">
+      <h2>
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-link"></use></svg>
+相关文章</h2>
+      <a class="related-paper__more" href="/archives/">
+        <span>查看更多</span>
+        
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-arrow-right"></use></svg>
+
+      </a>
+    </header>
+    <div class="related-paper__grid">
+      
+        <a class="related-card" href="/posts/fe17491f06d5/">
+          <span class="related-card__thumb">
+            
+<div class="paper-thumb paper-thumb-0 paper-thumb--cover">
+  
+    <img class="paper-thumb__img" src="/img/C%E8%AF%AD%E8%A8%80/char.webp" alt="C_study_char" loading="lazy" referrerpolicy="no-referrer">
+  
+</div>
+
+          </span>
+          <span class="related-card__body">
+            <strong class="related-card__title">C_study_char</strong>
+            <em class="related-card__date">2026-01-10</em>
+          </span>
+        </a>
+      
+        <a class="related-card" href="/posts/32f7b31f9b52/">
+          <span class="related-card__thumb">
+            
+<div class="paper-thumb paper-thumb-1 paper-thumb--cover">
+  
+    <img class="paper-thumb__img" src="/img/C%E8%AF%AD%E8%A8%80/struct.webp" alt="C_study_Struct" loading="lazy" referrerpolicy="no-referrer">
+  
+</div>
+
+          </span>
+          <span class="related-card__body">
+            <strong class="related-card__title">C_study_Struct</strong>
+            <em class="related-card__date">2025-12-11</em>
+          </span>
+        </a>
+      
+        <a class="related-card" href="/posts/ce8d21b4beef/">
+          <span class="related-card__thumb">
+            
+<div class="paper-thumb paper-thumb-2 paper-thumb--cover">
+  
+    <img class="paper-thumb__img" src="/img/C%E8%AF%AD%E8%A8%80/note.webp" alt="C语言笔记" loading="lazy" referrerpolicy="no-referrer">
+  
+</div>
+
+          </span>
+          <span class="related-card__body">
+            <strong class="related-card__title">C语言笔记</strong>
+            <em class="related-card__date">2026-07-14</em>
+          </span>
+        </a>
+      
+        <a class="related-card" href="/posts/037bcb475da6/">
+          <span class="related-card__thumb">
+            
+<div class="paper-thumb paper-thumb-0 paper-thumb--cover">
+  
+    <img class="paper-thumb__img" src="https://bee-reg-ab.imagency.cn/p/d333d469452c4f117876729e84fa7b0f.jpeg" alt="探索：Obsidian全平台互通方案" loading="lazy" referrerpolicy="no-referrer">
+  
+</div>
+
+          </span>
+          <span class="related-card__body">
+            <strong class="related-card__title">探索：Obsidian全平台互通方案</strong>
+            <em class="related-card__date">2026-02-06</em>
+          </span>
+        </a>
+      
+    </div>
+  </section>
+
+
+      
+
+<section class="comments-section" aria-label="评论">
+  <header class="comments-section__head">
+    <h2>
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-message-circle"></use></svg>
+评论</h2>
+  </header>
+  <div id="tcomment"></div>
+</section>
+<script>
+window.addEventListener('load', function () {
+  if (typeof twikoo === 'undefined') return;
+  twikoo.init({
+    envId: "https://yw37153blog.netlify.app/.netlify/functions/twikoo",
+    el: '#tcomment'
+  });
+});
+</script>
+
+
+    </section>
+    
+  </main>
+
+  <div class="sidebar-backdrop js-sidebar-close" aria-hidden="true"></div>
+
+  
+<footer class="site-footer">
+  <span class="site-footer__left">© 2026 By 文逸行_Yalego</span>
+  
+    <span class="site-footer__right">
+      
+        <span class="site-footer__row"><span class="site-footer__powered-prefix">Powered by Theme</span> <a href="https://github.com/Homulilly/hexo-theme-flatpaper" target="_blank" rel="noopener">FlatPaper</a></span>
+      
+    </span>
+  
+</footer>
+
+  
+<div class="search-panel" aria-hidden="true" data-index-url="/flatpaper-search.json">
+  <div class="search-backdrop js-search-close"></div>
+  <section class="search-dialog" role="dialog" aria-modal="true" aria-label="搜索文章">
+    <span class="tape tape--top-left" aria-hidden="true"></span>
+    <header class="search-head">
+      <h2><span class="green-dot"></span>搜索文章</h2>
+      <button class="icon-button js-search-close" type="button" aria-label="关闭搜索">
+        
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-x"></use></svg>
+
+      </button>
+    </header>
+    <label class="search-field">
+      
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="#flatpaper-icon-lucide-search"></use></svg>
+
+      <input id="flatpaper-search" class="search-input" type="search" placeholder="输入关键词，按 Esc 关闭" autocomplete="off">
+    </label>
+    <div class="search-results" data-empty="输入关键词后显示匹配的文章">
+      <p class="search-empty">输入关键词后显示匹配的文章</p>
+    </div>
+  </section>
+</div>
+
+  <script>
+  window.FLATPAPER_I18N = {"language":"zh-CN","common.posts":"文章","common.categories":"分类","common.tags":"标签","common.comments":"评论","common.share":"分享","common.page":"页面","common.archive":"归档","common.post_list":"文章列表","common.search_posts":"搜索文章","common.random_posts":"随机文章","common.reward":"赞赏","common.view_all":"查看全部","pagination.prev":"上一页","pagination.next":"下一页","pagination.post_pager":"文章分页","pagination.archive_pager":"归档分页","index.featured":"精选文章","index.pinned":"置顶","index.read_more":"阅读全文","index.previous_slide":"上一张","index.next_slide":"下一张","index.carousel_pagination":"轮播页码","index.carousel_slide":"第 %d 张","index.latest_posts":"最新文章","index.empty_posts":"还没有文章。创建第一篇文章后，这里会显示最新内容。","archive.title":"归档","archive.post_list":"文章列表","taxonomy.category_count":"%d 篇","taxonomy.empty_categories":"暂时还没有分类。","taxonomy.empty_tags":"暂时还没有标签。","links.label":"友链","links.title":"友情链接","links.empty_data":"暂未加载到友链数据。请确认 source/_data/links.yml 存在并已 hexo clean。","links.rss_label":"%s 的 RSS","friends_feed.label":"朋友圈","friends_feed.title":"友链朋友圈","friends_feed.loading":"正在加载友链动态…","friends_feed.missing_url":"暂未配置 all.json 地址。","friends_feed.load_failed":"友链动态加载失败，请稍后再试。","friends_feed.empty":"暂时没有抓取到友链文章。","friends_feed.load_more":"加载更多","friends_feed.updated_at":"更新于 %s","friends_feed.friend_count":"%d 位友邻","friends_feed.active_count":"%d 位活跃","friends_feed.article_count":"%d 篇文章","friends_feed.unknown_author":"未知站点","friends_feed.date_unknown":"时间未知","post.scroll_to_comments":"跳转到评论区","post.previous":"上一篇","post.next":"下一篇","post.no_previous":"没有更早的文章了","post.no_next":"已经是最新的一篇","post.back_to_top":"返回顶部","post.return_to_library":"回到书影馆","post.related_posts":"相关文章","post.view_more":"查看更多","not_found.label":"页面走丢了","not_found.title":"找不到这个页面","not_found.text":"这个地址可能已经移动、删除，或者从未存在。","not_found.home":"返回首页","not_found.search":"搜索文章","search.placeholder":"输入关键词，按 Esc 关闭","search.empty":"输入关键词后显示匹配的文章","search.loading":"正在加载搜索索引…","search.load_failed":"搜索索引加载失败，请重新打开搜索重试","search.no_result":"没有找到与 \"%s\" 相关的文章","search.close":"关闭搜索","code.copy":"复制代码","code.collapse":"折叠代码","code.expand":"展开代码","heading.anchor":"链接到此节: %s","head.tag":"标签：%s","head.category":"分类：%s","head.archive":"归档","head.archive_with_date":"归档：%s","head.page_number":"第 %d 页","navigation.primary":"主导航","navigation.mobile":"移动端导航","navigation.brand_home":"FlatPaper 首页","navigation.brand_menu":"打开站点导航","navigation.open_sidebar":"打开侧边栏","navigation.close_sidebar":"关闭侧边栏","navigation.sidebar":"侧边栏","navigation.sidebar_tools":"侧边栏工具","navigation.site_links":"站点链接","navigation.site_info":"站点信息","colors.choose_theme_color":"选择主题色","colors.theme_color":"主题色","colors.toggle_color_mode":"切换颜色模式","colors.green":"绿色","colors.purple":"紫色","colors.pink":"粉色","colors.sakura":"樱花粉","colors.blue":"蓝色","colors.orange":"橙色","colors.black":"黑色","profile.default_bio":"热爱生活，热爱代码，喜欢分享技术与生活中的点滴。","welcome.cta":"开始阅读","welcome.title":"欢迎来到 FlatPaper","welcome.text":"一个专注于内容与阅读体验的博客主题。","home_hero.label":"首页开屏","home_hero.enter":"开始阅读","home_hero.note":"今日","home_hero.default_subtitle":"日常记录","home_hero.nav_links":"开屏导航","home_hero.profile_links":"个人链接","home_hero.tools":"开屏工具","home_hero.shuffle_stickers":"打乱贴纸位置","home_hero.link":"链接","home_hero.sticker_image":"贴纸图片","home_hero.visit_confirm":"要访问 %s 吗？","home_hero.visit":"访问","home_hero.cancel":"取消","toc.title":"文章目录","toc.empty":"目录会根据文章标题自动生成。","toc.expand_all":"展开全部目录","toc.collapse_all":"收起全部目录","sidebar.hot_tags":"热门标签","sidebar.latest_posts":"最新文章"};
+  </script>
+  
+<script src="/js/main.js"></script>
+
+  
+  <script>
+(function() {
+  if (!document.getElementById('post-comment')) return;
+  var pagination = document.getElementById('post-pagination');
+  var container = document.createElement('div');
+  container.id = 'livere-comment-wrap';
+  container.innerHTML = '<livere-comment client-id="PhyrMWIoABbnPKqNMAqd"></livere-comment>';
+  if (pagination && pagination.parentNode) {
+    pagination.parentNode.insertBefore(container, pagination);
+  }
+})();
+</script>
+<script type="module" src="https://www.livere.org/livere-widget.js"></script>
+
+  
+</body>
+</html>
