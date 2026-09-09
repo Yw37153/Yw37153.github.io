@@ -724,9 +724,6 @@ body::before {
   grid-template-columns: 280px minmax(0, 1fr);
   align-items: stretch;
 }
-.paper-shell--wide {
-  grid-template-columns: minmax(0, 1fr);
-}
 .paper-shell--article .paper-sidebar {
   align-content: start;
   height: 100%;
@@ -5033,9 +5030,6 @@ body[data-button-style="tape"] .toc-toggle-all:hover {
 .dark-mode body[data-button-style="tape"] .reaction:hover,
 .dark-mode body[data-button-style="tape"] .toc-toggle-all:hover {
   color: var(--color-accent-muted);
-}
-.paper-shell--wide .paper-main {
-  grid-template-columns: minmax(0, 1fr);
 }
 .schedule-tape-wrap {
   min-width: 0;
