@@ -1,46 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>EPlan使用整理</title>
-    <url>/posts/7cc8d15b3d0e/</url>
-    <content><![CDATA[新建文件
-创建Demo模板新文件
-工作区：
-导入Catia文件时会发生畸变：
-
-
-找到发生畸变的文件
-
-
-在catia缩放
-
-
-导回工作区
-
-
-整体的文件一般以**.CATProduct**结尾
-导入车架时无响应：看任务管理器，如果还CPU和内存还在动就是假死 等着就行
-整体工作流思路：
-布线
-贴管脚 连接导线 放保护（代替束） 半自动布线
-接地
-贴端子, 1pin就行 全部需要接地的都连接在这个pin上
-并联
-先连一根导线 在这根导线上放熔断器 连接需要并联的导线
-改pin脚
-选择重新连接 选择原来的pin和目标pin
-以自身为中心翻转180度
-选择旋转 选择局部 找到对应的轴 180
-常见问题
-放入束后消失
-是因为勾选了显示内容，关掉就和教程、P8默认一样了 辅助里的束和放置里的束效果一样
-创建圆柱体时选择高度时卡顿
-其实并不是卡了，而是选择了关键点选点模式，无法选择Z轴点。关掉选择关键点
-提示: 无法创建，不存在直线连接
-没有完全取消布线，再检查一下起点和终点 选择“从束中取消布线”
-]]></content>
-  </entry>
-  <entry>
     <title>FormulaRacing — FSAE/FSEC 高压安全回路部件清单</title>
     <url>/posts/6bcec4358ece/</url>
     <content><![CDATA[大学生方程式赛车（FSAE/FSEC）高压安全回路部件清单及功能解析
@@ -361,76 +321,44 @@ git push origin --delete new-feature
       </tags>
   </entry>
   <entry>
-    <title>哲学的意义：答案还是思考</title>
-    <url>/posts/f100aad107e7/</url>
-    <content><![CDATA[0.
-也许我们的思考总是在经历一些事后被我们察觉，于是我们想当然地认为这些事是思考的缘由，换句话说，我们自以为思考是被启发出来的。但是，如果转换一下角度，从偶然性抽离出来再思考这个问题——我们的思考也许是个必然？
-写这篇文章是因为读到了不感兴趣的文章，虽然这篇的作者我有些好感，起码这个作者在这之前一直占据着“思考的缘由”的位置上，但是题材我真的极其不感兴趣。于是有了这些问题。
+    <title>EPlan使用整理</title>
+    <url>/posts/7cc8d15b3d0e/</url>
+    <content><![CDATA[新建文件
+创建Demo模板新文件
+工作区：
+导入Catia文件时会发生畸变：
 
-1.
 
-哲学的意义，究竟在于回答，还是在于思考的过程。
+找到发生畸变的文件
 
-当我们把意义放置在答案上——哲学一下子被固定住了。哲学家们千百年来用思考为其赋予的生命变成了一摊死水。
-哲学本身就很难有一个明确的答案，历代哲学家用不同的角度和方法论证证这个世界。谁也没有成功，从苏格拉底到齐泽克，他们各有各的局限性。
-但是，哲学毫无意义吗？
-在哲学家不断尝试阐述世界时，他们带来的尝试的方法论，仍旧闪耀在其他学科领域。
-–逻辑学，数学，物理学乃至玄学物理学。
-那么，重要的，还只是答案吗？
-2.
-再将思考的过程放在哲学的意义上。那么哲学家们所研究的就不应是世界如何，而是我们如何。
-很可惜的是，有相当一部分哲学家并不会会去思考关于思考本身的问题。
-前苏格拉底哲学家（公元前7-5世纪）基本未涉及对思考的思考，以至于他们缺乏对认知个体的系统性认知。就算是对于近现代发展出来的分析哲学来说，“我”这一字，本身就是非法的。
-可见，哲学发展的主线，从来不在于思考本身。
-3.
-从头来过。
-哲学，希腊语中又有爱智慧的意思，它诞生于人类的好奇心。人类迫切地将世界纳入自己构建的体系当中，于是他们用自己有限的知识推断完整的宇宙。
-哲学最开始就是为了将世界正确地放在自己的知识当中。
-此事在精神分析中的镜子阶段亦有记载。
-4.
-镜子阶段的理论来源于一次动物学实验，结论是
 
-半岁大的儿童与同龄的黑猩猩的不同，即在于前者会变得痴迷于其镜中的映像，并且欢欣雀跃地把它接纳为其自身的形象，而黑猩猩则会迅速认识到那一形象是虚幻的，并且丧失对它的兴趣。
+在catia缩放
 
-镜子阶段阐明了人类之所以为人的一个标志，将外界形象认同为完整的自我。在此阶段，我们将自我的形象误认为真实的自我。
-哲学的一个重要命题就是如何认识世界。正是镜子阶段的存在，我们将外界形象认同为自我，这种全能感让我们认为我有权力理解世界的运行规则。所以，我们开始好奇这世界万物，并尝试给予他合理的说法。
-5.
-关于“我”的讨论中，从尼采对形而上学语法的批判开始，在结构主义运动中福柯《词与物》的发表以后，主体不再被认为是进行思考的主体，仅仅是思考发生的场所。换句话说，主体只是思考需要的条件。
-（当然这个依旧有争论，比如分析哲学仍然认为主体是实体，不过本人更倾向于结构主义和现象学，也就是本文所述的观点）
-思考既必然，也不属于我。
-因此，哲学的意义随世界而变，它的形象是最终真理，即便他本身只能无限逼近，永无到达那日。我们始终不是镜子那一头的形象。
-6.
-在现象学看来，心灵或意识指向、呈现或关于某物的能力，是心理现象区别于物理现象的核心特征，这种能力被称为意向性。思考某物就是心灵意向性的一种体现。只有当被呈现的那物可以被感知到时，我们才能说“我正在思考”。
-7.
-可是，在我们解构问题以后，我们仍旧未找出答案。但我们现在可以确定思想有必然与客观存在性，但是其客观性是相对的，哲学是爱真理的学科，客观并不能代表他的正确性。一个哲学命题，如何被思考与被讨论，必须需要一个媒介人为地将其从脑海中解放出来。只有当这种思想赤裸地展现在世界的真实当中，人们达到了思想中所预想的结果时，人们的认识才被证实了。
-而哲学，正是这一旅程的指南书；他不为后人提供结果，只是证明曾经有个人正在思考。
 
+导回工作区
+
+
+整体的文件一般以**.CATProduct**结尾
+导入车架时无响应：看任务管理器，如果还CPU和内存还在动就是假死 等着就行
+整体工作流思路：
+布线
+贴管脚 连接导线 放保护（代替束） 半自动布线
+接地
+贴端子, 1pin就行 全部需要接地的都连接在这个pin上
+并联
+先连一根导线 在这根导线上放熔断器 连接需要并联的导线
+改pin脚
+选择重新连接 选择原来的pin和目标pin
+以自身为中心翻转180度
+选择旋转 选择局部 找到对应的轴 180
+常见问题
+放入束后消失
+是因为勾选了显示内容，关掉就和教程、P8默认一样了 辅助里的束和放置里的束效果一样
+创建圆柱体时选择高度时卡顿
+其实并不是卡了，而是选择了关键点选点模式，无法选择Z轴点。关掉选择关键点
+提示: 无法创建，不存在直线连接
+没有完全取消布线，再检查一下起点和终点 选择“从束中取消布线”
 ]]></content>
-      <categories>
-        <category>思考与记录</category>
-        <category>杂文</category>
-      </categories>
-      <tags>
-        <tag>文章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>今日闲谈见落花</title>
-    <url>/posts/3982f9dc37c3/</url>
-    <content><![CDATA[没有别的什么想法，也不是想写些什么，只是到了这个图书大厦，觉得这样做很有趣——于是我找了一个空地坐下，拿出键盘，写下这段文字。
-人出生就是出生了，从此再无别的含义。这世界太过于残忍，视万物为刍狗。我们难以想象，没有目的如何生存。在人类还不是人类时，人们活下去的动力就只是出于本能。一切全凭基因驱动。那时，活下去——这个词本身，就是他们拼尽全力的目标。随着文明的开启，人们渐渐掌握了语言，学会了耕种。有了闲时，有了语言的能力，大家就开始思考——“我是谁？我在哪？我应该到哪里去？”这样的哲学命题终于完成了它的降生，自此，对这个问题的回答成为了哲学的根基和脉络，贯穿至今。
-这些问题不是只有成熟的人才会思考，而是只有当我们认真审视并尽可能用行动诠释自己的思想时才会变为一个成熟的人。所以，看到这段话的你，请不要放弃对这些问题的思考。如果你认为你的答案过于肯定，请不要害怕，古往今来的哲学家们，他们也相当程度上坚信自己的理念。请不要害怕出错，因为我们一定会犯下“有局限性”的罪名。当我们给出自己的回答时，错误就已经诞生，但是与此同时，真理的一部分也悄然而至。
-我希望哲学的春雨可以沐浴在每一个成长中的少年、青年、中年及至老年。
-我仍旧在这里坐着，人们从我的身旁走过， 在茫茫书海中找寻着自己的精神归处。
-我是幸运的，在我思考宇宙是什么时，有一本书刚好走进了我的世界，我刚好翻开了它，于是我才知道，这些世人羞于讨论的话题、认为它神秘莫测的学科——叫哲学。走进哲学的世界，我才发现我并不孤独，甚至早已有人想过。那些有关世界的思考就在那里，闪耀在历史一隅。
-]]></content>
-      <categories>
-        <category>生活拾光</category>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
   </entry>
   <entry>
     <title>于是我再一次拿出电脑开始写作</title>
@@ -486,6 +414,24 @@ git push origin --delete new-feature
       </tags>
   </entry>
   <entry>
+    <title>今日闲谈见落花</title>
+    <url>/posts/3982f9dc37c3/</url>
+    <content><![CDATA[没有别的什么想法，也不是想写些什么，只是到了这个图书大厦，觉得这样做很有趣——于是我找了一个空地坐下，拿出键盘，写下这段文字。
+人出生就是出生了，从此再无别的含义。这世界太过于残忍，视万物为刍狗。我们难以想象，没有目的如何生存。在人类还不是人类时，人们活下去的动力就只是出于本能。一切全凭基因驱动。那时，活下去——这个词本身，就是他们拼尽全力的目标。随着文明的开启，人们渐渐掌握了语言，学会了耕种。有了闲时，有了语言的能力，大家就开始思考——“我是谁？我在哪？我应该到哪里去？”这样的哲学命题终于完成了它的降生，自此，对这个问题的回答成为了哲学的根基和脉络，贯穿至今。
+这些问题不是只有成熟的人才会思考，而是只有当我们认真审视并尽可能用行动诠释自己的思想时才会变为一个成熟的人。所以，看到这段话的你，请不要放弃对这些问题的思考。如果你认为你的答案过于肯定，请不要害怕，古往今来的哲学家们，他们也相当程度上坚信自己的理念。请不要害怕出错，因为我们一定会犯下“有局限性”的罪名。当我们给出自己的回答时，错误就已经诞生，但是与此同时，真理的一部分也悄然而至。
+我希望哲学的春雨可以沐浴在每一个成长中的少年、青年、中年及至老年。
+我仍旧在这里坐着，人们从我的身旁走过， 在茫茫书海中找寻着自己的精神归处。
+我是幸运的，在我思考宇宙是什么时，有一本书刚好走进了我的世界，我刚好翻开了它，于是我才知道，这些世人羞于讨论的话题、认为它神秘莫测的学科——叫哲学。走进哲学的世界，我才发现我并不孤独，甚至早已有人想过。那些有关世界的思考就在那里，闪耀在历史一隅。
+]]></content>
+      <categories>
+        <category>生活拾光</category>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>四月快乐</title>
     <url>/posts/92152adbe655/</url>
     <content><![CDATA[
@@ -519,6 +465,150 @@ git push origin --delete new-feature
       </categories>
       <tags>
         <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在Hexo上发表自己的文章</title>
+    <url>/posts/a4a3abd7df79/</url>
+    <content><![CDATA[
+关于Hexo上的文本功能
+在我们已经搭建好的Hexo上，可以进行一些简单的操作：写一篇文章并发表。
+流程概览
+graph TD
+新建-->写作-->发表
+新建
+用git bash打开库文件夹，输入命令
+hexo new [layout] &lt;title&gt;
+[Layout]是类型名，默认有三种，分别对应着不同的模板。分别是page、post和draft。具体区别是他们的Front-matter不同, 保存目录不同, page生成的文件名为index.md。
+
+
+Page
+静态内容：用于创建独立、不受时间影响的内容（如网站首页、关于我、分类、标签）。
+组织结构：可形成页面层级（例如：父页面“服务” → 子页面“网页设计”“SEO优化”）。
+
+
+---title: &#123;&#123; title &#125;&#125;date: &#123;&#123; date &#125;&#125;---
+
+
+Post
+动态内容：适合按时间发布的更新（如博客文章、新闻、教程）。
+分类系统：通过分类（Categories） 和标签（Tags） 进行内容组织。
+社交互动：支持评论、分享，适合内容营销。
+
+
+---title: &#123;&#123; title &#125;&#125;date: &#123;&#123; date &#125;&#125;tags:---
+
+
+Draft
+Hexo的独特机制，基本和Post一样.
+
+
+---title: &#123;&#123; title &#125;&#125;tags:---
+&lt;title&gt;是标题，可以使用任意语言。
+写作
+常用的语法是markdown。可以看相关的教程。我在这里简单介绍 一下使用频率较低但重要的指令。
+插入图片
+![替代文字](图片路径)![替代文字](图片路径 &quot;图片标题&quot;)
+插入代码
+
+
+行内代码：将代码用反单引号包围起来。
+
+
+段间代码：将代码```包围起来。
+
+
+插入流程图
+这里根据使用的Markdown插件不同, 所以有时候需要添加其他的mermaid插件才能正常渲染.
+如果渲染后仍然是代码块形式, 则需要安装额外的mermaid插件.
+
+
+竖式流程图
+
+
+graph TD
+A[方形] --> B(圆角)
+    B --> C{条件a}
+    C --> |a=1| D[结果1]
+    C --> |a=2| E[结果2]
+    F[竖向流程图]
+
+
+横式流程图
+
+
+graph LR
+A[方形] -->B(圆角)
+    B --> C{条件a}
+    C -->|a=1| D[结果1]
+    C -->|a=2| E[结果2]
+    F[横向流程图]
+发表
+hexo generate
+这一命令可以生成仓库post和page文章的静态文件. draft文件夹并不包括在内, 如果我们想让draft内的文章被看到, 则需要发表文章,将文章从draft移到post文件夹下:
+在git bash中输入
+hexo publish [layout] &lt;title&gt;]]></content>
+      <categories>
+        <category>技术探索</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>哲学的意义：答案还是思考</title>
+    <url>/posts/f100aad107e7/</url>
+    <content><![CDATA[0.
+也许我们的思考总是在经历一些事后被我们察觉，于是我们想当然地认为这些事是思考的缘由，换句话说，我们自以为思考是被启发出来的。但是，如果转换一下角度，从偶然性抽离出来再思考这个问题——我们的思考也许是个必然？
+写这篇文章是因为读到了不感兴趣的文章，虽然这篇的作者我有些好感，起码这个作者在这之前一直占据着“思考的缘由”的位置上，但是题材我真的极其不感兴趣。于是有了这些问题。
+
+1.
+
+哲学的意义，究竟在于回答，还是在于思考的过程。
+
+当我们把意义放置在答案上——哲学一下子被固定住了。哲学家们千百年来用思考为其赋予的生命变成了一摊死水。
+哲学本身就很难有一个明确的答案，历代哲学家用不同的角度和方法论证证这个世界。谁也没有成功，从苏格拉底到齐泽克，他们各有各的局限性。
+但是，哲学毫无意义吗？
+在哲学家不断尝试阐述世界时，他们带来的尝试的方法论，仍旧闪耀在其他学科领域。
+–逻辑学，数学，物理学乃至玄学物理学。
+那么，重要的，还只是答案吗？
+2.
+再将思考的过程放在哲学的意义上。那么哲学家们所研究的就不应是世界如何，而是我们如何。
+很可惜的是，有相当一部分哲学家并不会会去思考关于思考本身的问题。
+前苏格拉底哲学家（公元前7-5世纪）基本未涉及对思考的思考，以至于他们缺乏对认知个体的系统性认知。就算是对于近现代发展出来的分析哲学来说，“我”这一字，本身就是非法的。
+可见，哲学发展的主线，从来不在于思考本身。
+3.
+从头来过。
+哲学，希腊语中又有爱智慧的意思，它诞生于人类的好奇心。人类迫切地将世界纳入自己构建的体系当中，于是他们用自己有限的知识推断完整的宇宙。
+哲学最开始就是为了将世界正确地放在自己的知识当中。
+此事在精神分析中的镜子阶段亦有记载。
+4.
+镜子阶段的理论来源于一次动物学实验，结论是
+
+半岁大的儿童与同龄的黑猩猩的不同，即在于前者会变得痴迷于其镜中的映像，并且欢欣雀跃地把它接纳为其自身的形象，而黑猩猩则会迅速认识到那一形象是虚幻的，并且丧失对它的兴趣。
+
+镜子阶段阐明了人类之所以为人的一个标志，将外界形象认同为完整的自我。在此阶段，我们将自我的形象误认为真实的自我。
+哲学的一个重要命题就是如何认识世界。正是镜子阶段的存在，我们将外界形象认同为自我，这种全能感让我们认为我有权力理解世界的运行规则。所以，我们开始好奇这世界万物，并尝试给予他合理的说法。
+5.
+关于“我”的讨论中，从尼采对形而上学语法的批判开始，在结构主义运动中福柯《词与物》的发表以后，主体不再被认为是进行思考的主体，仅仅是思考发生的场所。换句话说，主体只是思考需要的条件。
+（当然这个依旧有争论，比如分析哲学仍然认为主体是实体，不过本人更倾向于结构主义和现象学，也就是本文所述的观点）
+思考既必然，也不属于我。
+因此，哲学的意义随世界而变，它的形象是最终真理，即便他本身只能无限逼近，永无到达那日。我们始终不是镜子那一头的形象。
+6.
+在现象学看来，心灵或意识指向、呈现或关于某物的能力，是心理现象区别于物理现象的核心特征，这种能力被称为意向性。思考某物就是心灵意向性的一种体现。只有当被呈现的那物可以被感知到时，我们才能说“我正在思考”。
+7.
+可是，在我们解构问题以后，我们仍旧未找出答案。但我们现在可以确定思想有必然与客观存在性，但是其客观性是相对的，哲学是爱真理的学科，客观并不能代表他的正确性。一个哲学命题，如何被思考与被讨论，必须需要一个媒介人为地将其从脑海中解放出来。只有当这种思想赤裸地展现在世界的真实当中，人们达到了思想中所预想的结果时，人们的认识才被证实了。
+而哲学，正是这一旅程的指南书；他不为后人提供结果，只是证明曾经有个人正在思考。
+
+]]></content>
+      <categories>
+        <category>思考与记录</category>
+        <category>杂文</category>
+      </categories>
+      <tags>
+        <tag>文章</tag>
       </tags>
   </entry>
   <entry>
@@ -691,86 +781,149 @@ End。
       </tags>
   </entry>
   <entry>
-    <title>在Hexo上发表自己的文章</title>
-    <url>/posts/a4a3abd7df79/</url>
-    <content><![CDATA[
-关于Hexo上的文本功能
-在我们已经搭建好的Hexo上，可以进行一些简单的操作：写一篇文章并发表。
+    <title>如何建立一个自己的网站</title>
+    <url>/posts/b2970389c113/</url>
+    <content><![CDATA[Hello World
+从1016整到1023。要不是 DDL 提前还能拖着……
+有一说一，我把这玩意儿整出来真挺不容易的，不管是被时间限制还是各种莫名的报错（点名No Laytout，这个我只能重来一遍解决，呵呵了）…虽然是社团的任务，但是自己也确实想搞一个记录生活。哇哈哈哈哈。总而言之，这个网站也是有了一个雏形。那就用建立博客教程来作为我第一个博客吧（！
+
+
+建站教程
 流程概览
+如果你的github账号里已经有了个人网站，可以通过发布一个仓库网站建站。
 graph TD
-新建-->写作-->发表
-新建
-用git bash打开库文件夹，输入命令
-hexo new [layout] &lt;title&gt;
-[Layout]是类型名，默认有三种，分别对应着不同的模板。分别是page、post和draft。具体区别是他们的Front-matter不同, 保存目录不同, page生成的文件名为index.md。
+    F[注册github]-->E
+    A[安装Node.js]-->D
+    B[安装git]-->D
+    B-->F
+    D[安装hexo]-->E(部署到github)
+    E-->G[写文档]
+    E-->H[安装主题]
+    E-->K[...]
+详细介绍
+1. 准备工作（建议不要放在磁盘根目录）
+1.1 安装 Node.js
+官方下载链接
+1.2 安装 git
+官方下载链接
+2. 为你的博客管理文件夹安装 Hexo
+经过多次实验，建议不要放在磁盘根目录下（权限和路径问题会麻烦）。
 
 
-Page
-静态内容：用于创建独立、不受时间影响的内容（如网站首页、关于我、分类、标签）。
-组织结构：可形成页面层级（例如：父页面“服务” → 子页面“网页设计”“SEO优化”）。
+在你准备好的空文件夹中，右键用 Git Bash 打开或在终端中进入该目录，先全局安装 hexo-cli：
 
 
----title: &#123;&#123; title &#125;&#125;date: &#123;&#123; date &#125;&#125;---
+npm install -g hexo-cli
 
 
-Post
-动态内容：适合按时间发布的更新（如博客文章、新闻、教程）。
-分类系统：通过分类（Categories） 和标签（Tags） 进行内容组织。
-社交互动：支持评论、分享，适合内容营销。
+检查是否成功
 
 
----title: &#123;&#123; title &#125;&#125;date: &#123;&#123; date &#125;&#125;tags:---
+hexo -v
 
 
-Draft
-Hexo的独特机制，基本和Post一样.
+初始化 Hexo（注意：目录应为空）：
 
 
----title: &#123;&#123; title &#125;&#125;tags:---
-&lt;title&gt;是标题，可以使用任意语言。
-写作
-常用的语法是markdown。可以看相关的教程。我在这里简单介绍 一下使用频率较低但重要的指令。
-插入图片
-![替代文字](图片路径)![替代文字](图片路径 &quot;图片标题&quot;)
-插入代码
+# 在当前空目录初始化 Hexohexo init# 或指定目录hexo init my-blog
 
 
-行内代码：将代码用反单引号包围起来。
+安装依赖：
 
 
-段间代码：将代码```包围起来。
+npm install```  注意：有警告也是正常的，在执行完`npm install`时，可能出现```bashnpm warn ... 
+不过这不重要，成功的标志是
+added 241 packages, and audited 242 packages in 25s38 packages are looking for funding  run `npm fund` for detailsfound 0 vulnerabilities
 
 
-插入流程图
-这里根据使用的Markdown插件不同, 所以有时候需要添加其他的mermaid插件才能正常渲染.
-如果渲染后仍然是代码块形式, 则需要安装额外的mermaid插件.
+在本地运行
 
 
-竖式流程图
+hexo clean         #清理文件hexo generate      #生成静态文件hexo server        #启动服务器
+现在，你已经完成本地部署。可买通过访问 http://localhost:4000（在某些编辑器/终端中 Ctrl+点击链接 可直接打开），看到网站雏形。以后我们可以利用这个检查网站的效果再发布。
+值得注意的是, hexo server后停止访问网站需要Ctrl+C停止。
+如果想让别人通过网站访问你，则需要上传到云端。
+接下来我们要将本地上传到 GitHub，让大家访问你的站点。
+2.部署到github
+由于初次建站和再次建站有些区别，所以我将分开讲解，已经有过一个网站的友友可以直接看项目网页.
+首次建站/个人网页
 
 
-graph TD
-A[方形] --> B(圆角)
-    B --> C{条件a}
-    C --> |a=1| D[结果1]
-    C --> |a=2| E[结果2]
-    F[竖向流程图]
+创建仓库
+Github中new一个repository
+Repository name [用户名.github.io]
 
 
-横式流程图
+本地配置SSH Key
+在git bash页面分别输入以下命令
+git config --global user.name &lt;你的用户名&gt;           # 配置个人信息-usernamegit config --global user.email &lt;你的GitHub邮箱&gt;      # 配置个人信息-useremailssh-keygen -t rsa -C &lt;你的GitHub邮箱&gt;	            # 生成密钥
+完成后右键打开&lt;id_rsa.pub&gt;文件并复制里面的全部内容
 
 
-graph LR
-A[方形] -->B(圆角)
-    B --> C{条件a}
-    C -->|a=1| D[结果1]
-    C -->|a=2| E[结果2]
-    F[横向流程图]
-发表
-hexo generate
-这一命令可以生成仓库post和page文章的静态文件. draft文件夹并不包括在内, 如果我们想让draft内的文章被看到, 则需要发表文章,将文章从draft移到post文件夹下:
+添加SSH Key到Github
+https://github.com/settings/ssh/new
+New即可
+
+
+同步SSH Key到本地git
+eval &quot;$(ssh-agent -s)&quot;ssh-add ~/.ssh/id_rsassh-add ~/.ssh/id_rsa   #测试电脑与github通信#成功 显示Hi Yw37153! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.
+
+
+修改Hexo配置文件在_config.yml中#Deployment下替换：
+
+
+&gt; #Deployment&gt; ##Docs: [](https://hexo.io/docs/deployment.html)[https://hexo.io/docs/deployment.htm](https://hexo.io/docs/deployment.htm)&gt; deploy:&gt; type: git&gt; repo: [git@github.com](mailto:git@github.com):XXXXX/XXXXX.github.io.git&gt; branch: main
+
+
+上传博客到Github
+npm install hexo-deployer-git --save  #安装hexo-deployer-git插件hexo cl &amp;&amp; hexo g &amp;&amp; hexo d  #上传
+
+
+显示
+INFO Deploy done: git
+即为成功。
+项目网页
+
+
+新建仓库（本地和github）
+
+
+打开仓库Setting，General，勾选Template repository。
+
+
+检查SSH
+
 在git bash中输入
-hexo publish [layout] &lt;title&gt;]]></content>
+
+git -T git@github.com
+正常应该显示
+Hi Yw37153! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.
+
+
+git初始化文件夹
+
+
+git init
+
+
+
+
+
+一些常用的命令
+
+
+更新设置
+
+
+本地检查
+hexo cleanhexo generatehexo s```  上传
+hexo clean
+hexo g
+hexo d
+
+
+
+]]></content>
       <categories>
         <category>技术探索</category>
         <category>教程</category>
@@ -779,6 +932,29 @@ hexo publish [layout] &lt;title&gt;]]></content>
         <tag>教程</tag>
         <tag>Hexo</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>莫名其妙想到的随笔</title>
+    <url>/posts/43a1bee9c805/</url>
+    <content><![CDATA[我的人生刚刚开始吗？
+不。
+我的人生早在出生那一刻就已经开始，伴随我的心跳一起，书写生命的每一行诗。
+
+“大学是人生的开始。”
+高考过后，当老师、家长在高考后不经意说出这句话为我们庆祝时，在不经意间用极巧妙的方法粉饰了它的阴谋——十八以前，你的过去、包括你的喜怒哀乐都不再重要，因为在十八，在某套话语体系下，你才被认可为一个真正的“人”。
+时间匆匆如流水，即便这种逻辑试图掩盖什么，可始终无法改变这十八年是人生中最重要的十八年。我们人生中的绝大多数知识都来源于此时，而人格与三观也在此时期几乎定型，甚至于百岁之后回望此生，人生的中点也不过18岁。 虽然我不喜欢毕导的人生中点理论来写那些咯噔文学的文案，但是我仍然保留可以用其作为我观点的关键参考：人生的中点是十八岁。 我们“前半生”的重要性不言而喻，可它却可以被一些话语悄然抹去？
+这对过去的我们不公平，对经历了十八年风雨的我们不公平，这对未成年们不公平。
+在视频网站的信息推流中，我们或许会看到未成年发布一些略显幼稚的话语。那些话语可能表达了开心，愤怒，抑或是伤心，虽稍显幼稚与不成熟，可没有这并不能作为攻击他们的正当理由。显然，社会将人群强硬地分为了两种人——成熟与幼稚。
+于是这个年龄在在这个语境下似乎也代表了一些意义，成人，拆开来看，是成为人。从社会上成人的方法有许多种，但大多是一种走过某个阶段——高考结束、进入大学、过完成人礼……为了统一标准，从法律意义将十八作为一道划分成人与否的清晰明确的分界线，它意味着从此时此刻起，你几乎被赋予所谓“人”的全部权利与责任。
+此时，“成人”才被这套话语体系承认为一个真正的人。这似乎也能解释为何“成人”那一刻自己的心情五味杂陈，自己的心态也仿佛成熟了不少，或许有喜悦，但更多被某种恍惚冲昏头脑。为何高中抑郁率上升，或许是因为从未当成一个真正的“人”来看——不需要承担成人的责任，只需要考虑学习。人是社会的产物，不被当人久了，自己也就淡忘了。长大了，也未必把小孩当成人看。
+不是十八岁以后开启人生，而是拥有了更多选择的权利与其带来的责任。
+完。
+
+一些后记
+我知道是对新篇章的祝福但是我看到的潜台词真的让我太难受了。。。
+以下是没有经过深度思考的文字，想保留观看体验的不要阅读。没有说以上经过深度思考的意思
+就写到这里吧，真的纯纯大晚上想到这句话真的很恶心于是奋笔疾书干了一堆字（其实才450多字）“成人”以后才是人生的开始，潜台词不就是：成人以前不是人生，所以“只需要学习就好”，所以一切幼稚的想法都应该被抛弃。但是这他妈不对啊，凭啥说幼稚不算人生体验，你觉得是小事是矫情我就要因此否定我实实在在经历的情绪？这是什么道理。他妈以后你觉得现在的你幼稚，你现在就不觉得委屈和开心了？那你这辈子别有情绪体验得了……
+]]></content>
   </entry>
   <entry>
     <title>感我此言良久立(1)</title>
@@ -830,44 +1006,6 @@ hexo publish [layout] &lt;title&gt;]]></content>
         <tag>随笔</tag>
         <tag>回忆</tag>
         <tag>排球</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>碎片</title>
-    <url>/posts/e69543aaddc9/</url>
-    <content><![CDATA[
-早读
-大家翻到第20页。
-老师，我这边太偏了，我坐过去。
-余光中向我的临座走来。
-认真翻书。
-纤云弄巧，飞星传恨，银汉迢迢暗度。
-早上好。
-早啊。
-金风玉露一相逢，便胜却人间无数。
-他在偷偷看我。
-柔情似水，佳期如梦，忍顾鹊桥归路。
-抬眼，他已经转过去了。
-…
-唉，我可真是太幸福了。
-傻逼。
-且夫天地之间，物各有主————
-我的身边有很多朋友，还有爱我的沪爷。
-还有我的爸爸妈妈。
-苟非吾之所有，虽一毫而莫取。
-你真傻逼。
-不像有些人……
-你能不能滚
-哎停一下！
-你俩都会背了是不！？
-]]></content>
-      <categories>
-        <category>生活拾光</category>
-        <category>日记</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-        <tag>回忆</tag>
       </tags>
   </entry>
   <entry>
@@ -1170,159 +1308,6 @@ Read and Write access to code
       </tags>
   </entry>
   <entry>
-    <title>如何建立一个自己的网站</title>
-    <url>/posts/b2970389c113/</url>
-    <content><![CDATA[Hello World
-从1016整到1023。要不是 DDL 提前还能拖着……
-有一说一，我把这玩意儿整出来真挺不容易的，不管是被时间限制还是各种莫名的报错（点名No Laytout，这个我只能重来一遍解决，呵呵了）…虽然是社团的任务，但是自己也确实想搞一个记录生活。哇哈哈哈哈。总而言之，这个网站也是有了一个雏形。那就用建立博客教程来作为我第一个博客吧（！
-
-
-建站教程
-流程概览
-如果你的github账号里已经有了个人网站，可以通过发布一个仓库网站建站。
-graph TD
-    F[注册github]-->E
-    A[安装Node.js]-->D
-    B[安装git]-->D
-    B-->F
-    D[安装hexo]-->E(部署到github)
-    E-->G[写文档]
-    E-->H[安装主题]
-    E-->K[...]
-详细介绍
-1. 准备工作（建议不要放在磁盘根目录）
-1.1 安装 Node.js
-官方下载链接
-1.2 安装 git
-官方下载链接
-2. 为你的博客管理文件夹安装 Hexo
-经过多次实验，建议不要放在磁盘根目录下（权限和路径问题会麻烦）。
-
-
-在你准备好的空文件夹中，右键用 Git Bash 打开或在终端中进入该目录，先全局安装 hexo-cli：
-
-
-npm install -g hexo-cli
-
-
-检查是否成功
-
-
-hexo -v
-
-
-初始化 Hexo（注意：目录应为空）：
-
-
-# 在当前空目录初始化 Hexohexo init# 或指定目录hexo init my-blog
-
-
-安装依赖：
-
-
-npm install```  注意：有警告也是正常的，在执行完`npm install`时，可能出现```bashnpm warn ... 
-不过这不重要，成功的标志是
-added 241 packages, and audited 242 packages in 25s38 packages are looking for funding  run `npm fund` for detailsfound 0 vulnerabilities
-
-
-在本地运行
-
-
-hexo clean         #清理文件hexo generate      #生成静态文件hexo server        #启动服务器
-现在，你已经完成本地部署。可买通过访问 http://localhost:4000（在某些编辑器/终端中 Ctrl+点击链接 可直接打开），看到网站雏形。以后我们可以利用这个检查网站的效果再发布。
-值得注意的是, hexo server后停止访问网站需要Ctrl+C停止。
-如果想让别人通过网站访问你，则需要上传到云端。
-接下来我们要将本地上传到 GitHub，让大家访问你的站点。
-2.部署到github
-由于初次建站和再次建站有些区别，所以我将分开讲解，已经有过一个网站的友友可以直接看项目网页.
-首次建站/个人网页
-
-
-创建仓库
-Github中new一个repository
-Repository name [用户名.github.io]
-
-
-本地配置SSH Key
-在git bash页面分别输入以下命令
-git config --global user.name &lt;你的用户名&gt;           # 配置个人信息-usernamegit config --global user.email &lt;你的GitHub邮箱&gt;      # 配置个人信息-useremailssh-keygen -t rsa -C &lt;你的GitHub邮箱&gt;	            # 生成密钥
-完成后右键打开&lt;id_rsa.pub&gt;文件并复制里面的全部内容
-
-
-添加SSH Key到Github
-https://github.com/settings/ssh/new
-New即可
-
-
-同步SSH Key到本地git
-eval &quot;$(ssh-agent -s)&quot;ssh-add ~/.ssh/id_rsassh-add ~/.ssh/id_rsa   #测试电脑与github通信#成功 显示Hi Yw37153! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.
-
-
-修改Hexo配置文件在_config.yml中#Deployment下替换：
-
-
-&gt; #Deployment&gt; ##Docs: [](https://hexo.io/docs/deployment.html)[https://hexo.io/docs/deployment.htm](https://hexo.io/docs/deployment.htm)&gt; deploy:&gt; type: git&gt; repo: [git@github.com](mailto:git@github.com):XXXXX/XXXXX.github.io.git&gt; branch: main
-
-
-上传博客到Github
-npm install hexo-deployer-git --save  #安装hexo-deployer-git插件hexo cl &amp;&amp; hexo g &amp;&amp; hexo d  #上传
-
-
-显示
-INFO Deploy done: git
-即为成功。
-项目网页
-
-
-新建仓库（本地和github）
-
-
-打开仓库Setting，General，勾选Template repository。
-
-
-检查SSH
-
-在git bash中输入
-
-git -T git@github.com
-正常应该显示
-Hi Yw37153! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.
-
-
-git初始化文件夹
-
-
-git init
-
-
-
-
-
-一些常用的命令
-
-
-更新设置
-
-
-本地检查
-hexo cleanhexo generatehexo s```  上传
-hexo clean
-hexo g
-hexo d
-
-
-
-]]></content>
-      <categories>
-        <category>技术探索</category>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>麦田里的守望者</title>
     <url>/posts/cb805417a12e/</url>
     <content><![CDATA[没有什么意义的读书笔记。书很好看。
@@ -1365,6 +1350,44 @@ hexo d
       </tags>
   </entry>
   <entry>
+    <title>碎片</title>
+    <url>/posts/e69543aaddc9/</url>
+    <content><![CDATA[
+早读
+大家翻到第20页。
+老师，我这边太偏了，我坐过去。
+余光中向我的临座走来。
+认真翻书。
+纤云弄巧，飞星传恨，银汉迢迢暗度。
+早上好。
+早啊。
+金风玉露一相逢，便胜却人间无数。
+他在偷偷看我。
+柔情似水，佳期如梦，忍顾鹊桥归路。
+抬眼，他已经转过去了。
+…
+唉，我可真是太幸福了。
+傻逼。
+且夫天地之间，物各有主————
+我的身边有很多朋友，还有爱我的沪爷。
+还有我的爸爸妈妈。
+苟非吾之所有，虽一毫而莫取。
+你真傻逼。
+不像有些人……
+你能不能滚
+哎停一下！
+你俩都会背了是不！？
+]]></content>
+      <categories>
+        <category>生活拾光</category>
+        <category>日记</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+        <tag>回忆</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>C_study_Note</title>
     <url>/posts/f14579d60d32/</url>
     <content><![CDATA[
@@ -1388,60 +1411,6 @@ hexo d
         <tag>C语言</tag>
         <tag>笔记</tag>
         <tag>加密</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C_study_Struct</title>
-    <url>/posts/32f7b31f9b52/</url>
-    <content><![CDATA[
-  a5ea2ecb672ade62adf93d46cb1e567001b662e197dabf5eb3869dd149436efdc1083721e5734061b137869a7107df4c24ddf16dae514bacd425cdbdf055a436d17c531e4f0f297e0b6abd15543dbddf22d162646761de2605fddc65c6e0ca692d30ac9eec235876a57c27356dc41f2c5b5b96367c486b1bcae7a547fe019092e3d06530e1a314986d444c3fd8d64dbb6be40a31af12f3e3266520ae8d5a66055cd086cb0fcc32e410ec9cff49b8318b6d746c7506accf949753e1ba69708e16b263e21cd85f633e5620e4e5161a32273f7cc44fc7aa39a1e733928510bef83f1c1b72ea5cae95160764c0b4f0ab9d4404ada097dfd607ed35015f4cfc64a3a71c43b76cac39e889a891cc1177460a10ca1bc18982b2e8e0ed6080f1fd44a77bb64a5d6df3a1e0dfc5e26aa7a9cd51e8f558ce4cbee6ecd5877f78fc00ea25729eac4dffc4d44d353fa5b05c04284f45b05d0500a2f9201eef5242205eb1cb7c4d9e9b992231f7899b76d652f023e74b8b0cedc722681b3bedbf4bc71bed50a2b0e5fc9ff85ecb7cbff7c496e4913b47a821eb81eec4ff79caa0a7bd37d95ee284db6e88a0a37aa59cea7de01fd7d5344dc6708a389d78737472ea241a43193f3f9483b68b55771a3d3f4e0e2f0d2f9e800e2b1a010f09bc5b169abf2ce9aecfc9585ca0a5bcee2d1cfc80c44e5615f536530c7b1cbd69b4ea0ce4a5848e7285fdc6a8e255cc108062596d94cf2ca2b8cff0511d1a0edea2fb2c557a4bfeb8577d69f8bcde7a45474d8d9855123de031b5b501a9574ffe08f7fcd30a96e3c82d88bf9d91a3956a49e66a4d3a58df08837b80c898d207b9a535e379a0dfd17941b9728f63bcf5040d57024634695f11ef29151ff2dbf8e5bc4db5d2ef65891a377d0dd3600c5c8bed65ae5e6647e07ee903f244201b507ffb7c791acad228e5a68c4478925c25a3cc341b0fd42d43f5789590df3c81f7ba3ca0a939f5e26c00001803a049110cc9d0cadfe4e4b95b3a65317b4b7e4d21a03c191f393faa173c309fb7b9e18c23909acbe215984738ab17b09544d7e0f177014992897b68fcb164fbd0eaffc27956776946196cc40cb1658e8c8ccada76cb92621b8ea91c6b1a39df59bb871b0be871e6a40b7ab88994c430b820fbf107cb94634ca245047e9813c56d0fc5af19f9db2555a8898c38f9a6d148f12d624e8e0fbd7ad2c320dbd80e0666858c79737eec2acb6e00eff3993abcae52475d607fe7d2ff76af6ed0176596c9d80e7a8ece41569c1415ccbf6971f69b9c13137d10d01518737a2894ada0777b1195bd05717f130a7232e6a77ae3e1f008ffa96920dd7d9f1eb4f412dc6334e132876e53f4b60dfbc9b1aefc864e7d78abbb6c93d4792dada9c57e8ba87da1bf3b89f92f1aa5c752a6a6bd3d3cc72c543395a85599be2a855bac9c77e5a3a2822c0d6df94508d637bbe3ae20c3d7900e0e6a53dd7fd14ec306bbad1ceace98235f9c24d22cfdf370ecdececda6c748ff31290cf9951edee3f74bf8e1906e198ec8b1fbc5b9a0e0c3d07949d12fa94724ad1248f2c935203e0ce692c9cf945043bba13f16c378d6a8c59aae9dff4481a04fcd7aec9fd1b1f559b9ead0d073ad513cf21e0e23f44292ff58bb3f5be4834c785267f644387bb07ede4c0806dd705d121febf43154244de3f496ba6c66dd33dba7ecbd79a562c011cebc06bb805cf6c377efd605db7a6cdb58c7aa62263b2f51745e4a76a4cf2e9978a19291e6196e6b481475ef1bab6c939f683bb5f5a4527e07e9da1f330062349a046239ee9ebc55eb19c2402d93d590489c45147bed0095d7c7ec02946055fe3296b02321ead2b66adef4a597eaba8dafa8b337207117ad49eb7fe9fdccef8ca2699bc3137e14885aff819a617615ca4c8e13db65168771a6bf3495a2fe884ed201f6e941b69d330d27edd0d0b4f80dfb9fea66963bfcb94394bb56930c4b2121c7fe6eaf410df4e664f4317110ca69558c6d38e12f823b2fb7ed459cee8fea1074f83b04de5aefa48e6d92568c249f77d3609ef70849247147e3df29d63004ad19fbb1f819ccd679af78d2f58ead7602b77e2bab358e50517b2f90430cec545f8046981a757af408d52ebf02dcccb52c9281fcc5701aae94587f1f9da9bf50b9570570cc45b466e42f5b7eedd0064bc664537e64fa021942a6c69f88eb3dd8ab641c1ae11f07089981d8aad8ca62560927933a4036b725dc2d6fcccf24236f2420911e464c15a5c94a4d19b15a853a54c995fca5965631f5ec44ae910b89df896087ae5078a9da7c4892a43160bad2eb66019b89ba788d1edefd58bcde138cdd7171c2a1daf1fc66dc38fe073b148f2be0ebabd2b5a5ad7c5a8b40bc7eed52fb95f3f4f155e840880aafd5c00c61a7e021b8d0cc9fbde9c6a85a6799e39ed8d8a84bf7a1b33ce1ec06ee04d4569ebfa062528b4caa6ca512be1d41e59094700f84562ffbee6b3be75a59d6c4c9a5bf6c63f8c45fb555a5d45d053cd73d99909e4b278271d999883b89e71a4ddfb066845396c158ca147c76d1ea0e63080853869872308b11d7fbbc197da54e7f35467f25d2ddc4d569e906753f36d870635b7e75780bfd2f2b98a67c465869522750d006828ab0a092761bbb67eb0799189e37ba5d7a763d39326674380b507bbf30c57c6d95c456ccdc4bbd0ed6a72fbbf6336ca506b3623f3ad8378e1f8ee606e0f7e6dbb53d2853abab6fbb80ce70c6dc7d7cd6e21c01613b802ec61c40211543d7530e6ea47ff8b97f93fc474d69b487af0d3011fcec11d91d8e5a5e162a04bfc5bb98a970817cf2f5ca45481db83a9a2b0a529079a3b47c2944fc1de3663595f5cef5d408d1b871a4a283564be1390492cce0550f8e90e4d0d525fca4843dce9927933c9388e77f3240c2b05c757bff9438ecc21a189efeed708962d51d237ebcb800572dbd7f49438a26b11098b2c3a97b40a0bdc5820197a0ffd5f169dbd9300bf06b7340465b6bd38d532212859ab93731119dfdd303bb41b24b6eab406281082fa6421ce1ffead5e26fb6793605e3da471e7c67d824920636dbf3e4419e290b651acfa725bc8fc4c4c4056422412fd3fad127688797026b0a41669e2bf4c9864c0e1f61e5c4d388224de720be9404b5a8e39cc199f47c0604aacd82160280f34cb9561bae10a7f370e78623904a6d9600f7ba6c23b542b2cdba8c1b97de066a5fd19cce1db5fc958232e14c1884fba78da2434e3c419776fcad12f78cdf05662c076fbb63ee50c45257a4b88c7942018868b93469e6d503fa06140229ff262d15fcabdb1ad4551cbb75032bc20315addef45cbbbe69e7f60c9355e8183094c45a4de1d7422c36a5ad70e5d74f63f2a1485661b0ff8b8787f56cbaa8141830db50d70b664ad3b6eec9eb93a241cf2161342b4a1fd503e860bf00f778345917d2651cd9d403deb4df60629606e31f8dcc15825f564d7b68621ccdbda04d6032412d934ce9e92f27bb2a52869fb39a121367cbaef05bcaa92a192c5fd2548ce511b478556a3d9f652e928c964d3fde2502586f67b01e36aa2fcb77b9cdc863262bcf710c117ab3455f41c583017c338089f29ef1153ff799be01923d622fc5e97228cdb3aa42d3eb70176dc96ea2f2716f80c83a337f55a275d30cd3a0ffc83569d76939f962c65f70a6aa0fb7207457c614822ebb345ac8803f0cbebdd95bf11cd975720e5c13cfc35a3a12d9c908c36bd0c3c6cad34d90487cd2e2b956d9cae4516a1b5e9e90304a27dbcd6cbd2726a65e41cfa08fa978fa6e06c7168a65b96b6620db436c7e3cb8219665b70f58540ac0a04ef7d276fb396c601ea7282b0ef33ad413b03b96e26762d61f0a128b804135aa2084b5517a86df93ed0b681af8b4c4b00e3586896acf91bc7b6b76d286a3a792fee1a79a5044a31e91d1ea68db6ee3cdfea4cbd2934eed1ca6ca2eeed670b925360a1cc669c5da467ccfca05719d5caa33b0103b154326971ca62be0d69ea72c84e5a209f5a34e4eafcc44b3c35adf3d4ce0fca6bdf327254f7c29ffb1979c155bfaba51ac27d7c4c9c9f5e9a8874bf884daf43af77ebe6a3b88dfd04ec986771f291f65bdfc74f1cc2d04d86753ba9200bdae294e242a595cdbd86b8153d33c4cc9cbb405e9bd618e9845b8f9d67909c9a879e8aaafcd87cd4a257a6820890854ede61edb06522458250457e58cb4222da7c91338f979c4f7473370f34b03d2dc89ef14bdda492eb24938dbc9666690b4a6fbb3b2524a593d2077a9935ebe005d36915b7ebb2a932fe8042472acf9e24ae50be39c0fad3db22150397ff0fde2d3bfd3521fece70dd049aff76db8b29e3bf6ccc26cb5ebd7366840df27546d98bda442b1c680cc42f9ded77964e8f7d0a261c34ae2c427c8050259bdd640e9b02340550348fb26085fe4277435f806349a4ac50750c4d06358e20135d118b2ab101abaf2d943850d36a88eaa5bb85485ff4afe14c31b70b6951a5523ca739b7abb5c81bcab347bf417d349dec65d3a0c9fe596475fe6cfa06d450f275a91727ae3c9d0f85740d4d43bc8776ec0535b4e1e560bda2d7e1263173bbeb465e6283dacfd1240fa42f8377b658c1ab59d0d73890e36aaa7d8de7cb4ad6f3bbb743f0519a0824ee32b8168471d6e569ec60517dd82932930c85a3f3a53e80336f363039be70690b76b362daebf3e5abaf88b13b578055075384e141bdcb14d7ed78d90cad220a02f1b7f7b194f10e8eb5d0fcbd2278bfdcd2ba5e35b30240cc1d9479884b170eaf350eb3d6779c6212770d8f5fbde2c1960a3a74d5f5435a3381988d0d983b9140f5b64d981fa7e00aa17b4a77f59a84e850ef6800b0dc8ee9d5072a4ec0251381b49e03e2d1513a688035540ac43dc55e4dd7c5d122cee588013e8ca3fc7e3ee36f605e972fc778caa5147f3963ea2496ad7850195267c8f42c8afe52006a20ba6b145bdd3a53ca81c67365ca94735ce7f0b7300f7ca819a7a53aa7632dd211989b63892a9b46dd5769784cdbde973695854b1ffb97d517bbc29c4a2c49880c318ee7ce3d5dcb07a390b2434ac243de9fe79c5ad71443d7e0771d13f63fcea2390da3c382f5e3d1167fb01c669b052e1c08be9ad992fc54d08232d4d34e70494a2aeb01509206494c2e56f06ef1275a293b33f23c3269eba0053e042c7ceddbf8bd21f48c57956442d10f929c9e9ebd6f759cecb0b2bcc2041037dc99c330d181a57c9516731947605730b3dc6b06a30c57d7e0921ac27aeb100ed1b56d87b7f0c43e1a0efd634f2cb6aba2e84a482aa5496994cd8f34d77296295179a6f4a8ec843d99d662b8d0aa9312bbb7d74fbedecd1ac6d0008a82e57f74b55e60fb447ff31e79e2d99cd81c273ae14494351301a6a62a32fd0bdfbb3802476d43e6c6f611bdb67a9d4fb6228ad7da85550ce89cbed6349aea0ae53dc35977332009a0ac27bc1e2788eedde4f0143f977c9d9718cbeaefc14e711d802aa4a8d75c6425723936f88cf0c024c46b12abe26e1a93b63de896d9ab1c0d476a5d94975d31440f7b97c9f395ae1236b3f33c0581f11d0f7fe359e5a0c20d6f9855ea0cc64695b01da0aafce7e3627a81fef96b8db3725695725dd86aff1367b12af43b47dcb0067c256f3ac097b0e909292d169d4024c53cbdfe903e9caca082319c366c3f79723a9744fad769c2ef24eb0845ac33aaaf818f54d44618f046f116f007cca3e76c529124cb69bcf9539280b1e550209f1e0ccc80831a649f92b28fbc998d29e13e0e98e5b041b4e543fcb16a47a597dd993fa0ee1a9c45f756982530f518312b274816568ef10b5d468f1b2960f39240eca371fb242d1eaff45f8d2831bde69dc59e6b8957f3a936a3ac95385f73440423d8a233c6838c9397a4eeb906ae4871519d0ccb5e517b7c7ccb74415c47ae481d3b75c72220ed40b5f4c8e0a63ef4c3d651ad4b97777142911899ad0df64aa03082c086bbc678672880fe90ad0816a59880a7f3c3e12664a4a37e7796d4b6c6665026fd17e94764d9a84b8a286b6486f2cb9a7049b29ac622d0532ef0aa0e896ef7125ba721a743ceb520068be1090fab4e60d26b8404375dec1a008cf2e14449a4ce05da95ca83dcbc2b46b4e4204f65c03e34ae1c285b6d8df7e7853a5989b671830bd55c95a227db49a0209a302fd7d33207880f2b5b0c4bfdc193cff0b17229249a0668f4d3b6e7b79ca4d4a7bb4dd857a7834acb1f6f2de76d4a99b1f6df98c44ba1d999280caefb9730612be94778041cbc92d25cc4a575843e4d5fb8a789c6648d5448f3d78956ee8ea0dd1632e0a619c0fa55ccb6c6b84071ea9fb4b4729455c546b9c3a4238ebfb39506a05b5ff799c1021e6e1490ed507a662ee5008f605d80ade58f189ca5cb0bdec3aa7f93d253965e0133bd0d3c1aa2ea38bb1bb7d7703118fa23a0237c07ef6d8c0379e21b392f1793705a20ecc99101bdcbf80c74c917c4811d984f5b96bc25c275046ea477ea8e47104e05cec5a102a8d5a835665e6ad07c94526083de7cd116860cceb6a72b29f08e164638966255b1d88d5174a5d2a2e16111769f025d98572d63fb88bd271493c64f9f3795c63323860cb9f63e1092c269a76efe0a71e29474ea0d2452f49df3452acf1cee1b1dbdcfd89c21d097a22f49f4d31854113cd00a783b735ca79af867294236b3a97256ad5f7f789f4fcb7d96e4caf88eb51fad90edecd9ce82f50ff56f9d4d6a5d76b6e1dcfe286620b5f1514e9d55bdb242ac69d0fd4fe2ccd93a0b1c22b506900516a1d2d78941e3dea5af49dc063e93d30559960b48f1035c821c282d70ecd00777a0455c8478bec9db845af9f004ff00faca498da066ad012e66358f655b0a6639e9ad25a71f2334d46901ddb273df1bc101ff7c3c3d90d516d84db7e1ab7155e1dc6321ee1d95e9e8e9edad8f5c592b0e1d23427bfb485cf5cd895b7c2f401e92bba826d427ca92a158c5fdb4179e55b66bf63f4e56b1e2e3b6e8a7c8d71b66c6acac6a6bf77256cc9d619c9d35e7fa365ba590080994e2ce835bc59ac25c2b409e0eecb0033afddbbc41bf574c727bec646cde1aa42df483bbb4f8238b99baffa9bed64947f126f05839be44f67de642bf1cdbf4303c236cc85bfad265fe83b1e36e4465759a27f59530279818160d820911fbb199c1e3c9a246034509b0d6bb46b0f5be6734ab66cdcd2a5eca16c601efc2189cff95c49e7775e61f309a2546759df488b23bf4085e8e4bc312a75611ed1a7e185b8ecb3312ebd6459919e33e88daf97b91fd783aa26e9380731b4948b9780504ce7df905fb7a6b2914116c80e00b585348f3c2914d9c77c6d7e70cced28b8db1e1196ed05d51bd44ca4082dd687b28e113304a0bd60eddfac9c8ebcaced9bbfdeb652b7caef06b7910aac3313739d3fd74c583504447b32450570cdbe6ca0ca32ec68fd8e1864157257d2b6172940b22db37f8e6ebb661c3124fc16bd401104f1eef2e69d54603f5c3943bb105a210df1907399450c117282175824d6721243b91bc26167147824c497ad30ec30acd4a43d3214ea2fcd72042180889aa84539c317aa9a60944f61ac9dd12529ff595cd91b0e6e6f9e8a72bd702716d807f930a8bf55e0a3831d4b9ea5c04e454ef074094391cfa0a8c0aa7391f474575b88b3313f4121954475fd20702bd21775c5dc5bab92087035017cdf25ebf8e61c0aa902df148ffe908171a305d7fbbeb2f7acf58c93206b764d113fd97889366b1f7ebf2904e6bedac85ac7ea3e4cbb47ffab1cb813c0d8cd67db9c794d174ad71c26b9a8787615abfc57d6f120e07b981ab346e6a7c42e9a166191c0987ce3058f90e5c6e0988a9fa4c522484392d2bcbcfd43e22b2d15528fa9557eb7d7ead048f6c3aca43ef8f40b890c9f6c3a5cf1e75c99bd5bd2ac0904caaf60016e5a4036f53b4821f967ad2aa6e4f72192834502d6312a02d5afeabe846a6204e779cdc20e92e61650ad876745b2ff9214d3f68d0ff153af3a8526dfaeab2adbb5d964b6e94194b0879de154921a65950be7986c2f49afae411ed416522da02d7f3a072ff2c4131545c69f05204f7f99b9044b2bc4f93d2e0e71dbba0761781f97da783cfe773f69b0d03f3058a3d7c8208bc4221b859d89901f73356852906329b6adb6e8caab5f8afc1c3ab834ede0d885e658d8a6f34c4dd2cd8af0fc5262c49f6fec439dc371da7f321eaac997f5ca17cc95761a30ea7557b4d872b523de6f3824df01fc293a7d27efd0e0dd55529a7fad75a7773aae4cce095fb6419407e518f43f625c0556209906c0a1a97cb434fb1c6bf447a17589043f1308ac65a9d211345cecb4d2a9a08dc83cadc1a9a91b5ed6bd883211a7d7581a5bba03d72d64774ff80a142f6ef1b085798e54fa5595052110ffd1b0f35f66d1d8361f6b7aace8bd2f8753f7d39580b5e640b244eb
-  
-    
-      
-      
-        输入密码查看.
-      
-    
-  
-
-]]></content>
-      <categories>
-        <category>技术探索</category>
-        <category>学习笔记</category>
-        <category>C语言</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-        <tag>笔记</tag>
-        <tag>加密</tag>
-        <tag>结构体</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C_study_char</title>
-    <url>/posts/fe17491f06d5/</url>
-    <content><![CDATA[
-  a5ea2ecb672ade62adf93d46cb1e567001b662e197dabf5eb3869dd149436efdc1083721e5734061b137869a7107df4c24ddf16dae514bacd425cdbdf055a436d17c531e4f0f297e0b6abd15543dbddf22d162646761de2605fddc65c6e0ca692d30ac9eec235876a57c27356dc41f2c5b5b96367c486b1bcae7a547fe019092e3d06530e1a314986d444c3fd8d64dbb6be40a31af12f3e3266520ae8d5a66055cd086cb0fcc32e410ec9cff49b8318b6d746c7506accf949753e1ba69708e16b263e21cd85f633e5620e4e5161a32273f7cc44fc7aa39a1e733928510bef83f1c1b72ea5cae95160764c0b4f0ab9d4404ada097dfd607ed35015f4cfc64a3a71c43b76cac39e889a891cc1177460a10ca1bc18982b2e8e0ed6080f1fd44a77bb64a5d6df3a1e0dfc5e26aa7a9cd51e8f558ce4cbee6ecd5877f78fc00ea25729eac4dffc4d44d353fa5b05c04284f45b05d0500a2f9201eef5242205eb1cb7c4d9e9b992231f7899b76d652f023e74b8b0cedc722681b3bedbf4bc71bed50a2b0e5fc9ff85ecb7cbff7c496e4913b47a821eb81eec4ff79caa0a7bd37d95ee206c905662e95224c416595d4489525d33bcd39e661b4f4e96ed2d7884eb5786cf1838c7d1f2a3e82dd992b44813be1014f3dbf3bac812246aded215bff9643974df17b6bba318583d412a9277c11e2be26f8cdf96d1ebfad987e806bf2b9c8147e9ba90d95fcebe8434f844d4ea933f231734126b55d7f18d54fefecb2fee1c78a3ec97bddbeefebb95f2206b63f7847e460f348f2eefcd3ea8ec84474e7c8f69a076df222fd1f13435abdc2becc7cbfb0a6a4e2d6566ef71c7e61f653f8468064351f91586ef20d5f3054a46a541f393326ffd86003215ff18898b0d79b3c6be043d4065bca589e2b1754243fb5114c3ec37f5bd39b1634b4c22b614761ab34ed53132f00feec97d052adaf1194622c0da67f5bc2e81d299410cfa530ff84706fbc3e3d8f7aaedea5b1567b6eec36a24145769f03fe8bc8fb6c579c7f74802cfdcc2a46ce6235f947024b2e50a4e63173a84cb5b2ec0b7499f72ad0db901ca056eb527a4bda3b75c1afcbffe4a04b8364cd35788f7534be74c315ab4f8d261108f060259ab209e59c4524f18410d80cb2c571cd31122af7c6810ea44918e9a9e639753fad8aa37607b0c62ea5126301a04d2c5322ebd474621d6ed5e81caffad6f82dc60d79be8afea3b77c299050aaa2642acede8670f3fed5a91a5c1297660d9bf5e8e4bc68820720c773966e94be6445e8abe868ccf01c71a51985ba9fb9057cff0921b62d66117a2934376b9dd3d04abc934a6e6920a37b2c9ff6ff670d2ecf75d64d119895902badedd94755c474dde9804636e95ef63903c3c61206cd501426619a7e3736370fa50a4f1056179a245b9ad1d1bb9293c3cf9cea4b58d3061e25f81f6ce6afe985390bda3b37e644f8e2489d8d8cda0e0cc849893109cce0acfb1c03e6c0aef675eee321cdb933b9297100fdafa7e20554874cdc331d084352295dfdbe8ddbebb2f5ab1a1baf3a91686c218adb21518264201fa365561e1ea3a6324aff3cfc5d8e5357373b48ccb88d292bb0b2d01dffe1cf384d6dbc2a059712f900dd3e15a1a1c3f62ae9d8baa0cea6bd5df39fc7fde6eefd036db1646325483452b0fe8c2f731365a3755c481c3868e43372f2e8ef148a88546b0d3bc4e68d44994b729c4db5b17ed38fce65bb72425f8a90584e23fabf60e36339f77d955071c2b409ea96487770414e525f105a5b417a195d2c03f6483bc5a1e19fb2ba9463bf10f2ef1ad3f0d2440c1a59d921b7f76b5e66817f4020a07fc1a1ae529086612f41d63b0874262ffa8708bcc16c912d32cb21c7bebae336fa33ef92394141ff3b2dd841b7b44c8970a1b061251238d099e68277060f60c003746c23447a93407fedc0d79609da9e2ffe9b81a3b80f7e953aaaceb80ec0c99d714d924e151c2fefa095cfcc54ff6081f32ec9af2523ff31a53d1781616cdaccacd2901273c5f2c032458e044ae65060b4c8e81b7538756e3763aa6ce718a98789de3f41d16e89558bd89cd7e31229ae0e0ee63198f998e3c26a1831ebd70de907e200d3bfcae9d28d4a04f6b6adaf4d009aca0c2919c323d9e5e1aaf691044052acd1f210f2db6344881e57eefb940800a9ababbce8fb872385b1fe84a2dd2ff8bea95020b551f6e2799196fa88dbd00098729755176bff5192c5c9432f599226d91470c40fc78cfffd40e691f3b956f59106cfa64dcfc7bb5547610a25c725d53c96349631aa89bbd83e93cc1d00be40bc9972683a7cb3ef5ada295b1157c417d629dd603044991c86592eab55ef6fdd729498e11a4e81d0f611109f8ccd678ae40e72107634f3b11655ad1145ca68bce7df234b964f6613f5611ee062c6434da32a9e691351dad430d6e57f69bbf0a706ac8d5c352c80cffa828f1dc337228d494af10d7c847942020d5eea59268d39f6ffe011d3be7e2fe7245906a2d567b24d283444d76a953f7cf6fd61816078be17bb5a0fffc2f81c1b3c255df6f929c3b7b47afeff808a147e8adb95b921a42881e0d339be71ae3c3b77a368b916eff814d573811727c2262e1e83feb98e39e62a116c3bec0d8e69ac64439941f907467c619de8dbc706b1634682238a3c6f7c4aed6862eaad91d8d1d977ca115b6f886e835b0adc7e4316a1b4db769192a7b7802b03aa6643fdc263d8a80ca2cdcc2dbb7bc9d2aa125c1029b4d76ec0b29143728aa12bc441294b231198158e01d00e42ae0fe477ae5e59df8c8ef55e17d3cb2a06eab7b0856cb2ccc17c9e6c7b812619eb1ba241b034ce8a3730745a43a0b55bc227673c978d116d55593728e8db97bf6ceef3cf2af38b455ef9abac2920facd3ed5b3a1f369e4e1c5c5ff811895436c3d2e125ca73f9d08af1ce9807a17f8fffb80ecae4b037964513f27c9ad627a97a22d5f247e4a61e2d3fc7183c5a8e85805a42bcf52ed7cf2a636b5441f92da2b1038ab43e0d69b65e1f58c923be1108719f76360833d8567dbdb607ac3e956b2a057abd727301e1afcb3f012bb1e5d3cb6fad8ab3e9eae819813ab0b29275676024e5821e48450f6d8652a83f0f9131f9a274222353ea72f16b6526b0f584d370db7593096e23542596b894f595f5dcc92d7358859013a5a56780fc3d23b591f85fe72cba56924b5679d6c70859df7c9973a82ddb75d3ee7fcf2bcbf1f605b29eba87217181da475587f054a03d165fb2545a7bc14d937b4fac877560f6f22b1389b352e6df6b7a6865c35eb14d2d50d01d70d2ceb9ae44bbdfbb9d4cc675201e6bf6f05e32a2335ed3289acb92b541458b06618733b8530fd9ef6665a2d02aacb7d2be73357e31478c0972bf62bb15da472b6d9aabcf6591145d9d5afa660a5d16a0d87f3ddb9708d9d6b06c985c6fe030b081bd52da0125fb2dc2a745284adf6eb7e4aa447946898e6459383d1abbbc52e223e9d48edffa917f2b4bb13035849271ce2b4aace93f3076c1128abe387e75940b95a6b5351ab49ecb2e1c624002077c751ff23a06488b07e6417475b60bd0395e67e8003b2c22dd906aaadefe54dbfc9f3f689fdc075c9343a7f2c2fc4269f488d9f82ae180191dfc0ea61a5442954ec20a98f4c52769cda714ac7ed72d2808e6a0e79a3c15bb886a0adc4c42b8dfb659d606608c8cf74665069c8e6d0248d5f91513c947155e41f12211b81888e762cb477fe5ce6e101d2e1ba252fe4263dca4adcd21ff308e836941dc9200b7ce7e61f299168139b343e7677cfdf42c1bea7edb8a41e3041e8fc17490a6ab90206f760ba854fa6bce237df735bb231311cec0e7ce87f78380ca97f89d3f174dff0c6218e61b4da1630e4ae6527294e3e40976cd7ff29261c16633672aa1bcc79aaf1deedcc1a729ae34e3f3684140ea2ee6aeaba762ae4415a90f8c5eec62976e3e8a9f51d549b6b177ab81f7fcb4debc52edb0f4f80422ca320aafb4d41a7adb6ca99836c8a6ffd272c316abcd3a7c41120a462081abca485c3a669b3c8adf2587c8696e24dbbf618a0d0e97d741920c1743ec817e78790c599c204e2924d2f1e32b4929a91c962c96bb0037c4543dbdf16a8b516b9ef4897fa06b804bb39f79a82354765ce086e2f3e03104fc1e60ba45b0a9fbd4e4404b6fe5a3bc2c35c706d631d51c8b06b85ad4c96353c2e430885c9c13ee1dc5376e7d252724ba74387796d82f6a211f8229746ce3c512e8fa32a52a98704a3044ff823a6aaf3089109b625d0916568b16e478f0f6c4fe223b1ff4c2eb2f2983f70a1c5a81fb323769323b0265b2f6a2297cf0c8efa888c3ce377a1ceadca3d9572a64fe77c6dbb2f9c283fe6dd7b2afffba59385daa4b6c95400edfe3a4cf755ec23c6cef780152c87c2193f31c7c029599d79cb583d2bd77593bbb1810206f5c01162ded94a41da8a297470b248e5fab67d3de22d2cd0796ca8c6f17615211252b3ee8652ca163da71c362e1c8cbedd6dee9f4e2b1a7596c07084443fdf9892dae211369c616a020284a3cd2941a40915523fd2908a3b855548bf105c91a9808efa54d78c006882b25794a851cb52a940dda0087073c62eff370167525363c946ede228ab3363ab6ef086da77aa347bdd4195bef58143fe7f063471aec2e195a6c28a67df563c8af2146ebb8332dbac18c5f16bb67baf210e70601e0f9d5481249c8168ddc20cf8c316f8e1c551caaba4b4cae52ff44a45deafc852db340c26df94f874646bd56335591140b0cc90d269a449adf35e8407a08e1098241e7b2ef0ca96e75cde5cab0b906eb3e071adcc709fe344ca2f1c67a535c75be94b7d5c1a8c94c03fbb04bf7cecc9abf04f2c6f8b2d8c3ba4478ac39e6015f559a4f96a653a50d88bd60f6883b7cba140550228492883dcceb8702a3aad63f6364a35e21a2f08077d0c8034a19e5805a7d21d6ff5b5a426a6a0a2ef0fe8ce34b04be4c4805dc5d7ad302d71fa5fda0c8a0bbd421cbd6d8d011ba1431db298a54cd87b2cd3e4ebad1a32af819e698b6959738f209f131794f46981f01106372ec27d934c6ee1e250302df1490014e145b5510f1525f93b6f5715db56f023e5e469f178c0c40f51d563bec5be4f6bb27ca7ba5f164d6c6ce4e79a2b2690ce97c5b6891d47a47b0023dfb136d7e59c492e3814c417cdad78647dcae121ce0cc4437c75fce9b71579b2d49a858e7b907daf0c6465c1c0e305cb2925d92cb0c36a254224b84adeb019b603d65ffb323d8bdba74466c880202f05e33737196fb550ddd99c8d78cd104a91d158fc5ae38e088533d9b69e6601b568f78ee7fc708d9ae27a2ff2e448fb73e3dc0702d93e0e748ba0a7306025b0035b377dcb56b7c50f3644d0658a1159f4f9377c1ba099cbd1461e4651de889416e4ca5e7a100fc8db25c29c187989848e3a0e879e4767ccdae1a2a5b38161dc0a7726b71981592a3a7651eb937eeea9706fe095c0578f4e3d3dcf8c92b7170bfc9f1e483e1237cbc9cdd073e3d9ab885d8da2f87ca48b72ec4fbea1d54936c15f7e49a375259251acd241e0d6475735f007c427627da6763cdf4c006483ff7c971a9fdfa5c4b176978e378ba097cdf36c450db9b65da1d1c44c05f3063274a61bddf3f3029a1eac336d0659110ea9a5727ff55a872bfeca48c80238dae3f6b546f96031acd6faaa5935333a25bed552f37fffe17904ade4cfc0584a30763a26ab3125e5637a4bc36251e39f51ed6806b1ac036c2baa915f5b4a8403e40abaded008b077f1237ef2dee1331b28aa82a369643969b153467934a9b42b51402c1bb802609b8903c8c38eb728dc849101f258aab09137ec81fa60be571061c5b225b090c382288ebb1359853707130a389f7da2e8b32ca3122c6453f91bca52ee1d743856659905d724f92ce754f8c96a447e682a308ec5a3bc1cba1383cbd685e86bcd1f2702668900fb03a2a8ab876eb78667449cf98a919155f575fedeb916342112eccdc5d0cd0dd3beb29156990165dbd97807603061dcb23f1f1c8844a7d03399dc3915be87319e629365d6cb78fc93748e03b70152226e3a3c9f075b2d1cc5c2c6268c41adcf8f00322250d62cf5d7e0bac635dfbc6653e455c7fda754468d816f6a9c08232ad632b5f1e3cbd0aeff9466ffd1fc7fef14986ee56df07813ceded44d71994e7d1c785f06c156b1db81103f502d2a0210c36e315a9d14012e1a08b07dc8e187139edbac5905998a813373bca4188876dc84b4be9171a2611615d827e942a354380dd21532c87ba934d22f21b8e8728c4597b5eb3f0f6a147b2f24325ee6f082fab02db19fb687b9357c19a37ea9e2ea548b56f4df92e809432bfdf15e91ba8cc3b1f2db79b6f98e5955ce0fa64ff9ea0bbdc5379697a721333c9d762a84bb8ec5a024a36a3f21382ed135ce220cae17edf083281b29191dae54d2c22b53a1a19a08c1a4b50da68c10353c55536ba4123b74b6963f1750441dee1deaa1c1184cd27bdfbe61edbaa38a8fccf3306bac8a3127d7b4370a441c221f808f618b14e45f96f9f8b8e7bbc33006866f49de3822d9e539383be4289a71c216eead09d1b3b041dd9154b1956f151f2915c69d4e4787a8e0d2921230bac42e2e59a28927a73cb694e3ddc19c0b0bd0aab093444daeb143eed8bc0787b01119646a0a2b2a67ee06257e699f99877f86af3eee7279567240973dd709e3d887cfe6f87732bcc74ad4d7dfd1b1c4274403489e9fd603c828673fe9521d368e44b91847c11353f6fd1b8f36c8bc3174dc49499bc7d2d12ee78d77ca283de0b27ebd57cbe9a36603be434de2f52d3e455424260446e174f4e6b44f10737c8110b1261287b232bba7f4c93e896084afa811b92cacad2e47d10a524f3e89174604289dab67ab9e20260750e22266b25aab7dce0fd99711b79baf27114a27f523f7e1b78045454c9d750daf091f8197316d9626d763ce1ba05773fbadff1bbe0cbec7db3f840cafdb5abd17eca3feeb2ce5bdbf00e826958e67ef36420a4f141a4e0abac32347c9984fe01a73675466d2a18b2f09f92f92cf447bd75734cf2ff53dcf2c2287fa0b8690342bcd91f28fd713fe79062acdffaec0849e7df3acb87d65b8af2b0d7d6a6f0ead0458e75389f1ef87398555abc9453303d4e4ee698f0189f37b8590ca2596a47e1a6431bd24ce2fb10a95b43e0b18144501418b056eaeefaff8e7bb582c43eb3d0873ac6e19b06248a81e8546a0d6af533e2d45d0b2494a20d5c50f56fc707e9073804e0778980ceca8dfcde69b6c2886cdfb502ace0a10461d70b6b1304e913f363230d9c8682a552bb547855b75af694d98ffd45f39102d8ada2f7dadb670dbfd408831350c5bf821f99cb9b4e007331baba444e498d711b57274c121ba4d0fe05ac56cd746ed1c9e2b6abc461c5a2c5db10e445a9f2d4112c61b552dc377d1b8655693fc73fbbb6f96f80e57f6a0c84c26f8729a404f27c521f9b8b4a148043a7764529d71276bd69cec08456c3ad2e4b618d10c476436244b83a802e6e0c7bb65727b5900b3f2e00bc496932dd5e6e4135fc3ead4a350090af290628904ee215c44af806e030fe99c9484b3de817da8811ea467f37e4a7ed314c8689ef7e386fb10cf4c567e7066e8b1be1cec283164e2ce53db2ceb8d321dd2ac10acec0a5c44a4ff98cd16f9a18617c388ee27d9c57ca1ace905eaa5fcdc9477dd5bf0812ec8a285590e1d325a5b43acf15a0eaaffed49a170c1ce7ee664774ecb6ebb7341019c6baab9e0ec525b2127516a933d91469232a4e08b467c79a0c0acbb8c60ebc478b714e035d23af9f811b6f55e5e2bc05dc0dd6eb6e38c040795cc0710eed7acfdd64b382176af19324a56f6293fc9ce990984cb7cfe1d09224aea136135f0141988920f90a1f1afcb02fd78407675933112c2cb19bcd6631ce19034c2f7aa4dd1ad7a3563f0ef75d08ac035b864957067c3560c9b124f91f7f56a1e247158c6e27983bff7ce1a618b3ea390aeb2b473036382d6d9a5f6bf235dadeed403646b3093973ab4e551df435a8176ffc419d22ada8c94a2e84cf4193402bbd432e0e98c385db859f0f7e1e8f6600a38812678f52367be7aa4e7b71bea20f5c534172e9da7b4448fa2e8d998fd1ef621e1b970213977acdea0e03a0f46886ffe34df8d3cf5f03bba0b91cc699ab0613b5e9766a299dec9f5cf482b7354f914ef4a8919c6a8479fd34b0de9fb2a0b0d2f
-  
-    
-      
-      
-        输入密码查看.
-      
-    
-  
-
-]]></content>
-      <categories>
-        <category>技术探索</category>
-        <category>学习笔记</category>
-        <category>C语言</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-        <tag>笔记</tag>
-        <tag>加密</tag>
-        <tag>指针</tag>
       </tags>
   </entry>
   <entry>
@@ -1506,6 +1475,818 @@ hexo d
       <tags>
         <tag>C语言</tag>
         <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C_study_char</title>
+    <url>/posts/fe17491f06d5/</url>
+    <content><![CDATA[
+  a5ea2ecb672ade62adf93d46cb1e567001b662e197dabf5eb3869dd149436efdc1083721e5734061b137869a7107df4c24ddf16dae514bacd425cdbdf055a436d17c531e4f0f297e0b6abd15543dbddf22d162646761de2605fddc65c6e0ca692d30ac9eec235876a57c27356dc41f2c5b5b96367c486b1bcae7a547fe019092e3d06530e1a314986d444c3fd8d64dbb6be40a31af12f3e3266520ae8d5a66055cd086cb0fcc32e410ec9cff49b8318b6d746c7506accf949753e1ba69708e16b263e21cd85f633e5620e4e5161a32273f7cc44fc7aa39a1e733928510bef83f1c1b72ea5cae95160764c0b4f0ab9d4404ada097dfd607ed35015f4cfc64a3a71c43b76cac39e889a891cc1177460a10ca1bc18982b2e8e0ed6080f1fd44a77bb64a5d6df3a1e0dfc5e26aa7a9cd51e8f558ce4cbee6ecd5877f78fc00ea25729eac4dffc4d44d353fa5b05c04284f45b05d0500a2f9201eef5242205eb1cb7c4d9e9b992231f7899b76d652f023e74b8b0cedc722681b3bedbf4bc71bed50a2b0e5fc9ff85ecb7cbff7c496e4913b47a821eb81eec4ff79caa0a7bd37d95ee206c905662e95224c416595d4489525d33bcd39e661b4f4e96ed2d7884eb5786cf1838c7d1f2a3e82dd992b44813be1014f3dbf3bac812246aded215bff9643974df17b6bba318583d412a9277c11e2be26f8cdf96d1ebfad987e806bf2b9c8147e9ba90d95fcebe8434f844d4ea933f231734126b55d7f18d54fefecb2fee1c78a3ec97bddbeefebb95f2206b63f7847e460f348f2eefcd3ea8ec84474e7c8f69a076df222fd1f13435abdc2becc7cbfb0a6a4e2d6566ef71c7e61f653f8468064351f91586ef20d5f3054a46a541f393326ffd86003215ff18898b0d79b3c6be043d4065bca589e2b1754243fb5114c3ec37f5bd39b1634b4c22b614761ab34ed53132f00feec97d052adaf1194622c0da67f5bc2e81d299410cfa530ff84706fbc3e3d8f7aaedea5b1567b6eec36a24145769f03fe8bc8fb6c579c7f74802cfdcc2a46ce6235f947024b2e50a4e63173a84cb5b2ec0b7499f72ad0db901ca056eb527a4bda3b75c1afcbffe4a04b8364cd35788f7534be74c315ab4f8d261108f060259ab209e59c4524f18410d80cb2c571cd31122af7c6810ea44918e9a9e639753fad8aa37607b0c62ea5126301a04d2c5322ebd474621d6ed5e81caffad6f82dc60d79be8afea3b77c299050aaa2642acede8670f3fed5a91a5c1297660d9bf5e8e4bc68820720c773966e94be6445e8abe868ccf01c71a51985ba9fb9057cff0921b62d66117a2934376b9dd3d04abc934a6e6920a37b2c9ff6ff670d2ecf75d64d119895902badedd94755c474dde9804636e95ef63903c3c61206cd501426619a7e3736370fa50a4f1056179a245b9ad1d1bb9293c3cf9cea4b58d3061e25f81f6ce6afe985390bda3b37e644f8e2489d8d8cda0e0cc849893109cce0acfb1c03e6c0aef675eee321cdb933b9297100fdafa7e20554874cdc331d084352295dfdbe8ddbebb2f5ab1a1baf3a91686c218adb21518264201fa365561e1ea3a6324aff3cfc5d8e5357373b48ccb88d292bb0b2d01dffe1cf384d6dbc2a059712f900dd3e15a1a1c3f62ae9d8baa0cea6bd5df39fc7fde6eefd036db1646325483452b0fe8c2f731365a3755c481c3868e43372f2e8ef148a88546b0d3bc4e68d44994b729c4db5b17ed38fce65bb72425f8a90584e23fabf60e36339f77d955071c2b409ea96487770414e525f105a5b417a195d2c03f6483bc5a1e19fb2ba9463bf10f2ef1ad3f0d2440c1a59d921b7f76b5e66817f4020a07fc1a1ae529086612f41d63b0874262ffa8708bcc16c912d32cb21c7bebae336fa33ef92394141ff3b2dd841b7b44c8970a1b061251238d099e68277060f60c003746c23447a93407fedc0d79609da9e2ffe9b81a3b80f7e953aaaceb80ec0c99d714d924e151c2fefa095cfcc54ff6081f32ec9af2523ff31a53d1781616cdaccacd2901273c5f2c032458e044ae65060b4c8e81b7538756e3763aa6ce718a98789de3f41d16e89558bd89cd7e31229ae0e0ee63198f998e3c26a1831ebd70de907e200d3bfcae9d28d4a04f6b6adaf4d009aca0c2919c323d9e5e1aaf691044052acd1f210f2db6344881e57eefb940800a9ababbce8fb872385b1fe84a2dd2ff8bea95020b551f6e2799196fa88dbd00098729755176bff5192c5c9432f599226d91470c40fc78cfffd40e691f3b956f59106cfa64dcfc7bb5547610a25c725d53c96349631aa89bbd83e93cc1d00be40bc9972683a7cb3ef5ada295b1157c417d629dd603044991c86592eab55ef6fdd729498e11a4e81d0f611109f8ccd678ae40e72107634f3b11655ad1145ca68bce7df234b964f6613f5611ee062c6434da32a9e691351dad430d6e57f69bbf0a706ac8d5c352c80cffa828f1dc337228d494af10d7c847942020d5eea59268d39f6ffe011d3be7e2fe7245906a2d567b24d283444d76a953f7cf6fd61816078be17bb5a0fffc2f81c1b3c255df6f929c3b7b47afeff808a147e8adb95b921a42881e0d339be71ae3c3b77a368b916eff814d573811727c2262e1e83feb98e39e62a116c3bec0d8e69ac64439941f907467c619de8dbc706b1634682238a3c6f7c4aed6862eaad91d8d1d977ca115b6f886e835b0adc7e4316a1b4db769192a7b7802b03aa6643fdc263d8a80ca2cdcc2dbb7bc9d2aa125c1029b4d76ec0b29143728aa12bc441294b231198158e01d00e42ae0fe477ae5e59df8c8ef55e17d3cb2a06eab7b0856cb2ccc17c9e6c7b812619eb1ba241b034ce8a3730745a43a0b55bc227673c978d116d55593728e8db97bf6ceef3cf2af38b455ef9abac2920facd3ed5b3a1f369e4e1c5c5ff811895436c3d2e125ca73f9d08af1ce9807a17f8fffb80ecae4b037964513f27c9ad627a97a22d5f247e4a61e2d3fc7183c5a8e85805a42bcf52ed7cf2a636b5441f92da2b1038ab43e0d69b65e1f58c923be1108719f76360833d8567dbdb607ac3e956b2a057abd727301e1afcb3f012bb1e5d3cb6fad8ab3e9eae819813ab0b29275676024e5821e48450f6d8652a83f0f9131f9a274222353ea72f16b6526b0f584d370db7593096e23542596b894f595f5dcc92d7358859013a5a56780fc3d23b591f85fe72cba56924b5679d6c70859df7c9973a82ddb75d3ee7fcf2bcbf1f605b29eba87217181da475587f054a03d165fb2545a7bc14d937b4fac877560f6f22b1389b352e6df6b7a6865c35eb14d2d50d01d70d2ceb9ae44bbdfbb9d4cc675201e6bf6f05e32a2335ed3289acb92b541458b06618733b8530fd9ef6665a2d02aacb7d2be73357e31478c0972bf62bb15da472b6d9aabcf6591145d9d5afa660a5d16a0d87f3ddb9708d9d6b06c985c6fe030b081bd52da0125fb2dc2a745284adf6eb7e4aa447946898e6459383d1abbbc52e223e9d48edffa917f2b4bb13035849271ce2b4aace93f3076c1128abe387e75940b95a6b5351ab49ecb2e1c624002077c751ff23a06488b07e6417475b60bd0395e67e8003b2c22dd906aaadefe54dbfc9f3f689fdc075c9343a7f2c2fc4269f488d9f82ae180191dfc0ea61a5442954ec20a98f4c52769cda714ac7ed72d2808e6a0e79a3c15bb886a0adc4c42b8dfb659d606608c8cf74665069c8e6d0248d5f91513c947155e41f12211b81888e762cb477fe5ce6e101d2e1ba252fe4263dca4adcd21ff308e836941dc9200b7ce7e61f299168139b343e7677cfdf42c1bea7edb8a41e3041e8fc17490a6ab90206f760ba854fa6bce237df735bb231311cec0e7ce87f78380ca97f89d3f174dff0c6218e61b4da1630e4ae6527294e3e40976cd7ff29261c16633672aa1bcc79aaf1deedcc1a729ae34e3f3684140ea2ee6aeaba762ae4415a90f8c5eec62976e3e8a9f51d549b6b177ab81f7fcb4debc52edb0f4f80422ca320aafb4d41a7adb6ca99836c8a6ffd272c316abcd3a7c41120a462081abca485c3a669b3c8adf2587c8696e24dbbf618a0d0e97d741920c1743ec817e78790c599c204e2924d2f1e32b4929a91c962c96bb0037c4543dbdf16a8b516b9ef4897fa06b804bb39f79a82354765ce086e2f3e03104fc1e60ba45b0a9fbd4e4404b6fe5a3bc2c35c706d631d51c8b06b85ad4c96353c2e430885c9c13ee1dc5376e7d252724ba74387796d82f6a211f8229746ce3c512e8fa32a52a98704a3044ff823a6aaf3089109b625d0916568b16e478f0f6c4fe223b1ff4c2eb2f2983f70a1c5a81fb323769323b0265b2f6a2297cf0c8efa888c3ce377a1ceadca3d9572a64fe77c6dbb2f9c283fe6dd7b2afffba59385daa4b6c95400edfe3a4cf755ec23c6cef780152c87c2193f31c7c029599d79cb583d2bd77593bbb1810206f5c01162ded94a41da8a297470b248e5fab67d3de22d2cd0796ca8c6f17615211252b3ee8652ca163da71c362e1c8cbedd6dee9f4e2b1a7596c07084443fdf9892dae211369c616a020284a3cd2941a40915523fd2908a3b855548bf105c91a9808efa54d78c006882b25794a851cb52a940dda0087073c62eff370167525363c946ede228ab3363ab6ef086da77aa347bdd4195bef58143fe7f063471aec2e195a6c28a67df563c8af2146ebb8332dbac18c5f16bb67baf210e70601e0f9d5481249c8168ddc20cf8c316f8e1c551caaba4b4cae52ff44a45deafc852db340c26df94f874646bd56335591140b0cc90d269a449adf35e8407a08e1098241e7b2ef0ca96e75cde5cab0b906eb3e071adcc709fe344ca2f1c67a535c75be94b7d5c1a8c94c03fbb04bf7cecc9abf04f2c6f8b2d8c3ba4478ac39e6015f559a4f96a653a50d88bd60f6883b7cba140550228492883dcceb8702a3aad63f6364a35e21a2f08077d0c8034a19e5805a7d21d6ff5b5a426a6a0a2ef0fe8ce34b04be4c4805dc5d7ad302d71fa5fda0c8a0bbd421cbd6d8d011ba1431db298a54cd87b2cd3e4ebad1a32af819e698b6959738f209f131794f46981f01106372ec27d934c6ee1e250302df1490014e145b5510f1525f93b6f5715db56f023e5e469f178c0c40f51d563bec5be4f6bb27ca7ba5f164d6c6ce4e79a2b2690ce97c5b6891d47a47b0023dfb136d7e59c492e3814c417cdad78647dcae121ce0cc4437c75fce9b71579b2d49a858e7b907daf0c6465c1c0e305cb2925d92cb0c36a254224b84adeb019b603d65ffb323d8bdba74466c880202f05e33737196fb550ddd99c8d78cd104a91d158fc5ae38e088533d9b69e6601b568f78ee7fc708d9ae27a2ff2e448fb73e3dc0702d93e0e748ba0a7306025b0035b377dcb56b7c50f3644d0658a1159f4f9377c1ba099cbd1461e4651de889416e4ca5e7a100fc8db25c29c187989848e3a0e879e4767ccdae1a2a5b38161dc0a7726b71981592a3a7651eb937eeea9706fe095c0578f4e3d3dcf8c92b7170bfc9f1e483e1237cbc9cdd073e3d9ab885d8da2f87ca48b72ec4fbea1d54936c15f7e49a375259251acd241e0d6475735f007c427627da6763cdf4c006483ff7c971a9fdfa5c4b176978e378ba097cdf36c450db9b65da1d1c44c05f3063274a61bddf3f3029a1eac336d0659110ea9a5727ff55a872bfeca48c80238dae3f6b546f96031acd6faaa5935333a25bed552f37fffe17904ade4cfc0584a30763a26ab3125e5637a4bc36251e39f51ed6806b1ac036c2baa915f5b4a8403e40abaded008b077f1237ef2dee1331b28aa82a369643969b153467934a9b42b51402c1bb802609b8903c8c38eb728dc849101f258aab09137ec81fa60be571061c5b225b090c382288ebb1359853707130a389f7da2e8b32ca3122c6453f91bca52ee1d743856659905d724f92ce754f8c96a447e682a308ec5a3bc1cba1383cbd685e86bcd1f2702668900fb03a2a8ab876eb78667449cf98a919155f575fedeb916342112eccdc5d0cd0dd3beb29156990165dbd97807603061dcb23f1f1c8844a7d03399dc3915be87319e629365d6cb78fc93748e03b70152226e3a3c9f075b2d1cc5c2c6268c41adcf8f00322250d62cf5d7e0bac635dfbc6653e455c7fda754468d816f6a9c08232ad632b5f1e3cbd0aeff9466ffd1fc7fef14986ee56df07813ceded44d71994e7d1c785f06c156b1db81103f502d2a0210c36e315a9d14012e1a08b07dc8e187139edbac5905998a813373bca4188876dc84b4be9171a2611615d827e942a354380dd21532c87ba934d22f21b8e8728c4597b5eb3f0f6a147b2f24325ee6f082fab02db19fb687b9357c19a37ea9e2ea548b56f4df92e809432bfdf15e91ba8cc3b1f2db79b6f98e5955ce0fa64ff9ea0bbdc5379697a721333c9d762a84bb8ec5a024a36a3f21382ed135ce220cae17edf083281b29191dae54d2c22b53a1a19a08c1a4b50da68c10353c55536ba4123b74b6963f1750441dee1deaa1c1184cd27bdfbe61edbaa38a8fccf3306bac8a3127d7b4370a441c221f808f618b14e45f96f9f8b8e7bbc33006866f49de3822d9e539383be4289a71c216eead09d1b3b041dd9154b1956f151f2915c69d4e4787a8e0d2921230bac42e2e59a28927a73cb694e3ddc19c0b0bd0aab093444daeb143eed8bc0787b01119646a0a2b2a67ee06257e699f99877f86af3eee7279567240973dd709e3d887cfe6f87732bcc74ad4d7dfd1b1c4274403489e9fd603c828673fe9521d368e44b91847c11353f6fd1b8f36c8bc3174dc49499bc7d2d12ee78d77ca283de0b27ebd57cbe9a36603be434de2f52d3e455424260446e174f4e6b44f10737c8110b1261287b232bba7f4c93e896084afa811b92cacad2e47d10a524f3e89174604289dab67ab9e20260750e22266b25aab7dce0fd99711b79baf27114a27f523f7e1b78045454c9d750daf091f8197316d9626d763ce1ba05773fbadff1bbe0cbec7db3f840cafdb5abd17eca3feeb2ce5bdbf00e826958e67ef36420a4f141a4e0abac32347c9984fe01a73675466d2a18b2f09f92f92cf447bd75734cf2ff53dcf2c2287fa0b8690342bcd91f28fd713fe79062acdffaec0849e7df3acb87d65b8af2b0d7d6a6f0ead0458e75389f1ef87398555abc9453303d4e4ee698f0189f37b8590ca2596a47e1a6431bd24ce2fb10a95b43e0b18144501418b056eaeefaff8e7bb582c43eb3d0873ac6e19b06248a81e8546a0d6af533e2d45d0b2494a20d5c50f56fc707e9073804e0778980ceca8dfcde69b6c2886cdfb502ace0a10461d70b6b1304e913f363230d9c8682a552bb547855b75af694d98ffd45f39102d8ada2f7dadb670dbfd408831350c5bf821f99cb9b4e007331baba444e498d711b57274c121ba4d0fe05ac56cd746ed1c9e2b6abc461c5a2c5db10e445a9f2d4112c61b552dc377d1b8655693fc73fbbb6f96f80e57f6a0c84c26f8729a404f27c521f9b8b4a148043a7764529d71276bd69cec08456c3ad2e4b618d10c476436244b83a802e6e0c7bb65727b5900b3f2e00bc496932dd5e6e4135fc3ead4a350090af290628904ee215c44af806e030fe99c9484b3de817da8811ea467f37e4a7ed314c8689ef7e386fb10cf4c567e7066e8b1be1cec283164e2ce53db2ceb8d321dd2ac10acec0a5c44a4ff98cd16f9a18617c388ee27d9c57ca1ace905eaa5fcdc9477dd5bf0812ec8a285590e1d325a5b43acf15a0eaaffed49a170c1ce7ee664774ecb6ebb7341019c6baab9e0ec525b2127516a933d91469232a4e08b467c79a0c0acbb8c60ebc478b714e035d23af9f811b6f55e5e2bc05dc0dd6eb6e38c040795cc0710eed7acfdd64b382176af19324a56f6293fc9ce990984cb7cfe1d09224aea136135f0141988920f90a1f1afcb02fd78407675933112c2cb19bcd6631ce19034c2f7aa4dd1ad7a3563f0ef75d08ac035b864957067c3560c9b124f91f7f56a1e247158c6e27983bff7ce1a618b3ea390aeb2b473036382d6d9a5f6bf235dadeed403646b3093973ab4e551df435a8176ffc419d22ada8c94a2e84cf4193402bbd432e0e98c385db859f0f7e1e8f6600a38812678f52367be7aa4e7b71bea20f5c534172e9da7b4448fa2e8d998fd1ef621e1b970213977acdea0e03a0f46886ffe34df8d3cf5f03bba0b91cc699ab0613b5e9766a299dec9f5cf482b7354f914ef4a8919c6a8479fd34b0de9fb2a0b0d2f
+  
+    
+      
+      
+        输入密码查看.
+      
+    
+  
+
+]]></content>
+      <categories>
+        <category>技术探索</category>
+        <category>学习笔记</category>
+        <category>C语言</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
+        <tag>笔记</tag>
+        <tag>加密</tag>
+        <tag>指针</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>高等代数笔记</title>
+    <url>/posts/ecb159bb0577/</url>
+    <content><![CDATA[高等代数笔记
+
+本笔记按章节组织，点击链接查看各章节详细内容。
+
+
+目录
+
+
+
+章节
+主题
+链接
+
+
+
+
+
+第三章
+线性方程组理论
+查看
+
+
+
+第四章
+多项式
+查看
+
+
+
+第五章
+线性空间
+查看
+
+
+
+第六章
+线性变换
+查看
+
+
+
+第七章
+相似标准型
+查看
+
+
+
+第八章
+二次型
+
+
+
+
+第九章
+内积空间及其线性变换
+
+
+
+
+
+
+更新记录
+
+
+
+日期
+更新内容
+
+
+
+
+2026-05-29
+创建笔记结构，整理第三章、多项式、线性空间
+
+
+2026-06-05
+完善目录
+
+
+2026-06-06
+补完多项式和线性空间
+
+
+2026-06-14
+新增第六章：线性变换、矩阵表示与特征值
+
+
+2026-06-15
+新增第七章：相似标准型、λ-矩阵与若尔当标准型
+
+
+
+
+持续更新中…
+]]></content>
+      <categories>
+        <category>数学</category>
+        <category>高等代数</category>
+      </categories>
+      <tags>
+        <tag>高等代数</tag>
+        <tag>数学笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C_study_Struct</title>
+    <url>/posts/32f7b31f9b52/</url>
+    <content><![CDATA[
+  a5ea2ecb672ade62adf93d46cb1e567001b662e197dabf5eb3869dd149436efdc1083721e5734061b137869a7107df4c24ddf16dae514bacd425cdbdf055a436d17c531e4f0f297e0b6abd15543dbddf22d162646761de2605fddc65c6e0ca692d30ac9eec235876a57c27356dc41f2c5b5b96367c486b1bcae7a547fe019092e3d06530e1a314986d444c3fd8d64dbb6be40a31af12f3e3266520ae8d5a66055cd086cb0fcc32e410ec9cff49b8318b6d746c7506accf949753e1ba69708e16b263e21cd85f633e5620e4e5161a32273f7cc44fc7aa39a1e733928510bef83f1c1b72ea5cae95160764c0b4f0ab9d4404ada097dfd607ed35015f4cfc64a3a71c43b76cac39e889a891cc1177460a10ca1bc18982b2e8e0ed6080f1fd44a77bb64a5d6df3a1e0dfc5e26aa7a9cd51e8f558ce4cbee6ecd5877f78fc00ea25729eac4dffc4d44d353fa5b05c04284f45b05d0500a2f9201eef5242205eb1cb7c4d9e9b992231f7899b76d652f023e74b8b0cedc722681b3bedbf4bc71bed50a2b0e5fc9ff85ecb7cbff7c496e4913b47a821eb81eec4ff79caa0a7bd37d95ee284db6e88a0a37aa59cea7de01fd7d5344dc6708a389d78737472ea241a43193f3f9483b68b55771a3d3f4e0e2f0d2f9e800e2b1a010f09bc5b169abf2ce9aecfc9585ca0a5bcee2d1cfc80c44e5615f536530c7b1cbd69b4ea0ce4a5848e7285fdc6a8e255cc108062596d94cf2ca2b8cff0511d1a0edea2fb2c557a4bfeb8577d69f8bcde7a45474d8d9855123de031b5b501a9574ffe08f7fcd30a96e3c82d88bf9d91a3956a49e66a4d3a58df08837b80c898d207b9a535e379a0dfd17941b9728f63bcf5040d57024634695f11ef29151ff2dbf8e5bc4db5d2ef65891a377d0dd3600c5c8bed65ae5e6647e07ee903f244201b507ffb7c791acad228e5a68c4478925c25a3cc341b0fd42d43f5789590df3c81f7ba3ca0a939f5e26c00001803a049110cc9d0cadfe4e4b95b3a65317b4b7e4d21a03c191f393faa173c309fb7b9e18c23909acbe215984738ab17b09544d7e0f177014992897b68fcb164fbd0eaffc27956776946196cc40cb1658e8c8ccada76cb92621b8ea91c6b1a39df59bb871b0be871e6a40b7ab88994c430b820fbf107cb94634ca245047e9813c56d0fc5af19f9db2555a8898c38f9a6d148f12d624e8e0fbd7ad2c320dbd80e0666858c79737eec2acb6e00eff3993abcae52475d607fe7d2ff76af6ed0176596c9d80e7a8ece41569c1415ccbf6971f69b9c13137d10d01518737a2894ada0777b1195bd05717f130a7232e6a77ae3e1f008ffa96920dd7d9f1eb4f412dc6334e132876e53f4b60dfbc9b1aefc864e7d78abbb6c93d4792dada9c57e8ba87da1bf3b89f92f1aa5c752a6a6bd3d3cc72c543395a85599be2a855bac9c77e5a3a2822c0d6df94508d637bbe3ae20c3d7900e0e6a53dd7fd14ec306bbad1ceace98235f9c24d22cfdf370ecdececda6c748ff31290cf9951edee3f74bf8e1906e198ec8b1fbc5b9a0e0c3d07949d12fa94724ad1248f2c935203e0ce692c9cf945043bba13f16c378d6a8c59aae9dff4481a04fcd7aec9fd1b1f559b9ead0d073ad513cf21e0e23f44292ff58bb3f5be4834c785267f644387bb07ede4c0806dd705d121febf43154244de3f496ba6c66dd33dba7ecbd79a562c011cebc06bb805cf6c377efd605db7a6cdb58c7aa62263b2f51745e4a76a4cf2e9978a19291e6196e6b481475ef1bab6c939f683bb5f5a4527e07e9da1f330062349a046239ee9ebc55eb19c2402d93d590489c45147bed0095d7c7ec02946055fe3296b02321ead2b66adef4a597eaba8dafa8b337207117ad49eb7fe9fdccef8ca2699bc3137e14885aff819a617615ca4c8e13db65168771a6bf3495a2fe884ed201f6e941b69d330d27edd0d0b4f80dfb9fea66963bfcb94394bb56930c4b2121c7fe6eaf410df4e664f4317110ca69558c6d38e12f823b2fb7ed459cee8fea1074f83b04de5aefa48e6d92568c249f77d3609ef70849247147e3df29d63004ad19fbb1f819ccd679af78d2f58ead7602b77e2bab358e50517b2f90430cec545f8046981a757af408d52ebf02dcccb52c9281fcc5701aae94587f1f9da9bf50b9570570cc45b466e42f5b7eedd0064bc664537e64fa021942a6c69f88eb3dd8ab641c1ae11f07089981d8aad8ca62560927933a4036b725dc2d6fcccf24236f2420911e464c15a5c94a4d19b15a853a54c995fca5965631f5ec44ae910b89df896087ae5078a9da7c4892a43160bad2eb66019b89ba788d1edefd58bcde138cdd7171c2a1daf1fc66dc38fe073b148f2be0ebabd2b5a5ad7c5a8b40bc7eed52fb95f3f4f155e840880aafd5c00c61a7e021b8d0cc9fbde9c6a85a6799e39ed8d8a84bf7a1b33ce1ec06ee04d4569ebfa062528b4caa6ca512be1d41e59094700f84562ffbee6b3be75a59d6c4c9a5bf6c63f8c45fb555a5d45d053cd73d99909e4b278271d999883b89e71a4ddfb066845396c158ca147c76d1ea0e63080853869872308b11d7fbbc197da54e7f35467f25d2ddc4d569e906753f36d870635b7e75780bfd2f2b98a67c465869522750d006828ab0a092761bbb67eb0799189e37ba5d7a763d39326674380b507bbf30c57c6d95c456ccdc4bbd0ed6a72fbbf6336ca506b3623f3ad8378e1f8ee606e0f7e6dbb53d2853abab6fbb80ce70c6dc7d7cd6e21c01613b802ec61c40211543d7530e6ea47ff8b97f93fc474d69b487af0d3011fcec11d91d8e5a5e162a04bfc5bb98a970817cf2f5ca45481db83a9a2b0a529079a3b47c2944fc1de3663595f5cef5d408d1b871a4a283564be1390492cce0550f8e90e4d0d525fca4843dce9927933c9388e77f3240c2b05c757bff9438ecc21a189efeed708962d51d237ebcb800572dbd7f49438a26b11098b2c3a97b40a0bdc5820197a0ffd5f169dbd9300bf06b7340465b6bd38d532212859ab93731119dfdd303bb41b24b6eab406281082fa6421ce1ffead5e26fb6793605e3da471e7c67d824920636dbf3e4419e290b651acfa725bc8fc4c4c4056422412fd3fad127688797026b0a41669e2bf4c9864c0e1f61e5c4d388224de720be9404b5a8e39cc199f47c0604aacd82160280f34cb9561bae10a7f370e78623904a6d9600f7ba6c23b542b2cdba8c1b97de066a5fd19cce1db5fc958232e14c1884fba78da2434e3c419776fcad12f78cdf05662c076fbb63ee50c45257a4b88c7942018868b93469e6d503fa06140229ff262d15fcabdb1ad4551cbb75032bc20315addef45cbbbe69e7f60c9355e8183094c45a4de1d7422c36a5ad70e5d74f63f2a1485661b0ff8b8787f56cbaa8141830db50d70b664ad3b6eec9eb93a241cf2161342b4a1fd503e860bf00f778345917d2651cd9d403deb4df60629606e31f8dcc15825f564d7b68621ccdbda04d6032412d934ce9e92f27bb2a52869fb39a121367cbaef05bcaa92a192c5fd2548ce511b478556a3d9f652e928c964d3fde2502586f67b01e36aa2fcb77b9cdc863262bcf710c117ab3455f41c583017c338089f29ef1153ff799be01923d622fc5e97228cdb3aa42d3eb70176dc96ea2f2716f80c83a337f55a275d30cd3a0ffc83569d76939f962c65f70a6aa0fb7207457c614822ebb345ac8803f0cbebdd95bf11cd975720e5c13cfc35a3a12d9c908c36bd0c3c6cad34d90487cd2e2b956d9cae4516a1b5e9e90304a27dbcd6cbd2726a65e41cfa08fa978fa6e06c7168a65b96b6620db436c7e3cb8219665b70f58540ac0a04ef7d276fb396c601ea7282b0ef33ad413b03b96e26762d61f0a128b804135aa2084b5517a86df93ed0b681af8b4c4b00e3586896acf91bc7b6b76d286a3a792fee1a79a5044a31e91d1ea68db6ee3cdfea4cbd2934eed1ca6ca2eeed670b925360a1cc669c5da467ccfca05719d5caa33b0103b154326971ca62be0d69ea72c84e5a209f5a34e4eafcc44b3c35adf3d4ce0fca6bdf327254f7c29ffb1979c155bfaba51ac27d7c4c9c9f5e9a8874bf884daf43af77ebe6a3b88dfd04ec986771f291f65bdfc74f1cc2d04d86753ba9200bdae294e242a595cdbd86b8153d33c4cc9cbb405e9bd618e9845b8f9d67909c9a879e8aaafcd87cd4a257a6820890854ede61edb06522458250457e58cb4222da7c91338f979c4f7473370f34b03d2dc89ef14bdda492eb24938dbc9666690b4a6fbb3b2524a593d2077a9935ebe005d36915b7ebb2a932fe8042472acf9e24ae50be39c0fad3db22150397ff0fde2d3bfd3521fece70dd049aff76db8b29e3bf6ccc26cb5ebd7366840df27546d98bda442b1c680cc42f9ded77964e8f7d0a261c34ae2c427c8050259bdd640e9b02340550348fb26085fe4277435f806349a4ac50750c4d06358e20135d118b2ab101abaf2d943850d36a88eaa5bb85485ff4afe14c31b70b6951a5523ca739b7abb5c81bcab347bf417d349dec65d3a0c9fe596475fe6cfa06d450f275a91727ae3c9d0f85740d4d43bc8776ec0535b4e1e560bda2d7e1263173bbeb465e6283dacfd1240fa42f8377b658c1ab59d0d73890e36aaa7d8de7cb4ad6f3bbb743f0519a0824ee32b8168471d6e569ec60517dd82932930c85a3f3a53e80336f363039be70690b76b362daebf3e5abaf88b13b578055075384e141bdcb14d7ed78d90cad220a02f1b7f7b194f10e8eb5d0fcbd2278bfdcd2ba5e35b30240cc1d9479884b170eaf350eb3d6779c6212770d8f5fbde2c1960a3a74d5f5435a3381988d0d983b9140f5b64d981fa7e00aa17b4a77f59a84e850ef6800b0dc8ee9d5072a4ec0251381b49e03e2d1513a688035540ac43dc55e4dd7c5d122cee588013e8ca3fc7e3ee36f605e972fc778caa5147f3963ea2496ad7850195267c8f42c8afe52006a20ba6b145bdd3a53ca81c67365ca94735ce7f0b7300f7ca819a7a53aa7632dd211989b63892a9b46dd5769784cdbde973695854b1ffb97d517bbc29c4a2c49880c318ee7ce3d5dcb07a390b2434ac243de9fe79c5ad71443d7e0771d13f63fcea2390da3c382f5e3d1167fb01c669b052e1c08be9ad992fc54d08232d4d34e70494a2aeb01509206494c2e56f06ef1275a293b33f23c3269eba0053e042c7ceddbf8bd21f48c57956442d10f929c9e9ebd6f759cecb0b2bcc2041037dc99c330d181a57c9516731947605730b3dc6b06a30c57d7e0921ac27aeb100ed1b56d87b7f0c43e1a0efd634f2cb6aba2e84a482aa5496994cd8f34d77296295179a6f4a8ec843d99d662b8d0aa9312bbb7d74fbedecd1ac6d0008a82e57f74b55e60fb447ff31e79e2d99cd81c273ae14494351301a6a62a32fd0bdfbb3802476d43e6c6f611bdb67a9d4fb6228ad7da85550ce89cbed6349aea0ae53dc35977332009a0ac27bc1e2788eedde4f0143f977c9d9718cbeaefc14e711d802aa4a8d75c6425723936f88cf0c024c46b12abe26e1a93b63de896d9ab1c0d476a5d94975d31440f7b97c9f395ae1236b3f33c0581f11d0f7fe359e5a0c20d6f9855ea0cc64695b01da0aafce7e3627a81fef96b8db3725695725dd86aff1367b12af43b47dcb0067c256f3ac097b0e909292d169d4024c53cbdfe903e9caca082319c366c3f79723a9744fad769c2ef24eb0845ac33aaaf818f54d44618f046f116f007cca3e76c529124cb69bcf9539280b1e550209f1e0ccc80831a649f92b28fbc998d29e13e0e98e5b041b4e543fcb16a47a597dd993fa0ee1a9c45f756982530f518312b274816568ef10b5d468f1b2960f39240eca371fb242d1eaff45f8d2831bde69dc59e6b8957f3a936a3ac95385f73440423d8a233c6838c9397a4eeb906ae4871519d0ccb5e517b7c7ccb74415c47ae481d3b75c72220ed40b5f4c8e0a63ef4c3d651ad4b97777142911899ad0df64aa03082c086bbc678672880fe90ad0816a59880a7f3c3e12664a4a37e7796d4b6c6665026fd17e94764d9a84b8a286b6486f2cb9a7049b29ac622d0532ef0aa0e896ef7125ba721a743ceb520068be1090fab4e60d26b8404375dec1a008cf2e14449a4ce05da95ca83dcbc2b46b4e4204f65c03e34ae1c285b6d8df7e7853a5989b671830bd55c95a227db49a0209a302fd7d33207880f2b5b0c4bfdc193cff0b17229249a0668f4d3b6e7b79ca4d4a7bb4dd857a7834acb1f6f2de76d4a99b1f6df98c44ba1d999280caefb9730612be94778041cbc92d25cc4a575843e4d5fb8a789c6648d5448f3d78956ee8ea0dd1632e0a619c0fa55ccb6c6b84071ea9fb4b4729455c546b9c3a4238ebfb39506a05b5ff799c1021e6e1490ed507a662ee5008f605d80ade58f189ca5cb0bdec3aa7f93d253965e0133bd0d3c1aa2ea38bb1bb7d7703118fa23a0237c07ef6d8c0379e21b392f1793705a20ecc99101bdcbf80c74c917c4811d984f5b96bc25c275046ea477ea8e47104e05cec5a102a8d5a835665e6ad07c94526083de7cd116860cceb6a72b29f08e164638966255b1d88d5174a5d2a2e16111769f025d98572d63fb88bd271493c64f9f3795c63323860cb9f63e1092c269a76efe0a71e29474ea0d2452f49df3452acf1cee1b1dbdcfd89c21d097a22f49f4d31854113cd00a783b735ca79af867294236b3a97256ad5f7f789f4fcb7d96e4caf88eb51fad90edecd9ce82f50ff56f9d4d6a5d76b6e1dcfe286620b5f1514e9d55bdb242ac69d0fd4fe2ccd93a0b1c22b506900516a1d2d78941e3dea5af49dc063e93d30559960b48f1035c821c282d70ecd00777a0455c8478bec9db845af9f004ff00faca498da066ad012e66358f655b0a6639e9ad25a71f2334d46901ddb273df1bc101ff7c3c3d90d516d84db7e1ab7155e1dc6321ee1d95e9e8e9edad8f5c592b0e1d23427bfb485cf5cd895b7c2f401e92bba826d427ca92a158c5fdb4179e55b66bf63f4e56b1e2e3b6e8a7c8d71b66c6acac6a6bf77256cc9d619c9d35e7fa365ba590080994e2ce835bc59ac25c2b409e0eecb0033afddbbc41bf574c727bec646cde1aa42df483bbb4f8238b99baffa9bed64947f126f05839be44f67de642bf1cdbf4303c236cc85bfad265fe83b1e36e4465759a27f59530279818160d820911fbb199c1e3c9a246034509b0d6bb46b0f5be6734ab66cdcd2a5eca16c601efc2189cff95c49e7775e61f309a2546759df488b23bf4085e8e4bc312a75611ed1a7e185b8ecb3312ebd6459919e33e88daf97b91fd783aa26e9380731b4948b9780504ce7df905fb7a6b2914116c80e00b585348f3c2914d9c77c6d7e70cced28b8db1e1196ed05d51bd44ca4082dd687b28e113304a0bd60eddfac9c8ebcaced9bbfdeb652b7caef06b7910aac3313739d3fd74c583504447b32450570cdbe6ca0ca32ec68fd8e1864157257d2b6172940b22db37f8e6ebb661c3124fc16bd401104f1eef2e69d54603f5c3943bb105a210df1907399450c117282175824d6721243b91bc26167147824c497ad30ec30acd4a43d3214ea2fcd72042180889aa84539c317aa9a60944f61ac9dd12529ff595cd91b0e6e6f9e8a72bd702716d807f930a8bf55e0a3831d4b9ea5c04e454ef074094391cfa0a8c0aa7391f474575b88b3313f4121954475fd20702bd21775c5dc5bab92087035017cdf25ebf8e61c0aa902df148ffe908171a305d7fbbeb2f7acf58c93206b764d113fd97889366b1f7ebf2904e6bedac85ac7ea3e4cbb47ffab1cb813c0d8cd67db9c794d174ad71c26b9a8787615abfc57d6f120e07b981ab346e6a7c42e9a166191c0987ce3058f90e5c6e0988a9fa4c522484392d2bcbcfd43e22b2d15528fa9557eb7d7ead048f6c3aca43ef8f40b890c9f6c3a5cf1e75c99bd5bd2ac0904caaf60016e5a4036f53b4821f967ad2aa6e4f72192834502d6312a02d5afeabe846a6204e779cdc20e92e61650ad876745b2ff9214d3f68d0ff153af3a8526dfaeab2adbb5d964b6e94194b0879de154921a65950be7986c2f49afae411ed416522da02d7f3a072ff2c4131545c69f05204f7f99b9044b2bc4f93d2e0e71dbba0761781f97da783cfe773f69b0d03f3058a3d7c8208bc4221b859d89901f73356852906329b6adb6e8caab5f8afc1c3ab834ede0d885e658d8a6f34c4dd2cd8af0fc5262c49f6fec439dc371da7f321eaac997f5ca17cc95761a30ea7557b4d872b523de6f3824df01fc293a7d27efd0e0dd55529a7fad75a7773aae4cce095fb6419407e518f43f625c0556209906c0a1a97cb434fb1c6bf447a17589043f1308ac65a9d211345cecb4d2a9a08dc83cadc1a9a91b5ed6bd883211a7d7581a5bba03d72d64774ff80a142f6ef1b085798e54fa5595052110ffd1b0f35f66d1d8361f6b7aace8bd2f8753f7d39580b5e640b244eb
+  
+    
+      
+      
+        输入密码查看.
+      
+    
+  
+
+]]></content>
+      <categories>
+        <category>技术探索</category>
+        <category>学习笔记</category>
+        <category>C语言</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
+        <tag>笔记</tag>
+        <tag>加密</tag>
+        <tag>结构体</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>线性变换、矩阵表示与特征值</title>
+    <url>/posts/bb5d05dc5b3d/</url>
+    <content><![CDATA[第六章 线性变换、矩阵表示与特征值
+一、线性变换
+1. 定义与性质
+线性变换需满足：
+
+
+可加性：A(α+β)=Aα+Aβ\mathcal{A}(\alpha + \beta) = \mathcal{A}\alpha + \mathcal{A}\betaA(α+β)=Aα+Aβ
+
+
+齐次性：A(kα)=kA(α)\mathcal{A}(k\alpha) = k\mathcal{A}(\alpha)A(kα)=kA(α)
+
+
+2. 唯一性
+Aεi=Bεi  ⟺  A=B\mathcal{A}\varepsilon_i = \mathcal{B}\varepsilon_i \iff \mathcal{A} = \mathcal{B}Aεi​=Bεi​⟺A=B3. A\mathcal{A}A 的核 (Kernel)
+ker⁡A={α∣Aα=0,α∈V}\ker\mathcal{A} = \{\alpha \mid \mathcal{A}\alpha = 0, \alpha \in V\}kerA={α∣Aα=0,α∈V}
+二、线性变换的矩阵描述
+设 ε1,ε2,⋯ ,εn\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_nε1​,ε2​,⋯,εn​ 为空间的一组基，线性变换在此基下的映射关系为：
+{Aε1=a11ε1+a21ε2+⋯+an1εnAε2=a12ε1+a22ε2+⋯+an2εn⋮Aεn=a1nε1+a2nε2+⋯+annεn
+\begin{cases}
+\mathcal{A}\varepsilon_1 = a_{11}\varepsilon_1 + a_{21}\varepsilon_2 + \cdots + a_{n1}\varepsilon_n \\
+\mathcal{A}\varepsilon_2 = a_{12}\varepsilon_1 + a_{22}\varepsilon_2 + \cdots + a_{n2}\varepsilon_n \\
+\quad \vdots \\
+\mathcal{A}\varepsilon_n = a_{1n}\varepsilon_1 + a_{2n}\varepsilon_2 + \cdots + a_{nn}\varepsilon_n
+\end{cases}
+⎩⎨⎧​Aε1​=a11​ε1​+a21​ε2​+⋯+an1​εn​Aε2​=a12​ε1​+a22​ε2​+⋯+an2​εn​⋮Aεn​=a1n​ε1​+a2n​ε2​+⋯+ann​εn​​1. 矩阵表示
+对应矩阵为：
+A=(a11a12⋯a1na21a22⋯a2n⋮⋮⋱⋮an1an2⋯ann)
+A = \begin{pmatrix}
+a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\
+a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}
+\end{pmatrix}
+A=​a11​a21​⋮an1​​a12​a22​⋮an2​​⋯⋯⋱⋯​a1n​a2n​⋮ann​​​2. 简写形式
+Aε1=(a11a21⋮an1)
+\mathcal{A}\varepsilon_1 = \begin{pmatrix} a_{11} \\ a_{21} \\ \vdots \\ a_{n1} \end{pmatrix}
+Aε1​=​a11​a21​⋮an1​​​A(ε1,ε2,⋯ ,εn)=(ε1,ε2,⋯ ,εn)A
+\mathcal{A}(\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n) = (\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n)A
+A(ε1​,ε2​,⋯,εn​)=(ε1​,ε2​,⋯,εn​)A3. 坐标变换公式
+设 α=(ε1,ε2,⋯ ,εn)(x1x2⋮xn)\alpha = (\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n) \begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}α=(ε1​,ε2​,⋯,εn​)​x1​x2​⋮xn​​​，则 Aα\mathcal{A}\alphaAα 在基 ε1,ε2,⋯ ,εn\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_nε1​,ε2​,⋯,εn​ 下的坐标为：
+(y1y2⋮yn)=A(x1x2⋮xn)
+\begin{pmatrix} y_1 \\ y_2 \\ \vdots \\ y_n \end{pmatrix} = A \begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}
+​y1​y2​⋮yn​​​=A​x1​x2​⋮xn​​​
+三、相似矩阵与特征值对角化
+1. 相似矩阵
+若 B=X−1AXB = X^{-1}AXB=X−1AX，则称矩阵 AAA 与 BBB 相似。
+性质：相似矩阵的特征多项式相同，特征值相同。
+2. 特征向量与对角化
+目的：寻找一组基使线性变换的矩阵为对角矩阵。
+A(ε1,ε2,⋯ ,εn)=(ε1,ε2,⋯ ,εn)(λ1λ2⋱λn)
+\mathcal{A}(\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n) = (\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n) \begin{pmatrix} \lambda_1 &amp; &amp; &amp; \\ &amp; \lambda_2 &amp; &amp; \\ &amp; &amp; \ddots &amp; \\ &amp; &amp; &amp; \lambda_n \end{pmatrix}
+A(ε1​,ε2​,⋯,εn​)=(ε1​,ε2​,⋯,εn​)​λ1​​λ2​​⋱​λn​​​即：
+Aεi=λiεi  ⟹  Aξ=λξ
+\mathcal{A}\varepsilon_i = \lambda_i \varepsilon_i \implies A\xi = \lambda \xi
+Aεi​=λi​εi​⟹Aξ=λξ定义：λ\lambdaλ 为 AAA 的一个特征值，ξ\xiξ 为 AAA（对应 λ\lambdaλ）的特征向量。
+3. 如何求特征值？
+引入特征多项式：
+λ 是 A 的特征值  ⟺  ∣λI−A∣=0
+\lambda \text{ 是 } A \text{ 的特征值} \iff |\lambda I - A| = 0
+λ 是 A 的特征值⟺∣λI−A∣=0
+四、例题与应用
+1. 例1：判断/验证线性变换
+
+
+验证 A(α+β)=Aα+Aβ\mathcal{A}(\alpha + \beta) = \mathcal{A}\alpha + \mathcal{A}\betaA(α+β)=Aα+Aβ 以及 A(kα)=kAα\mathcal{A}(k\alpha) = k\mathcal{A}\alphaA(kα)=kAα 是否成立。
+
+
+技巧：通常看映射表达式中变量的次数是否为 1 或 0。
+
+
+2. 例2：过渡矩阵与坐标变换
+已知 β1=α1+2α2,  β2=α1−α2+2α3,  β3=α1+α2+α3\beta_1 = \alpha_1 + 2\alpha_2,\;\beta_2 = \alpha_1 - \alpha_2 + 2\alpha_3,\;\beta_3 = \alpha_1 + \alpha_2 + \alpha_3β1​=α1​+2α2​,β2​=α1​−α2​+2α3​,β3​=α1​+α2​+α3​，矩阵 A=(31−202−1123)A = \begin{pmatrix} 3 &amp; 1 &amp; -2 \\ 0 &amp; 2 &amp; -1 \\ 1 &amp; 2 &amp; 3 \end{pmatrix}A=​301​122​−2−13​​。
+(1) 证明 β1,β2,β3\beta_1, \beta_2, \beta_3β1​,β2​,β3​ 是基
+写出关系式：
+(β1,β2,β3)=(α1,α2,α3)P
+(\beta_1, \beta_2, \beta_3) = (\alpha_1, \alpha_2, \alpha_3)P
+(β1​,β2​,β3​)=(α1​,α2​,α3​)P其中过渡矩阵 P=(1112−11021)P = \begin{pmatrix} 1 &amp; 1 &amp; 1 \\ 2 &amp; -1 &amp; 1 \\ 0 &amp; 2 &amp; 1 \end{pmatrix}P=​120​1−12​111​​。
+计算行列式：
+∣P∣=∣1112−11021∣≠0  ⟹  β1,β2,β3 是基.
+|P| = \begin{vmatrix} 1 &amp; 1 &amp; 1 \\ 2 &amp; -1 &amp; 1 \\ 0 &amp; 2 &amp; 1 \end{vmatrix} \neq 0 \implies \beta_1, \beta_2, \beta_3 \text{ 是基}.
+∣P∣=​120​1−12​111​​=0⟹β1​,β2​,β3​ 是基.(2) 求 A\mathcal{A}A 在基 β1,β2,β3\beta_1, \beta_2, \beta_3β1​,β2​,β3​ 下的矩阵 BBB
+套公式：
+B=P−1AP
+B = P^{-1}AP
+B=P−1AP答案：
+B=(1−12−71−5−331512)
+B = \begin{pmatrix} 1 &amp; -12 &amp; -7 \\ 1 &amp; -5 &amp; -3 \\ 3 &amp; 15 &amp; 12 \end{pmatrix}
+B=​113​−12−515​−7−312​​(3) 求向量 α=−4α1+α2−6α3\alpha = -4\alpha_1 + \alpha_2 - 6\alpha_3α=−4α1​+α2​−6α3​ 在 β1,β2,β3\beta_1, \beta_2, \beta_3β1​,β2​,β3​ 下的坐标
+α=(α1,α2,α3)(−41−6)=(β1,β2,β3)[P−1(−41−6)]=(β1,β2,β3)(−1−30)
+\alpha = (\alpha_1, \alpha_2, \alpha_3) \begin{pmatrix} -4 \\ 1 \\ -6 \end{pmatrix} = (\beta_1, \beta_2, \beta_3) \left[ P^{-1} \begin{pmatrix} -4 \\ 1 \\ -6 \end{pmatrix} \right] = (\beta_1, \beta_2, \beta_3) \begin{pmatrix} -1 \\ -3 \\ 0 \end{pmatrix}
+α=(α1​,α2​,α3​)​−41−6​​=(β1​,β2​,β3​)​P−1​−41−6​​​=(β1​,β2​,β3​)​−1−30​​新坐标为：(−1,−3,0)T(-1, -3, 0)^T(−1,−3,0)T
+
+注：或写出增广矩阵 [β1,β2,β3∣α]→[I∣X][\beta_1, \beta_2, \beta_3 \mid \alpha] \to [I \mid X][β1​,β2​,β3​∣α]→[I∣X]，其中 XXX 为新坐标。
+
+3. 例3：相似矩阵求未知数与可逆阵 PPP
+已知矩阵 AAA 相似于 BBB，求未知数：
+
+
+利用特征多项式相等：∣λI−A∣=∣λI−B∣|\lambda I - A| = |\lambda I - B|∣λI−A∣=∣λI−B∣
+
+
+比较同次项系数，解得答案。
+
+
+求可逆阵 PPP（即对角化问题）：
+
+
+求特征值：计算 ∣λI−A∣=0|\lambda I - A| = 0∣λI−A∣=0 所得的 λ\lambdaλ。
+
+
+求基础解系：代入 (λI−A)x=0(\lambda I - A)x = 0(λI−A)x=0 求基础解系。
+
+
+基础解系拼起来所得的矩阵即为 PPP。
+
+
+4. 例4：证明子空间
+已知线性变换 A\mathcal{A}A 在 ε1,ε2,ε3\varepsilon_1, \varepsilon_2, \varepsilon_3ε1​,ε2​,ε3​ 下的矩阵为 (31−122−1220)\begin{pmatrix} 3 &amp; 1 &amp; -1 \\ 2 &amp; 2 &amp; -1 \\ 2 &amp; 2 &amp; 0 \end{pmatrix}​322​122​−1−10​​。求证：U=L(ε3,ε1+ε2+2ε3)U = L(\varepsilon_3, \varepsilon_1 + \varepsilon_2 + 2\varepsilon_3)U=L(ε3​,ε1​+ε2​+2ε3​) 是 A\mathcal{A}A-子空间。
+证法（利用定义）：
+根据基和线性变换矩阵写出映射关系：
+{A(ε1)=3ε1+2ε2+2ε3A(ε2)=ε1+2ε2+2ε3A(ε3)=−ε1−ε2
+\begin{cases}
+\mathcal{A}(\varepsilon_1) = 3\varepsilon_1 + 2\varepsilon_2 + 2\varepsilon_3 \\
+\mathcal{A}(\varepsilon_2) = \varepsilon_1 + 2\varepsilon_2 + 2\varepsilon_3 \\
+\mathcal{A}(\varepsilon_3) = -\varepsilon_1 - \varepsilon_2
+\end{cases}
+⎩⎨⎧​A(ε1​)=3ε1​+2ε2​+2ε3​A(ε2​)=ε1​+2ε2​+2ε3​A(ε3​)=−ε1​−ε2​​任取 β∈U\beta \in Uβ∈U，则 β=k1ε3+k2(ε1+ε2+2ε3)\beta = k_1\varepsilon_3 + k_2(\varepsilon_1 + \varepsilon_2 + 2\varepsilon_3)β=k1​ε3​+k2​(ε1​+ε2​+2ε3​)。
+计算 A(β)\mathcal{A}(\beta)A(β)：
+A(β)=A[k1ε3+k2(ε1+ε2+2ε3)]=k1A(ε3)+k2A(ε1)+k2A(ε2)+2k2A(ε3)=k1(−ε1−ε2)+k2(3ε1+2ε2+2ε3)+k2(ε1+2ε2+2ε3)+2k2(−ε1−ε2)=(2k2−k1)ε1+(2k2−k1)ε2+4k2ε3
+\begin{aligned}
+\mathcal{A}(\beta) &amp;= \mathcal{A}[k_1\varepsilon_3 + k_2(\varepsilon_1 + \varepsilon_2 + 2\varepsilon_3)] \\
+&amp;= k_1\mathcal{A}(\varepsilon_3) + k_2\mathcal{A}(\varepsilon_1) + k_2\mathcal{A}(\varepsilon_2) + 2k_2\mathcal{A}(\varepsilon_3) \\
+&amp;= k_1(-\varepsilon_1 - \varepsilon_2) + k_2(3\varepsilon_1 + 2\varepsilon_2 + 2\varepsilon_3) + k_2(\varepsilon_1 + 2\varepsilon_2 + 2\varepsilon_3) + 2k_2(-\varepsilon_1 - \varepsilon_2) \\
+&amp;= (2k_2 - k_1)\varepsilon_1 + (2k_2 - k_1)\varepsilon_2 + 4k_2\varepsilon_3
+\end{aligned}
+A(β)​=A[k1​ε3​+k2​(ε1​+ε2​+2ε3​)]=k1​A(ε3​)+k2​A(ε1​)+k2​A(ε2​)+2k2​A(ε3​)=k1​(−ε1​−ε2​)+k2​(3ε1​+2ε2​+2ε3​)+k2​(ε1​+2ε2​+2ε3​)+2k2​(−ε1​−ε2​)=(2k2​−k1​)ε1​+(2k2​−k1​)ε2​+4k2​ε3​​将 A(β)\mathcal{A}(\beta)A(β) 用 UUU 的生成元 ε3\varepsilon_3ε3​ 与 ε1+ε2+2ε3\varepsilon_1 + \varepsilon_2 + 2\varepsilon_3ε1​+ε2​+2ε3​ 表示：
+A(β)=2k1ε3+(2k2−k1)(ε1+ε2+2ε3)∈U
+\begin{aligned}
+\mathcal{A}(\beta) &amp;= 2k_1\varepsilon_3 + (2k_2 - k_1)(\varepsilon_1 + \varepsilon_2 + 2\varepsilon_3) \in U
+\end{aligned}
+A(β)​=2k1​ε3​+(2k2​−k1​)(ε1​+ε2​+2ε3​)∈U​故 UUU 是 A\mathcal{A}A-子空间，得证。
+通用步骤总结：
+
+
+根据基和线性变换矩阵写出 A(εi)\mathcal{A}(\varepsilon_i)A(εi​) 的表达式。
+
+
+任取 β∈U\beta \in Uβ∈U，写出其线性组合形式：β=l1β1+l2β2+⋯+lmβm\beta = l_1\beta_1 + l_2\beta_2 + \cdots + l_m\beta_mβ=l1​β1​+l2​β2​+⋯+lm​βm​。
+
+
+计算线性变换：A(β)=A(l1β1+⋯+lmβm)\mathcal{A}(\beta) = \mathcal{A}(l_1\beta_1 + \cdots + l_m\beta_m)A(β)=A(l1​β1​+⋯+lm​βm​)。
+
+
+化简，若结果仍能表示为 β1,⋯ ,βm\beta_1, \cdots, \beta_mβ1​,⋯,βm​ 的线性组合，则得证。
+
+
+
+五、求 A\mathcal{A}A 的值域与核的维数和基
+1. 值域 (Range)
+AV=L(Aε1,Aε2,⋯ ,Aεn)
+\mathcal{A}V = L(\mathcal{A}\varepsilon_1, \mathcal{A}\varepsilon_2, \cdots, \mathcal{A}\varepsilon_n)
+AV=L(Aε1​,Aε2​,⋯,Aεn​)即值域由基向量的像张成，其维数等于 Aε1,…,Aεn\mathcal{A}\varepsilon_1, \dots, \mathcal{A}\varepsilon_nAε1​,…,Aεn​ 的极大无关组中向量的个数。
+2. 核 (Kernel)
+ker⁡A={α∣Aα=0,α∈V}
+\ker\mathcal{A} = \{\alpha \mid \mathcal{A}\alpha = 0, \alpha \in V\}
+kerA={α∣Aα=0,α∈V}设 α=x1ε1+x2ε2+⋯+xnεn∈ker⁡A\alpha = x_1\varepsilon_1 + x_2\varepsilon_2 + \cdots + x_n\varepsilon_n \in \ker\mathcal{A}α=x1​ε1​+x2​ε2​+⋯+xn​εn​∈kerA，则根据定义：
+Ax=0
+A x = 0
+Ax=0即求解齐次线性方程组的基础解系：
+
+
+基础解系即为核的一组基。
+
+
+基础解系中向量的数量即为核的维数。
+
+
+
+返回总目录
+]]></content>
+      <categories>
+        <category>数学</category>
+        <category>高等代数</category>
+      </categories>
+      <tags>
+        <tag>高等代数</tag>
+        <tag>线性变换</tag>
+        <tag>特征值</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>线性方程组理论</title>
+    <url>/posts/49e3f6d43f5e/</url>
+    <content><![CDATA[线性方程组理论
+3.5 线性方程组理论
+一、有解条件
+非齐次线性方程组 Ax=βAx = \betaAx=β：
+
+
+有解 ⇔r(A)=r(Aˉ)\Leftrightarrow r(A) = r(\bar{A})⇔r(A)=r(Aˉ)（系数矩阵秩 = 增广矩阵秩）
+
+=n= n=n：唯一解
+&lt;n&lt; n&lt;n：无穷多组解（nnn 为未知数个数）
+
+
+
+齐次线性方程组 Ax=0Ax = 0Ax=0：
+
+
+r(A)=nr(A) = nr(A)=n：唯一零解
+
+
+r(A)&lt;nr(A) &lt; nr(A)&lt;n：无穷多非零解
+
+
+
+注：解空间维数 =n−r= n - r=n−r（nnn 为未知数个数，rrr 为系数矩阵的秩）
+
+
+二、解的结构
+1. 基础解系
+Ax=0Ax = 0Ax=0 的一组解向量，满足：
+
+
+线性无关
+
+
+可表达全部解向量
+
+
+条件：有非零解
+个数：n−rn - rn−r = 自由未知量个数
+求 Ax=0Ax = 0Ax=0 的基础解系步骤：
+
+
+将系数矩阵 化简为行最简形
+
+
+确定自由未知量个数 =n−r= n - r=n−r
+
+
+确定自由未知量
+
+
+写出化简后的表达式
+
+
+将自由未知量移至右侧
+
+
+令自由未知量依次取一个为 1，其余为 0，得出结果，将计算结果依次排列为解向量
+
+
+例：
+
+$$\begin{cases}
+x + y = 3 \\
+2x + 2y = 6
+\end{cases}$$
+
+对应 Ax=0Ax = 0Ax=0：
+
+$$\begin{cases}
+x + y = 0 \\
+2x + 2y = 0
+\end{cases}$$
+
+
+系数矩阵：$\begin{pmatrix} 1 & 1 \\ 2 & 2 \end{pmatrix} \to \begin{pmatrix} 1 & 1 \\ 0 & 0 \end{pmatrix}$
+
+自由未知量个数 =n−r=2−1=1= n - r = 2 - 1 = 1=n−r=2−1=1
+令 y=ty = ty=t，则 x=−y=−tx = -y = -tx=−y=−t
+取 t=1t = 1t=1，得 x=−1x = -1x=−1
+
+基础解系：$\xi = \begin{pmatrix} -1 \\ 1 \end{pmatrix}$
+
+
+2. 求通解
+步骤：
+
+
+求基础解系
+
+
+通解形式：x=η0+kηx = \eta_0 + k\etax=η0​+kη
+
+求 η0\eta_0η0​（特解）：设满足方程的数
+求 η\etaη（基础解系）
+
+
+
+
+3. 求极大线性无关组
+步骤：
+
+
+按列写向量组，排成竖着的矩阵
+
+
+化简为行最简形
+
+
+非零行个数 = 秩
+
+
+主元列 即为极大线性无关组
+
+
+例：
+
+$$\begin{pmatrix}
+1 & 0 & 3 & 0 & 1 \\
+0 & 1 & 1 & 0 & 1 \\
+0 & 0 & 0 & 1 & 1 \\
+0 & 0 & 0 & 0 & 0
+\end{pmatrix}$$
+
+其中主元列为第 1、2、4 列，故：
+
+
+α1,α2,α4\alpha_1, \alpha_2, \alpha_4α1​,α2​,α4​ 是一个极大线性无关组
+
+
+或 α1,α3,α4\alpha_1, \alpha_3, \alpha_4α1​,α3​,α4​
+
+
+或 α1,α2,α5\alpha_1, \alpha_2, \alpha_5α1​,α2​,α5​
+
+
+或 α1,α3,α5\alpha_1, \alpha_3, \alpha_5α1​,α3​,α5​
+
+
+分别可为极大线性无关组。
+
+返回总目录
+]]></content>
+      <categories>
+        <category>数学</category>
+        <category>高等代数</category>
+      </categories>
+      <tags>
+        <tag>线性代数</tag>
+        <tag>线性方程组</tag>
+        <tag>基础解系</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多项式</title>
+    <url>/posts/164b419a7cca/</url>
+    <content><![CDATA[多项式
+一、多项式整除
+若 h(x)≠0h(x) \neq 0h(x)=0，f(x)=g(x)⋅h(x)f(x) = g(x) \cdot h(x)f(x)=g(x)⋅h(x)，则称 g(x)g(x)g(x) 整除 f(x)f(x)f(x)，记作 g(x)∣f(x)g(x) \mid f(x)g(x)∣f(x)
+
+
+g(x)g(x)g(x) 为因式
+
+
+f(x)f(x)f(x) 为倍式
+
+
+性质：f(x)=g(x)⋅h(x)=0⇒g(x)=0f(x) = g(x) \cdot h(x) = 0 \Rightarrow g(x) = 0f(x)=g(x)⋅h(x)=0⇒g(x)=0 或 h(x)=0h(x) = 0h(x)=0
+定理：k&gt;1k &gt; 1k&gt;1 时，[g(x)]k∣f(x)⇒[g(x)]k−1∣f′(x)[g(x)]^k \mid f(x) \Rightarrow [g(x)]^{k-1} \mid f^{\prime}(x)[g(x)]k∣f(x)⇒[g(x)]k−1∣f′(x)
+因式分解
+标准分解式：f(x)=cp1r1(x)p2r2(x)⋯psrs(x)f(x) = cp_1^{r_1}(x)p_2^{r_2}(x)\cdots p_s^{r_s}(x)f(x)=cp1r1​​(x)p2r2​​(x)⋯psrs​​(x)，其中pi(x)p^i(x)pi(x)是不同的首项系数为1的不可约多项式。
+
+
+复系数~：f(x)=a(x−a1)l1(x−a2)l2⋯(x−as)lsf(x) = a(x - a_1)^{l_1}(x - a_2)^{l_2}\cdots (x - a_s)^{l_s}f(x)=a(x−a1​)l1​(x−a2​)l2​⋯(x−as​)ls​
+
+
+实系数~：f(x)=a(x−c1)l1⋯(x−cs)ls(x2+p1x+q1)k1⋯(x2+prx+qr)krf(x) = a(x - c_1)^{l_1}\cdots (x - c_s)^{l_s}(x^2 + p_1x + q_1)^{k_1}\cdots (x^2 + p_rx + q_r)^{k_r}f(x)=a(x−c1​)l1​⋯(x−cs​)ls​(x2+p1​x+q1​)k1​⋯(x2+pr​x+qr​)kr​
+
+
+重因式：设 p(x),f(x)∈F[x]p(x), f(x) \in F[x]p(x),f(x)∈F[x]，且 p(x)p(x)p(x) 为不可约多项式，如果 pk(x)∣f(x)p^k(x) \mid f(x)pk(x)∣f(x)，而 pk+1(x)∤f(x)p^{k+1}(x) \nmid f(x)pk+1(x)∤f(x)，则称 p(x)p(x)p(x) 为多项式 f(x)f(x)f(x) 的 kkk 重因式。
+✅重因式和根的关系：f(α)=0  ⟺  (x−α)∣f(x),(x−α)=0f(\alpha)=0 \iff (x-\alpha) \mid f(x), (x-\alpha)=0f(α)=0⟺(x−α)∣f(x),(x−α)=0 ，其中α\alphaα就是根。
+重因式
+定理 4.4.3 如果不可约多项式 p(x)p(x)p(x) 是 f(x)f(x)f(x) 的 kkk 重因式 (k≥2k \ge 2k≥2)，那么它是 f′(x)f^{\prime}(x)f′(x) 的 k−1k-1k−1 重因式.
+推论 4.4.3 不可约多项式 p(x)p(x)p(x) 是 f(x)f(x)f(x) 的重因式的充分必要条件为 p(x)p(x)p(x) 是 f(x)f(x)f(x) 与 f′(x)f^{\prime}(x)f′(x) 的公因式.
+推论 4.4.4 多项式 f(x)f(x)f(x) 没有重因式的充分必要条件是 f(x)f(x)f(x) 与 f′(x)f^{\prime}(x)f′(x) 互素.
+推论 4.6.1 实数域上的不可约多项式或为一次多项式或为二次多项式：
+ax2+bx+c,且b2−4ac&lt;0.ax^2 + bx + c, \quad \text{且} \quad b^2 - 4ac &lt; 0.ax2+bx+c,且b2−4ac&lt;0.有理根定理 若 f(rs)=0f\left(\frac{r}{s}\right) = 0f(sr​)=0，ana_nan​ 是最高次项系数，a0a_0a0​ 是常数项，r，s互素，则：
+
+
+s∣ans \mid a_ns∣an​
+
+
+r∣a0r \mid a_0r∣a0​
+
+
+艾森斯坦 (Eisenstein) 判别法 设 f(x)=anxn+an−1xn−1+⋯+a0f(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_0f(x)=an​xn+an−1​xn−1+⋯+a0​
+是一个整系数多项式，如果存在一个素数 ppp，使得
+(1) p∤anp \nmid a_np∤an​;
+(2) p∣an−1,an−2,⋯ ,a0p \mid a_{n-1}, a_{n-2}, \cdots, a_0p∣an−1​,an−2​,⋯,a0​;
+(3) p2∤a0p^2 \nmid a_0p2∤a0​,
+那么 f(x)f(x)f(x) 在有理数域上是不可约的。
+例题
+例 1. 确定 a,ba, ba,b 使 (x−1)2∣ax4+bx3+1(x-1)^2 \mid ax^4 + bx^3 + 1(x−1)2∣ax4+bx3+1.
+核心：定理 4.4.3
+步骤：
+
+
+f(x)f(x)f(x)求导
+
+
+从原式的因式找到根 α\alphaα ，令{f(α)=0,f′(α)=0.\begin{cases} f(\alpha) = 0, \\ f^{\prime}(\alpha) = 0. \end{cases}{f(α)=0,f′(α)=0.​
+
+
+解方程组即可求得答案
+
+
+解： 令 f(x)=ax4+bx3+1f(x) = ax^4 + bx^3 + 1f(x)=ax4+bx3+1，则 f′(x)=4ax3+3bx2f^{\prime}(x) = 4ax^3 + 3bx^2f′(x)=4ax3+3bx2，由题意
+(x−1)(x-1)(x−1) 是 f(x)=ax4+bx3+1f(x) = ax^4 + bx^3 + 1f(x)=ax4+bx3+1 的二重因式，则 (x−1)∣f(x),(x−1)∣f′(x)(x-1) \mid f(x), (x-1) \mid f^{\prime}(x)(x−1)∣f(x),(x−1)∣f′(x)，于是
+
+$$f(1) = 0, \quad f'(1) = 0,$$
+
+即
+
+$$\begin{cases} a + b + 1 = 0, \\ 4a + 3b = 0. \end{cases}$$
+
+得 a=3,b=−4a = 3, b = -4a=3,b=−4.
+例 2. 求多项式 f(x)=3x4+5x3+x2+5x−2f(x) = 3x^4 + 5x^3 + x^2 + 5x - 2f(x)=3x4+5x3+x2+5x−2 的有理根：
+核心：有理根定理
+步骤：
+
+
+列出a0a_{0}a0​ 和 ana_{n}an​ 的全部因式
+
+
+a0a_{0}a0​ 做分母， ana_{n}an​ 做分子，列出可能的有理根。
+
+
+将有理根代回原式验算，结果为1的是根。
+
+
+解. 设 rs\frac{r}{s}sr​ 是有理根，则 s∣3, r∣−2s \mid 3, \ r \mid -2s∣3, r∣−2，可能的有理根为 ±1, ±2, ±13, ±23\pm 1, \ \pm 2, \ \pm \frac{1}{3}, \ \pm \frac{2}{3}±1, ±2, ±31​, ±32​，
+验算知 −2-2−2 及 13\frac{1}{3}31​ 都是根。
+例 3. 判断多项式 x4−8x3+12x2+2x^4 - 8x^3 + 12x^2 + 2x4−8x3+12x2+2 在有理数域上是否可约：
+步骤：
+
+
+验算 p∤anp \nmid a_np∤an​； p∣an−1,an−2,⋯ ,a0p \mid a_{n-1}, a_{n-2}, \cdots, a_0p∣an−1​,an−2​,⋯,a0​；p2∤a0p^2 \nmid a_0p2∤a0​
+
+
+全部成立时不可约
+
+
+解： 取素数 p=2p = 2p=2，则 2∤1, 2∣−8,12,0,22 \nmid 1, \ 2 \mid -8, 12, 0, 22∤1, 2∣−8,12,0,2，但是 p2∤2p^2 \nmid 2p2∤2，由艾森斯坦判别法知，该多项式在有理数域上不可约。
+
+返回总目录
+]]></content>
+      <categories>
+        <category>数学</category>
+        <category>高等代数</category>
+      </categories>
+      <tags>
+        <tag>多项式</tag>
+        <tag>有理根定理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>相似标准型</title>
+    <url>/posts/397c08f5e43e/</url>
+    <content><![CDATA[线性代数笔记：相似标准型、λ\lambdaλ-矩阵与若尔当标准型
+一、 λ\lambdaλ-矩阵与相似标准型
+1. λ\lambdaλ-矩阵的定义
+λ-矩阵 A(λ)=(aij(λ))m×n\lambda\text{-矩阵 } A(\lambda) = \big(a_{ij}(\lambda)\big)_{m \times n}λ-矩阵 A(λ)=(aij​(λ))m×n​可以表示为：A(λ)=Amλm+Am−1λm−1+⋯+A1λ+A0A(\lambda) = A_m \lambda^m + A_{m-1} \lambda^{m-1} + \cdots + A_1 \lambda + A_0A(λ)=Am​λm+Am−1​λm−1+⋯+A1​λ+A0​其中 AiA_iAi​ 为常数矩阵（数字矩阵）。
+
+
+可逆的条件：∣A(λ)∣≠0 且为常数.|A(\lambda)| \ne 0 \text{ 且为常数}.∣A(λ)∣=0 且为常数.
+
+
+2. λ\lambdaλ-矩阵的标准型（Smith 标准型）
+(d1(λ)d2(λ)⋱dr(λ)0⋱0)
+\begin{pmatrix}
+d_1(\lambda) &amp; &amp; &amp; &amp; &amp; \\
+&amp; d_2(\lambda) &amp; &amp; &amp; &amp; \\
+&amp; &amp; \ddots &amp; &amp; &amp; \\
+&amp; &amp; &amp; d_r(\lambda) &amp; &amp; \\
+&amp; &amp; &amp; &amp; 0 &amp; &amp; \\
+&amp; &amp; &amp; &amp; &amp; \ddots &amp; \\
+&amp; &amp; &amp; &amp; &amp; &amp; 0
+\end{pmatrix}
+​d1​(λ)​d2​(λ)​⋱​dr​(λ)​0​⋱​0​​其中 di(λ)d_i(\lambda)di​(λ) 是首项系数为 1 的多项式，且满足整除关系：d1(λ)∣d2(λ)∣⋯∣dr(λ)d_1(\lambda) \mid d_2(\lambda) \mid \cdots \mid d_r(\lambda)d1​(λ)∣d2​(λ)∣⋯∣dr​(λ)（即后一个多项式总能被前一个整除）。
+3. 行列式因子 (Determinant Factors)
+全部 kkk 阶子式的首项系数为 1 的最大公因式 Dk(λ)D_k(\lambda)Dk​(λ) 称为 A(λ)A(\lambda)A(λ) 的 kkk 阶行列式因子。
+
+
+重要结论：行列式因子相同   ⟺  \iff⟺ 矩阵相似。
+
+
+4. 不变因子 (Invariant Factors)
+不变因子 di(λ)d_i(\lambda)di​(λ) 与行列式因子 Dk(λ)D_k(\lambda)Dk​(λ) 的关系为：
+d1(λ)=D1(λ),d2(λ)=D2(λ)D1(λ),⋯ ,dn(λ)=Dn(λ)Dn−1(λ)d_1(\lambda) = D_1(\lambda),\quad d_2(\lambda) = \frac{D_2(\lambda)}{D_1(\lambda)},\quad \cdots,\quad d_n(\lambda) = \frac{D_n(\lambda)}{D_{n-1}(\lambda)}d1​(λ)=D1​(λ),d2​(λ)=D1​(λ)D2​(λ)​,⋯,dn​(λ)=Dn−1​(λ)Dn​(λ)​
+
+
+重要结论：不变因子相同   ⟺  \iff⟺ 矩阵相似。
+
+
+5. 初等因子 (Elementary Divisors)
+将所有非平凡的不变因子分解成首项系数为 1 的两两不同的两两互素的不可约多项式次幂的乘积，这些幂方项即为初等因子。
+
+示例：若某矩阵的不变因子为 (λ−2),(λ−2)(λ−1)2(\lambda-2), (\lambda-2)(\lambda-1)^2(λ−2),(λ−2)(λ−1)2，则它的初等因子为：(λ−2),(λ−2),(λ−1)2(\lambda-2), (\lambda-2), (\lambda-1)^2(λ−2),(λ−2),(λ−1)2
+
+
+
+矩阵等价的充要条件：秩和不变因子相同   ⟺  \iff⟺ 矩阵等价。
+
+
+
+二、 特征矩阵与若尔当标准型 (Jordan Normal Form)
+1. 核心概念与性质
+
+
+凯莱-哈密顿定理：f(λ) 使 f(A)=0  ⟺  A 以 A 为根.f(\lambda) \text{ 使 } f(A) = 0 \iff A \text{ 以 } A \text{ 为根}.f(λ) 使 f(A)=0⟺A 以 A 为根.
+
+
+最小多项式 m(λ)m(\lambda)m(λ)：最小多项式与最后一个不变因子 dn(λ)d_n(\lambda)dn​(λ) 相同。
+
+
+对角化条件：A 与对角矩阵相似  ⟺  最小多项式无重根.A \text{ 与对角矩阵相似} \iff \text{最小多项式无重根}.A 与对角矩阵相似⟺最小多项式无重根.
+
+
+2. 若尔当标准型结构
+若尔当标准型由若干个若尔当块（Jordan Block）组成：(J1J2⋱Js)
+\begin{pmatrix}
+J_1 &amp; &amp; \\
+&amp; J_2 &amp; \\
+&amp; &amp; \ddots \\
+&amp; &amp; &amp; J_s
+\end{pmatrix}
+​J1​​J2​​⋱​Js​​​
+其中每一个若尔当块 JiJ_iJi​ 的形式为：
+Ji=(λ0⋯⋯001λ⋯⋯00⋮⋮⋱⋮⋮⋮⋮⋱⋮⋮00⋯1λ000⋯⋯1λ)
+J_i = \begin{pmatrix}
+\lambda &amp; 0 &amp; \cdots &amp; \cdots &amp; 0 &amp; 0 \\
+1 &amp; \lambda &amp; \cdots &amp; \cdots &amp; 0 &amp; 0 \\
+\vdots &amp; \vdots &amp; \ddots &amp; &amp; \vdots &amp; \vdots \\
+\vdots &amp; \vdots &amp; &amp; \ddots &amp; \vdots &amp; \vdots \\
+0 &amp; 0 &amp; \cdots &amp; 1 &amp; \lambda &amp; 0 \\
+0 &amp; 0 &amp; \cdots &amp; \cdots &amp; 1 &amp; \lambda
+\end{pmatrix}
+Ji​=​λ1⋮⋮00​0λ⋮⋮00​⋯⋯⋱⋯⋯​⋯⋯⋱1⋯​00⋮⋮λ1​00⋮⋮0λ​​
+3. 如何求若尔当标准型
+通用步骤：
+
+
+求特征值：解 ∣λI−A∣=0|\lambda I - A| = 0∣λI−A∣=0，得特征值 λ1,…,λs\lambda_1,\dots,\lambda_sλ1​,…,λs​。
+
+
+对每个特征值 λi\lambda_iλi​，确定若尔当块：
+
+计算 dk=dim⁡ker⁡(A−λiI)kd_k = \dim\ker(A - \lambda_i I)^kdk​=dimker(A−λi​I)k（零空间维数），k=1,2,…k = 1,2,\dotsk=1,2,… 直到维数稳定
+若尔当块个数 =d1= d_1=d1​（即几何重数）
+大小 ≥k\ge k≥k 的若尔当块个数 =dk−dk−1= d_k - d_{k-1}=dk​−dk−1​（约定 d0=0d_0 = 0d0​=0）
+大小恰好 =k= k=k 的若尔当块个数 =(dk−dk−1)−(dk+1−dk)= (d_k - d_{k-1}) - (d_{k+1} - d_k)=(dk​−dk−1​)−(dk+1​−dk​)
+
+
+
+组合：将所有若尔当块按对角排列。
+
+
+
+注：若 d1d_1d1​ 等于代数重数，则全部为 1×11\times11×1 若尔当块（即可对角化）。
+
+例题：已知 A=(210020003)A = \begin{pmatrix} 2 &amp; 1 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 3 \end{pmatrix}A=​200​120​003​​，求其若尔当标准型。
+解：
+
+
+求特征值：∣λI−A∣=∣λ−2−100λ−2000λ−3∣=(λ−2)2(λ−3)|\lambda I - A| = \begin{vmatrix} \lambda-2 &amp; -1 &amp; 0 \\ 0 &amp; \lambda-2 &amp; 0 \\ 0 &amp; 0 &amp; \lambda-3 \end{vmatrix} = (\lambda-2)^2(\lambda-3)∣λI−A∣=​λ−200​−1λ−20​00λ−3​​=(λ−2)2(λ−3)
+所以特征值为：λ1=λ2=2,λ3=3\lambda_1 = \lambda_2 = 2,\quad \lambda_3 = 3λ1​=λ2​=2,λ3​=3
+
+
+分析若尔当块：
+
+当 λ=2\lambda = 2λ=2 时：A−2I=(010000001),rank=2A - 2I = \begin{pmatrix} 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix},\quad \text{rank}=2A−2I=​000​100​001​​,rank=2
+d1=dim⁡ker⁡(A−2I)=3−2=1⇒1 个若尔当块d_1 = \dim\ker(A-2I) = 3-2 = 1 \quad \Rightarrow \quad 1\text{ 个若尔当块}d1​=dimker(A−2I)=3−2=1⇒1 个若尔当块
+(A−2I)2=(000000001),rank=1(A-2I)^2 = \begin{pmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix},\quad \text{rank}=1(A−2I)2=​000​000​001​​,rank=1
+d2=3−1=2,d3=2（稳定）d_2 = 3-1 = 2,\quad d_3 = 2 \text{（稳定）}d2​=3−1=2,d3​=2（稳定）
+大小恰好为 2 的块个数 =(d2−d1)−(d3−d2)=(2−1)−(2−2)=1= (d_2-d_1)-(d_3-d_2) = (2-1)-(2-2) = 1=(d2​−d1​)−(d3​−d2​)=(2−1)−(2−2)=1
+⇒λ=2 对应一个 2×2 若尔当块\Rightarrow \lambda=2 \text{ 对应一个 } 2\times2 \text{ 若尔当块}⇒λ=2 对应一个 2×2 若尔当块
+当 λ=3\lambda = 3λ=3 时（1重根），对应 1×11\times11×1 若尔当块：(3)\begin{pmatrix}3\end{pmatrix}(3​)
+
+
+
+最终组合成的若尔当标准型为：
+(200120003)\begin{pmatrix} 2 &amp; 0 &amp; 0 \\ 1 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 3 \end{pmatrix}​210​020​003​​
+
+
+
+三、 计算示例：求 D4(λ)D_4(\lambda)D4​(λ)
+对于手稿中的 4×44 \times 44×4 特征矩阵：∣λ−21000λ+12000λ1034λ+1∣
+\begin{vmatrix}
+\lambda-2 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; \lambda+1 &amp; 2 &amp; 0 \\
+0 &amp; 0 &amp; \lambda &amp; 1 \\
+0 &amp; 3 &amp; 4 &amp; \lambda+1
+\end{vmatrix}
+​λ−2000​1λ+103​02λ4​001λ+1​​
+按第一列展开：
+D4(λ)=(λ−2)∣λ+1200λ134λ+1∣=(λ−2)[(λ+1)(λ(λ+1)−4)−2(0−3)]=(λ−2)[(λ+1)(λ2+λ−4)+6]=(λ−2)(λ3+2λ2−3λ+2)
+\begin{aligned}
+D_4(\lambda) &amp; = (\lambda-2) \begin{vmatrix}
+\lambda+1 &amp; 2 &amp; 0 \\
+0 &amp; \lambda &amp; 1 \\
+3 &amp; 4 &amp; \lambda+1
+\end{vmatrix} \\
+&amp; = (\lambda-2)\big[(\lambda+1)(\lambda(\lambda+1)-4) - 2(0-3) \big] \\
+&amp; = (\lambda-2)\big[(\lambda+1)(\lambda^2+\lambda-4) + 6 \big] \\
+&amp; = (\lambda-2)(\lambda^3+2\lambda^2-3\lambda+2)
+\end{aligned}
+D4​(λ)​=(λ−2)​λ+103​2λ4​01λ+1​​=(λ−2)[(λ+1)(λ(λ+1)−4)−2(0−3)]=(λ−2)[(λ+1)(λ2+λ−4)+6]=(λ−2)(λ3+2λ2−3λ+2)​
+
+四、 变换矩阵的求法
+若 A(λ)⟶标准型 B(λ)A(\lambda) \longrightarrow \text{标准型 } B(\lambda)A(λ)⟶标准型 B(λ)，求可逆 λ\lambdaλ-矩阵 P(λ),Q(λ)P(\lambda), Q(\lambda)P(λ),Q(λ) 使得：
+B(λ)=P(λ)A(λ)Q(λ)B(\lambda) = P(\lambda)A(\lambda)Q(\lambda)B(λ)=P(λ)A(λ)Q(λ)
+通用高斯变换技巧（大增广矩阵法）：构建如下的联合矩阵进行初等变换：
+
+$$
+\left(\begin{array}{c|c}
+A(\lambda) & I \\
+\hline
+I & 0
+\end{array}\right)
+\longrightarrow
+\left(\begin{array}{c|c}
+B(\lambda) & P(\lambda) \\
+\hline
+Q(\lambda) & 
+\end{array}\right)
+$$
+
+
+
+注：在对 A(λ)A(\lambda)A(λ) 进行化简时，不需要做对称变换，行变换产生的效果记录在右侧，列变换产生的效果记录在下方。
+
+
+
+返回总目录
+]]></content>
+      <categories>
+        <category>数学</category>
+        <category>高等代数</category>
+      </categories>
+      <tags>
+        <tag>线性代数</tag>
+        <tag>若尔当标准型</tag>
+        <tag>λ-矩阵</tag>
       </tags>
   </entry>
   <entry>
@@ -1783,258 +2564,135 @@ Hf(P0)=(fxx(P0)fxy(P0)fyx(P0)fyy(P0))H_f(P_0) = \begin{pmatrix} f_{xx}(P_0) &amp
         <category>数学分析</category>
       </categories>
       <tags>
-        <tag>数学分析</tag>
         <tag>数学笔记</tag>
+        <tag>数学分析</tag>
       </tags>
   </entry>
   <entry>
-    <title>定积分的应用</title>
-    <url>/posts/4839f19f60f3/</url>
-    <content><![CDATA[第十章 定积分的应用
-一、 定积分的定义与基本概念
-1. 定积分的定义
-任给 ε&gt;0\varepsilon &gt; 0ε&gt;0，存在 δ&gt;0\delta &gt; 0δ&gt;0，对区间 [a,b][a, b][a,b] 的任何分割 T:a=x0&lt;x1&lt;⋯&lt;xn=bT: a = x_0 &lt; x_1 &lt; \cdots &lt; x_n = bT:a=x0​&lt;x1​&lt;⋯&lt;xn​=b，及任意在 [xi−1,xi][x_{i-1}, x_i][xi−1​,xi​] 上的点 ξi\xi_iξi​ (i=1,2,⋯ ,ni = 1, 2, \cdots, ni=1,2,⋯,n)，只要 ∥T∥=max⁡1≤i≤n{Δxi}&lt;δ\|T\| = \max\limits_{1 \le i \le n} \{\Delta x_i\} &lt; \delta∥T∥=1≤i≤nmax​{Δxi​}&lt;δ 时，必有：
-∣∑i=1nf(ξi)Δxi−J∣&lt;ε\left| \sum_{i=1}^n f(\xi_i)\Delta x_i - J \right| &lt; \varepsilon​i=1∑n​f(ξi​)Δxi​−J​&lt;ε
-则称 JJJ 为 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上的定积分，记作：
-J=∫abf(x)dx=lim⁡∥T∥→0∑i=1nf(ξi)ΔxiJ = \int_a^b f(x)dx = \lim_{\|T\| \to 0} \sum_{i=1}^n f(\xi_i)\Delta x_iJ=∫ab​f(x)dx=∥T∥→0lim​i=1∑n​f(ξi​)Δxi​
-2. 牛顿-莱布尼茨公式 (Newton-Leibniz Formula)
-设 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上连续，且存在原函数 F(x)F(x)F(x)，即 F′(x)=f(x)F&#x27;(x) = f(x)F′(x)=f(x)，则：
+    <title>线性空间</title>
+    <url>/posts/581f95a5bebe/</url>
+    <content><![CDATA[线性空间
+性质（判断是否是线性空间的依据）
+定义 5.1.1 设 VVV 是一个非空集合，FFF 是一个数域. 在集合 VVV 的元素之间定义了一种运算，叫做加法，即对于 VVV 中任意两个元素 α\alphaα 与 β\betaβ，在 VVV 中都有唯一的一个元素 γ\gammaγ 与之对应，称为 α\alphaα 与 β\betaβ 的和，记为 γ=α+β\gamma = \alpha + \betaγ=α+β；在数域 FFF 与集合 VVV 中的元素之间还定义了一种运算，叫做数乘，即对于数域 FFF 中任一数 kkk 与集合 VVV 中任一元素 α\alphaα，在 VVV 中都有唯一的一个元素 δ\deltaδ 与它们对应，称为 kkk 与 α\alphaα 的数量乘法，记为 δ=kα\delta = k\alphaδ=kα，如果两种运算满足如下性质：
+(1) 加法交换律 α+β=β+α\alpha + \beta = \beta + \alphaα+β=β+α;
+(2) 加法结合律 (α+β)+γ=α+(β+γ)(\alpha + \beta) + \gamma = \alpha + (\beta + \gamma)(α+β)+γ=α+(β+γ);
+(3) 存在“零元”，即存在 0∈V\mathbf{0} \in V0∈V，使得 ∀α∈V, 0+α=α\forall \alpha \in V, \ \mathbf{0} + \alpha = \alpha∀α∈V, 0+α=α;
+(4) 存在负元，即 ∀α∈V\forall \alpha \in V∀α∈V，存在 β∈V\beta \in Vβ∈V，使得 α+β=0\alpha + \beta = \mathbf{0}α+β=0;
+(5) 1⋅α=α1 \cdot \alpha = \alpha1⋅α=α;
+(6) 数乘结合律 (kl)α=k(lα)=l(kα)(kl)\alpha = k(l\alpha) = l(k\alpha)(kl)α=k(lα)=l(kα);
+(7) 分配律 (k+l)α=kα+lα(k + l)\alpha = k\alpha + l\alpha(k+l)α=kα+lα;
+(8) 分配律 k(α+β)=kα+kβk(\alpha + \beta) = k\alpha + k\betak(α+β)=kα+kβ,
+基变换与坐标变换
+过渡矩阵
+ε1,ε2,⋯ ,εn\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_nε1​,ε2​,⋯,εn​ 和 η1,η2,⋯ ,ηn\eta_1, \eta_2, \cdots, \eta_nη1​,η2​,⋯,ηn​ 是 VVV 的两组基，且
 
+$$\begin{cases} \eta_1 = a_{11}\varepsilon_1 + a_{21}\varepsilon_2 + \cdots + a_{n1}\varepsilon_n, \\ \eta_2 = a_{12}\varepsilon_1 + a_{22}\varepsilon_2 + \cdots + a_{n2}\varepsilon_n, \\ \cdots\cdots \\ \eta_n = a_{1n}\varepsilon_1 + a_{2n}\varepsilon_2 + \cdots + a_{nn}\varepsilon_n. \end{cases} \quad (5.3.1)$$
 
-f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上可积。
+将式 (5.3.1) 写成矩阵形式
 
+$$(\eta_1, \eta_2, \cdots, \eta_n) = (\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n) \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{pmatrix}. \quad (5.3.2)$$
 
-∫abf(x)dx=F(x)∣ab=F(b)−F(a)\int_a^b f(x)dx = F(x) \Big|_a^b = F(b) - F(a)∫ab​f(x)dx=F(x)​ab​=F(b)−F(a)
+这也就是基变换公式。
+定义 5.3.1 我们称式 (5.3.2) 中的矩阵
 
+$$A = \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{pmatrix}$$
 
+为从基 ε1,ε2,⋯ ,εn\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_nε1​,ε2​,⋯,εn​ 到基 η1,η2,⋯ ,ηn\eta_1, \eta_2, \cdots, \eta_nη1​,η2​,⋯,ηn​ 的过渡矩阵.
+基变换公式
+η=Aε\mathbf{\eta} = A\mathbf{\varepsilon}η=Aε(x1,x2,⋯ ,xn)=(ε1,ε2,⋯ ,εn)A(x_{1}, x_{2}, \cdots, x_{n})=(\varepsilon_{1}, \varepsilon_{2}, \cdots, \varepsilon_{n})A(x1​,x2​,⋯,xn​)=(ε1​,ε2​,⋯,εn​)A坐标变换公式
 
-二、 可积条件
-设 A⇒A \RightarrowA⇒ 可积 ⇒B\Rightarrow B⇒B，其中 AAA 是充分条件，BBB 是必要条件。
-1. 可积 ⇒B\Rightarrow B⇒B （必要条件）
+$$\mathbf{x} = A\mathbf{x}'$$
 
 
-有界性：若函数 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上可积，则 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上必定有界。
+$$(x_{1},x_{2}, \cdots, x_{n})=A(x'_{1}, x'_{2}, \cdots, x'_{n})$$
 
+线性子空间
+判断
 
-2. A⇒A \RightarrowA⇒ 可积 （充分条件）
 
+加法封闭
 
-连续：若 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上连续，则 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上可积。
 
+数乘封闭
 
-有限个间断点：若 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上是有界函数，且只有有限个间断点，则 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上可积。
 
+运算
 
-单调：若 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上单调，则 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上可积。
 
+子空间的交 V1∩V2={v∣v∈V1 且 v∈V2}V_1 \cap V_2 = \{v \mid v \in V_1 \text{ 且 } v \in V_2\}V1​∩V2​={v∣v∈V1​ 且 v∈V2​}
 
 
-三、 定积分的性质
+子空间的和 V1+V2={v1+v2∣v1∈V1,v2∈V2}V_1 + V_2 = \{v_1 + v_2 \mid v_1 \in V_1, v_2 \in V_2\}V1​+V2​={v1​+v2​∣v1​∈V1​,v2​∈V2​}
 
+子空间的直和 V1+V2V_1 + V_2V1​+V2​ 中每个向量 α\mathbf{\alpha}α 的分解式α=α1+α2,α1∈V1, α2∈V2\mathbf{\alpha} = \mathbf{\alpha}_1 + \mathbf{\alpha}_2, \quad \mathbf{\alpha}_1 \in V_1, \ \mathbf{\alpha}_2 \in V_2α=α1​+α2​,α1​∈V1​, α2​∈V2​ 唯一, 则称V1+V2V_1 + V_2V1​+V2​为直和，记为 V1⊕V2V_1 \oplus V_2V1​⊕V2​.
 
-线性可积性：积分运算具有线性性质（即齐次性与可加性）。
 
 
-积分中值定理：设 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上连续，则至少存在一点 ξ∈[a,b]\xi \in [a, b]ξ∈[a,b]，使得：
-∫abf(x)dx=f(ξ)(b−a)\int_a^b f(x)dx = f(\xi)(b - a)∫ab​f(x)dx=f(ξ)(b−a)
+L(α1,α2,⋯ ,αs)+L(β1,β2,⋯ ,βt)=L(α1,α2,⋯ ,αs,β1,β2,⋯ ,βt).L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_s) + L(\beta_1, \beta_2, \cdots, \beta_t) = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_s, \beta_1, \beta_2, \cdots, \beta_t).L(α1​,α2​,⋯,αs​)+L(β1​,β2​,⋯,βt​)=L(α1​,α2​,⋯,αs​,β1​,β2​,⋯,βt​).直和判断的充分必要条件
+定理 5.4.6 设 V1V_1V1​ 与 V2V_2V2​ 是 VVV 的两个子空间，若 W=V1+V2W = V_1 + V_2W=V1​+V2​，则下述结论等价：
+(1) W=V1+V2W = V_1 + V_2W=V1​+V2​ 是直和；
+(2) 如果 α1+α2=0, αi∈Vi(i=1,2)\mathbf{\alpha}_1 + \mathbf{\alpha}_2 = \mathbf{0}, \ \mathbf{\alpha}_i \in V_i (i = 1,2)α1​+α2​=0, αi​∈Vi​(i=1,2)，那么 α1=α2=0\mathbf{\alpha}_1 = \mathbf{\alpha}_2 = \mathbf{0}α1​=α2​=0；
+(3) V1∩V2={0}V_1 \cap V_2 = \{\mathbf{0}\}V1​∩V2​={0}；
+(4) 如果 α1,α2,⋯ ,αs\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_sα1​,α2​,⋯,αs​ 是 V1V_1V1​ 的一组基，β1,β2,⋯ ,βt\beta_1, \beta_2, \cdots, \beta_tβ1​,β2​,⋯,βt​ 是 V2V_2V2​ 的一组基，那么 α1,α2,⋯ ,αs,β1,β2,⋯ ,βt\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_s, \beta_1, \beta_2, \cdots, \beta_tα1​,α2​,⋯,αs​,β1​,β2​,⋯,βt​ 是 WWW 的一组基；
+(5) dim⁡W=dim⁡V1+dim⁡V2\dim W = \dim V_1 + \dim V_2dimW=dimV1​+dimV2​.
+维数与基
+L(α1,α2,⋯ ,αr)L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_r)L(α1​,α2​,⋯,αr​) 的维数等于向量组 α1,α2,⋯ ,αr\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_rα1​,α2​,⋯,αr​ 的秩.
+与运算结合 :
+定理 5.4.5（维数公式） 设 VVV 为有限维线性空间，V1,V2V_1, V_2V1​,V2​ 为 VVV 的子空间，则
+dim⁡(V1+V2)=dim⁡V1+dim⁡V2−dim⁡(V1∩V2).(5.4.4)\dim(V_1 + V_2) = \dim V_1 + \dim V_2 - \dim(V_1 \cap V_2). \quad (5.4.4)dim(V1​+V2​)=dimV1​+dimV2​−dim(V1​∩V2​).(5.4.4)如果是直和
+dim⁡(W)=dim⁡V1+dim⁡V2\dim(W) = \dim V_1 + \dim V_2dim(W)=dimV1​+dimV2​，其中W=V1+V2W = V_1 + V_2W=V1​+V2​是直和
+例题
+例 1 已知 R4\mathbb{R}^4R4 中向量 （P201: 4）
+α1=(1,2,1,0), α2=(−1,1,1,1); β1=(2,−1,0,1), β2=(1,−1,3,7),\mathbf{\alpha}_1 = (1, 2, 1, 0), \ \mathbf{\alpha}_2 = (-1, 1, 1, 1); \ \mathbf{\beta}_1 = (2, -1, 0, 1), \ \mathbf{\beta}_2 = (1, -1, 3, 7),α1​=(1,2,1,0), α2​=(−1,1,1,1); β1​=(2,−1,0,1), β2​=(1,−1,3,7),子空间 V1=L(α1,α2), V2=L(β1,β2),V_1 = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2), \ V_2 = L(\mathbf{\beta}_1, \mathbf{\beta}_2),V1​=L(α1​,α2​), V2​=L(β1​,β2​),
+(1) 求 V1+V2V_1 + V_2V1​+V2​ 的一组基和维数.
+步骤：
 
 
-推论（广义积分中值定理）：设 f(x),g(x)f(x), g(x)f(x),g(x) 在 [a,b][a, b][a,b] 上连续，g(x)g(x)g(x) 在 [a,b][a, b][a,b] 上不变号（同侧），则至少存在一点 ξ∈[a,b]\xi \in [a, b]ξ∈[a,b]，使得：
-∫abf(x)g(x)dx=f(ξ)∫abg(x)dx\int_a^b f(x)g(x)dx = f(\xi)\int_a^b g(x)dx∫ab​f(x)g(x)dx=f(ξ)∫ab​g(x)dx
+V1+V2=L(α1,α2,β1,β2)V_{1}+V_{2}=L(\alpha_{1},\alpha_{2},\beta_{1},\beta_{2})V1​+V2​=L(α1​,α2​,β1​,β2​)
 
 
+写出以 α1,α2,β1β2\alpha_{1},\alpha_{2},\beta_{1}\beta_{2}α1​,α2​,β1​β2​ 为列向量的矩阵
 
-四、 变限积分
-若 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上连续，定义变上限积分函数 Φ(x)=∫axf(t)dt\Phi(x) = \int_a^x f(t)dtΦ(x)=∫ax​f(t)dt，则 Φ(x)\Phi(x)Φ(x) 在 [a,b][a, b][a,b] 上可导，且：
-Φ′(x)=ddx∫axf(t)dt=f(x)(x∈[a,b])\Phi&#x27;(x) = \frac{d}{dx} \int_a^x f(t)dt = f(x) \quad (x \in [a, b])Φ′(x)=dxd​∫ax​f(t)dt=f(x)(x∈[a,b])
 
-五、 积分第二中值定理
-(注：手写笔记中列出了此标题，未记录具体公式)
+对矩阵进行实行行变换，化成行最简形
 
-六、 积分计算方法
-1. 换元法 (Substitution Method)
-公式：
-∫αβf[ψ(t)]ψ′(t)dt=∫abf(x)dx\int_{\alpha}^{\beta} f[\psi(t)]\psi&#x27;(t)dt = \int_a^b f(x)dx∫αβ​f[ψ(t)]ψ′(t)dt=∫ab​f(x)dx
-例1
-计算：∫02x1+x2dx\int_0^2 \frac{x}{\sqrt{1+x^2}} dx∫02​1+x2​x​dx
-解题步骤：
 
+秩=维数，主元列为基（与求极大线性无关组一致）
 
-变形积分项：
-∫0211+x2d(12x2)\int_0^2 \frac{1}{\sqrt{1+x^2}} d\left(\frac{1}{2}x^2\right)∫02​1+x2​1​d(21​x2)
 
+解：(1) V1+V2=L(α1,α2,β1,β2)V_1 + V_2 = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1, \mathbf{\beta}_2)V1​+V2​=L(α1​,α2​,β1​,β2​)
+对以 α1,α2,β1,β2\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1, \mathbf{\beta}_2α1​,α2​,β1​,β2​ 为列向量的矩阵 A\mathbf{A}A 作初等行变换
 
-统一成 (1+x2)−12(1+x^2)^{-\frac{1}{2}}(1+x2)−21​ 和 12x2\frac{1}{2}x^221​x2 的形式：
-d(12x2)=12dx2=12d(x2+1)d\left(\frac{1}{2}x^2\right) = \frac{1}{2}dx^2 = \frac{1}{2}d(x^2+1)d(21​x2)=21​dx2=21​d(x2+1)
+$$\mathbf{A} = \begin{pmatrix} 1 & -1 & 2 & 1 \\ 2 & 1 & -1 & -1 \\ 1 & 1 & 0 & 3 \\ 0 & 1 & 1 & 7 \end{pmatrix} \rightarrow \begin{pmatrix} 1 & -1 & 2 & 1 \\ 0 & 3 & -5 & -3 \\ 0 & 2 & -2 & 2 \\ 0 & 1 & 1 & 7 \end{pmatrix} \rightarrow \begin{pmatrix} 1 & -1 & 2 & 1 \\ 0 & 0 & -2 & -6 \\ 0 & 1 & -1 & 1 \\ 0 & 0 & 2 & 6 \end{pmatrix} \rightarrow \begin{pmatrix} 1 & 0 & 0 & -1 \\ 0 & 1 & 0 & 4 \\ 0 & 0 & 1 & 3 \\ 0 & 0 & 0 & 0 \end{pmatrix} = \mathbf{B}$$
 
+由 B\mathbf{B}B 知，α1,α2,β1\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1α1​,α2​,β1​ （或 α1,α2,β2\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_2α1​,α2​,β2​）为 α1,α2,β1,β2\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1, \mathbf{\beta}_2α1​,α2​,β1​,β2​ 的一个极大无关组.
+V1+V2=L(α1,α2,β1)V_1 + V_2 = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1)V1​+V2​=L(α1​,α2​,β1​) 为 3 维的，α1,α2,β1\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1α1​,α2​,β1​ （或 α1,α2,β2\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_2α1​,α2​,β2​）为其一组基.
+(2) 求 V1∩V2V_1 \cap V_2V1​∩V2​ 的一组基和维数.
+步骤：
 
-令 t=1+x2t = 1+x^2t=1+x2，当 x∈[0,2]x \in [0, 2]x∈[0,2] 时，t∈[1,5]t \in [1, 5]t∈[1,5]：
-原式=12∫02(1+x2)−12d(x2+1)=12∫15t−12dt\text{原式} = \frac{1}{2} \int_0^2 (1+x^2)^{-\frac{1}{2}} d(x^2+1) = \frac{1}{2} \int_1^5 t^{-\frac{1}{2}}dt原式=21​∫02​(1+x2)−21​d(x2+1)=21​∫15​t−21​dt
 
+设向量γ\gammaγ 是 V1V_{1}V1​ 和 V2V_{2}V2​ 中的向量
 
-计算最终结果：
-12⋅[2t12]15=5−1\frac{1}{2} \cdot \left[ 2t^{\frac{1}{2}} \right]_1^5 = \sqrt{5} - 121​⋅[2t21​]15​=5​−1
 
+分别用 V1V_{1}V1​ 和 V2V_{2}V2​ 的基表示γ\gammaγ
 
-2. 分部积分法 (Integration by Parts)
-公式：
-∫abu(x)dv(x)=u(x)v(x)∣ab−∫abv(x)du(x)\int_a^b u(x)dv(x) = u(x)v(x) \Big|_a^b - \int_a^b v(x)du(x)∫ab​u(x)dv(x)=u(x)v(x)​ab​−∫ab​v(x)du(x)
-例2
-计算：∫012arcsin⁡xdx\int_0^{\frac{1}{2}} \arcsin x dx∫021​​arcsinxdx
-解题步骤：
 
+移项，使右侧全部为零
 
-设 u=arcsin⁡xu = \arcsin xu=arcsinx，dv=dxdv = dxdv=dx：
 
-则 du=11−x2dxdu = \frac{1}{\sqrt{1-x^2}}dxdu=1−x2​1​dx，v=xv = xv=x
 
 
-
-带入公式：
-原式=xarcsin⁡x∣012−∫012x1−x2dx\text{原式} = x \arcsin x \Big|_0^{\frac{1}{2}} - \int_0^{\frac{1}{2}} \frac{x}{\sqrt{1-x^2}} dx原式=xarcsinx​021​​−∫021​​1−x2​x​dx
-
-
-
-定积分的应用
-一、 体积（旋转体）
-设函数 f(x)f(x)f(x) 在闭区间 [a,b][a, b][a,b] 上连续。由平面图形 A={(x,y)∣0≤∣y∣≤∣f(x)∣,a≤x≤b}A = \{ (x, y) \mid 0 \le |y| \le |f(x)|, a \le x \le b \}A={(x,y)∣0≤∣y∣≤∣f(x)∣,a≤x≤b} 绕 xxx 轴旋转一周所得的旋转体体积：
-V=π∫abf2(x) dxV = \pi \int_{a}^{b} f^2(x) \, dxV=π∫ab​f2(x)dx
-二、 弧长
-1. 参数方程形式
-若曲线由参数方程表示：
-{x=x(t)y=y(t)t∈[α,β]\begin{cases} x = x(t) \\ y = y(t) \end{cases} \quad t \in [\alpha, \beta]{x=x(t)y=y(t)​t∈[α,β]
-其弧长公式为：
-s=∫αβx′2(t)+y′2(t) dts = \int_{\alpha}^{\beta} \sqrt{x&#x27;^2(t) + y&#x27;^2(t)} \, dts=∫αβ​x′2(t)+y′2(t)​dt
-2. 极坐标形式
-若曲线由极坐标方程表示：
-ρ=r(θ),θ∈[α,β]\rho = r(\theta), \quad \theta \in [\alpha, \beta]ρ=r(θ),θ∈[α,β]
-其弧长公式为：
-s=∫αβr2(θ)+r′2(θ) dθs = \int_{\alpha}^{\beta} \sqrt{r^2(\theta) + r&#x27;^2(\theta)} \, d\thetas=∫αβ​r2(θ)+r′2(θ)​dθ
-
-三、 曲率
-1. 参数方程形式
-对于参数方程表示的曲线，其曲率 kkk 的计算公式为：
-k=∣x′y′′−x′′y′∣(x′2+y′2)32k = \frac{|x&#x27;y&#x27;&#x27; - x&#x27;&#x27;y&#x27;|}{(x&#x27;^2 + y&#x27;^2)^{\frac{3}{2}}}k=(x′2+y′2)23​∣x′y′′−x′′y′∣​
-2. 直角坐标形式
-若曲线方程为 y=f(x)y = f(x)y=f(x)，则其曲率 kkk 的计算公式为：
-k=∣y′′∣(1+y′2)32k = \frac{|y&#x27;&#x27;|}{(1 + y&#x27;^2)^{\frac{3}{2}}}k=(1+y′2)23​∣y′′∣​
-
-四、 旋转曲面的面积
-1. 直角坐标形式
-若曲线 y=f(x)y = f(x)y=f(x) 绕 xxx 轴旋转，所围成的旋转曲面面积为：
-S=2π∫ab∣f(x)∣1+f′2(x) dxS = 2\pi \int_{a}^{b} |f(x)| \sqrt{1 + f&#x27;^2(x)} \, dxS=2π∫ab​∣f(x)∣1+f′2(x)​dx
-2. 参数方程形式
-若曲线由参数方程表示：
-{x=x(t)y=y(t)t∈[α,β]\begin{cases} x = x(t) \\ y = y(t) \end{cases} \quad t \in [\alpha, \beta]{x=x(t)y=y(t)​t∈[α,β]
-该曲线绕 xxx 轴旋转一周所得的旋转曲面面积为：
-S=2π∫αβ∣y(t)∣x′2(t)+y′2(t) dtS = 2\pi \int_{\alpha}^{\beta} |y(t)| \sqrt{x&#x27;^2(t) + y&#x27;^2(t)} \, dtS=2π∫αβ​∣y(t)∣x′2(t)+y′2(t)​dt
-附录：常用不定积分基本公式表
-
-
-
-序号
-积分公式
-序号
-积分公式
-
-
-
-
-1
-∫0dx=C\int 0 dx = C∫0dx=C
-2
-∫xαdx=xα+1α+1+C(α≠−1)\int x^\alpha dx = \frac{x^{\alpha+1}}{\alpha+1} + C \quad (\alpha \neq -1)∫xαdx=α+1xα+1​+C(α=−1)
-
-
-3
-∫axdx=axln⁡a+C\int a^x dx = \frac{a^x}{\ln a} + C∫axdx=lnaax​+C
-4
-∫1xdx=ln⁡∣x∣+C\int \frac{1}{x} dx = \ln|x| + C∫x1​dx=ln∣x∣+C
-
-
-5
-∫sin⁡xdx=−cos⁡x+C\int \sin x dx = -\cos x + C∫sinxdx=−cosx+C
-6
-∫cos⁡xdx=sin⁡x+C\int \cos x dx = \sin x + C∫cosxdx=sinx+C
-
-
-7
-∫sec⁡2xdx=tan⁡x+C\int \sec^2 x dx = \tan x + C∫sec2xdx=tanx+C
-8
-∫csc⁡2xdx=−cot⁡x+C\int \csc^2 x dx = -\cot x + C∫csc2xdx=−cotx+C
-
-
-9
-∫sec⁡x⋅tan⁡xdx=sec⁡x+C\int \sec x \cdot \tan x dx = \sec x + C∫secx⋅tanxdx=secx+C
-10
-∫csc⁡x⋅cot⁡xdx=−csc⁡x+C\int \csc x \cdot \cot x dx = -\csc x + C∫cscx⋅cotxdx=−cscx+C
-
-
-11
-∫dx1−x2=arcsin⁡x+C=−arccos⁡x+C\int \frac{dx}{\sqrt{1-x^2}} = \arcsin x + C = -\arccos x + C∫1−x2​dx​=arcsinx+C=−arccosx+C
-12
-∫dx1+x2=arctan⁡x+C=−arccot x+C\int \frac{dx}{1+x^2} = \arctan x + C = -\text{arccot } x + C∫1+x2dx​=arctanx+C=−arccot x+C
-
-
-
-特别地：
-
-
-∫12xdx=x+C\int \frac{1}{2\sqrt{x}} dx = \sqrt{x} + C∫2x​1​dx=x​+C
-
-
-∫−1x2dx=1x+C\int -\frac{1}{x^2} dx = \frac{1}{x} + C∫−x21​dx=x1​+C
-
-
-∫exdx=ex+C\int e^x dx = e^x + C∫exdx=ex+C
-
-
-∫1dx=∫dx=x+C\int 1 dx = \int dx = x + C∫1dx=∫dx=x+C
-
-
+γ=k1α1+k2α2=l1β1+l2β2\mathbf{\gamma} = k_1\mathbf{\alpha}_1 + k_2\mathbf{\alpha}_2 = l_1\mathbf{\beta}_1 + l_2\mathbf{\beta}_2γ=k1​α1​+k2​α2​=l1​β1​+l2​β2​
 
 返回总目录
 ]]></content>
       <categories>
         <category>数学</category>
-        <category>数学分析</category>
+        <category>高等代数</category>
       </categories>
       <tags>
-        <tag>定积分</tag>
-        <tag>几何应用</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>多元函数的极限与连续</title>
-    <url>/posts/81df7152b326/</url>
-    <content><![CDATA[二元函数的极限
-一、 重极限
-定义：
-设二元函数 f(P)f(P)f(P) 在定义域 DDD 上有定义，P0P_0P0​ 是 DDD 的聚点。
-∀ε&gt;0,∃δ&gt;0, 当 P∈U˚(P0,δ)∩D 时，恒有：\forall \varepsilon &gt; 0, \exists \delta &gt; 0, \text{ 当 } P \in \mathring{U}(P_0, \delta) \cap D \text{ 时，恒有：}∀ε&gt;0,∃δ&gt;0, 当 P∈U˚(P0​,δ)∩D 时，恒有：
-∣f(P)−A∣&lt;ε|f(P) - A| &lt; \varepsilon∣f(P)−A∣&lt;ε则称当 P→P0P \to P_0P→P0​ 时，f(P)f(P)f(P) 在 DDD 上的极限为 AAA，记作：
-lim⁡P→P0P∈Df(P)=A\lim_{\substack{P \to P_0 \\ P \in D}} f(P) = AP→P0​P∈D​lim​f(P)=A
-二、 累次极限
-1. 先对 x→x0x \to x_0x→x0​，后对 y→y0y \to y_0y→y0​
-L1=lim⁡y→y0lim⁡x→x0f(x,y)L_1 = \lim_{y \to y_0} \lim_{x \to x_0} f(x, y)L1​=y→y0​lim​x→x0​lim​f(x,y)2. 先对 y→y0y \to y_0y→y0​，后对 x→x0x \to x_0x→x0​
-L2=lim⁡x→x0lim⁡y→y0f(x,y)L_2 = \lim_{x \to x_0} \lim_{y \to y_0} f(x, y)L2​=x→x0​lim​y→y0​lim​f(x,y)
-💡 概念辨析笔记：
-
-重极限要求点 PPP 以任意路径趋近于 沿P0沿 P_0沿P0​ 时，函数值都趋于同一个常数 AAA。
-累次极限则是分别沿平行于坐标轴的方向，先后进行两次一元函数的极限过程。两者并不完全等价==（重极限存在时，累次极限不一定存在；反之亦然）==。
-
-
-
-返回总目录
-]]></content>
-      <categories>
-        <category>数学</category>
-        <category>数学分析</category>
-      </categories>
-      <tags>
-        <tag>多元函数</tag>
-        <tag>极限</tag>
-        <tag>连续</tag>
+        <tag>线性空间</tag>
+        <tag>向量空间</tag>
       </tags>
   </entry>
   <entry>
@@ -2511,9 +3169,210 @@ L2=lim⁡x→x0lim⁡y→y0f(x,y)L_2 = \lim_{x \to x_0} \lim_{y \to y_0} f(x, y)
       </tags>
   </entry>
   <entry>
-    <title>曲面积分</title>
-    <url>/posts/bda4118bc1b7/</url>
-    <content><![CDATA[第二十二章 曲面积分
+    <title>定积分的应用</title>
+    <url>/posts/4839f19f60f3/</url>
+    <content><![CDATA[第十章 定积分的应用
+一、 定积分的定义与基本概念
+1. 定积分的定义
+任给 ε&gt;0\varepsilon &gt; 0ε&gt;0，存在 δ&gt;0\delta &gt; 0δ&gt;0，对区间 [a,b][a, b][a,b] 的任何分割 T:a=x0&lt;x1&lt;⋯&lt;xn=bT: a = x_0 &lt; x_1 &lt; \cdots &lt; x_n = bT:a=x0​&lt;x1​&lt;⋯&lt;xn​=b，及任意在 [xi−1,xi][x_{i-1}, x_i][xi−1​,xi​] 上的点 ξi\xi_iξi​ (i=1,2,⋯ ,ni = 1, 2, \cdots, ni=1,2,⋯,n)，只要 ∥T∥=max⁡1≤i≤n{Δxi}&lt;δ\|T\| = \max\limits_{1 \le i \le n} \{\Delta x_i\} &lt; \delta∥T∥=1≤i≤nmax​{Δxi​}&lt;δ 时，必有：
+∣∑i=1nf(ξi)Δxi−J∣&lt;ε\left| \sum_{i=1}^n f(\xi_i)\Delta x_i - J \right| &lt; \varepsilon​i=1∑n​f(ξi​)Δxi​−J​&lt;ε
+则称 JJJ 为 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上的定积分，记作：
+J=∫abf(x)dx=lim⁡∥T∥→0∑i=1nf(ξi)ΔxiJ = \int_a^b f(x)dx = \lim_{\|T\| \to 0} \sum_{i=1}^n f(\xi_i)\Delta x_iJ=∫ab​f(x)dx=∥T∥→0lim​i=1∑n​f(ξi​)Δxi​
+2. 牛顿-莱布尼茨公式 (Newton-Leibniz Formula)
+设 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上连续，且存在原函数 F(x)F(x)F(x)，即 F′(x)=f(x)F&#x27;(x) = f(x)F′(x)=f(x)，则：
+
+
+f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上可积。
+
+
+∫abf(x)dx=F(x)∣ab=F(b)−F(a)\int_a^b f(x)dx = F(x) \Big|_a^b = F(b) - F(a)∫ab​f(x)dx=F(x)​ab​=F(b)−F(a)
+
+
+
+二、 可积条件
+设 A⇒A \RightarrowA⇒ 可积 ⇒B\Rightarrow B⇒B，其中 AAA 是充分条件，BBB 是必要条件。
+1. 可积 ⇒B\Rightarrow B⇒B （必要条件）
+
+
+有界性：若函数 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上可积，则 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上必定有界。
+
+
+2. A⇒A \RightarrowA⇒ 可积 （充分条件）
+
+
+连续：若 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上连续，则 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上可积。
+
+
+有限个间断点：若 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上是有界函数，且只有有限个间断点，则 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上可积。
+
+
+单调：若 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上单调，则 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上可积。
+
+
+
+三、 定积分的性质
+
+
+线性可积性：积分运算具有线性性质（即齐次性与可加性）。
+
+
+积分中值定理：设 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上连续，则至少存在一点 ξ∈[a,b]\xi \in [a, b]ξ∈[a,b]，使得：
+∫abf(x)dx=f(ξ)(b−a)\int_a^b f(x)dx = f(\xi)(b - a)∫ab​f(x)dx=f(ξ)(b−a)
+
+
+推论（广义积分中值定理）：设 f(x),g(x)f(x), g(x)f(x),g(x) 在 [a,b][a, b][a,b] 上连续，g(x)g(x)g(x) 在 [a,b][a, b][a,b] 上不变号（同侧），则至少存在一点 ξ∈[a,b]\xi \in [a, b]ξ∈[a,b]，使得：
+∫abf(x)g(x)dx=f(ξ)∫abg(x)dx\int_a^b f(x)g(x)dx = f(\xi)\int_a^b g(x)dx∫ab​f(x)g(x)dx=f(ξ)∫ab​g(x)dx
+
+
+
+四、 变限积分
+若 f(x)f(x)f(x) 在 [a,b][a, b][a,b] 上连续，定义变上限积分函数 Φ(x)=∫axf(t)dt\Phi(x) = \int_a^x f(t)dtΦ(x)=∫ax​f(t)dt，则 Φ(x)\Phi(x)Φ(x) 在 [a,b][a, b][a,b] 上可导，且：
+Φ′(x)=ddx∫axf(t)dt=f(x)(x∈[a,b])\Phi&#x27;(x) = \frac{d}{dx} \int_a^x f(t)dt = f(x) \quad (x \in [a, b])Φ′(x)=dxd​∫ax​f(t)dt=f(x)(x∈[a,b])
+
+五、 积分第二中值定理
+(注：手写笔记中列出了此标题，未记录具体公式)
+
+六、 积分计算方法
+1. 换元法 (Substitution Method)
+公式：
+∫αβf[ψ(t)]ψ′(t)dt=∫abf(x)dx\int_{\alpha}^{\beta} f[\psi(t)]\psi&#x27;(t)dt = \int_a^b f(x)dx∫αβ​f[ψ(t)]ψ′(t)dt=∫ab​f(x)dx
+例1
+计算：∫02x1+x2dx\int_0^2 \frac{x}{\sqrt{1+x^2}} dx∫02​1+x2​x​dx
+解题步骤：
+
+
+变形积分项：
+∫0211+x2d(12x2)\int_0^2 \frac{1}{\sqrt{1+x^2}} d\left(\frac{1}{2}x^2\right)∫02​1+x2​1​d(21​x2)
+
+
+统一成 (1+x2)−12(1+x^2)^{-\frac{1}{2}}(1+x2)−21​ 和 12x2\frac{1}{2}x^221​x2 的形式：
+d(12x2)=12dx2=12d(x2+1)d\left(\frac{1}{2}x^2\right) = \frac{1}{2}dx^2 = \frac{1}{2}d(x^2+1)d(21​x2)=21​dx2=21​d(x2+1)
+
+
+令 t=1+x2t = 1+x^2t=1+x2，当 x∈[0,2]x \in [0, 2]x∈[0,2] 时，t∈[1,5]t \in [1, 5]t∈[1,5]：
+原式=12∫02(1+x2)−12d(x2+1)=12∫15t−12dt\text{原式} = \frac{1}{2} \int_0^2 (1+x^2)^{-\frac{1}{2}} d(x^2+1) = \frac{1}{2} \int_1^5 t^{-\frac{1}{2}}dt原式=21​∫02​(1+x2)−21​d(x2+1)=21​∫15​t−21​dt
+
+
+计算最终结果：
+12⋅[2t12]15=5−1\frac{1}{2} \cdot \left[ 2t^{\frac{1}{2}} \right]_1^5 = \sqrt{5} - 121​⋅[2t21​]15​=5​−1
+
+
+2. 分部积分法 (Integration by Parts)
+公式：
+∫abu(x)dv(x)=u(x)v(x)∣ab−∫abv(x)du(x)\int_a^b u(x)dv(x) = u(x)v(x) \Big|_a^b - \int_a^b v(x)du(x)∫ab​u(x)dv(x)=u(x)v(x)​ab​−∫ab​v(x)du(x)
+例2
+计算：∫012arcsin⁡xdx\int_0^{\frac{1}{2}} \arcsin x dx∫021​​arcsinxdx
+解题步骤：
+
+
+设 u=arcsin⁡xu = \arcsin xu=arcsinx，dv=dxdv = dxdv=dx：
+
+则 du=11−x2dxdu = \frac{1}{\sqrt{1-x^2}}dxdu=1−x2​1​dx，v=xv = xv=x
+
+
+
+带入公式：
+原式=xarcsin⁡x∣012−∫012x1−x2dx\text{原式} = x \arcsin x \Big|_0^{\frac{1}{2}} - \int_0^{\frac{1}{2}} \frac{x}{\sqrt{1-x^2}} dx原式=xarcsinx​021​​−∫021​​1−x2​x​dx
+
+
+
+定积分的应用
+一、 体积（旋转体）
+设函数 f(x)f(x)f(x) 在闭区间 [a,b][a, b][a,b] 上连续。由平面图形 A={(x,y)∣0≤∣y∣≤∣f(x)∣,a≤x≤b}A = \{ (x, y) \mid 0 \le |y| \le |f(x)|, a \le x \le b \}A={(x,y)∣0≤∣y∣≤∣f(x)∣,a≤x≤b} 绕 xxx 轴旋转一周所得的旋转体体积：
+V=π∫abf2(x) dxV = \pi \int_{a}^{b} f^2(x) \, dxV=π∫ab​f2(x)dx
+二、 弧长
+1. 参数方程形式
+若曲线由参数方程表示：
+{x=x(t)y=y(t)t∈[α,β]\begin{cases} x = x(t) \\ y = y(t) \end{cases} \quad t \in [\alpha, \beta]{x=x(t)y=y(t)​t∈[α,β]
+其弧长公式为：
+s=∫αβx′2(t)+y′2(t) dts = \int_{\alpha}^{\beta} \sqrt{x&#x27;^2(t) + y&#x27;^2(t)} \, dts=∫αβ​x′2(t)+y′2(t)​dt
+2. 极坐标形式
+若曲线由极坐标方程表示：
+ρ=r(θ),θ∈[α,β]\rho = r(\theta), \quad \theta \in [\alpha, \beta]ρ=r(θ),θ∈[α,β]
+其弧长公式为：
+s=∫αβr2(θ)+r′2(θ) dθs = \int_{\alpha}^{\beta} \sqrt{r^2(\theta) + r&#x27;^2(\theta)} \, d\thetas=∫αβ​r2(θ)+r′2(θ)​dθ
+
+三、 曲率
+1. 参数方程形式
+对于参数方程表示的曲线，其曲率 kkk 的计算公式为：
+k=∣x′y′′−x′′y′∣(x′2+y′2)32k = \frac{|x&#x27;y&#x27;&#x27; - x&#x27;&#x27;y&#x27;|}{(x&#x27;^2 + y&#x27;^2)^{\frac{3}{2}}}k=(x′2+y′2)23​∣x′y′′−x′′y′∣​
+2. 直角坐标形式
+若曲线方程为 y=f(x)y = f(x)y=f(x)，则其曲率 kkk 的计算公式为：
+k=∣y′′∣(1+y′2)32k = \frac{|y&#x27;&#x27;|}{(1 + y&#x27;^2)^{\frac{3}{2}}}k=(1+y′2)23​∣y′′∣​
+
+四、 旋转曲面的面积
+1. 直角坐标形式
+若曲线 y=f(x)y = f(x)y=f(x) 绕 xxx 轴旋转，所围成的旋转曲面面积为：
+S=2π∫ab∣f(x)∣1+f′2(x) dxS = 2\pi \int_{a}^{b} |f(x)| \sqrt{1 + f&#x27;^2(x)} \, dxS=2π∫ab​∣f(x)∣1+f′2(x)​dx
+2. 参数方程形式
+若曲线由参数方程表示：
+{x=x(t)y=y(t)t∈[α,β]\begin{cases} x = x(t) \\ y = y(t) \end{cases} \quad t \in [\alpha, \beta]{x=x(t)y=y(t)​t∈[α,β]
+该曲线绕 xxx 轴旋转一周所得的旋转曲面面积为：
+S=2π∫αβ∣y(t)∣x′2(t)+y′2(t) dtS = 2\pi \int_{\alpha}^{\beta} |y(t)| \sqrt{x&#x27;^2(t) + y&#x27;^2(t)} \, dtS=2π∫αβ​∣y(t)∣x′2(t)+y′2(t)​dt
+附录：常用不定积分基本公式表
+
+
+
+序号
+积分公式
+序号
+积分公式
+
+
+
+
+1
+∫0dx=C\int 0 dx = C∫0dx=C
+2
+∫xαdx=xα+1α+1+C(α≠−1)\int x^\alpha dx = \frac{x^{\alpha+1}}{\alpha+1} + C \quad (\alpha \neq -1)∫xαdx=α+1xα+1​+C(α=−1)
+
+
+3
+∫axdx=axln⁡a+C\int a^x dx = \frac{a^x}{\ln a} + C∫axdx=lnaax​+C
+4
+∫1xdx=ln⁡∣x∣+C\int \frac{1}{x} dx = \ln|x| + C∫x1​dx=ln∣x∣+C
+
+
+5
+∫sin⁡xdx=−cos⁡x+C\int \sin x dx = -\cos x + C∫sinxdx=−cosx+C
+6
+∫cos⁡xdx=sin⁡x+C\int \cos x dx = \sin x + C∫cosxdx=sinx+C
+
+
+7
+∫sec⁡2xdx=tan⁡x+C\int \sec^2 x dx = \tan x + C∫sec2xdx=tanx+C
+8
+∫csc⁡2xdx=−cot⁡x+C\int \csc^2 x dx = -\cot x + C∫csc2xdx=−cotx+C
+
+
+9
+∫sec⁡x⋅tan⁡xdx=sec⁡x+C\int \sec x \cdot \tan x dx = \sec x + C∫secx⋅tanxdx=secx+C
+10
+∫csc⁡x⋅cot⁡xdx=−csc⁡x+C\int \csc x \cdot \cot x dx = -\csc x + C∫cscx⋅cotxdx=−cscx+C
+
+
+11
+∫dx1−x2=arcsin⁡x+C=−arccos⁡x+C\int \frac{dx}{\sqrt{1-x^2}} = \arcsin x + C = -\arccos x + C∫1−x2​dx​=arcsinx+C=−arccosx+C
+12
+∫dx1+x2=arctan⁡x+C=−arccot x+C\int \frac{dx}{1+x^2} = \arctan x + C = -\text{arccot } x + C∫1+x2dx​=arctanx+C=−arccot x+C
+
+
+
+特别地：
+
+
+∫12xdx=x+C\int \frac{1}{2\sqrt{x}} dx = \sqrt{x} + C∫2x​1​dx=x​+C
+
+
+∫−1x2dx=1x+C\int -\frac{1}{x^2} dx = \frac{1}{x} + C∫−x21​dx=x1​+C
+
+
+∫exdx=ex+C\int e^x dx = e^x + C∫exdx=ex+C
+
+
+∫1dx=∫dx=x+C\int 1 dx = \int dx = x + C∫1dx=∫dx=x+C
+
+
 
 返回总目录
 ]]></content>
@@ -2522,8 +3381,41 @@ L2=lim⁡x→x0lim⁡y→y0f(x,y)L_2 = \lim_{x \to x_0} \lim_{y \to y_0} f(x, y)
         <category>数学分析</category>
       </categories>
       <tags>
-        <tag>曲面积分</tag>
-        <tag>高斯公式</tag>
+        <tag>定积分</tag>
+        <tag>几何应用</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多元函数的极限与连续</title>
+    <url>/posts/81df7152b326/</url>
+    <content><![CDATA[二元函数的极限
+一、 重极限
+定义：
+设二元函数 f(P)f(P)f(P) 在定义域 DDD 上有定义，P0P_0P0​ 是 DDD 的聚点。
+∀ε&gt;0,∃δ&gt;0, 当 P∈U˚(P0,δ)∩D 时，恒有：\forall \varepsilon &gt; 0, \exists \delta &gt; 0, \text{ 当 } P \in \mathring{U}(P_0, \delta) \cap D \text{ 时，恒有：}∀ε&gt;0,∃δ&gt;0, 当 P∈U˚(P0​,δ)∩D 时，恒有：
+∣f(P)−A∣&lt;ε|f(P) - A| &lt; \varepsilon∣f(P)−A∣&lt;ε则称当 P→P0P \to P_0P→P0​ 时，f(P)f(P)f(P) 在 DDD 上的极限为 AAA，记作：
+lim⁡P→P0P∈Df(P)=A\lim_{\substack{P \to P_0 \\ P \in D}} f(P) = AP→P0​P∈D​lim​f(P)=A
+二、 累次极限
+1. 先对 x→x0x \to x_0x→x0​，后对 y→y0y \to y_0y→y0​
+L1=lim⁡y→y0lim⁡x→x0f(x,y)L_1 = \lim_{y \to y_0} \lim_{x \to x_0} f(x, y)L1​=y→y0​lim​x→x0​lim​f(x,y)2. 先对 y→y0y \to y_0y→y0​，后对 x→x0x \to x_0x→x0​
+L2=lim⁡x→x0lim⁡y→y0f(x,y)L_2 = \lim_{x \to x_0} \lim_{y \to y_0} f(x, y)L2​=x→x0​lim​y→y0​lim​f(x,y)
+💡 概念辨析笔记：
+
+重极限要求点 PPP 以任意路径趋近于 沿P0沿 P_0沿P0​ 时，函数值都趋于同一个常数 AAA。
+累次极限则是分别沿平行于坐标轴的方向，先后进行两次一元函数的极限过程。两者并不完全等价==（重极限存在时，累次极限不一定存在；反之亦然）==。
+
+
+
+返回总目录
+]]></content>
+      <categories>
+        <category>数学</category>
+        <category>数学分析</category>
+      </categories>
+      <tags>
+        <tag>多元函数</tag>
+        <tag>极限</tag>
+        <tag>连续</tag>
       </tags>
   </entry>
   <entry>
@@ -2632,904 +3524,20 @@ L:{x=x(t)y=y(t)t∈[α,β]L: \begin{cases} x = x(t) \\ y = y(t) \end{cases} \qua
       </tags>
   </entry>
   <entry>
-    <title>高等代数笔记</title>
-    <url>/posts/ecb159bb0577/</url>
-    <content><![CDATA[高等代数笔记
-
-本笔记按章节组织，点击链接查看各章节详细内容。
-
-
-目录
-
-
-
-章节
-主题
-链接
-
-
-
-
-
-第三章
-线性方程组理论
-查看
-
-
-
-第四章
-多项式
-查看
-
-
-
-第五章
-线性空间
-查看
-
-
-
-第六章
-线性变换
-查看
-
-
-
-第七章
-相似标准型
-查看
-
-
-
-第八章
-二次型
-
-
-
-
-第九章
-内积空间及其线性变换
-
-
-
-
-
-
-更新记录
-
-
-
-日期
-更新内容
-
-
-
-
-2026-05-29
-创建笔记结构，整理第三章、多项式、线性空间
-
-
-2026-06-05
-完善目录
-
-
-2026-06-06
-补完多项式和线性空间
-
-
-2026-06-14
-新增第六章：线性变换、矩阵表示与特征值
-
-
-2026-06-15
-新增第七章：相似标准型、λ-矩阵与若尔当标准型
-
-
-
-
-持续更新中…
-]]></content>
-      <categories>
-        <category>数学</category>
-        <category>高等代数</category>
-      </categories>
-      <tags>
-        <tag>数学笔记</tag>
-        <tag>高等代数</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>相似标准型</title>
-    <url>/posts/397c08f5e43e/</url>
-    <content><![CDATA[线性代数笔记：相似标准型、λ\lambdaλ-矩阵与若尔当标准型
-一、 λ\lambdaλ-矩阵与相似标准型
-1. λ\lambdaλ-矩阵的定义
-λ-矩阵 A(λ)=(aij(λ))m×n\lambda\text{-矩阵 } A(\lambda) = \big(a_{ij}(\lambda)\big)_{m \times n}λ-矩阵 A(λ)=(aij​(λ))m×n​可以表示为：A(λ)=Amλm+Am−1λm−1+⋯+A1λ+A0A(\lambda) = A_m \lambda^m + A_{m-1} \lambda^{m-1} + \cdots + A_1 \lambda + A_0A(λ)=Am​λm+Am−1​λm−1+⋯+A1​λ+A0​其中 AiA_iAi​ 为常数矩阵（数字矩阵）。
-
-
-可逆的条件：∣A(λ)∣≠0 且为常数.|A(\lambda)| \ne 0 \text{ 且为常数}.∣A(λ)∣=0 且为常数.
-
-
-2. λ\lambdaλ-矩阵的标准型（Smith 标准型）
-(d1(λ)d2(λ)⋱dr(λ)0⋱0)
-\begin{pmatrix}
-d_1(\lambda) &amp; &amp; &amp; &amp; &amp; \\
-&amp; d_2(\lambda) &amp; &amp; &amp; &amp; \\
-&amp; &amp; \ddots &amp; &amp; &amp; \\
-&amp; &amp; &amp; d_r(\lambda) &amp; &amp; \\
-&amp; &amp; &amp; &amp; 0 &amp; &amp; \\
-&amp; &amp; &amp; &amp; &amp; \ddots &amp; \\
-&amp; &amp; &amp; &amp; &amp; &amp; 0
-\end{pmatrix}
-​d1​(λ)​d2​(λ)​⋱​dr​(λ)​0​⋱​0​​其中 di(λ)d_i(\lambda)di​(λ) 是首项系数为 1 的多项式，且满足整除关系：d1(λ)∣d2(λ)∣⋯∣dr(λ)d_1(\lambda) \mid d_2(\lambda) \mid \cdots \mid d_r(\lambda)d1​(λ)∣d2​(λ)∣⋯∣dr​(λ)（即后一个多项式总能被前一个整除）。
-3. 行列式因子 (Determinant Factors)
-全部 kkk 阶子式的首项系数为 1 的最大公因式 Dk(λ)D_k(\lambda)Dk​(λ) 称为 A(λ)A(\lambda)A(λ) 的 kkk 阶行列式因子。
-
-
-重要结论：行列式因子相同   ⟺  \iff⟺ 矩阵相似。
-
-
-4. 不变因子 (Invariant Factors)
-不变因子 di(λ)d_i(\lambda)di​(λ) 与行列式因子 Dk(λ)D_k(\lambda)Dk​(λ) 的关系为：
-d1(λ)=D1(λ),d2(λ)=D2(λ)D1(λ),⋯ ,dn(λ)=Dn(λ)Dn−1(λ)d_1(\lambda) = D_1(\lambda),\quad d_2(\lambda) = \frac{D_2(\lambda)}{D_1(\lambda)},\quad \cdots,\quad d_n(\lambda) = \frac{D_n(\lambda)}{D_{n-1}(\lambda)}d1​(λ)=D1​(λ),d2​(λ)=D1​(λ)D2​(λ)​,⋯,dn​(λ)=Dn−1​(λ)Dn​(λ)​
-
-
-重要结论：不变因子相同   ⟺  \iff⟺ 矩阵相似。
-
-
-5. 初等因子 (Elementary Divisors)
-将所有非平凡的不变因子分解成首项系数为 1 的两两不同的两两互素的不可约多项式次幂的乘积，这些幂方项即为初等因子。
-
-示例：若某矩阵的不变因子为 (λ−2),(λ−2)(λ−1)2(\lambda-2), (\lambda-2)(\lambda-1)^2(λ−2),(λ−2)(λ−1)2，则它的初等因子为：(λ−2),(λ−2),(λ−1)2(\lambda-2), (\lambda-2), (\lambda-1)^2(λ−2),(λ−2),(λ−1)2
-
-
-
-矩阵等价的充要条件：秩和不变因子相同   ⟺  \iff⟺ 矩阵等价。
-
-
-
-二、 特征矩阵与若尔当标准型 (Jordan Normal Form)
-1. 核心概念与性质
-
-
-凯莱-哈密顿定理：f(λ) 使 f(A)=0  ⟺  A 以 A 为根.f(\lambda) \text{ 使 } f(A) = 0 \iff A \text{ 以 } A \text{ 为根}.f(λ) 使 f(A)=0⟺A 以 A 为根.
-
-
-最小多项式 m(λ)m(\lambda)m(λ)：最小多项式与最后一个不变因子 dn(λ)d_n(\lambda)dn​(λ) 相同。
-
-
-对角化条件：A 与对角矩阵相似  ⟺  最小多项式无重根.A \text{ 与对角矩阵相似} \iff \text{最小多项式无重根}.A 与对角矩阵相似⟺最小多项式无重根.
-
-
-2. 若尔当标准型结构
-若尔当标准型由若干个若尔当块（Jordan Block）组成：(J1J2⋱Js)
-\begin{pmatrix}
-J_1 &amp; &amp; \\
-&amp; J_2 &amp; \\
-&amp; &amp; \ddots \\
-&amp; &amp; &amp; J_s
-\end{pmatrix}
-​J1​​J2​​⋱​Js​​​
-其中每一个若尔当块 JiJ_iJi​ 的形式为：
-Ji=(λ0⋯⋯001λ⋯⋯00⋮⋮⋱⋮⋮⋮⋮⋱⋮⋮00⋯1λ000⋯⋯1λ)
-J_i = \begin{pmatrix}
-\lambda &amp; 0 &amp; \cdots &amp; \cdots &amp; 0 &amp; 0 \\
-1 &amp; \lambda &amp; \cdots &amp; \cdots &amp; 0 &amp; 0 \\
-\vdots &amp; \vdots &amp; \ddots &amp; &amp; \vdots &amp; \vdots \\
-\vdots &amp; \vdots &amp; &amp; \ddots &amp; \vdots &amp; \vdots \\
-0 &amp; 0 &amp; \cdots &amp; 1 &amp; \lambda &amp; 0 \\
-0 &amp; 0 &amp; \cdots &amp; \cdots &amp; 1 &amp; \lambda
-\end{pmatrix}
-Ji​=​λ1⋮⋮00​0λ⋮⋮00​⋯⋯⋱⋯⋯​⋯⋯⋱1⋯​00⋮⋮λ1​00⋮⋮0λ​​
-3. 如何求若尔当标准型
-通用步骤：
-
-
-求特征值：解 ∣λI−A∣=0|\lambda I - A| = 0∣λI−A∣=0，得特征值 λ1,…,λs\lambda_1,\dots,\lambda_sλ1​,…,λs​。
-
-
-对每个特征值 λi\lambda_iλi​，确定若尔当块：
-
-计算 dk=dim⁡ker⁡(A−λiI)kd_k = \dim\ker(A - \lambda_i I)^kdk​=dimker(A−λi​I)k（零空间维数），k=1,2,…k = 1,2,\dotsk=1,2,… 直到维数稳定
-若尔当块个数 =d1= d_1=d1​（即几何重数）
-大小 ≥k\ge k≥k 的若尔当块个数 =dk−dk−1= d_k - d_{k-1}=dk​−dk−1​（约定 d0=0d_0 = 0d0​=0）
-大小恰好 =k= k=k 的若尔当块个数 =(dk−dk−1)−(dk+1−dk)= (d_k - d_{k-1}) - (d_{k+1} - d_k)=(dk​−dk−1​)−(dk+1​−dk​)
-
-
-
-组合：将所有若尔当块按对角排列。
-
-
-
-注：若 d1d_1d1​ 等于代数重数，则全部为 1×11\times11×1 若尔当块（即可对角化）。
-
-例题：已知 A=(210020003)A = \begin{pmatrix} 2 &amp; 1 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 3 \end{pmatrix}A=​200​120​003​​，求其若尔当标准型。
-解：
-
-
-求特征值：∣λI−A∣=∣λ−2−100λ−2000λ−3∣=(λ−2)2(λ−3)|\lambda I - A| = \begin{vmatrix} \lambda-2 &amp; -1 &amp; 0 \\ 0 &amp; \lambda-2 &amp; 0 \\ 0 &amp; 0 &amp; \lambda-3 \end{vmatrix} = (\lambda-2)^2(\lambda-3)∣λI−A∣=​λ−200​−1λ−20​00λ−3​​=(λ−2)2(λ−3)
-所以特征值为：λ1=λ2=2,λ3=3\lambda_1 = \lambda_2 = 2,\quad \lambda_3 = 3λ1​=λ2​=2,λ3​=3
-
-
-分析若尔当块：
-
-当 λ=2\lambda = 2λ=2 时：A−2I=(010000001),rank=2A - 2I = \begin{pmatrix} 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix},\quad \text{rank}=2A−2I=​000​100​001​​,rank=2
-d1=dim⁡ker⁡(A−2I)=3−2=1⇒1 个若尔当块d_1 = \dim\ker(A-2I) = 3-2 = 1 \quad \Rightarrow \quad 1\text{ 个若尔当块}d1​=dimker(A−2I)=3−2=1⇒1 个若尔当块
-(A−2I)2=(000000001),rank=1(A-2I)^2 = \begin{pmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix},\quad \text{rank}=1(A−2I)2=​000​000​001​​,rank=1
-d2=3−1=2,d3=2（稳定）d_2 = 3-1 = 2,\quad d_3 = 2 \text{（稳定）}d2​=3−1=2,d3​=2（稳定）
-大小恰好为 2 的块个数 =(d2−d1)−(d3−d2)=(2−1)−(2−2)=1= (d_2-d_1)-(d_3-d_2) = (2-1)-(2-2) = 1=(d2​−d1​)−(d3​−d2​)=(2−1)−(2−2)=1
-⇒λ=2 对应一个 2×2 若尔当块\Rightarrow \lambda=2 \text{ 对应一个 } 2\times2 \text{ 若尔当块}⇒λ=2 对应一个 2×2 若尔当块
-当 λ=3\lambda = 3λ=3 时（1重根），对应 1×11\times11×1 若尔当块：(3)\begin{pmatrix}3\end{pmatrix}(3​)
-
-
-
-最终组合成的若尔当标准型为：
-(200120003)\begin{pmatrix} 2 &amp; 0 &amp; 0 \\ 1 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 3 \end{pmatrix}​210​020​003​​
-
-
-
-三、 计算示例：求 D4(λ)D_4(\lambda)D4​(λ)
-对于手稿中的 4×44 \times 44×4 特征矩阵：∣λ−21000λ+12000λ1034λ+1∣
-\begin{vmatrix}
-\lambda-2 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; \lambda+1 &amp; 2 &amp; 0 \\
-0 &amp; 0 &amp; \lambda &amp; 1 \\
-0 &amp; 3 &amp; 4 &amp; \lambda+1
-\end{vmatrix}
-​λ−2000​1λ+103​02λ4​001λ+1​​
-按第一列展开：
-D4(λ)=(λ−2)∣λ+1200λ134λ+1∣=(λ−2)[(λ+1)(λ(λ+1)−4)−2(0−3)]=(λ−2)[(λ+1)(λ2+λ−4)+6]=(λ−2)(λ3+2λ2−3λ+2)
-\begin{aligned}
-D_4(\lambda) &amp; = (\lambda-2) \begin{vmatrix}
-\lambda+1 &amp; 2 &amp; 0 \\
-0 &amp; \lambda &amp; 1 \\
-3 &amp; 4 &amp; \lambda+1
-\end{vmatrix} \\
-&amp; = (\lambda-2)\big[(\lambda+1)(\lambda(\lambda+1)-4) - 2(0-3) \big] \\
-&amp; = (\lambda-2)\big[(\lambda+1)(\lambda^2+\lambda-4) + 6 \big] \\
-&amp; = (\lambda-2)(\lambda^3+2\lambda^2-3\lambda+2)
-\end{aligned}
-D4​(λ)​=(λ−2)​λ+103​2λ4​01λ+1​​=(λ−2)[(λ+1)(λ(λ+1)−4)−2(0−3)]=(λ−2)[(λ+1)(λ2+λ−4)+6]=(λ−2)(λ3+2λ2−3λ+2)​
-
-四、 变换矩阵的求法
-若 A(λ)⟶标准型 B(λ)A(\lambda) \longrightarrow \text{标准型 } B(\lambda)A(λ)⟶标准型 B(λ)，求可逆 λ\lambdaλ-矩阵 P(λ),Q(λ)P(\lambda), Q(\lambda)P(λ),Q(λ) 使得：
-B(λ)=P(λ)A(λ)Q(λ)B(\lambda) = P(\lambda)A(\lambda)Q(\lambda)B(λ)=P(λ)A(λ)Q(λ)
-通用高斯变换技巧（大增广矩阵法）：构建如下的联合矩阵进行初等变换：
-
-$$
-\left(\begin{array}{c|c}
-A(\lambda) & I \\
-\hline
-I & 0
-\end{array}\right)
-\longrightarrow
-\left(\begin{array}{c|c}
-B(\lambda) & P(\lambda) \\
-\hline
-Q(\lambda) & 
-\end{array}\right)
-$$
-
-
-
-注：在对 A(λ)A(\lambda)A(λ) 进行化简时，不需要做对称变换，行变换产生的效果记录在右侧，列变换产生的效果记录在下方。
-
-
+    <title>曲面积分</title>
+    <url>/posts/bda4118bc1b7/</url>
+    <content><![CDATA[第二十二章 曲面积分
 
 返回总目录
 ]]></content>
       <categories>
         <category>数学</category>
-        <category>高等代数</category>
+        <category>数学分析</category>
       </categories>
       <tags>
-        <tag>线性代数</tag>
-        <tag>若尔当标准型</tag>
-        <tag>λ-矩阵</tag>
+        <tag>曲面积分</tag>
+        <tag>高斯公式</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>多项式</title>
-    <url>/posts/164b419a7cca/</url>
-    <content><![CDATA[多项式
-一、多项式整除
-若 h(x)≠0h(x) \neq 0h(x)=0，f(x)=g(x)⋅h(x)f(x) = g(x) \cdot h(x)f(x)=g(x)⋅h(x)，则称 g(x)g(x)g(x) 整除 f(x)f(x)f(x)，记作 g(x)∣f(x)g(x) \mid f(x)g(x)∣f(x)
-
-
-g(x)g(x)g(x) 为因式
-
-
-f(x)f(x)f(x) 为倍式
-
-
-性质：f(x)=g(x)⋅h(x)=0⇒g(x)=0f(x) = g(x) \cdot h(x) = 0 \Rightarrow g(x) = 0f(x)=g(x)⋅h(x)=0⇒g(x)=0 或 h(x)=0h(x) = 0h(x)=0
-定理：k&gt;1k &gt; 1k&gt;1 时，[g(x)]k∣f(x)⇒[g(x)]k−1∣f′(x)[g(x)]^k \mid f(x) \Rightarrow [g(x)]^{k-1} \mid f^{\prime}(x)[g(x)]k∣f(x)⇒[g(x)]k−1∣f′(x)
-因式分解
-标准分解式：f(x)=cp1r1(x)p2r2(x)⋯psrs(x)f(x) = cp_1^{r_1}(x)p_2^{r_2}(x)\cdots p_s^{r_s}(x)f(x)=cp1r1​​(x)p2r2​​(x)⋯psrs​​(x)，其中pi(x)p^i(x)pi(x)是不同的首项系数为1的不可约多项式。
-
-
-复系数~：f(x)=a(x−a1)l1(x−a2)l2⋯(x−as)lsf(x) = a(x - a_1)^{l_1}(x - a_2)^{l_2}\cdots (x - a_s)^{l_s}f(x)=a(x−a1​)l1​(x−a2​)l2​⋯(x−as​)ls​
-
-
-实系数~：f(x)=a(x−c1)l1⋯(x−cs)ls(x2+p1x+q1)k1⋯(x2+prx+qr)krf(x) = a(x - c_1)^{l_1}\cdots (x - c_s)^{l_s}(x^2 + p_1x + q_1)^{k_1}\cdots (x^2 + p_rx + q_r)^{k_r}f(x)=a(x−c1​)l1​⋯(x−cs​)ls​(x2+p1​x+q1​)k1​⋯(x2+pr​x+qr​)kr​
-
-
-重因式：设 p(x),f(x)∈F[x]p(x), f(x) \in F[x]p(x),f(x)∈F[x]，且 p(x)p(x)p(x) 为不可约多项式，如果 pk(x)∣f(x)p^k(x) \mid f(x)pk(x)∣f(x)，而 pk+1(x)∤f(x)p^{k+1}(x) \nmid f(x)pk+1(x)∤f(x)，则称 p(x)p(x)p(x) 为多项式 f(x)f(x)f(x) 的 kkk 重因式。
-✅重因式和根的关系：f(α)=0  ⟺  (x−α)∣f(x),(x−α)=0f(\alpha)=0 \iff (x-\alpha) \mid f(x), (x-\alpha)=0f(α)=0⟺(x−α)∣f(x),(x−α)=0 ，其中α\alphaα就是根。
-重因式
-定理 4.4.3 如果不可约多项式 p(x)p(x)p(x) 是 f(x)f(x)f(x) 的 kkk 重因式 (k≥2k \ge 2k≥2)，那么它是 f′(x)f^{\prime}(x)f′(x) 的 k−1k-1k−1 重因式.
-推论 4.4.3 不可约多项式 p(x)p(x)p(x) 是 f(x)f(x)f(x) 的重因式的充分必要条件为 p(x)p(x)p(x) 是 f(x)f(x)f(x) 与 f′(x)f^{\prime}(x)f′(x) 的公因式.
-推论 4.4.4 多项式 f(x)f(x)f(x) 没有重因式的充分必要条件是 f(x)f(x)f(x) 与 f′(x)f^{\prime}(x)f′(x) 互素.
-推论 4.6.1 实数域上的不可约多项式或为一次多项式或为二次多项式：
-ax2+bx+c,且b2−4ac&lt;0.ax^2 + bx + c, \quad \text{且} \quad b^2 - 4ac &lt; 0.ax2+bx+c,且b2−4ac&lt;0.有理根定理 若 f(rs)=0f\left(\frac{r}{s}\right) = 0f(sr​)=0，ana_nan​ 是最高次项系数，a0a_0a0​ 是常数项，r，s互素，则：
-
-
-s∣ans \mid a_ns∣an​
-
-
-r∣a0r \mid a_0r∣a0​
-
-
-艾森斯坦 (Eisenstein) 判别法 设 f(x)=anxn+an−1xn−1+⋯+a0f(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_0f(x)=an​xn+an−1​xn−1+⋯+a0​
-是一个整系数多项式，如果存在一个素数 ppp，使得
-(1) p∤anp \nmid a_np∤an​;
-(2) p∣an−1,an−2,⋯ ,a0p \mid a_{n-1}, a_{n-2}, \cdots, a_0p∣an−1​,an−2​,⋯,a0​;
-(3) p2∤a0p^2 \nmid a_0p2∤a0​,
-那么 f(x)f(x)f(x) 在有理数域上是不可约的。
-例题
-例 1. 确定 a,ba, ba,b 使 (x−1)2∣ax4+bx3+1(x-1)^2 \mid ax^4 + bx^3 + 1(x−1)2∣ax4+bx3+1.
-核心：定理 4.4.3
-步骤：
-
-
-f(x)f(x)f(x)求导
-
-
-从原式的因式找到根 α\alphaα ，令{f(α)=0,f′(α)=0.\begin{cases} f(\alpha) = 0, \\ f^{\prime}(\alpha) = 0. \end{cases}{f(α)=0,f′(α)=0.​
-
-
-解方程组即可求得答案
-
-
-解： 令 f(x)=ax4+bx3+1f(x) = ax^4 + bx^3 + 1f(x)=ax4+bx3+1，则 f′(x)=4ax3+3bx2f^{\prime}(x) = 4ax^3 + 3bx^2f′(x)=4ax3+3bx2，由题意
-(x−1)(x-1)(x−1) 是 f(x)=ax4+bx3+1f(x) = ax^4 + bx^3 + 1f(x)=ax4+bx3+1 的二重因式，则 (x−1)∣f(x),(x−1)∣f′(x)(x-1) \mid f(x), (x-1) \mid f^{\prime}(x)(x−1)∣f(x),(x−1)∣f′(x)，于是
-
-$$f(1) = 0, \quad f'(1) = 0,$$
-
-即
-
-$$\begin{cases} a + b + 1 = 0, \\ 4a + 3b = 0. \end{cases}$$
-
-得 a=3,b=−4a = 3, b = -4a=3,b=−4.
-例 2. 求多项式 f(x)=3x4+5x3+x2+5x−2f(x) = 3x^4 + 5x^3 + x^2 + 5x - 2f(x)=3x4+5x3+x2+5x−2 的有理根：
-核心：有理根定理
-步骤：
-
-
-列出a0a_{0}a0​ 和 ana_{n}an​ 的全部因式
-
-
-a0a_{0}a0​ 做分母， ana_{n}an​ 做分子，列出可能的有理根。
-
-
-将有理根代回原式验算，结果为1的是根。
-
-
-解. 设 rs\frac{r}{s}sr​ 是有理根，则 s∣3, r∣−2s \mid 3, \ r \mid -2s∣3, r∣−2，可能的有理根为 ±1, ±2, ±13, ±23\pm 1, \ \pm 2, \ \pm \frac{1}{3}, \ \pm \frac{2}{3}±1, ±2, ±31​, ±32​，
-验算知 −2-2−2 及 13\frac{1}{3}31​ 都是根。
-例 3. 判断多项式 x4−8x3+12x2+2x^4 - 8x^3 + 12x^2 + 2x4−8x3+12x2+2 在有理数域上是否可约：
-步骤：
-
-
-验算 p∤anp \nmid a_np∤an​； p∣an−1,an−2,⋯ ,a0p \mid a_{n-1}, a_{n-2}, \cdots, a_0p∣an−1​,an−2​,⋯,a0​；p2∤a0p^2 \nmid a_0p2∤a0​
-
-
-全部成立时不可约
-
-
-解： 取素数 p=2p = 2p=2，则 2∤1, 2∣−8,12,0,22 \nmid 1, \ 2 \mid -8, 12, 0, 22∤1, 2∣−8,12,0,2，但是 p2∤2p^2 \nmid 2p2∤2，由艾森斯坦判别法知，该多项式在有理数域上不可约。
-
-返回总目录
-]]></content>
-      <categories>
-        <category>数学</category>
-        <category>高等代数</category>
-      </categories>
-      <tags>
-        <tag>多项式</tag>
-        <tag>有理根定理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>线性方程组理论</title>
-    <url>/posts/49e3f6d43f5e/</url>
-    <content><![CDATA[线性方程组理论
-3.5 线性方程组理论
-一、有解条件
-非齐次线性方程组 Ax=βAx = \betaAx=β：
-
-
-有解 ⇔r(A)=r(Aˉ)\Leftrightarrow r(A) = r(\bar{A})⇔r(A)=r(Aˉ)（系数矩阵秩 = 增广矩阵秩）
-
-=n= n=n：唯一解
-&lt;n&lt; n&lt;n：无穷多组解（nnn 为未知数个数）
-
-
-
-齐次线性方程组 Ax=0Ax = 0Ax=0：
-
-
-r(A)=nr(A) = nr(A)=n：唯一零解
-
-
-r(A)&lt;nr(A) &lt; nr(A)&lt;n：无穷多非零解
-
-
-
-注：解空间维数 =n−r= n - r=n−r（nnn 为未知数个数，rrr 为系数矩阵的秩）
-
-
-二、解的结构
-1. 基础解系
-Ax=0Ax = 0Ax=0 的一组解向量，满足：
-
-
-线性无关
-
-
-可表达全部解向量
-
-
-条件：有非零解
-个数：n−rn - rn−r = 自由未知量个数
-求 Ax=0Ax = 0Ax=0 的基础解系步骤：
-
-
-将系数矩阵 化简为行最简形
-
-
-确定自由未知量个数 =n−r= n - r=n−r
-
-
-确定自由未知量
-
-
-写出化简后的表达式
-
-
-将自由未知量移至右侧
-
-
-令自由未知量依次取一个为 1，其余为 0，得出结果，将计算结果依次排列为解向量
-
-
-例：
-
-$$\begin{cases}
-x + y = 3 \\
-2x + 2y = 6
-\end{cases}$$
-
-对应 Ax=0Ax = 0Ax=0：
-
-$$\begin{cases}
-x + y = 0 \\
-2x + 2y = 0
-\end{cases}$$
-
-
-系数矩阵：$\begin{pmatrix} 1 & 1 \\ 2 & 2 \end{pmatrix} \to \begin{pmatrix} 1 & 1 \\ 0 & 0 \end{pmatrix}$
-
-自由未知量个数 =n−r=2−1=1= n - r = 2 - 1 = 1=n−r=2−1=1
-令 y=ty = ty=t，则 x=−y=−tx = -y = -tx=−y=−t
-取 t=1t = 1t=1，得 x=−1x = -1x=−1
-
-基础解系：$\xi = \begin{pmatrix} -1 \\ 1 \end{pmatrix}$
-
-
-2. 求通解
-步骤：
-
-
-求基础解系
-
-
-通解形式：x=η0+kηx = \eta_0 + k\etax=η0​+kη
-
-求 η0\eta_0η0​（特解）：设满足方程的数
-求 η\etaη（基础解系）
-
-
-
-
-3. 求极大线性无关组
-步骤：
-
-
-按列写向量组，排成竖着的矩阵
-
-
-化简为行最简形
-
-
-非零行个数 = 秩
-
-
-主元列 即为极大线性无关组
-
-
-例：
-
-$$\begin{pmatrix}
-1 & 0 & 3 & 0 & 1 \\
-0 & 1 & 1 & 0 & 1 \\
-0 & 0 & 0 & 1 & 1 \\
-0 & 0 & 0 & 0 & 0
-\end{pmatrix}$$
-
-其中主元列为第 1、2、4 列，故：
-
-
-α1,α2,α4\alpha_1, \alpha_2, \alpha_4α1​,α2​,α4​ 是一个极大线性无关组
-
-
-或 α1,α3,α4\alpha_1, \alpha_3, \alpha_4α1​,α3​,α4​
-
-
-或 α1,α2,α5\alpha_1, \alpha_2, \alpha_5α1​,α2​,α5​
-
-
-或 α1,α3,α5\alpha_1, \alpha_3, \alpha_5α1​,α3​,α5​
-
-
-分别可为极大线性无关组。
-
-返回总目录
-]]></content>
-      <categories>
-        <category>数学</category>
-        <category>高等代数</category>
-      </categories>
-      <tags>
-        <tag>线性代数</tag>
-        <tag>线性方程组</tag>
-        <tag>基础解系</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>线性变换、矩阵表示与特征值</title>
-    <url>/posts/bb5d05dc5b3d/</url>
-    <content><![CDATA[第六章 线性变换、矩阵表示与特征值
-一、线性变换
-1. 定义与性质
-线性变换需满足：
-
-
-可加性：A(α+β)=Aα+Aβ\mathcal{A}(\alpha + \beta) = \mathcal{A}\alpha + \mathcal{A}\betaA(α+β)=Aα+Aβ
-
-
-齐次性：A(kα)=kA(α)\mathcal{A}(k\alpha) = k\mathcal{A}(\alpha)A(kα)=kA(α)
-
-
-2. 唯一性
-Aεi=Bεi  ⟺  A=B\mathcal{A}\varepsilon_i = \mathcal{B}\varepsilon_i \iff \mathcal{A} = \mathcal{B}Aεi​=Bεi​⟺A=B3. A\mathcal{A}A 的核 (Kernel)
-ker⁡A={α∣Aα=0,α∈V}\ker\mathcal{A} = \{\alpha \mid \mathcal{A}\alpha = 0, \alpha \in V\}kerA={α∣Aα=0,α∈V}
-二、线性变换的矩阵描述
-设 ε1,ε2,⋯ ,εn\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_nε1​,ε2​,⋯,εn​ 为空间的一组基，线性变换在此基下的映射关系为：
-{Aε1=a11ε1+a21ε2+⋯+an1εnAε2=a12ε1+a22ε2+⋯+an2εn⋮Aεn=a1nε1+a2nε2+⋯+annεn
-\begin{cases}
-\mathcal{A}\varepsilon_1 = a_{11}\varepsilon_1 + a_{21}\varepsilon_2 + \cdots + a_{n1}\varepsilon_n \\
-\mathcal{A}\varepsilon_2 = a_{12}\varepsilon_1 + a_{22}\varepsilon_2 + \cdots + a_{n2}\varepsilon_n \\
-\quad \vdots \\
-\mathcal{A}\varepsilon_n = a_{1n}\varepsilon_1 + a_{2n}\varepsilon_2 + \cdots + a_{nn}\varepsilon_n
-\end{cases}
-⎩⎨⎧​Aε1​=a11​ε1​+a21​ε2​+⋯+an1​εn​Aε2​=a12​ε1​+a22​ε2​+⋯+an2​εn​⋮Aεn​=a1n​ε1​+a2n​ε2​+⋯+ann​εn​​1. 矩阵表示
-对应矩阵为：
-A=(a11a12⋯a1na21a22⋯a2n⋮⋮⋱⋮an1an2⋯ann)
-A = \begin{pmatrix}
-a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\
-a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
-a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}
-\end{pmatrix}
-A=​a11​a21​⋮an1​​a12​a22​⋮an2​​⋯⋯⋱⋯​a1n​a2n​⋮ann​​​2. 简写形式
-Aε1=(a11a21⋮an1)
-\mathcal{A}\varepsilon_1 = \begin{pmatrix} a_{11} \\ a_{21} \\ \vdots \\ a_{n1} \end{pmatrix}
-Aε1​=​a11​a21​⋮an1​​​A(ε1,ε2,⋯ ,εn)=(ε1,ε2,⋯ ,εn)A
-\mathcal{A}(\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n) = (\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n)A
-A(ε1​,ε2​,⋯,εn​)=(ε1​,ε2​,⋯,εn​)A3. 坐标变换公式
-设 α=(ε1,ε2,⋯ ,εn)(x1x2⋮xn)\alpha = (\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n) \begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}α=(ε1​,ε2​,⋯,εn​)​x1​x2​⋮xn​​​，则 Aα\mathcal{A}\alphaAα 在基 ε1,ε2,⋯ ,εn\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_nε1​,ε2​,⋯,εn​ 下的坐标为：
-(y1y2⋮yn)=A(x1x2⋮xn)
-\begin{pmatrix} y_1 \\ y_2 \\ \vdots \\ y_n \end{pmatrix} = A \begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}
-​y1​y2​⋮yn​​​=A​x1​x2​⋮xn​​​
-三、相似矩阵与特征值对角化
-1. 相似矩阵
-若 B=X−1AXB = X^{-1}AXB=X−1AX，则称矩阵 AAA 与 BBB 相似。
-性质：相似矩阵的特征多项式相同，特征值相同。
-2. 特征向量与对角化
-目的：寻找一组基使线性变换的矩阵为对角矩阵。
-A(ε1,ε2,⋯ ,εn)=(ε1,ε2,⋯ ,εn)(λ1λ2⋱λn)
-\mathcal{A}(\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n) = (\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n) \begin{pmatrix} \lambda_1 &amp; &amp; &amp; \\ &amp; \lambda_2 &amp; &amp; \\ &amp; &amp; \ddots &amp; \\ &amp; &amp; &amp; \lambda_n \end{pmatrix}
-A(ε1​,ε2​,⋯,εn​)=(ε1​,ε2​,⋯,εn​)​λ1​​λ2​​⋱​λn​​​即：
-Aεi=λiεi  ⟹  Aξ=λξ
-\mathcal{A}\varepsilon_i = \lambda_i \varepsilon_i \implies A\xi = \lambda \xi
-Aεi​=λi​εi​⟹Aξ=λξ定义：λ\lambdaλ 为 AAA 的一个特征值，ξ\xiξ 为 AAA（对应 λ\lambdaλ）的特征向量。
-3. 如何求特征值？
-引入特征多项式：
-λ 是 A 的特征值  ⟺  ∣λI−A∣=0
-\lambda \text{ 是 } A \text{ 的特征值} \iff |\lambda I - A| = 0
-λ 是 A 的特征值⟺∣λI−A∣=0
-四、例题与应用
-1. 例1：判断/验证线性变换
-
-
-验证 A(α+β)=Aα+Aβ\mathcal{A}(\alpha + \beta) = \mathcal{A}\alpha + \mathcal{A}\betaA(α+β)=Aα+Aβ 以及 A(kα)=kAα\mathcal{A}(k\alpha) = k\mathcal{A}\alphaA(kα)=kAα 是否成立。
-
-
-技巧：通常看映射表达式中变量的次数是否为 1 或 0。
-
-
-2. 例2：过渡矩阵与坐标变换
-已知 β1=α1+2α2,  β2=α1−α2+2α3,  β3=α1+α2+α3\beta_1 = \alpha_1 + 2\alpha_2,\;\beta_2 = \alpha_1 - \alpha_2 + 2\alpha_3,\;\beta_3 = \alpha_1 + \alpha_2 + \alpha_3β1​=α1​+2α2​,β2​=α1​−α2​+2α3​,β3​=α1​+α2​+α3​，矩阵 A=(31−202−1123)A = \begin{pmatrix} 3 &amp; 1 &amp; -2 \\ 0 &amp; 2 &amp; -1 \\ 1 &amp; 2 &amp; 3 \end{pmatrix}A=​301​122​−2−13​​。
-(1) 证明 β1,β2,β3\beta_1, \beta_2, \beta_3β1​,β2​,β3​ 是基
-写出关系式：
-(β1,β2,β3)=(α1,α2,α3)P
-(\beta_1, \beta_2, \beta_3) = (\alpha_1, \alpha_2, \alpha_3)P
-(β1​,β2​,β3​)=(α1​,α2​,α3​)P其中过渡矩阵 P=(1112−11021)P = \begin{pmatrix} 1 &amp; 1 &amp; 1 \\ 2 &amp; -1 &amp; 1 \\ 0 &amp; 2 &amp; 1 \end{pmatrix}P=​120​1−12​111​​。
-计算行列式：
-∣P∣=∣1112−11021∣≠0  ⟹  β1,β2,β3 是基.
-|P| = \begin{vmatrix} 1 &amp; 1 &amp; 1 \\ 2 &amp; -1 &amp; 1 \\ 0 &amp; 2 &amp; 1 \end{vmatrix} \neq 0 \implies \beta_1, \beta_2, \beta_3 \text{ 是基}.
-∣P∣=​120​1−12​111​​=0⟹β1​,β2​,β3​ 是基.(2) 求 A\mathcal{A}A 在基 β1,β2,β3\beta_1, \beta_2, \beta_3β1​,β2​,β3​ 下的矩阵 BBB
-套公式：
-B=P−1AP
-B = P^{-1}AP
-B=P−1AP答案：
-B=(1−12−71−5−331512)
-B = \begin{pmatrix} 1 &amp; -12 &amp; -7 \\ 1 &amp; -5 &amp; -3 \\ 3 &amp; 15 &amp; 12 \end{pmatrix}
-B=​113​−12−515​−7−312​​(3) 求向量 α=−4α1+α2−6α3\alpha = -4\alpha_1 + \alpha_2 - 6\alpha_3α=−4α1​+α2​−6α3​ 在 β1,β2,β3\beta_1, \beta_2, \beta_3β1​,β2​,β3​ 下的坐标
-α=(α1,α2,α3)(−41−6)=(β1,β2,β3)[P−1(−41−6)]=(β1,β2,β3)(−1−30)
-\alpha = (\alpha_1, \alpha_2, \alpha_3) \begin{pmatrix} -4 \\ 1 \\ -6 \end{pmatrix} = (\beta_1, \beta_2, \beta_3) \left[ P^{-1} \begin{pmatrix} -4 \\ 1 \\ -6 \end{pmatrix} \right] = (\beta_1, \beta_2, \beta_3) \begin{pmatrix} -1 \\ -3 \\ 0 \end{pmatrix}
-α=(α1​,α2​,α3​)​−41−6​​=(β1​,β2​,β3​)​P−1​−41−6​​​=(β1​,β2​,β3​)​−1−30​​新坐标为：(−1,−3,0)T(-1, -3, 0)^T(−1,−3,0)T
-
-注：或写出增广矩阵 [β1,β2,β3∣α]→[I∣X][\beta_1, \beta_2, \beta_3 \mid \alpha] \to [I \mid X][β1​,β2​,β3​∣α]→[I∣X]，其中 XXX 为新坐标。
-
-3. 例3：相似矩阵求未知数与可逆阵 PPP
-已知矩阵 AAA 相似于 BBB，求未知数：
-
-
-利用特征多项式相等：∣λI−A∣=∣λI−B∣|\lambda I - A| = |\lambda I - B|∣λI−A∣=∣λI−B∣
-
-
-比较同次项系数，解得答案。
-
-
-求可逆阵 PPP（即对角化问题）：
-
-
-求特征值：计算 ∣λI−A∣=0|\lambda I - A| = 0∣λI−A∣=0 所得的 λ\lambdaλ。
-
-
-求基础解系：代入 (λI−A)x=0(\lambda I - A)x = 0(λI−A)x=0 求基础解系。
-
-
-基础解系拼起来所得的矩阵即为 PPP。
-
-
-4. 例4：证明子空间
-已知线性变换 A\mathcal{A}A 在 ε1,ε2,ε3\varepsilon_1, \varepsilon_2, \varepsilon_3ε1​,ε2​,ε3​ 下的矩阵为 (31−122−1220)\begin{pmatrix} 3 &amp; 1 &amp; -1 \\ 2 &amp; 2 &amp; -1 \\ 2 &amp; 2 &amp; 0 \end{pmatrix}​322​122​−1−10​​。求证：U=L(ε3,ε1+ε2+2ε3)U = L(\varepsilon_3, \varepsilon_1 + \varepsilon_2 + 2\varepsilon_3)U=L(ε3​,ε1​+ε2​+2ε3​) 是 A\mathcal{A}A-子空间。
-证法（利用定义）：
-根据基和线性变换矩阵写出映射关系：
-{A(ε1)=3ε1+2ε2+2ε3A(ε2)=ε1+2ε2+2ε3A(ε3)=−ε1−ε2
-\begin{cases}
-\mathcal{A}(\varepsilon_1) = 3\varepsilon_1 + 2\varepsilon_2 + 2\varepsilon_3 \\
-\mathcal{A}(\varepsilon_2) = \varepsilon_1 + 2\varepsilon_2 + 2\varepsilon_3 \\
-\mathcal{A}(\varepsilon_3) = -\varepsilon_1 - \varepsilon_2
-\end{cases}
-⎩⎨⎧​A(ε1​)=3ε1​+2ε2​+2ε3​A(ε2​)=ε1​+2ε2​+2ε3​A(ε3​)=−ε1​−ε2​​任取 β∈U\beta \in Uβ∈U，则 β=k1ε3+k2(ε1+ε2+2ε3)\beta = k_1\varepsilon_3 + k_2(\varepsilon_1 + \varepsilon_2 + 2\varepsilon_3)β=k1​ε3​+k2​(ε1​+ε2​+2ε3​)。
-计算 A(β)\mathcal{A}(\beta)A(β)：
-A(β)=A[k1ε3+k2(ε1+ε2+2ε3)]=k1A(ε3)+k2A(ε1)+k2A(ε2)+2k2A(ε3)=k1(−ε1−ε2)+k2(3ε1+2ε2+2ε3)+k2(ε1+2ε2+2ε3)+2k2(−ε1−ε2)=(2k2−k1)ε1+(2k2−k1)ε2+4k2ε3
-\begin{aligned}
-\mathcal{A}(\beta) &amp;= \mathcal{A}[k_1\varepsilon_3 + k_2(\varepsilon_1 + \varepsilon_2 + 2\varepsilon_3)] \\
-&amp;= k_1\mathcal{A}(\varepsilon_3) + k_2\mathcal{A}(\varepsilon_1) + k_2\mathcal{A}(\varepsilon_2) + 2k_2\mathcal{A}(\varepsilon_3) \\
-&amp;= k_1(-\varepsilon_1 - \varepsilon_2) + k_2(3\varepsilon_1 + 2\varepsilon_2 + 2\varepsilon_3) + k_2(\varepsilon_1 + 2\varepsilon_2 + 2\varepsilon_3) + 2k_2(-\varepsilon_1 - \varepsilon_2) \\
-&amp;= (2k_2 - k_1)\varepsilon_1 + (2k_2 - k_1)\varepsilon_2 + 4k_2\varepsilon_3
-\end{aligned}
-A(β)​=A[k1​ε3​+k2​(ε1​+ε2​+2ε3​)]=k1​A(ε3​)+k2​A(ε1​)+k2​A(ε2​)+2k2​A(ε3​)=k1​(−ε1​−ε2​)+k2​(3ε1​+2ε2​+2ε3​)+k2​(ε1​+2ε2​+2ε3​)+2k2​(−ε1​−ε2​)=(2k2​−k1​)ε1​+(2k2​−k1​)ε2​+4k2​ε3​​将 A(β)\mathcal{A}(\beta)A(β) 用 UUU 的生成元 ε3\varepsilon_3ε3​ 与 ε1+ε2+2ε3\varepsilon_1 + \varepsilon_2 + 2\varepsilon_3ε1​+ε2​+2ε3​ 表示：
-A(β)=2k1ε3+(2k2−k1)(ε1+ε2+2ε3)∈U
-\begin{aligned}
-\mathcal{A}(\beta) &amp;= 2k_1\varepsilon_3 + (2k_2 - k_1)(\varepsilon_1 + \varepsilon_2 + 2\varepsilon_3) \in U
-\end{aligned}
-A(β)​=2k1​ε3​+(2k2​−k1​)(ε1​+ε2​+2ε3​)∈U​故 UUU 是 A\mathcal{A}A-子空间，得证。
-通用步骤总结：
-
-
-根据基和线性变换矩阵写出 A(εi)\mathcal{A}(\varepsilon_i)A(εi​) 的表达式。
-
-
-任取 β∈U\beta \in Uβ∈U，写出其线性组合形式：β=l1β1+l2β2+⋯+lmβm\beta = l_1\beta_1 + l_2\beta_2 + \cdots + l_m\beta_mβ=l1​β1​+l2​β2​+⋯+lm​βm​。
-
-
-计算线性变换：A(β)=A(l1β1+⋯+lmβm)\mathcal{A}(\beta) = \mathcal{A}(l_1\beta_1 + \cdots + l_m\beta_m)A(β)=A(l1​β1​+⋯+lm​βm​)。
-
-
-化简，若结果仍能表示为 β1,⋯ ,βm\beta_1, \cdots, \beta_mβ1​,⋯,βm​ 的线性组合，则得证。
-
-
-
-五、求 A\mathcal{A}A 的值域与核的维数和基
-1. 值域 (Range)
-AV=L(Aε1,Aε2,⋯ ,Aεn)
-\mathcal{A}V = L(\mathcal{A}\varepsilon_1, \mathcal{A}\varepsilon_2, \cdots, \mathcal{A}\varepsilon_n)
-AV=L(Aε1​,Aε2​,⋯,Aεn​)即值域由基向量的像张成，其维数等于 Aε1,…,Aεn\mathcal{A}\varepsilon_1, \dots, \mathcal{A}\varepsilon_nAε1​,…,Aεn​ 的极大无关组中向量的个数。
-2. 核 (Kernel)
-ker⁡A={α∣Aα=0,α∈V}
-\ker\mathcal{A} = \{\alpha \mid \mathcal{A}\alpha = 0, \alpha \in V\}
-kerA={α∣Aα=0,α∈V}设 α=x1ε1+x2ε2+⋯+xnεn∈ker⁡A\alpha = x_1\varepsilon_1 + x_2\varepsilon_2 + \cdots + x_n\varepsilon_n \in \ker\mathcal{A}α=x1​ε1​+x2​ε2​+⋯+xn​εn​∈kerA，则根据定义：
-Ax=0
-A x = 0
-Ax=0即求解齐次线性方程组的基础解系：
-
-
-基础解系即为核的一组基。
-
-
-基础解系中向量的数量即为核的维数。
-
-
-
-返回总目录
-]]></content>
-      <categories>
-        <category>数学</category>
-        <category>高等代数</category>
-      </categories>
-      <tags>
-        <tag>高等代数</tag>
-        <tag>线性变换</tag>
-        <tag>特征值</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>线性空间</title>
-    <url>/posts/581f95a5bebe/</url>
-    <content><![CDATA[线性空间
-性质（判断是否是线性空间的依据）
-定义 5.1.1 设 VVV 是一个非空集合，FFF 是一个数域. 在集合 VVV 的元素之间定义了一种运算，叫做加法，即对于 VVV 中任意两个元素 α\alphaα 与 β\betaβ，在 VVV 中都有唯一的一个元素 γ\gammaγ 与之对应，称为 α\alphaα 与 β\betaβ 的和，记为 γ=α+β\gamma = \alpha + \betaγ=α+β；在数域 FFF 与集合 VVV 中的元素之间还定义了一种运算，叫做数乘，即对于数域 FFF 中任一数 kkk 与集合 VVV 中任一元素 α\alphaα，在 VVV 中都有唯一的一个元素 δ\deltaδ 与它们对应，称为 kkk 与 α\alphaα 的数量乘法，记为 δ=kα\delta = k\alphaδ=kα，如果两种运算满足如下性质：
-(1) 加法交换律 α+β=β+α\alpha + \beta = \beta + \alphaα+β=β+α;
-(2) 加法结合律 (α+β)+γ=α+(β+γ)(\alpha + \beta) + \gamma = \alpha + (\beta + \gamma)(α+β)+γ=α+(β+γ);
-(3) 存在“零元”，即存在 0∈V\mathbf{0} \in V0∈V，使得 ∀α∈V, 0+α=α\forall \alpha \in V, \ \mathbf{0} + \alpha = \alpha∀α∈V, 0+α=α;
-(4) 存在负元，即 ∀α∈V\forall \alpha \in V∀α∈V，存在 β∈V\beta \in Vβ∈V，使得 α+β=0\alpha + \beta = \mathbf{0}α+β=0;
-(5) 1⋅α=α1 \cdot \alpha = \alpha1⋅α=α;
-(6) 数乘结合律 (kl)α=k(lα)=l(kα)(kl)\alpha = k(l\alpha) = l(k\alpha)(kl)α=k(lα)=l(kα);
-(7) 分配律 (k+l)α=kα+lα(k + l)\alpha = k\alpha + l\alpha(k+l)α=kα+lα;
-(8) 分配律 k(α+β)=kα+kβk(\alpha + \beta) = k\alpha + k\betak(α+β)=kα+kβ,
-基变换与坐标变换
-过渡矩阵
-ε1,ε2,⋯ ,εn\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_nε1​,ε2​,⋯,εn​ 和 η1,η2,⋯ ,ηn\eta_1, \eta_2, \cdots, \eta_nη1​,η2​,⋯,ηn​ 是 VVV 的两组基，且
-
-$$\begin{cases} \eta_1 = a_{11}\varepsilon_1 + a_{21}\varepsilon_2 + \cdots + a_{n1}\varepsilon_n, \\ \eta_2 = a_{12}\varepsilon_1 + a_{22}\varepsilon_2 + \cdots + a_{n2}\varepsilon_n, \\ \cdots\cdots \\ \eta_n = a_{1n}\varepsilon_1 + a_{2n}\varepsilon_2 + \cdots + a_{nn}\varepsilon_n. \end{cases} \quad (5.3.1)$$
-
-将式 (5.3.1) 写成矩阵形式
-
-$$(\eta_1, \eta_2, \cdots, \eta_n) = (\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_n) \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{pmatrix}. \quad (5.3.2)$$
-
-这也就是基变换公式。
-定义 5.3.1 我们称式 (5.3.2) 中的矩阵
-
-$$A = \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{pmatrix}$$
-
-为从基 ε1,ε2,⋯ ,εn\varepsilon_1, \varepsilon_2, \cdots, \varepsilon_nε1​,ε2​,⋯,εn​ 到基 η1,η2,⋯ ,ηn\eta_1, \eta_2, \cdots, \eta_nη1​,η2​,⋯,ηn​ 的过渡矩阵.
-基变换公式
-η=Aε\mathbf{\eta} = A\mathbf{\varepsilon}η=Aε(x1,x2,⋯ ,xn)=(ε1,ε2,⋯ ,εn)A(x_{1}, x_{2}, \cdots, x_{n})=(\varepsilon_{1}, \varepsilon_{2}, \cdots, \varepsilon_{n})A(x1​,x2​,⋯,xn​)=(ε1​,ε2​,⋯,εn​)A坐标变换公式
-
-$$\mathbf{x} = A\mathbf{x}'$$
-
-
-$$(x_{1},x_{2}, \cdots, x_{n})=A(x'_{1}, x'_{2}, \cdots, x'_{n})$$
-
-线性子空间
-判断
-
-
-加法封闭
-
-
-数乘封闭
-
-
-运算
-
-
-子空间的交 V1∩V2={v∣v∈V1 且 v∈V2}V_1 \cap V_2 = \{v \mid v \in V_1 \text{ 且 } v \in V_2\}V1​∩V2​={v∣v∈V1​ 且 v∈V2​}
-
-
-子空间的和 V1+V2={v1+v2∣v1∈V1,v2∈V2}V_1 + V_2 = \{v_1 + v_2 \mid v_1 \in V_1, v_2 \in V_2\}V1​+V2​={v1​+v2​∣v1​∈V1​,v2​∈V2​}
-
-子空间的直和 V1+V2V_1 + V_2V1​+V2​ 中每个向量 α\mathbf{\alpha}α 的分解式α=α1+α2,α1∈V1, α2∈V2\mathbf{\alpha} = \mathbf{\alpha}_1 + \mathbf{\alpha}_2, \quad \mathbf{\alpha}_1 \in V_1, \ \mathbf{\alpha}_2 \in V_2α=α1​+α2​,α1​∈V1​, α2​∈V2​ 唯一, 则称V1+V2V_1 + V_2V1​+V2​为直和，记为 V1⊕V2V_1 \oplus V_2V1​⊕V2​.
-
-
-
-L(α1,α2,⋯ ,αs)+L(β1,β2,⋯ ,βt)=L(α1,α2,⋯ ,αs,β1,β2,⋯ ,βt).L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_s) + L(\beta_1, \beta_2, \cdots, \beta_t) = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_s, \beta_1, \beta_2, \cdots, \beta_t).L(α1​,α2​,⋯,αs​)+L(β1​,β2​,⋯,βt​)=L(α1​,α2​,⋯,αs​,β1​,β2​,⋯,βt​).直和判断的充分必要条件
-定理 5.4.6 设 V1V_1V1​ 与 V2V_2V2​ 是 VVV 的两个子空间，若 W=V1+V2W = V_1 + V_2W=V1​+V2​，则下述结论等价：
-(1) W=V1+V2W = V_1 + V_2W=V1​+V2​ 是直和；
-(2) 如果 α1+α2=0, αi∈Vi(i=1,2)\mathbf{\alpha}_1 + \mathbf{\alpha}_2 = \mathbf{0}, \ \mathbf{\alpha}_i \in V_i (i = 1,2)α1​+α2​=0, αi​∈Vi​(i=1,2)，那么 α1=α2=0\mathbf{\alpha}_1 = \mathbf{\alpha}_2 = \mathbf{0}α1​=α2​=0；
-(3) V1∩V2={0}V_1 \cap V_2 = \{\mathbf{0}\}V1​∩V2​={0}；
-(4) 如果 α1,α2,⋯ ,αs\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_sα1​,α2​,⋯,αs​ 是 V1V_1V1​ 的一组基，β1,β2,⋯ ,βt\beta_1, \beta_2, \cdots, \beta_tβ1​,β2​,⋯,βt​ 是 V2V_2V2​ 的一组基，那么 α1,α2,⋯ ,αs,β1,β2,⋯ ,βt\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_s, \beta_1, \beta_2, \cdots, \beta_tα1​,α2​,⋯,αs​,β1​,β2​,⋯,βt​ 是 WWW 的一组基；
-(5) dim⁡W=dim⁡V1+dim⁡V2\dim W = \dim V_1 + \dim V_2dimW=dimV1​+dimV2​.
-维数与基
-L(α1,α2,⋯ ,αr)L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_r)L(α1​,α2​,⋯,αr​) 的维数等于向量组 α1,α2,⋯ ,αr\mathbf{\alpha}_1, \mathbf{\alpha}_2, \cdots, \mathbf{\alpha}_rα1​,α2​,⋯,αr​ 的秩.
-与运算结合 :
-定理 5.4.5（维数公式） 设 VVV 为有限维线性空间，V1,V2V_1, V_2V1​,V2​ 为 VVV 的子空间，则
-dim⁡(V1+V2)=dim⁡V1+dim⁡V2−dim⁡(V1∩V2).(5.4.4)\dim(V_1 + V_2) = \dim V_1 + \dim V_2 - \dim(V_1 \cap V_2). \quad (5.4.4)dim(V1​+V2​)=dimV1​+dimV2​−dim(V1​∩V2​).(5.4.4)如果是直和
-dim⁡(W)=dim⁡V1+dim⁡V2\dim(W) = \dim V_1 + \dim V_2dim(W)=dimV1​+dimV2​，其中W=V1+V2W = V_1 + V_2W=V1​+V2​是直和
-例题
-例 1 已知 R4\mathbb{R}^4R4 中向量 （P201: 4）
-α1=(1,2,1,0), α2=(−1,1,1,1); β1=(2,−1,0,1), β2=(1,−1,3,7),\mathbf{\alpha}_1 = (1, 2, 1, 0), \ \mathbf{\alpha}_2 = (-1, 1, 1, 1); \ \mathbf{\beta}_1 = (2, -1, 0, 1), \ \mathbf{\beta}_2 = (1, -1, 3, 7),α1​=(1,2,1,0), α2​=(−1,1,1,1); β1​=(2,−1,0,1), β2​=(1,−1,3,7),子空间 V1=L(α1,α2), V2=L(β1,β2),V_1 = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2), \ V_2 = L(\mathbf{\beta}_1, \mathbf{\beta}_2),V1​=L(α1​,α2​), V2​=L(β1​,β2​),
-(1) 求 V1+V2V_1 + V_2V1​+V2​ 的一组基和维数.
-步骤：
-
-
-V1+V2=L(α1,α2,β1,β2)V_{1}+V_{2}=L(\alpha_{1},\alpha_{2},\beta_{1},\beta_{2})V1​+V2​=L(α1​,α2​,β1​,β2​)
-
-
-写出以 α1,α2,β1β2\alpha_{1},\alpha_{2},\beta_{1}\beta_{2}α1​,α2​,β1​β2​ 为列向量的矩阵
-
-
-对矩阵进行实行行变换，化成行最简形
-
-
-秩=维数，主元列为基（与求极大线性无关组一致）
-
-
-解：(1) V1+V2=L(α1,α2,β1,β2)V_1 + V_2 = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1, \mathbf{\beta}_2)V1​+V2​=L(α1​,α2​,β1​,β2​)
-对以 α1,α2,β1,β2\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1, \mathbf{\beta}_2α1​,α2​,β1​,β2​ 为列向量的矩阵 A\mathbf{A}A 作初等行变换
-
-$$\mathbf{A} = \begin{pmatrix} 1 & -1 & 2 & 1 \\ 2 & 1 & -1 & -1 \\ 1 & 1 & 0 & 3 \\ 0 & 1 & 1 & 7 \end{pmatrix} \rightarrow \begin{pmatrix} 1 & -1 & 2 & 1 \\ 0 & 3 & -5 & -3 \\ 0 & 2 & -2 & 2 \\ 0 & 1 & 1 & 7 \end{pmatrix} \rightarrow \begin{pmatrix} 1 & -1 & 2 & 1 \\ 0 & 0 & -2 & -6 \\ 0 & 1 & -1 & 1 \\ 0 & 0 & 2 & 6 \end{pmatrix} \rightarrow \begin{pmatrix} 1 & 0 & 0 & -1 \\ 0 & 1 & 0 & 4 \\ 0 & 0 & 1 & 3 \\ 0 & 0 & 0 & 0 \end{pmatrix} = \mathbf{B}$$
-
-由 B\mathbf{B}B 知，α1,α2,β1\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1α1​,α2​,β1​ （或 α1,α2,β2\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_2α1​,α2​,β2​）为 α1,α2,β1,β2\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1, \mathbf{\beta}_2α1​,α2​,β1​,β2​ 的一个极大无关组.
-V1+V2=L(α1,α2,β1)V_1 + V_2 = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1)V1​+V2​=L(α1​,α2​,β1​) 为 3 维的，α1,α2,β1\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_1α1​,α2​,β1​ （或 α1,α2,β2\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{\beta}_2α1​,α2​,β2​）为其一组基.
-(2) 求 V1∩V2V_1 \cap V_2V1​∩V2​ 的一组基和维数.
-步骤：
-
-
-设向量γ\gammaγ 是 V1V_{1}V1​ 和 V2V_{2}V2​ 中的向量
-
-
-分别用 V1V_{1}V1​ 和 V2V_{2}V2​ 的基表示γ\gammaγ
-
-
-移项，使右侧全部为零
-
-
-
-
-γ=k1α1+k2α2=l1β1+l2β2\mathbf{\gamma} = k_1\mathbf{\alpha}_1 + k_2\mathbf{\alpha}_2 = l_1\mathbf{\beta}_1 + l_2\mathbf{\beta}_2γ=k1​α1​+k2​α2​=l1​β1​+l2​β2​
-
-返回总目录
-]]></content>
-      <categories>
-        <category>数学</category>
-        <category>高等代数</category>
-      </categories>
-      <tags>
-        <tag>线性空间</tag>
-        <tag>向量空间</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>莫名其妙想到的随笔</title>
-    <url>/posts/43a1bee9c805/</url>
-    <content><![CDATA[我的人生刚刚开始吗？不。我的人生早在出生那一刻就已经开始，伴随我的心跳一起，书写生命的每一行诗。
-“大学是人生的开始。”
-高考过后，当老师、家长在高考后不经意说出这句话为我们庆祝时，在不经意间用极巧妙的方法粉饰了它的阴谋——十八以前，你的过去、包括你的喜怒哀乐都不再重要，因为在十八，在某套话语体系下，你才被认可为一个真正的“人”。时间匆匆如流水，即便这种逻辑试图掩盖什么，可始终无法改变这十八年是人生中最重要的十八年。我们人生中的绝大多数知识都来源于此时，而人格与三观也在此时期几乎定型，甚至于百岁之后回望此生，人生的中点也不过18岁。 虽然我不喜欢毕导的人生中点理论来写那些咯噔文学的文案，但是我仍然保留可以用其作为我观点的关键参考：人生的中点是十八岁。 我们“前半生”的重要性不言而喻，可它却可以被一些话语悄然抹去？这对过去的我们不公平，对经历了十八年风雨的我们不公平，这对未成年们不公平。在视频网站的信息推流中，我们或许会看到未成年发布一些略显幼稚的话语。那些话语可能表达了开心，愤怒，抑或是伤心，虽稍显幼稚与不成熟，可没有这并不能作为攻击他们的正当理由。 显然，社会将人群强硬地分为了两种人——成熟与幼稚。于是这个年龄在在这个语境下似乎也代表了一些意义，成人，拆开来看，是成为人。从社会上成人的方法有许多种，但大多是一种走过某个阶段——高考结束、进入大学、过完成人礼……为了统一标准，从法律意义将十八作为一道划分成人与否的清晰明确的分界线，它意味着从此时此刻起，你几乎被赋予所谓“人”的全部权利与责任。此时，“成人”才被这套话语体系承认为一个真正的人。这似乎也能解释为何“成人”那一刻自己的心情五味杂陈，自己的心态也仿佛成熟了不少，或许有喜悦，但更多被某种恍惚冲昏头脑。 为何高中抑郁率上升，或许是因为从未当成一个真正的“人”来看——不需要承担成人的责任，只需要考虑学习。人是社会的产物，不被当人久了，自己也就淡忘了。长大了，也未必把小孩当成人看。
-不是十八岁以后开启人生，而是拥有了更多选择的权利与其带来的责任。
-完。
-
-一些后记
-我知道是对新篇章的祝福但是我看到的潜台词真的让我太难受了。。。
-以下是没有经过深度思考的文字，想保留观看体验的不要阅读。没有说以上经过深度思考的意思
-就写到这里吧，真的纯纯大晚上想到这句话真的很恶心于是奋笔疾书干了一堆字（其实才450多字）“成人”以后才是人生的开始，潜台词不就是：成人以前不是人生，所以“只需要学习就好”，所以一切幼稚的想法都应该被抛弃。但是这他妈不对啊，凭啥说幼稚不算人生体验，你觉得是小事是矫情我就要因此否定我实实在在经历的情绪？这是什么道理。他妈以后你觉得现在的你幼稚，你现在就不觉得委屈和开心了？那你这辈子别有情绪体验得了……
-]]></content>
   </entry>
   <entry>
     <title>书影馆</title>
@@ -3542,23 +3550,15 @@ V1+V2=L(α1,α2,β1)V_1 + V_2 = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{
 ]]></content>
   </entry>
   <entry>
-    <title>音乐馆</title>
-    <url>/Music/index.html</url>
-    <content><![CDATA[
-    ]]></content>
-  </entry>
-  <entry>
     <title>分类</title>
     <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>About</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[哈喽哈喽！欢迎来到我的世界~
-我的博客受限于我本人的习惯与知识储备，并不以技术探讨为核心内容喵。
-因此内容大多是我的想法，虽然可能有些过于中二（？总之，希望这个网站可以满足大家对我的好奇心，也希望这个网站可以让我更加真实地活在你的面前。
-]]></content>
+    <title>音乐馆</title>
+    <url>/Music/index.html</url>
+    <content><![CDATA[
+    ]]></content>
   </entry>
   <entry>
     <title></title>
@@ -3576,14 +3576,22 @@ V1+V2=L(α1,α2,β1)V_1 + V_2 = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{
 }]]></content>
   </entry>
   <entry>
-    <title>留言板</title>
-    <url>/guestbook/index.html</url>
-    <content><![CDATA[留下点什么……
+    <title>About</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[哈喽哈喽！欢迎来到我的世界~
+我的博客受限于我本人的习惯与知识储备，并不以技术探讨为核心内容喵。
+因此内容大多是我的想法，虽然可能有些过于中二（？总之，希望这个网站可以满足大家对我的好奇心，也希望这个网站可以让我更加真实地活在你的面前。
 ]]></content>
   </entry>
   <entry>
     <title>标签</title>
     <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>留言板</title>
+    <url>/guestbook/index.html</url>
+    <content><![CDATA[留下点什么……
+]]></content>
   </entry>
 </search>
