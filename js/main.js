@@ -1602,6 +1602,162 @@
     });
   }
 
+  // ---- Schedule: filter the semester timetable by teaching week ----
+  document.querySelectorAll('.schedule-paper').forEach(function (schedule) {
+    var grid = schedule.querySelector('.schedule-grid');
+    var picker = schedule.querySelector('.schedule-week-picker');
+    var selectButton = schedule.querySelector('.schedule-week-select');
+    var selectValue = schedule.querySelector('.schedule-week-select-value');
+    var menu = schedule.querySelector('.schedule-week-menu');
+    var options = Array.prototype.slice.call(schedule.querySelectorAll('.schedule-week-option'));
+    var range = schedule.querySelector('.schedule-week-range');
+    var previous = schedule.querySelector('.schedule-week-prev');
+    var next = schedule.querySelector('.schedule-week-next');
+    if (!grid || !picker || !selectButton || !selectValue || !menu || !options.length || !range || !previous || !next) return;
+
+    var semesterStart = new Date(grid.dataset.semesterStart + 'T00:00:00');
+    var events = Array.prototype.slice.call(grid.querySelectorAll('.schedule-event'));
+
+    function includesWeek(expression, week) {
+      return String(expression || '').split(',').some(function (part) {
+        var bounds = part.trim().split('-').map(Number);
+        return bounds.length === 1 ? week === bounds[0] : week >= bounds[0] && week <= bounds[1];
+      });
+    }
+
+    function formatDate(date) {
+      return (date.getMonth() + 1) + ' 月 ' + date.getDate() + ' 日';
+    }
+
+    function setMenuOpen(open) {
+      picker.classList.toggle('is-open', open);
+      selectButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menu.hidden = !open;
+    }
+
+    function setWeek(value) {
+      var week = Math.max(1, Math.min(17, Number(value) || 1));
+      var weekStart = new Date(semesterStart);
+      weekStart.setDate(weekStart.getDate() + (week - 1) * 7);
+      var weekEnd = new Date(weekStart);
+      weekEnd.setDate(weekEnd.getDate() + 6);
+
+      selectButton.dataset.week = String(week);
+      selectValue.textContent = '第 ' + week + ' 周';
+      options.forEach(function (option) {
+        option.setAttribute('aria-selected', option.dataset.week === String(week) ? 'true' : 'false');
+      });
+      range.textContent = formatDate(weekStart) + ' – ' + formatDate(weekEnd);
+      previous.disabled = week === 1;
+      next.disabled = week === 17;
+
+      events.forEach(function (event) {
+        var visible = includesWeek(event.dataset.weeks, week);
+        if (event.dataset.weekParity === 'odd') visible = visible && week % 2 === 1;
+        if (event.dataset.weekParity === 'even') visible = visible && week % 2 === 0;
+        event.classList.toggle('is-week-hidden', !visible);
+        event.setAttribute('aria-hidden', visible ? 'false' : 'true');
+      });
+
+      // Place visible courses side by side when the source timetable contains conflicts.
+      var visibleEvents = events.filter(function (event) {
+        return !event.classList.contains('is-week-hidden');
+      });
+      visibleEvents.forEach(function (event) {
+        event.style.setProperty('--schedule-lane', '0');
+        event.style.setProperty('--schedule-lanes', '1');
+      });
+      for (var day = 1; day <= 5; day += 1) {
+        var dayEvents = visibleEvents.filter(function (event) {
+          return Number(event.style.getPropertyValue('--schedule-day')) === day;
+        }).sort(function (a, b) {
+          return Number(a.style.getPropertyValue('--schedule-start')) - Number(b.style.getPropertyValue('--schedule-start'));
+        });
+        var clusters = [];
+        dayEvents.forEach(function (event) {
+          var start = Number(event.style.getPropertyValue('--schedule-start'));
+          var end = start + Number(event.style.getPropertyValue('--schedule-span'));
+          var cluster = clusters.length ? clusters[clusters.length - 1] : null;
+          if (!cluster || start >= cluster.end) {
+            cluster = { end: end, events: [] };
+            clusters.push(cluster);
+          }
+          cluster.end = Math.max(cluster.end, end);
+          cluster.events.push(event);
+        });
+        clusters.forEach(function (cluster) {
+          var laneEnds = [];
+          cluster.events.forEach(function (event) {
+            var start = Number(event.style.getPropertyValue('--schedule-start'));
+            var end = start + Number(event.style.getPropertyValue('--schedule-span'));
+            var lane = laneEnds.findIndex(function (laneEnd) { return start >= laneEnd; });
+            if (lane === -1) lane = laneEnds.length;
+            laneEnds[lane] = end;
+            event.style.setProperty('--schedule-lane', String(lane));
+          });
+          cluster.events.forEach(function (event) {
+            event.style.setProperty('--schedule-lanes', String(laneEnds.length));
+          });
+        });
+      }
+    }
+
+    selectButton.addEventListener('click', function () {
+      setMenuOpen(menu.hidden);
+    });
+    selectButton.addEventListener('keydown', function (event) {
+      if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return;
+      event.preventDefault();
+      setMenuOpen(true);
+      var selectedIndex = Math.max(0, Number(selectButton.dataset.week) - 1);
+      options[selectedIndex].focus();
+    });
+    options.forEach(function (option, index) {
+      option.addEventListener('click', function () {
+        setWeek(option.dataset.week);
+        setMenuOpen(false);
+        selectButton.focus();
+      });
+      option.addEventListener('keydown', function (event) {
+        var nextIndex = null;
+        if (event.key === 'ArrowDown' || event.key === 'ArrowRight') nextIndex = (index + 1) % options.length;
+        if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') nextIndex = (index - 1 + options.length) % options.length;
+        if (event.key === 'Home') nextIndex = 0;
+        if (event.key === 'End') nextIndex = options.length - 1;
+        if (event.key === 'Escape') {
+          event.preventDefault();
+          setMenuOpen(false);
+          selectButton.focus();
+          return;
+        }
+        if (nextIndex === null) return;
+        event.preventDefault();
+        options[nextIndex].focus();
+      });
+    });
+    previous.addEventListener('click', function () {
+      setWeek(Number(selectButton.dataset.week) - 1);
+      setMenuOpen(false);
+    });
+    next.addEventListener('click', function () {
+      setWeek(Number(selectButton.dataset.week) + 1);
+      setMenuOpen(false);
+    });
+    document.addEventListener('click', function (event) {
+      if (!picker.contains(event.target)) setMenuOpen(false);
+    });
+
+    var today = new Date();
+    var initialWeek = Math.floor((today - semesterStart) / (7 * 24 * 60 * 60 * 1000)) + 1;
+    setWeek(initialWeek >= 1 && initialWeek <= 17 ? initialWeek : 1);
+
+    if (today >= semesterStart) {
+      var weekday = today.getDay() || 7;
+      var todayHead = grid.querySelector('[data-weekday="' + weekday + '"]');
+      if (todayHead) todayHead.classList.add('is-today');
+    }
+  });
+
   // ---- Back-to-top button: reveal once the reader has scrolled down ----
   var backToTop = document.querySelector('.back-to-top');
   if (backToTop) {
