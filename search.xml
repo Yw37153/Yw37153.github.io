@@ -406,6 +406,7 @@ Use 【选择使用的仿真器】
 
 
 GPIO 控制输出
+来源：实验课程一
 配置：
 System Core &gt;&gt; GPIO：
 GPIO Output Level: Low （根据原理图选择相应的电平）
@@ -428,6 +429,14 @@ HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
 
 
 参考阅读： 课本第四章P45 寄存器：P54
+中断控制器 判断按键
+名词翻译：
+上升沿：电平由低到高上升为上升沿
+下降沿：电平由高到低下降为下降沿
+疑问：
+为什么不采用轮询方式（在循环中添加电平判断）？
+因为这样做会占用大量CPU。
+配置：
 ]]></content>
       <categories>
         <category>技术探索</category>
@@ -436,7 +445,6 @@ HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
       </categories>
       <tags>
         <tag>STM32</tag>
-        <tag>CubeMX</tag>
         <tag>嵌入式</tag>
         <tag>笔记</tag>
         <tag>Keil</tag>
@@ -3918,7 +3926,11 @@ V1+V2=L(α1,α2,β1)V_1 + V_2 = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{
     
     
       德语（1） LANG143
-      罗颖男 · WLA-603第 11–12 节
+      罗颖男 · WLC-108第 11–13 节
+    
+    
+      德语（1） LANG143
+      罗颖男 · WLC-108第 11–12 节
     
 
     
