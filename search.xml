@@ -412,7 +412,6 @@ System Core &gt;&gt; GPIO：
 GPIO Output Level: Low （根据原理图选择相应的电平）
 GPIO mode: Output Push Pull
 GPIO pull-up/pull-down（是否启用上/下拉电阻）: No pull-up and No pull-down
-User label 一般为了好记好使会给改一个好写的名字
 main.c文件：P58
 int main(void)&#123;    uint32_t systick_i; //定义变量    while(1)    &#123;        systick_i++;                 if(systick_i % 2 == 1)        &#123;            HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin); //翻转引脚电平        &#125;        HAL_Delay(1000);    &#125;&#125;
 代码说明uint32_t systick_i;
@@ -437,6 +436,15 @@ HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
 为什么不采用轮询方式（在循环中添加电平判断）？
 因为这样做会占用大量CPU。
 配置：
+选择Intterup_EXIT0
+GPIO_mode: ( 选择上升沿触发或下降沿触发)
+GPIO_Pull-up/Pull-down:
+按下接地，松开时产生的上升沿触发-&gt;选择上拉电阻
+按下接VCC，松开时产生的下降沿触发-&gt;选择下拉电阻
+NVIC:
+Enable 选上优先级 2 2
+main.c文件:
+int main(void)&#123;&#125;
 ]]></content>
       <categories>
         <category>技术探索</category>
@@ -3752,6 +3760,212 @@ V1+V2=L(α1,α2,β1)V_1 + V_2 = L(\mathbf{\alpha}_1, \mathbf{\alpha}_2, \mathbf{
       <tags>
         <tag>线性空间</tag>
         <tag>向量空间</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>复变函数笔记</title>
+    <url>/posts/0d679f4feaa5/</url>
+    <content><![CDATA[复变函数笔记
+目录
+
+按常见课程内容整理，后续可按教材调整顺序。
+
+
+
+
+专题
+笔记
+
+
+
+
+复数与复平面
+待补充
+
+
+复变函数的极限与连续
+待补充
+
+
+解析函数与柯西–黎曼方程
+待补充
+
+
+初等解析函数
+待补充
+
+
+复积分与柯西积分定理
+待补充
+
+
+柯西积分公式与解析函数的性质
+待补充
+
+
+级数与泰勒展开
+待补充
+
+
+洛朗展开与孤立奇点
+待补充
+
+
+留数定理及其应用
+待补充
+
+
+共形映射
+待补充
+
+
+
+]]></content>
+      <categories>
+        <category>数学</category>
+        <category>复变函数</category>
+      </categories>
+      <tags>
+        <tag>数学笔记</tag>
+        <tag>复变函数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数字电子技术笔记</title>
+    <url>/posts/e7cfb1ff0f42/</url>
+    <content><![CDATA[数字电子技术笔记
+目录
+
+按常见课程内容整理，后续可按教材调整顺序。
+
+
+
+
+专题
+笔记
+
+
+
+
+数制与编码
+待补充
+
+
+逻辑代数与逻辑函数化简
+待补充
+
+
+逻辑门电路
+待补充
+
+
+组合逻辑电路
+待补充
+
+
+锁存器与触发器
+待补充
+
+
+时序逻辑电路
+待补充
+
+
+寄存器与计数器
+待补充
+
+
+脉冲波形的产生与整形
+待补充
+
+
+半导体存储器与可编程逻辑器件
+待补充
+
+
+数模与模数转换
+待补充
+
+
+
+]]></content>
+      <categories>
+        <category>技术探索</category>
+        <category>学习笔记</category>
+        <category>数字电子技术</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>数字电子技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>模拟电子技术笔记</title>
+    <url>/posts/62509445f17e/</url>
+    <content><![CDATA[模拟电子技术笔记
+目录
+
+按常见课程内容整理，后续可按教材调整顺序。
+
+
+
+
+专题
+笔记
+
+
+
+
+半导体基础与二极管
+待补充
+
+
+三极管与基本放大电路
+待补充
+
+
+场效应管与放大电路
+待补充
+
+
+多级放大电路与频率响应
+待补充
+
+
+差分放大电路与集成运算放大器
+待补充
+
+
+放大电路中的反馈
+待补充
+
+
+信号运算与处理电路
+待补充
+
+
+波形发生与变换电路
+待补充
+
+
+功率放大电路
+待补充
+
+
+直流稳压电源
+待补充
+
+
+
+]]></content>
+      <categories>
+        <category>技术探索</category>
+        <category>学习笔记</category>
+        <category>模拟电子技术</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>模拟电子技术</tag>
       </tags>
   </entry>
   <entry>

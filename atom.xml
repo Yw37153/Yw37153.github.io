@@ -10,7 +10,69 @@
   <rights>All rights reserved 2026, 文逸行_Yalego</rights>
   <subtitle>心怀云水之洒脱</subtitle>
   <title>文逸行</title>
-  <updated>2026-10-18T12:10:08.595Z</updated>
+  <updated>2026-10-19T07:58:58.102Z</updated>
+  <entry>
+    <author>
+      <name>文逸行_Yalego</name>
+    </author>
+    <category term="数学" scheme="https://www.wyxworld.cyou/categories/%E6%95%B0%E5%AD%A6/"/>
+    <category term="复变函数" scheme="https://www.wyxworld.cyou/categories/%E6%95%B0%E5%AD%A6/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <category term="数学笔记" scheme="https://www.wyxworld.cyou/tags/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    <category term="复变函数" scheme="https://www.wyxworld.cyou/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/"/>
+    <content>
+      <![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1>复变函数笔记</h1><h2 id="目录">目录</h2><blockquote><p>按常见课程内容整理，后续可按教材调整顺序。</p></blockquote><table><thead><tr><th>专题</th><th>笔记</th></tr></thead><tbody><tr><td>复数与复平面</td><td>待补充</td></tr><tr><td>复变函数的极限与连续</td><td>待补充</td></tr><tr><td>解析函数与柯西–黎曼方程</td><td>待补充</td></tr><tr><td>初等解析函数</td><td>待补充</td></tr><tr><td>复积分与柯西积分定理</td><td>待补充</td></tr><tr><td>柯西积分公式与解析函数的性质</td><td>待补充</td></tr><tr><td>级数与泰勒展开</td><td>待补充</td></tr><tr><td>洛朗展开与孤立奇点</td><td>待补充</td></tr><tr><td>留数定理及其应用</td><td>待补充</td></tr><tr><td>共形映射</td><td>待补充</td></tr></tbody></table>]]>
+    </content>
+    <id>https://www.wyxworld.cyou/posts/0d679f4feaa5/</id>
+    <link href="https://www.wyxworld.cyou/posts/0d679f4feaa5/"/>
+    <published>2026-10-19T02:00:00.000Z</published>
+    <summary>
+      <![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="st]]>
+    </summary>
+    <title>复变函数笔记</title>
+    <updated>2026-10-19T07:58:58.102Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>文逸行_Yalego</name>
+    </author>
+    <category term="技术探索" scheme="https://www.wyxworld.cyou/categories/Tech/"/>
+    <category term="学习笔记" scheme="https://www.wyxworld.cyou/categories/Tech/Notes/"/>
+    <category term="数字电子技术" scheme="https://www.wyxworld.cyou/categories/Tech/Notes/%E6%95%B0%E5%AD%97%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF/"/>
+    <category term="笔记" scheme="https://www.wyxworld.cyou/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="数字电子技术" scheme="https://www.wyxworld.cyou/tags/%E6%95%B0%E5%AD%97%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF/"/>
+    <content>
+      <![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1>数字电子技术笔记</h1><h2 id="目录">目录</h2><blockquote><p>按常见课程内容整理，后续可按教材调整顺序。</p></blockquote><table><thead><tr><th>专题</th><th>笔记</th></tr></thead><tbody><tr><td>数制与编码</td><td>待补充</td></tr><tr><td>逻辑代数与逻辑函数化简</td><td>待补充</td></tr><tr><td>逻辑门电路</td><td>待补充</td></tr><tr><td>组合逻辑电路</td><td>待补充</td></tr><tr><td>锁存器与触发器</td><td>待补充</td></tr><tr><td>时序逻辑电路</td><td>待补充</td></tr><tr><td>寄存器与计数器</td><td>待补充</td></tr><tr><td>脉冲波形的产生与整形</td><td>待补充</td></tr><tr><td>半导体存储器与可编程逻辑器件</td><td>待补充</td></tr><tr><td>数模与模数转换</td><td>待补充</td></tr></tbody></table>]]>
+    </content>
+    <id>https://www.wyxworld.cyou/posts/e7cfb1ff0f42/</id>
+    <link href="https://www.wyxworld.cyou/posts/e7cfb1ff0f42/"/>
+    <published>2026-10-19T02:00:00.000Z</published>
+    <summary>
+      <![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="st]]>
+    </summary>
+    <title>数字电子技术笔记</title>
+    <updated>2026-10-19T08:00:27.470Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>文逸行_Yalego</name>
+    </author>
+    <category term="技术探索" scheme="https://www.wyxworld.cyou/categories/Tech/"/>
+    <category term="学习笔记" scheme="https://www.wyxworld.cyou/categories/Tech/Notes/"/>
+    <category term="模拟电子技术" scheme="https://www.wyxworld.cyou/categories/Tech/Notes/%E6%A8%A1%E6%8B%9F%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF/"/>
+    <category term="笔记" scheme="https://www.wyxworld.cyou/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="模拟电子技术" scheme="https://www.wyxworld.cyou/tags/%E6%A8%A1%E6%8B%9F%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF/"/>
+    <content>
+      <![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1>模拟电子技术笔记</h1><h2 id="目录">目录</h2><blockquote><p>按常见课程内容整理，后续可按教材调整顺序。</p></blockquote><table><thead><tr><th>专题</th><th>笔记</th></tr></thead><tbody><tr><td>半导体基础与二极管</td><td>待补充</td></tr><tr><td>三极管与基本放大电路</td><td>待补充</td></tr><tr><td>场效应管与放大电路</td><td>待补充</td></tr><tr><td>多级放大电路与频率响应</td><td>待补充</td></tr><tr><td>差分放大电路与集成运算放大器</td><td>待补充</td></tr><tr><td>放大电路中的反馈</td><td>待补充</td></tr><tr><td>信号运算与处理电路</td><td>待补充</td></tr><tr><td>波形发生与变换电路</td><td>待补充</td></tr><tr><td>功率放大电路</td><td>待补充</td></tr><tr><td>直流稳压电源</td><td>待补充</td></tr></tbody></table>]]>
+    </content>
+    <id>https://www.wyxworld.cyou/posts/62509445f17e/</id>
+    <link href="https://www.wyxworld.cyou/posts/62509445f17e/"/>
+    <published>2026-10-19T02:00:00.000Z</published>
+    <summary>
+      <![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="st]]>
+    </summary>
+    <title>模拟电子技术笔记</title>
+    <updated>2026-10-19T08:00:27.462Z</updated>
+  </entry>
   <entry>
     <author>
       <name>文逸行_Yalego</name>
@@ -23,7 +85,7 @@
     <category term="笔记" scheme="https://www.wyxworld.cyou/tags/%E7%AC%94%E8%AE%B0/"/>
     <category term="Keil" scheme="https://www.wyxworld.cyou/tags/Keil/"/>
     <content>
-      <![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="Keil5-调试与仿真">Keil5 调试与仿真</h2><p>来源：实验课程一</p><h3 id="软件仿真">软件仿真</h3><p>配置:</p><p><code>Debug</code>页面：</p><ul class="lvl-0"><li class="lvl-2"><p><input type="checkbox" id="checkbox0" checked="true"><label for="checkbox0">Use Simulator</label></p></li><li class="lvl-2"><p><code>DARMSTM.DLL</code>：<code>-pSTM32F103ZE</code></p></li><li class="lvl-2"><p><code>TARMSTM.DLL</code>：<code>-pSTM32F103ZE</code></p></li></ul><p>操作：</p><ol><li class="lvl-3"><p>修改Debug配置</p></li><li class="lvl-3"><p>再次编译</p></li><li class="lvl-3"><p>进入Debug</p></li><li class="lvl-3"><p>使用逻辑分析页面添加想要查看波形的引脚。例如，我想查看PE5引脚电平随时间的变化，就需要在配置页面添加以下代码：</p></li></ol>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(PORTE &amp; 0x00000020) &gt;&gt; 5</span><br></pre></td></tr></table></figure><details class="flatpaper-note flatpaper-note--info"><summary class="flatpaper-note__title"><span class="flatpaper-note__icon" aria-hidden="true"></span><span class="flatpaper-note__label">表达式解析</span><span class="flatpaper-note__chevron" aria-hidden="true"></span></summary><div class="flatpaper-note__body"><p><code>(PORTE &amp; 0x00000020) &gt;&gt; 5</code><br>这段代码的含义是提取并转换 GPIO 引脚 PE5（Port E, Pin 5）当前的电平状态（0 或 1），以便在波形监视工具中清晰显示。</p><p>分步拆解：</p><p><code>PORTE</code>：</p><p>代表 Port E 端口的寄存器值，其中包含了该端口所有 16 个引脚（Pin 0 ~ Pin 15）的高低电平状态。</p><p><code>&amp; 0x00000020</code>（按位与掩码）：</p><p>0x00000020 换算成二进制是 0000 … 0010 0000，其第 5 位（从 0 开始数）为 1。</p><p>这一步通过“按位与”操作，屏蔽并清零了其他所有引脚的状态，只单独留下 PE5 引脚的原始数据。</p><p><code>&gt;&gt; 5</code>（右移 5 位）：</p><p>把刚才过滤出来的第 5 位数据向右平移 5 位，将其移动到最低位（第 0 位）。</p><p>经过这一步处理后，整个表达式的值就会变成纯粹的 0（代表低电平） 或 1（代表高电平），可以直接被波形工具识别并绘制成高低起伏的方波。</p></div></details><h3 id="实物仿真">实物仿真</h3><p>配置：</p><p><code>Debug</code>页面：</p><ul class="lvl-0"><li class="lvl-2"><p><input type="checkbox" id="checkbox1" checked="true"><label for="checkbox1">Use 【选择使用的仿真器】</label></p></li></ul><p>操作：</p><ol><li class="lvl-3"><p>修改Debug配置</p></li><li class="lvl-3"><p>编译</p></li><li class="lvl-3"><p>烧录</p></li><li class="lvl-3"><p>按下核心板上的复位键</p></li></ol><h2 id="GPIO-控制输出">GPIO 控制输出</h2><p>来源：实验课程一</p><p>配置：</p><p>System Core &gt;&gt; GPIO：<br>GPIO Output Level: Low （根据原理图选择相应的电平）<br>GPIO mode: Output Push Pull<br>GPIO pull-up/pull-down（是否启用上/下拉电阻）: No pull-up and No pull-down<br>User label 一般为了好记好使会给改一个好写的名字</p><p><code>main.c</code>文件：<em>P58</em></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint32_t</span> systick_i; <span class="comment">//定义变量</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        systick_i++; </span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(systick_i % <span class="number">2</span> == <span class="number">1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin); <span class="comment">//翻转引脚电平</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        HAL_Delay(<span class="number">1000</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><details class="flatpaper-note flatpaper-note--info"><summary class="flatpaper-note__title"><span class="flatpaper-note__icon" aria-hidden="true"></span><span class="flatpaper-note__label">代码说明</span><span class="flatpaper-note__chevron" aria-hidden="true"></span></summary><div class="flatpaper-note__body"><p><code>uint32_t systick_i;</code><br>定义了一个局部变量，类型为 <code>uint32_t</code>。</p><p><code>HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);</code><br>翻转 LED 引脚电平的（TogglePin 可以让 LED 状态取反，使用 WritePin 点亮会使代码繁杂）。</p></div></details><p>操作：</p><ol><li class="lvl-3"><p>在MX中选择所需引脚，选择<code>GPIO_Output</code>模式</p></li><li class="lvl-3"><p>修改配置</p></li></ol><p><em>参考阅读： 课本第四章P45 寄存器：P54</em></p><h2 id="中断控制器-判断按键">中断控制器 判断按键</h2><p>名词翻译：</p><p><strong>上升沿</strong>：电平由低到高<strong>上升</strong>为上升沿<br><strong>下降沿</strong>：电平由高到低<strong>下降</strong>为下降沿</p><p>疑问：</p><p>为什么不采用轮询方式（在循环中添加电平判断）？</p><p>因为这样做会占用大量CPU。</p><p>配置：</p>]]>
+      <![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="Keil5-调试与仿真">Keil5 调试与仿真</h2><p>来源：实验课程一</p><h3 id="软件仿真">软件仿真</h3><p>配置:</p><p><code>Debug</code>页面：</p><ul class="lvl-0"><li class="lvl-2"><p><input type="checkbox" id="checkbox1" checked="true"><label for="checkbox1">Use Simulator</label></p></li><li class="lvl-2"><p><code>DARMSTM.DLL</code>：<code>-pSTM32F103ZE</code></p></li><li class="lvl-2"><p><code>TARMSTM.DLL</code>：<code>-pSTM32F103ZE</code></p></li></ul><p>操作：</p><ol><li class="lvl-3"><p>修改Debug配置</p></li><li class="lvl-3"><p>再次编译</p></li><li class="lvl-3"><p>进入Debug</p></li><li class="lvl-3"><p>使用逻辑分析页面添加想要查看波形的引脚。例如，我想查看PE5引脚电平随时间的变化，就需要在配置页面添加以下代码：</p></li></ol>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(PORTE &amp; 0x00000020) &gt;&gt; 5</span><br></pre></td></tr></table></figure><details class="flatpaper-note flatpaper-note--info"><summary class="flatpaper-note__title"><span class="flatpaper-note__icon" aria-hidden="true"></span><span class="flatpaper-note__label">表达式解析</span><span class="flatpaper-note__chevron" aria-hidden="true"></span></summary><div class="flatpaper-note__body"><p><code>(PORTE &amp; 0x00000020) &gt;&gt; 5</code><br>这段代码的含义是提取并转换 GPIO 引脚 PE5（Port E, Pin 5）当前的电平状态（0 或 1），以便在波形监视工具中清晰显示。</p><p>分步拆解：</p><p><code>PORTE</code>：</p><p>代表 Port E 端口的寄存器值，其中包含了该端口所有 16 个引脚（Pin 0 ~ Pin 15）的高低电平状态。</p><p><code>&amp; 0x00000020</code>（按位与掩码）：</p><p>0x00000020 换算成二进制是 0000 … 0010 0000，其第 5 位（从 0 开始数）为 1。</p><p>这一步通过“按位与”操作，屏蔽并清零了其他所有引脚的状态，只单独留下 PE5 引脚的原始数据。</p><p><code>&gt;&gt; 5</code>（右移 5 位）：</p><p>把刚才过滤出来的第 5 位数据向右平移 5 位，将其移动到最低位（第 0 位）。</p><p>经过这一步处理后，整个表达式的值就会变成纯粹的 0（代表低电平） 或 1（代表高电平），可以直接被波形工具识别并绘制成高低起伏的方波。</p></div></details><h3 id="实物仿真">实物仿真</h3><p>配置：</p><p><code>Debug</code>页面：</p><ul class="lvl-0"><li class="lvl-2"><p><input type="checkbox" id="checkbox2" checked="true"><label for="checkbox2">Use 【选择使用的仿真器】</label></p></li></ul><p>操作：</p><ol><li class="lvl-3"><p>修改Debug配置</p></li><li class="lvl-3"><p>编译</p></li><li class="lvl-3"><p>烧录</p></li><li class="lvl-3"><p>按下核心板上的复位键</p></li></ol><h2 id="GPIO-控制输出">GPIO 控制输出</h2><p>来源：实验课程一</p><p>配置：</p><p>System Core &gt;&gt; GPIO：<br>GPIO Output Level: Low （根据原理图选择相应的电平）<br>GPIO mode: Output Push Pull<br>GPIO pull-up/pull-down（是否启用上/下拉电阻）: No pull-up and No pull-down</p><p><code>main.c</code>文件：<em>P58</em></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint32_t</span> systick_i; <span class="comment">//定义变量</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        systick_i++; </span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(systick_i % <span class="number">2</span> == <span class="number">1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin); <span class="comment">//翻转引脚电平</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        HAL_Delay(<span class="number">1000</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><details class="flatpaper-note flatpaper-note--info"><summary class="flatpaper-note__title"><span class="flatpaper-note__icon" aria-hidden="true"></span><span class="flatpaper-note__label">代码说明</span><span class="flatpaper-note__chevron" aria-hidden="true"></span></summary><div class="flatpaper-note__body"><p><code>uint32_t systick_i;</code><br>定义了一个局部变量，类型为 <code>uint32_t</code>。</p><p><code>HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);</code><br>翻转 LED 引脚电平的（TogglePin 可以让 LED 状态取反，使用 WritePin 点亮会使代码繁杂）。</p></div></details><p>操作：</p><ol><li class="lvl-3"><p>在MX中选择所需引脚，选择<code>GPIO_Output</code>模式</p></li><li class="lvl-3"><p>修改配置</p></li></ol><p><em>参考阅读： 课本第四章P45 寄存器：P54</em></p><h2 id="中断控制器-判断按键">中断控制器 判断按键</h2><p>名词翻译：</p><p><strong>上升沿</strong>：电平由低到高<strong>上升</strong>为上升沿<br><strong>下降沿</strong>：电平由高到低<strong>下降</strong>为下降沿</p><p>疑问：</p><p>为什么不采用轮询方式（在循环中添加电平判断）？</p><p>因为这样做会占用大量CPU。</p><p>配置：</p><p>选择Intterup_EXIT0<br>GPIO_mode: ( 选择上升沿触发或下降沿触发)<br>GPIO_Pull-up/Pull-down:<br>按下接地，松开时产生的上升沿触发-&gt;选择<strong>上拉电阻</strong><br>按下接VCC，松开时产生的下降沿触发-&gt;选择<strong>下拉电阻</strong><br>NVIC:<br>Enable 选上优先级 2 2</p><p><code>main.c</code>文件:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]>
     </content>
     <id>https://www.wyxworld.cyou/posts/12ae0c8db9ff/</id>
     <link href="https://www.wyxworld.cyou/posts/12ae0c8db9ff/"/>
@@ -32,7 +94,7 @@
       <![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="st]]>
     </summary>
     <title>STM32实验笔记</title>
-    <updated>2026-10-18T12:10:08.595Z</updated>
+    <updated>2026-10-19T08:07:52.816Z</updated>
   </entry>
   <entry>
     <author>
@@ -46,16 +108,16 @@
     <category term="嵌入式" scheme="https://www.wyxworld.cyou/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
     <category term="笔记" scheme="https://www.wyxworld.cyou/tags/%E7%AC%94%E8%AE%B0/"/>
     <content>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><h1>Pinout &amp; Configuration</h1><h2 id="RCC-时钟配置">RCC 时钟配置</h2><p><strong>高速/低速时钟：无源外部晶振</strong></p><p>RCC → <strong>High Speed Clock (HSE): Crystal/Ceramic Resonator</strong></p><p>RCC → <strong>Low Speed Clock (LSE): Crystal/Ceramic Resonator</strong></p><h2 id="SYS-配置">SYS 配置</h2><p>Debug 模式：<strong>Serial Wire (SWD接口)</strong></p><h1>Clock Configuration</h1><p><strong>HCLK</strong> 选择最大<strong>72MHz</strong>，更改后选择确定可以自动配置好其他选项</p><blockquote><p><strong>注意</strong>：以上参数以 STM32F103（HCLK 上限 72MHz、外部晶振 8MHz）为例。不同型号的时钟上限、PLL 倍频范围、APB1/APB2 分频限制不同（如 STM32F0、STM32F4 等），上述配置并不通用，请以对应型号的数据手册和 CubeMX 的提示为准。</p></blockquote><h1>Project Manager</h1><h2 id="Project-→">Project →</h2><p>Project Name: 略</p><p>Project Location: 略</p><p>Toolchain/IDE: <strong>MDK-ARM</strong> (Keil5)</p><h2 id="Code-Generator">Code Generator</h2><p>STM32Cube MCU packages and embedded software packs: <strong>Copy only the necessary library files</strong></p><ul class="lvl-0"><li class="lvl-2"><p><input type="checkbox" id="checkbox0" checked="true"><label for="checkbox0">Generate peripheral initialization as a pair of ‘.c/.h’ files per peripheral</label></p></li></ul>]]>
+      <![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1>Pinout &amp; Configuration</h1><h2 id="RCC-时钟配置">RCC 时钟配置</h2><p><strong>高速/低速时钟：无源外部晶振</strong></p><p>RCC → <strong>High Speed Clock (HSE): Crystal/Ceramic Resonator</strong></p><p>RCC → <strong>Low Speed Clock (LSE): Crystal/Ceramic Resonator</strong></p><h2 id="SYS-配置">SYS 配置</h2><p>Debug 模式：<strong>Serial Wire (SWD接口)</strong></p><h1>Clock Configuration</h1><p><strong>HCLK</strong> 选择最大<strong>72MHz</strong>，更改后选择确定可以自动配置好其他选项</p><blockquote><p><strong>注意</strong>：以上参数以 STM32F103（HCLK 上限 72MHz、外部晶振 8MHz）为例。不同型号的时钟上限、PLL 倍频范围、APB1/APB2 分频限制不同（如 STM32F0、STM32F4 等），上述配置并不通用，请以对应型号的数据手册和 CubeMX 的提示为准。</p></blockquote><h1>Project Manager</h1><h2 id="Project-→">Project →</h2><p>Project Name: 略</p><p>Project Location: 略</p><p>Toolchain/IDE: <strong>MDK-ARM</strong> (Keil5)</p><h2 id="Code-Generator">Code Generator</h2><p>STM32Cube MCU packages and embedded software packs: <strong>Copy only the necessary library files</strong></p><ul class="lvl-0"><li class="lvl-2"><p><input type="checkbox" id="checkbox0" checked="true"><label for="checkbox0">Generate peripheral initialization as a pair of ‘.c/.h’ files per peripheral</label></p></li></ul>]]>
     </content>
     <id>https://www.wyxworld.cyou/posts/063c0147683e/</id>
     <link href="https://www.wyxworld.cyou/posts/063c0147683e/"/>
     <published>2026-10-17T14:31:58.000Z</published>
     <summary>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" cla]]>
+      <![CDATA[<link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="st]]>
     </summary>
     <title>STM32基础配置_实验一</title>
-    <updated>2026-10-17T14:33:37.437Z</updated>
+    <updated>2026-11-13T07:25:47.153Z</updated>
   </entry>
   <entry>
     <author>
@@ -364,65 +426,5 @@
     </summary>
     <title>曲线积分</title>
     <updated>2026-07-15T11:28:23.052Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>文逸行_Yalego</name>
-    </author>
-    <category term="数学" scheme="https://www.wyxworld.cyou/categories/%E6%95%B0%E5%AD%A6/"/>
-    <category term="数学分析" scheme="https://www.wyxworld.cyou/categories/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/"/>
-    <category term="二重积分" scheme="https://www.wyxworld.cyou/tags/%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86/"/>
-    <category term="三重积分" scheme="https://www.wyxworld.cyou/tags/%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86/"/>
-    <content>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><h1>第二十一章 重积分</h1><hr><p><a href="/posts/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/">返回总目录</a></p>]]>
-    </content>
-    <id>https://www.wyxworld.cyou/posts/67f6c8a875d0/</id>
-    <link href="https://www.wyxworld.cyou/posts/67f6c8a875d0/"/>
-    <published>2026-06-08T02:00:00.000Z</published>
-    <summary>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" cla]]>
-    </summary>
-    <title>重积分</title>
-    <updated>2026-07-15T11:28:23.057Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>文逸行_Yalego</name>
-    </author>
-    <category term="数学" scheme="https://www.wyxworld.cyou/categories/%E6%95%B0%E5%AD%A6/"/>
-    <category term="数学分析" scheme="https://www.wyxworld.cyou/categories/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/"/>
-    <category term="曲面积分" scheme="https://www.wyxworld.cyou/tags/%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/"/>
-    <category term="高斯公式" scheme="https://www.wyxworld.cyou/tags/%E9%AB%98%E6%96%AF%E5%85%AC%E5%BC%8F/"/>
-    <content>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><h1>第二十二章 曲面积分</h1><hr><p><a href="/posts/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/">返回总目录</a></p>]]>
-    </content>
-    <id>https://www.wyxworld.cyou/posts/bda4118bc1b7/</id>
-    <link href="https://www.wyxworld.cyou/posts/bda4118bc1b7/"/>
-    <published>2026-06-08T02:00:00.000Z</published>
-    <summary>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" cla]]>
-    </summary>
-    <title>曲面积分</title>
-    <updated>2026-07-15T11:28:23.054Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>文逸行_Yalego</name>
-    </author>
-    <category term="生活拾光 / 随笔" scheme="https://www.wyxworld.cyou/categories/%E7%94%9F%E6%B4%BB%E6%8B%BE%E5%85%89-%E9%9A%8F%E7%AC%94/"/>
-    <category term="随笔" scheme="https://www.wyxworld.cyou/tags/%E9%9A%8F%E7%AC%94/"/>
-    <category term="回忆" scheme="https://www.wyxworld.cyou/tags/%E5%9B%9E%E5%BF%86/"/>
-    <category term="排球" scheme="https://www.wyxworld.cyou/tags/%E6%8E%92%E7%90%83/"/>
-    <content>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><p>我自知生在北京，高考竞争算不上激烈，于是努力地过了一天又一天，比不上那些卷王，但是为了不背叛我自己，那些日子我也算不上得过且过。回想高中打球那段日子，虽说精神状态算不上没有病，但对我个人来讲也是一段欢乐时光。我总是在想，如果毕业了，我见不到这帮子有病的人了怎么办，还会这样快乐吗。</p><p>我很期待运动的时间，中午、晚饭过后、晚自习后、以及体育课甚至上操跑步的时间——这几个时间点一同组成了我学下去的动力——再学一会就可以去打球了。也正因此，我难以接受天气变化。有风有雨就打不了球，其他年级有考试也打不了球。运动的时间看似多，加起来也难凑出两个小时，我也就格外珍惜这段发着光的碎片。</p><p>于是我打排球相当尽力，我可以接到每一个球，因为我害怕在这本就让我期待和骄傲的时间让我感到失败。</p><p>我不是一个多坚强的人，作为大多数人的一份子，我会把失误无限放大。一次失败的不可修复在我看来就像给我的技术宣判了死刑。我越来越害怕我丢下，我越来越害怕接不起球会被淘汰——即便我们只是打着玩，根本和淘汰无关。</p><p>好像是高二，我意识到我的技术在瓶颈期。然而想上一点强度会被虐烂，打休闲又太没有激情了，于是在一场球后，我在一个空旷的走廊里发呆，——“好想变强”<br>“你给自己整得这么热血干啥。”</p><p>这不是阻止我进步的理由。</p><p>于是我更加珍惜每次打球，我尽我最大努力救下每一个可能的球。</p><p>“你确定要让她站这里？”<br>“没事没事，相信她。”<br>他转过头，“相信你。”</p><p>我知道我的努力被人看见了，我才知道真的在向那个靠近。——应该不是热血吧。会不会显得我太认真了。</p><p>还好有一个更认真但是更爱压力人在这里（）</p><p>于是我越来越享受和期待排球，总是在看天气预报今天能不能打球，总是在问今天有没有人打球。</p><p>我想打二传，铁子。真的吗，那我相信你。</p><p>如果不出意外的话，我很难忘记这段记忆。</p><p>你想象一下，一个喜欢压力别人的人对你说我相信你，你怎么忍得住辜负他的信任呢。第一次传球对他来说不太理想的情况下，我只能靠他的评价来调整我的传法。下一颗球来了，我找到合适的位置，看着球起跳。好像世界运动慢了几分，凭着我的直觉将球传了出去。</p><p>很好的一次配合，可惜他出界了。但是！他说“握草你真适合打二传，天生就是打二传的料。”</p><p>握草兄弟，我天生就是打二传的料。</p><p>高三。</p><p>随着时间和经验的积累，我可以清楚地感觉到我的水平在不断进步。可是这种进步的欲望怎么会有终止的时候呢，我又开始期待成为强度局上的能力排名。好吧，也许我正在被某些东西一点点地异化。</p><p>我们结识了一帮新的高一同学，她们也很喜欢打球，但是能力很显然得比之前的我们要高，而且体育老师也比当时的我们更加支持。我有些不服，但也没有真正的打球重要，很快把这事抛掷脑后。</p><p>出乎意料地，班长也加入了排球大军。</p><p>人越来越多了。</p><p>我一直对他印象不算深刻，就是觉得是一个班级里比较玩得开的角色，虽然我不怎么喜欢他，但我跟他一起打排球还算舒服，也让我对他有了改观，起码没有那么抵触了。他刚来的时候还垫不好球，但他很适合扣球，于是我就让他给我打攻，这样也不用一直等另一帮人练我的二传了。不出我所料，他真的很适合这件事，们运动员是这样的，一身牛劲没有技巧。不过随着他打球的日子不断增加，他的技术也有了由此可见的进步<s>也算是我养大的孩子了</s>垫球有了长进。</p><p>后来高一的也有男生想要加入我们，于是顺理成章地他成为了那个男生的才二传手，而我又一次体会到了不再是那个特别的存在。</p><p>我有些难受，但是场上位置那么多，我总可以去干别的事，从此开起了我的专注接一的自由人之路。</p><p>于是又有了第二个我印象深刻的事，我接起了一个惊为天人的一。</p><p>那是一个傍晚，场上人不多，也许是都在吃饭。</p><p>总之我耐心观察对方二传的动向，Ok，他的球出手了，我猜的没错给了syx。在我观察的这一刻，好像时间又慢了下来，在他可以选择的落点有我和ptq两个人防，我防左边大斜线而他防中场和吊球。他正对着我上步，就在我觉得他会扣大斜的瞬间我看到了他的身体和手掌方向——是直线我的身体凭着直觉向那边跑过去，此刻我害怕球在我跑到之前落地，然后我也就失去了这惊为天人的一球，很幸运，差点落地，落在了我心跳收缩的时刻，是右手起的，不高，但足够ptq把球救过去。<br>“这么快吗？”我听到他问。</p><p>我更爱排球了。</p><p>距离高考还有一周时间，我依旧保持每天打球。</p><p>每天我就看着那流水一样的倒计时一天天减少，心里却默数着还能打几次排球。我们还能见几次面。</p><p>临别之时终要来临。</p><p>大学。</p><p>报道的那天，我穿过各种各样的推销，在仍然迷路的大学里，就去问学姐：“哈喽学姐，这里有排球场吗？”我不确定我的水平下降了多少，只是我实在忍受不了没有球打的日子了。得到学姐的答案后，我火速奔往了排球场。</p><p>“那个同学，能加一个吗？”<br>“可以呀。”</p>]]>
-    </content>
-    <id>https://www.wyxworld.cyou/posts/db100a784552/</id>
-    <link href="https://www.wyxworld.cyou/posts/db100a784552/"/>
-    <published>2026-06-04T04:19:15.000Z</published>
-    <summary>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" cla]]>
-    </summary>
-    <title>感我此言良久立(1)</title>
-    <updated>2026-07-15T11:28:23.027Z</updated>
   </entry>
 </feed>
